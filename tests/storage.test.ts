@@ -1,7 +1,19 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { GameState } from "../src/game/state";
 import type { Settings } from "../src/game/types";
-import { loadGame, loadSettings, loadUsed, saveGame, saveSettings, saveUsed } from "../src/storage";
+import {
+  appendRecord,
+  clearStats,
+  loadGame,
+  loadGroups,
+  loadSettings,
+  loadStats,
+  loadUsed,
+  saveGame,
+  saveGroups,
+  saveSettings,
+  saveUsed,
+} from "../src/storage";
 
 const settings: Settings = {
   names: ["Anna", "Ben", "Cem"],
@@ -140,5 +152,68 @@ describe("kaputte Daten", () => {
     expect(loadGame()).toBeNull();
     expect(loadUsed()).toEqual({});
     expect(() => saveGame(game)).not.toThrow();
+  });
+});
+
+describe("Gruppen speichern", () => {
+  const group = {
+    id: "g1",
+    name: "Freitagsrunde",
+    members: [
+      { id: "m1", name: "Anna" },
+      { id: "m2", name: "Ben" },
+    ],
+    selected: ["m2", "m1"],
+    evening: 2,
+  };
+
+  it("speichert und lädt Gruppen", () => {
+    saveGroups([group]);
+    expect(loadGroups()).toEqual([group]);
+  });
+
+  it("liefert ohne gespeicherte Gruppen eine leere Liste", () => {
+    expect(loadGroups()).toEqual([]);
+  });
+
+  it("verwirft kaputte Gruppen und Auswahl-IDs, die es nicht mehr gibt", () => {
+    localStorage.setItem(
+      "impostor:v1:groups",
+      JSON.stringify([group, { id: "g2", name: 5 }, { ...group, id: "g3", selected: ["m1", "weg"] }]),
+    );
+    expect(loadGroups()).toEqual([group, { ...group, id: "g3", selected: ["m1"] }]);
+  });
+});
+
+describe("Statistik speichern", () => {
+  const record = {
+    roundId: "r1",
+    evening: 1,
+    at: "2026-10-26T20:00:00.000Z",
+    mode: "alle" as const,
+    players: ["a", "b", "c"],
+    impostors: ["a"],
+    starter: "b",
+    winner: "crew" as const,
+  };
+
+  it("hängt Runden pro Gruppe an und speichert dieselbe Runde nur einmal", () => {
+    appendRecord("g1", record);
+    appendRecord("g1", record);
+    appendRecord("g1", { ...record, roundId: "r2" });
+    appendRecord("g2", record);
+    expect(loadStats("g1").map((r) => r.roundId)).toEqual(["r1", "r2"]);
+    expect(loadStats("g2")).toHaveLength(1);
+  });
+
+  it("löscht die Statistik einer Gruppe", () => {
+    appendRecord("g1", record);
+    clearStats("g1");
+    expect(loadStats("g1")).toEqual([]);
+  });
+
+  it("verwirft kaputte Einträge", () => {
+    localStorage.setItem("impostor:v1:stats:g1", JSON.stringify([record, { roundId: 5 }]));
+    expect(loadStats("g1")).toEqual([record]);
   });
 });

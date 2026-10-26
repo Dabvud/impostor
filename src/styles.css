@@ -35,3 +35,151 @@ body {
   padding: max(24px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom));
   font-size: 18px;
 }
+
+h1,
+h2 {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: var(--surface);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+button.primary {
+  width: 100%;
+  max-width: 420px;
+  padding: 18px;
+  background: var(--accent);
+  color: #062312;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 0.04em;
+}
+
+.setup {
+  justify-content: flex-start;
+}
+
+.panel {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.panel h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.panel button {
+  background: var(--bg);
+}
+
+.name-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.name-list li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 4px 4px 12px;
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+.icon-button {
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.add-name {
+  display: flex;
+  gap: 8px;
+}
+
+.add-name input,
+.panel select {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #2c4636;
+  border-radius: 12px;
+  background: var(--bg);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.stepper button {
+  width: 52px;
+  height: 52px;
+  font-size: 24px;
+}
+
+.stepper output {
+  font-size: 32px;
+  font-weight: 700;
+  min-width: 2ch;
+  text-align: center;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.segmented button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #062312;
+  font-weight: 700;
+}
+
+.errors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--danger);
+  text-align: center;
+}

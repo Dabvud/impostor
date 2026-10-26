@@ -10,12 +10,34 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "vereine-int", label: "🌐 Alle Vereine", hasDifficulty: false },
 ];
 
-const playerEntry = ({ name, hints }: Footballer): Entry => ({
-  name,
-  hints: [hints.nation, hints.position, hints.special].filter((h): h is string => Boolean(h)),
-});
+/** Kommen weniger Spieler eines Landes im Topf vor, verrät die Nation als Tipp zu viel. */
+const MIN_SAME_NATION = 5;
+/** Eine Region, die nur ein Verein im Topf hat, verrät ihn sofort. */
+const MIN_SAME_REGION = 2;
 
-const clubEntry = ({ name, hints }: Club): Entry => ({ name, hints: [hints.region, hints.colors] });
+const isText = (h: string | null): h is string => Boolean(h);
+
+function countBy<T>(items: T[], key: (item: T) => string): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const item of items) counts.set(key(item), (counts.get(key(item)) ?? 0) + 1);
+  return counts;
+}
+
+function playerEntries(players: Footballer[]): Entry[] {
+  const nations = countBy(players, (p) => p.hints.nation);
+  return players.map(({ name, hints }) => {
+    const nation = (nations.get(hints.nation) ?? 0) >= MIN_SAME_NATION ? hints.nation : null;
+    return { name, hints: [nation, hints.position, hints.special].filter(isText) };
+  });
+}
+
+function clubEntries(clubs: Club[]): Entry[] {
+  const regions = countBy(clubs, (c) => c.hints.region);
+  return clubs.map(({ name, hints }) => {
+    const region = (regions.get(hints.region) ?? 0) >= MIN_SAME_REGION ? hints.region : null;
+    return { name, hints: [region, hints.colors].filter(isText) };
+  });
+}
 
 const withTag = (players: Footballer[], tag: Tag) => players.filter((p) => p.tags.includes(tag));
 
@@ -23,19 +45,19 @@ const withTag = (players: Footballer[], tag: Tag) => players.filter((p) => p.tag
 export function poolFor(mode: ModeId, difficulty: Tier, players: Footballer[], clubs: Club[]): Entry[] {
   switch (mode) {
     case "alle":
-      return players.filter((p) => p.tier <= difficulty).map(playerEntry);
+      return playerEntries(players.filter((p) => p.tier <= difficulty));
     case "bundesliga":
-      return withTag(players, "bundesliga").map(playerEntry);
+      return playerEntries(withTag(players, "bundesliga"));
     case "cl-legenden":
-      return withTag(players, "cl-legende").map(playerEntry);
+      return playerEntries(withTag(players, "cl-legende"));
     case "wm-legenden":
-      return withTag(players, "wm-legende").map(playerEntry);
+      return playerEntries(withTag(players, "wm-legende"));
     case "fifa-icons":
-      return withTag(players, "fifa-icon").map(playerEntry);
+      return playerEntries(withTag(players, "fifa-icon"));
     case "vereine-de":
-      return clubs.filter((c) => c.region === "de").map(clubEntry);
+      return clubEntries(clubs.filter((c) => c.region === "de"));
     case "vereine-int":
-      return clubs.filter((c) => c.inAllClubs).map(clubEntry);
+      return clubEntries(clubs.filter((c) => c.inAllClubs));
   }
 }
 

@@ -37,12 +37,41 @@ describe("poolFor", () => {
 
   it("liefert Name und die vorhandenen Tipps als Liste", () => {
     expect(poolFor("alle", 2, players, clubs)).toEqual([
-      { name: "A", hints: ["Land A", "Torwart", "Trick A"] },
-      { name: "B", hints: ["Land B", "Stürmer"] },
+      { name: "A", hints: ["Torwart", "Trick A"] },
+      { name: "B", hints: ["Stürmer"] },
     ]);
     expect(poolFor("vereine-int", 1, players, clubs)).toEqual([
-      { name: "X", hints: ["Region X", "Rot"] },
-      { name: "Y", hints: ["Region Y", "Blau"] },
+      { name: "X", hints: ["Rot"] },
+      { name: "Y", hints: ["Blau"] },
+    ]);
+  });
+
+  it("nennt die Nation nur, wenn mindestens 5 Spieler im Topf aus ihr kommen", () => {
+    const squad: Footballer[] = [
+      ...["B1", "B2", "B3", "B4", "B5"].map((name) => ({
+        name,
+        tier: 1 as const,
+        tags: [],
+        hints: { nation: "Brasilien", position: "Stürmer", special: null },
+      })),
+      { name: "K1", tier: 1, tags: [], hints: { nation: "Südkorea", position: "Stürmer", special: null } },
+    ];
+    const pool = poolFor("alle", 1, squad, []);
+    expect(pool.find((e) => e.name === "B1")?.hints).toEqual(["Brasilien", "Stürmer"]);
+    expect(pool.find((e) => e.name === "K1")?.hints).toEqual(["Stürmer"]);
+    expect(poolFor("alle", 1, squad.slice(1), []).find((e) => e.name === "B2")?.hints).toEqual(["Stürmer"]);
+  });
+
+  it("nennt die Region eines Vereins nur, wenn sie im Topf mehrfach vorkommt", () => {
+    const league: Club[] = [
+      { name: "D", region: "de", inAllClubs: true, hints: { region: "Ruhrpott", colors: "Schwarz-Gelb" } },
+      { name: "S", region: "de", inAllClubs: true, hints: { region: "Ruhrpott", colors: "Königsblau" } },
+      { name: "R", region: "int", inAllClubs: true, hints: { region: "Österreich", colors: "Rot-Weiß" } },
+    ];
+    expect(poolFor("vereine-int", 1, [], league)).toEqual([
+      { name: "D", hints: ["Ruhrpott", "Schwarz-Gelb"] },
+      { name: "S", hints: ["Ruhrpott", "Königsblau"] },
+      { name: "R", hints: ["Rot-Weiß"] },
     ]);
   });
 });

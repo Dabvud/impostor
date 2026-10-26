@@ -1,13 +1,18 @@
+import type { Group } from "./game/groups";
 import { MODES } from "./game/modes";
 import type { UsedMap } from "./game/session";
 import type { GameState } from "./game/state";
+import type { RoundRecord } from "./game/stats";
 import type { Round, Settings } from "./game/types";
 
 const KEYS = {
   settings: "impostor:v1:settings",
   game: "impostor:v1:game",
   used: "impostor:v1:used",
+  groups: "impostor:v1:groups",
 };
+
+const statsKey = (groupId: string) => `impostor:v1:stats:${groupId}`;
 
 function read(key: string): unknown {
   try {
@@ -101,8 +106,14 @@ function isGameState(v: unknown): v is GameState {
         v.index < v.round.speakingOrder.length
       );
     case "discussion":
-    case "resolution":
       return isRound(v.round);
+    case "resolution":
+      // v1.3 kannte noch keine Schritte – fehlender Schritt gilt als abgeschlossen
+      return (
+        isRound(v.round) &&
+        (v.step === undefined || ["caught?", "guess", "guessed?", "done"].includes(v.step as string)) &&
+        (v.winner === undefined || v.winner === null || v.winner === "crew" || v.winner === "impostor")
+      );
     default:
       return false;
   }
@@ -129,7 +140,11 @@ export function saveSettings(s: Settings): void {
 export function loadGame(): GameState | null {
   const v = read(KEYS.game);
   if (!isGameState(v)) return null;
-  return v.phase === "setup" ? v : { ...v, round: upgradeRound(v.round) };
+  if (v.phase === "setup") return v;
+  if (v.phase === "resolution") {
+    return { ...v, round: upgradeRound(v.round), step: v.step ?? "done", winner: v.winner ?? null };
+  }
+  return { ...v, round: upgradeRound(v.round) };
 }
 
 export function saveGame(g: GameState): void {
@@ -144,4 +159,58 @@ export function loadUsed(): UsedMap {
 
 export function saveUsed(u: UsedMap): void {
   write(KEYS.used, u);
+}
+
+function isGroup(v: unknown): v is Group {
+  return (
+    isObject(v) &&
+    typeof v.id === "string" &&
+    typeof v.name === "string" &&
+    Array.isArray(v.members) &&
+    v.members.every((m) => isObject(m) && typeof m.id === "string" && typeof m.name === "string") &&
+    isStringArray(v.selected) &&
+    typeof v.evening === "number" && Number.isInteger(v.evening) && v.evening >= 1
+  );
+}
+
+export function loadGroups(): Group[] {
+  const v = read(KEYS.groups);
+  if (!Array.isArray(v)) return [];
+  return v.filter(isGroup).map((g) => ({
+    ...g,
+    selected: g.selected.filter((id) => g.members.some((m) => m.id === id)),
+  }));
+}
+
+export function saveGroups(groups: Group[]): void {
+  write(KEYS.groups, groups);
+}
+
+function isRoundRecord(v: unknown): v is RoundRecord {
+  return (
+    isObject(v) &&
+    typeof v.roundId === "string" &&
+    typeof v.evening === "number" && Number.isInteger(v.evening) && v.evening >= 1 &&
+    typeof v.at === "string" &&
+    MODES.some((m) => m.id === v.mode) &&
+    isStringArray(v.players) &&
+    isStringArray(v.impostors) &&
+    typeof v.starter === "string" &&
+    (v.winner === null || v.winner === "crew" || v.winner === "impostor")
+  );
+}
+
+export function loadStats(groupId: string): RoundRecord[] {
+  const v = read(statsKey(groupId));
+  return Array.isArray(v) ? v.filter(isRoundRecord) : [];
+}
+
+export function appendRecord(groupId: string, record: RoundRecord): void {
+  const records = loadStats(groupId);
+  if (records.some((r) => r.roundId === record.roundId)) return;
+  write(statsKey(groupId), [...records, record]);
+}
+
+export function clearStats(groupId: string): void {
+  write(statsKey(groupId), []);
 }

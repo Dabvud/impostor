@@ -81,6 +81,14 @@ describe("computeStats", () => {
   });
 });
 
+describe("toRecord bei geänderter Gruppe", () => {
+  it("überspringt Namen, die während der Runde umbenannt oder entfernt wurden", () => {
+    const group: Group = { id: "g", name: "G", members: members.slice(1), selected: [], evening: 1 };
+    const round = { id: "r2", revealOrder: ["Anna", "Ben", "Cem"], impostors: ["Anna"], starter: "Anna" } as Round;
+    expect(toRecord(round, group, "alle", "crew", "t")).toMatchObject({ players: ["b", "c"], impostors: [], starter: "" });
+  });
+});
+
 describe("toRecord", () => {
   it("übersetzt Namen der Runde in Mitglieds-IDs", () => {
     const group: Group = { id: "g", name: "G", members, selected: all, evening: 3 };

@@ -105,8 +105,6 @@ describe("Spielstände aus v1.0", () => {
         guessEnabled: false,
         word: { name: "Messi", hints: [] },
         hint: null,
-        id: "r1",
-        guessEnabled: true,
         speakingOrder: ["Cem", "Anna", "Ben"],
         thinkSeconds: null,
         discussSeconds: null,
@@ -139,6 +137,22 @@ describe("kaputte Daten", () => {
     expect(loadGame()).toEqual(personal);
     localStorage.setItem("impostor:v1:game", JSON.stringify({ ...personal, round: { ...personal.round, personalHints: { Anna: 5 } } }));
     expect((loadGame() as { round: { personalHints: unknown } }).round.personalHints).toBeNull();
+  });
+
+  it("lädt eine Auflösung mitten im Ablauf unverändert", () => {
+    const mid = { phase: "resolution", round: game.round, step: "guess", winner: null };
+    localStorage.setItem("impostor:v1:game", JSON.stringify(mid));
+    expect(loadGame()).toEqual(mid);
+  });
+
+  it("lädt eine Auflösung aus v1.3 (ohne Schritt) als abgeschlossen", () => {
+    localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "resolution", round: game.round }));
+    expect(loadGame()).toEqual({ phase: "resolution", round: game.round, step: "done", winner: null });
+  });
+
+  it("verwirft einen unbekannten Auflösungs-Schritt", () => {
+    localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "resolution", round: game.round, step: "?" }));
+    expect(loadGame()).toBeNull();
   });
 
   it("lädt eine Hinweisrunde und verwirft einen ungültigen Index", () => {

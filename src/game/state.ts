@@ -1,12 +1,19 @@
 import type { Round } from "./types";
 
+export type Winner = "crew" | "impostor";
+/**
+ * Auflösung in Schritten: erst „erwischt?“, dann ggf. raten lassen und das Wort aufdecken.
+ * Steht im Zustand, damit Neuladen beim gleichen Schritt weitermacht.
+ */
+export type ResolutionStep = "caught?" | "guess" | "guessed?" | "done";
+
 export type GameState =
   | { phase: "setup" }
   | { phase: "handoff"; round: Round; index: number }
   | { phase: "reveal"; round: Round; index: number; seen: boolean }
   | { phase: "clues"; round: Round; index: number }
   | { phase: "discussion"; round: Round }
-  | { phase: "resolution"; round: Round };
+  | { phase: "resolution"; round: Round; step: ResolutionStep; winner: Winner | null };
 
 export type Action =
   | { type: "start"; round: Round }
@@ -15,6 +22,9 @@ export type Action =
   | { type: "passOn" }
   | { type: "nextClue" }
   | { type: "resolve" }
+  | { type: "caught"; yes: boolean }
+  | { type: "revealWord" }
+  | { type: "guessed"; yes: boolean }
   | { type: "toSetup" }
   | { type: "hide" }; // App geht in den Hintergrund: offene Karte verdecken
 
@@ -22,7 +32,7 @@ export type Action =
 export function reducer(state: GameState, action: Action): GameState {
   switch (action.type) {
     case "start":
-      return state.phase === "setup" || state.phase === "resolution"
+      return state.phase === "setup" || (state.phase === "resolution" && state.step === "done")
         ? { phase: "handoff", round: action.round, index: 0 }
         : state;
     case "confirm":
@@ -44,8 +54,23 @@ export function reducer(state: GameState, action: Action): GameState {
         ? { phase: "clues", round: state.round, index }
         : { phase: "discussion", round: state.round };
     }
-    case "resolve":
-      return state.phase === "discussion" ? { phase: "resolution", round: state.round } : state;
+    case "resolve": {
+      if (state.phase !== "discussion") return state;
+      const { impostors, revealOrder } = state.round;
+      // Ohne oder mit nur Impostorn gibt es nichts zu entscheiden
+      const decided = impostors.length === 0 || impostors.length === revealOrder.length;
+      return { phase: "resolution", round: state.round, step: decided ? "done" : "caught?", winner: null };
+    }
+    case "caught":
+      if (state.phase !== "resolution" || state.step !== "caught?") return state;
+      if (!action.yes) return { ...state, step: "done", winner: "impostor" };
+      return state.round.guessEnabled ? { ...state, step: "guess" } : { ...state, step: "done", winner: "crew" };
+    case "revealWord":
+      return state.phase === "resolution" && state.step === "guess" ? { ...state, step: "guessed?" } : state;
+    case "guessed":
+      return state.phase === "resolution" && state.step === "guessed?"
+        ? { ...state, step: "done", winner: action.yes ? "impostor" : "crew" }
+        : state;
     case "toSetup":
       return state.phase === "setup" ? state : { phase: "setup" };
     case "hide":

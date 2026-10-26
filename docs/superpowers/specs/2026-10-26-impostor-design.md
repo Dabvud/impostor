@@ -1,7 +1,7 @@
 # Impostor – Design-Spezifikation
 
 **Datum:** 2026-10-26
-**Status:** Entwurf zur Freigabe
+**Status:** Freigegeben, umgesetzt in v1.0
 
 ## 1. Ziel
 

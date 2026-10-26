@@ -5,7 +5,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Süddeutschland",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -14,7 +18,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Ruhrpott",
-      "colors": "Schwarz-Gelb"
+      "color": "Gelb",
+      "league": "Bundesliga",
+      "character": "Stimmungshochburg",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -23,7 +31,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Rheinland",
-      "colors": "Schwarz-Rot"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Werksklub",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -32,7 +44,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Sachsen",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Investorenklub",
+      "success": "Pokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -41,7 +57,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Niederrhein",
-      "colors": "Schwarz-Weiß-Grün"
+      "color": "Grün",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -50,7 +70,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Niedersachsen",
-      "colors": "Grün-Weiß"
+      "color": "Grün",
+      "league": "Bundesliga",
+      "character": "Werksklub",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -59,7 +83,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Hessen",
-      "colors": "Schwarz-Weiß-Rot"
+      "color": "Schwarz",
+      "league": "Bundesliga",
+      "character": "Stimmungshochburg",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -68,7 +96,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Kraichgau",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Bundesliga",
+      "character": "Investorenklub",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -77,7 +109,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Schwaben",
-      "colors": "Weiß-Rot"
+      "color": "Weiß",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -86,7 +122,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Breisgau",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Ausbildungsverein",
+      "success": "noch nie Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -95,7 +135,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Norddeutschland",
-      "colors": "Grün-Weiß"
+      "color": "Grün",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -104,7 +148,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Ruhrpott",
-      "colors": "Königsblau"
+      "color": "Blau",
+      "league": "Bundesliga",
+      "character": "Arbeiterklub",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -113,7 +161,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Rheinhessen",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Kultklub",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -122,7 +174,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Schwaben",
-      "colors": "Rot-Grün-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -131,7 +187,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Rheinland",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Kultklub",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -140,7 +200,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Berlin",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -149,7 +213,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Norddeutschland",
-      "colors": "Blau-Weiß-Schwarz"
+      "color": "Blau",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -158,7 +226,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Hauptstadtregion",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Kultklub",
+      "success": "Pokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -167,7 +239,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Niedersachsen",
-      "colors": "Schwarz-Weiß-Grün"
+      "color": "Grün",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -176,7 +252,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Rheinland",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Kultklub",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -185,7 +265,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Franken",
-      "colors": "Rot-Schwarz"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -194,7 +278,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Ruhrpott",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Bundesliga",
+      "character": "Arbeiterklub",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -203,7 +291,11 @@
     "inAllClubs": false,
     "hints": {
       "region": "Ostwürttemberg",
-      "colors": "Rot-Blau"
+      "color": "Rot",
+      "league": "Bundesliga",
+      "character": "Traditionsverein",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -212,7 +304,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Himmelblau-Weiß"
+      "color": "Blau",
+      "league": "Premier League",
+      "character": "Investorenklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -221,7 +317,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Rot-Weiß-Schwarz"
+      "color": "Rot",
+      "league": "Premier League",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -230,7 +330,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Rot"
+      "color": "Rot",
+      "league": "Premier League",
+      "character": "Stimmungshochburg",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -239,7 +343,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Premier League",
+      "character": "Investorenklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -248,7 +356,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Premier League",
+      "character": "Großklub",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -257,7 +369,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Weiß-Marineblau"
+      "color": "Weiß",
+      "league": "Premier League",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -266,7 +382,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Schwarz-Weiß"
+      "color": "Schwarz",
+      "league": "Premier League",
+      "character": "Arbeiterklub",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -275,7 +395,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Weinrot-Hellblau"
+      "color": "Rot",
+      "league": "Premier League",
+      "character": "Traditionsverein",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -284,7 +408,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Weinrot-Hellblau"
+      "color": "Rot",
+      "league": "Premier League",
+      "character": "Arbeiterklub",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -293,7 +421,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Premier League",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -302,7 +434,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "England",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Premier League",
+      "character": "Traditionsverein",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -311,7 +447,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Weiß"
+      "color": "Weiß",
+      "league": "LaLiga",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Krone im Wappen"
     }
   },
   {
@@ -320,7 +460,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Blau-Rot"
+      "color": "Blau",
+      "league": "LaLiga",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreuz im Wappen"
     }
   },
   {
@@ -329,7 +473,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Rot-Weiß-Blau"
+      "color": "Rot",
+      "league": "LaLiga",
+      "character": "Stimmungshochburg",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -338,7 +486,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Weiß-Rot"
+      "color": "Weiß",
+      "league": "LaLiga",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -347,7 +499,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Weiß-Schwarz"
+      "color": "Weiß",
+      "league": "LaLiga",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -356,7 +512,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Gelb"
+      "color": "Gelb",
+      "league": "LaLiga",
+      "character": "Ausbildungsverein",
+      "success": "Europapokalsieger",
+      "crest": "Krone im Wappen"
     }
   },
   {
@@ -365,7 +525,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "LaLiga",
+      "character": "Ausbildungsverein",
+      "success": "Meister",
+      "crest": "Kreuz im Wappen"
     }
   },
   {
@@ -374,7 +538,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Spanien",
-      "colors": "Grün-Weiß"
+      "color": "Grün",
+      "league": "LaLiga",
+      "character": "Kultklub",
+      "success": "Meister",
+      "crest": "Krone im Wappen"
     }
   },
   {
@@ -383,7 +551,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Schwarz-Weiß"
+      "color": "Schwarz",
+      "league": "Serie A",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -392,7 +564,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Schwarz-Blau"
+      "color": "Blau",
+      "league": "Serie A",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -401,7 +577,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Rot-Schwarz"
+      "color": "Rot",
+      "league": "Serie A",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreuz im Wappen"
     }
   },
   {
@@ -410,7 +590,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Himmelblau-Weiß"
+      "color": "Blau",
+      "league": "Serie A",
+      "character": "Kultklub",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -419,7 +603,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Rot-Gelb"
+      "color": "Rot",
+      "league": "Serie A",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -428,7 +616,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Hellblau-Weiß"
+      "color": "Blau",
+      "league": "Serie A",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -437,7 +629,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Schwarz-Blau"
+      "color": "Blau",
+      "league": "Serie A",
+      "character": "Ausbildungsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -446,7 +642,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Violett-Weiß"
+      "color": "Lila",
+      "league": "Serie A",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -455,7 +655,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Italien",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Serie A",
+      "character": "Investorenklub",
+      "success": "noch nie Meister",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -464,7 +668,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Frankreich",
-      "colors": "Blau-Rot-Weiß"
+      "color": "Blau",
+      "league": "Ligue 1",
+      "character": "Investorenklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -473,7 +681,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Frankreich",
-      "colors": "Weiß-Hellblau"
+      "color": "Weiß",
+      "league": "Ligue 1",
+      "character": "Stimmungshochburg",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -482,7 +694,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Frankreich",
-      "colors": "Weiß-Rot-Blau"
+      "color": "Weiß",
+      "league": "Ligue 1",
+      "character": "Ausbildungsverein",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -491,7 +707,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Riviera",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Ligue 1",
+      "character": "Ausbildungsverein",
+      "success": "Meister",
+      "crest": "Krone im Wappen"
     }
   },
   {
@@ -500,7 +720,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Frankreich",
-      "colors": "Rot-Weiß-Blau"
+      "color": "Rot",
+      "league": "Ligue 1",
+      "character": "Ausbildungsverein",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -509,7 +733,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Portugal",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Liga Portugal",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -518,7 +746,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Portugal",
-      "colors": "Blau-Weiß"
+      "color": "Blau",
+      "league": "Liga Portugal",
+      "character": "Großklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -527,7 +759,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Portugal",
-      "colors": "Grün-Weiß"
+      "color": "Grün",
+      "league": "Liga Portugal",
+      "character": "Ausbildungsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -536,7 +772,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Niederlande",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Eredivisie",
+      "character": "Ausbildungsverein",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -545,7 +785,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Niederlande",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Eredivisie",
+      "character": "Werksklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -554,7 +798,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Niederlande",
-      "colors": "Rot-Weiß-Schwarz"
+      "color": "Rot",
+      "league": "Eredivisie",
+      "character": "Arbeiterklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -563,7 +811,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Schottland",
-      "colors": "Grün-Weiß"
+      "color": "Grün",
+      "league": "Scottish Premiership",
+      "character": "Kultklub",
+      "success": "Champions-League-Sieger",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -572,7 +824,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Schottland",
-      "colors": "Blau-Weiß-Rot"
+      "color": "Blau",
+      "league": "Scottish Premiership",
+      "character": "Traditionsverein",
+      "success": "Europapokalsieger",
+      "crest": "Tier im Wappen"
     }
   },
   {
@@ -581,7 +837,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Türkei",
-      "colors": "Gelb-Rot"
+      "color": "Rot",
+      "league": "Süper Lig",
+      "character": "Stimmungshochburg",
+      "success": "Europapokalsieger",
+      "crest": "Buchstaben im Wappen"
     }
   },
   {
@@ -590,7 +850,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Türkei",
-      "colors": "Gelb-Marineblau"
+      "color": "Gelb",
+      "league": "Süper Lig",
+      "character": "Großklub",
+      "success": "Meister",
+      "crest": "Kreis-Wappen"
     }
   },
   {
@@ -599,7 +863,11 @@
     "inAllClubs": true,
     "hints": {
       "region": "Österreich",
-      "colors": "Rot-Weiß"
+      "color": "Rot",
+      "league": "Österreichische Bundesliga",
+      "character": "Ausbildungsverein",
+      "success": "Meister",
+      "crest": "Tier im Wappen"
     }
   }
 ]

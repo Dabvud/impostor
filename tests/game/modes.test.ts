@@ -7,10 +7,14 @@ const players: Footballer[] = [
   { name: "B", tier: 2, tags: ["cl-legende"], hints: { nation: "Land B", position: "Stürmer", special: null } },
   { name: "C", tier: 3, tags: ["wm-legende", "bundesliga", "fifa-icon"], hints: { nation: "Land C", position: "Stürmer", special: null } },
 ];
+const club = (name: string, region: Club["region"], inAllClubs: boolean, h: string): Club => {
+  const [r, color, league, character, success, crest] = h.split("|");
+  return { name, region, inAllClubs, hints: { region: r, color, league, character, success, crest } };
+};
 const clubs: Club[] = [
-  { name: "X", region: "de", inAllClubs: true, hints: { region: "Region X", colors: "Rot" } },
-  { name: "Y", region: "int", inAllClubs: true, hints: { region: "Region Y", colors: "Blau" } },
-  { name: "Z", region: "de", inAllClubs: false, hints: { region: "Region Z", colors: "Grün" } },
+  club("X", "de", true, "Region X|Rot|Liga X|Kultklub|Meister|Stern im Wappen"),
+  club("Y", "int", true, "Region Y|Blau|Liga Y|Großklub|Pokalsieger|Kreuz im Wappen"),
+  club("Z", "de", false, "Region Z|Grün|Liga Z|Werksklub|Meister|Tier im Wappen"),
 ];
 const names = (mode: Parameters<typeof poolFor>[0], difficulty: 1 | 2 | 3 = 1) =>
   poolFor(mode, difficulty, players, clubs).map((e) => e.name);
@@ -40,9 +44,10 @@ describe("poolFor", () => {
       { name: "A", hints: ["Torwart", "Trick A"] },
       { name: "B", hints: ["Stürmer"] },
     ]);
-    expect(poolFor("vereine-int", 1, players, clubs)).toEqual([
-      { name: "X", hints: ["Rot"] },
-      { name: "Y", hints: ["Blau"] },
+    // X und Z teilen nur „Meister“ – das trifft auf beide (alle) zu und fällt weg
+    expect(poolFor("vereine-de", 1, players, clubs)).toEqual([
+      { name: "X", hints: [] },
+      { name: "Z", hints: [] },
     ]);
   });
 
@@ -62,16 +67,24 @@ describe("poolFor", () => {
     expect(poolFor("alle", 1, squad.slice(1), []).find((e) => e.name === "B2")?.hints).toEqual(["Stürmer"]);
   });
 
-  it("nennt die Region eines Vereins nur, wenn sie im Topf mehrfach vorkommt", () => {
+  it("nennt Vereins-Tipps nur, wenn mindestens 2, aber nicht alle Vereine im Topf sie teilen", () => {
     const league: Club[] = [
-      { name: "D", region: "de", inAllClubs: true, hints: { region: "Ruhrpott", colors: "Schwarz-Gelb" } },
-      { name: "S", region: "de", inAllClubs: true, hints: { region: "Ruhrpott", colors: "Königsblau" } },
-      { name: "R", region: "int", inAllClubs: true, hints: { region: "Österreich", colors: "Rot-Weiß" } },
+      club("D", "de", true, "Ruhrpott|Gelb|Bundesliga|Traditionsverein|Champions-League-Sieger|Buchstaben im Wappen"),
+      club("S", "de", true, "Ruhrpott|Blau|Bundesliga|Traditionsverein|Pokalsieger|Buchstaben im Wappen"),
+      club("R", "int", true, "Österreich|Rot|Österreichische Bundesliga|Investorenklub|Meister|Tier im Wappen"),
+      club("L", "de", true, "Rheinland|Rot|Bundesliga|Werksklub|Europapokalsieger|Kreuz im Wappen"),
     ];
     expect(poolFor("vereine-int", 1, [], league)).toEqual([
-      { name: "D", hints: ["Ruhrpott", "Schwarz-Gelb"] },
-      { name: "S", hints: ["Ruhrpott", "Königsblau"] },
-      { name: "R", hints: ["Rot-Weiß"] },
+      { name: "D", hints: ["Ruhrpott", "Bundesliga", "Traditionsverein", "Buchstaben im Wappen"] },
+      { name: "S", hints: ["Ruhrpott", "Bundesliga", "Traditionsverein", "Buchstaben im Wappen"] },
+      { name: "R", hints: ["Rot"] },
+      { name: "L", hints: ["Rot", "Bundesliga"] },
+    ]);
+    // Bundesliga-Modus: „Bundesliga“ trifft auf alle zu und verrät nichts
+    expect(poolFor("vereine-de", 1, [], league).map((e) => e.hints)).toEqual([
+      ["Ruhrpott", "Traditionsverein", "Buchstaben im Wappen"],
+      ["Ruhrpott", "Traditionsverein", "Buchstaben im Wappen"],
+      [],
     ]);
   });
 });

@@ -2,7 +2,14 @@ export type Tier = 1 | 2 | 3;
 export type Tag = "bundesliga" | "cl-legende" | "wm-legende" | "fifa-icon";
 /** Merkmale, aus denen der Tipp für den Impostor gezogen wird. */
 export type PlayerHints = { nation: string; position: string; special: string | null };
-export type ClubHints = { region: string; colors: string };
+export type ClubHints = {
+  region: string;
+  color: string;
+  league: string;
+  character: string;
+  success: string;
+  crest: string;
+};
 export type Footballer = { name: string; tier: Tier; tags: Tag[]; hints: PlayerHints };
 /** `inAllClubs`: erscheint im Modus „Alle Vereine“ (internationale Vereine immer, Bundesliga nur die relevanten). */
 export type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hints: ClubHints };

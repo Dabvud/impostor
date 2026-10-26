@@ -1,4 +1,4 @@
-import type { Club, Entry, Footballer, ModeId, Tag, Tier } from "./types";
+import type { Club, ClubHints, Entry, Footballer, ModeId, Tag, Tier } from "./types";
 
 export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
@@ -12,8 +12,7 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
 
 /** Kommen weniger Spieler eines Landes im Topf vor, verrät die Nation als Tipp zu viel. */
 const MIN_SAME_NATION = 5;
-/** Eine Region, die nur ein Verein im Topf hat, verrät ihn sofort. */
-const MIN_SAME_REGION = 2;
+const CLUB_HINT_KEYS: (keyof ClubHints)[] = ["region", "color", "league", "character", "success", "crest"];
 
 const isText = (h: string | null): h is string => Boolean(h);
 
@@ -31,12 +30,19 @@ function playerEntries(players: Footballer[]): Entry[] {
   });
 }
 
+/**
+ * Ein Vereins-Tipp taugt nur, wenn ihn mindestens zwei Vereine im Topf teilen (sonst verrät er
+ * den Verein) und nicht alle (sonst sagt er nichts, z. B. „Bundesliga“ im Bundesliga-Modus).
+ */
 function clubEntries(clubs: Club[]): Entry[] {
-  const regions = countBy(clubs, (c) => c.hints.region);
-  return clubs.map(({ name, hints }) => {
-    const region = (regions.get(hints.region) ?? 0) >= MIN_SAME_REGION ? hints.region : null;
-    return { name, hints: [region, hints.colors].filter(isText) };
-  });
+  const counts = new Map(CLUB_HINT_KEYS.map((key) => [key, countBy(clubs, (c) => c.hints[key])]));
+  return clubs.map(({ name, hints }) => ({
+    name,
+    hints: CLUB_HINT_KEYS.map((key) => {
+      const n = counts.get(key)?.get(hints[key]) ?? 0;
+      return n >= 2 && n < clubs.length ? hints[key] : null;
+    }).filter(isText),
+  }));
 }
 
 const withTag = (players: Footballer[], tag: Tag) => players.filter((p) => p.tags.includes(tag));

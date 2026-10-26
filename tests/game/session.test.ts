@@ -4,11 +4,14 @@ import type { Club, Footballer, Settings } from "../../src/game/types";
 import { seededRng } from "../helpers/rng";
 
 const players: Footballer[] = [{ name: "A", tier: 1, tags: [], hints: { nation: "N", position: "Torwart", special: null } }];
-const clubs: Club[] = [
-  { name: "X", region: "de", inAllClubs: true, hints: { region: "R", colors: "F" } },
-  { name: "Y", region: "de", inAllClubs: true, hints: { region: "R", colors: "F" } },
-  { name: "Z", region: "de", inAllClubs: true, hints: { region: "R", colors: "F" } },
-];
+const club = (name: string, color: string, character: string): Club => ({
+  name,
+  region: "de",
+  inAllClubs: true,
+  hints: { region: `Region ${name}`, color, league: `Liga ${name}`, character, success: `Erfolg ${name}`, crest: `Wappen ${name}` },
+});
+// Jeder Verein teilt mindestens einen Tipp mit einem anderen, aber keiner trifft auf alle zu.
+const clubs: Club[] = [club("X", "Rot", "Kultklub"), club("Y", "Rot", "Großklub"), club("Z", "Blau", "Großklub")];
 const settings: Settings = {
   names: [" Anna ", "Ben", "Cem"],
   impostorCount: 1,
@@ -27,7 +30,7 @@ describe("nextRound", () => {
   });
 
   it("gibt mit eingeschaltetem Schalter einen Tipp, sonst keinen", () => {
-    expect(nextRound(settings, players, clubs, {}, seededRng(5)).round.hint).toMatch(/^[RF]$/);
+    expect(["Rot", "Großklub"]).toContain(nextRound(settings, players, clubs, {}, seededRng(5)).round.hint);
     expect(nextRound({ ...settings, hintsEnabled: false }, players, clubs, {}, seededRng(5)).round.hint).toBeNull();
   });
 

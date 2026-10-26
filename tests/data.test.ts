@@ -18,6 +18,41 @@ const POSITIONS = [
   "Stürmer",
 ];
 
+const CLUB_VALUES = {
+  color: ["Rot", "Blau", "Weiß", "Schwarz", "Gelb", "Grün", "Orange", "Lila"],
+  league: [
+    "Bundesliga",
+    "Premier League",
+    "LaLiga",
+    "Serie A",
+    "Ligue 1",
+    "Eredivisie",
+    "Liga Portugal",
+    "Süper Lig",
+    "Scottish Premiership",
+    "Österreichische Bundesliga",
+  ],
+  character: [
+    "Traditionsverein",
+    "Werksklub",
+    "Großklub",
+    "Kultklub",
+    "Investorenklub",
+    "Ausbildungsverein",
+    "Arbeiterklub",
+    "Stimmungshochburg",
+  ],
+  success: ["Champions-League-Sieger", "Europapokalsieger", "Meister", "Pokalsieger", "noch nie Meister"],
+  crest: [
+    "Tier im Wappen",
+    "Stern im Wappen",
+    "Buchstaben im Wappen",
+    "Krone im Wappen",
+    "Kreuz im Wappen",
+    "Kreis-Wappen",
+  ],
+};
+
 const words = (s: string) =>
   s
     .normalize("NFD")
@@ -89,12 +124,17 @@ describe("clubs.json", () => {
     expect(clubs.filter((c) => c.name.trim() === "" || !["de", "int"].includes(c.region))).toEqual([]);
   });
 
-  it("hat für jeden Verein Region und Farben, ohne den Namen zu verraten", () => {
-    expect(clubs.filter((c) => !c.hints?.region?.trim() || !c.hints?.colors?.trim()).map((c) => c.name)).toEqual([]);
-    const leaking = clubs.flatMap((c) =>
-      [c.hints.region, c.hints.colors].filter((h) => leaks(c.name, h)).map((h) => `${c.name}: ${h}`),
+  it("hat für jeden Verein eine Region und nur Werte aus den festen Listen", () => {
+    const invalid = clubs.filter(
+      (c) =>
+        !c.hints?.region?.trim() ||
+        (Object.keys(CLUB_VALUES) as (keyof typeof CLUB_VALUES)[]).some((key) => !CLUB_VALUES[key].includes(c.hints[key])),
     );
-    expect(leaking).toEqual([]);
+    expect(invalid.map((c) => c.name)).toEqual([]);
+  });
+
+  it("verrät mit der Region nicht den Vereinsnamen", () => {
+    expect(clubs.filter((c) => leaks(c.name, c.hints.region)).map((c) => `${c.name}: ${c.hints.region}`)).toEqual([]);
   });
 
   it("hat 23 deutsche und 44 internationale Vereine", () => {

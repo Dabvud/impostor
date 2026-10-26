@@ -1,9 +1,9 @@
 import { useRef, useState, type PointerEvent, type ReactNode } from "react";
 
-type Props = { children: ReactNode; onReveal: () => void; thresholdPx?: number };
+type Props = { children: ReactNode; owner: string; onReveal: () => void; thresholdPx?: number };
 
 /** Verdeckte Karte: Hochziehen zeigt den Inhalt, Loslassen verdeckt ihn wieder. */
-export default function RevealCard({ children, onReveal, thresholdPx = 80 }: Props) {
+export default function RevealCard({ children, owner, onReveal, thresholdPx = 80 }: Props) {
   const startY = useRef<number | null>(null);
   const [offset, setOffset] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -44,7 +44,8 @@ export default function RevealCard({ children, onReveal, thresholdPx = 80 }: Pro
         style={{ transform: `translateY(${-offset}px)` }}
       >
         <span className="reveal-arrow">↑</span>
-        <span>Karte nach oben ziehen</span>
+        <span className="reveal-owner">Karte von {owner}</span>
+        <span>nach oben ziehen</span>
       </div>
     </div>
   );

@@ -490,3 +490,14 @@ button:focus-visible {
   font-size: 14px;
   color: var(--danger);
 }
+
+.reveal-name {
+  font-size: clamp(28px, 8vw, 40px);
+  text-align: center;
+  word-break: break-word;
+}
+
+.reveal-owner {
+  color: var(--text);
+  font-size: 18px;
+}

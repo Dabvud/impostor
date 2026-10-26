@@ -7,6 +7,7 @@ function setup(props: Partial<Parameters<typeof RevealScreen>[0]> = {}) {
   const onPassOn = vi.fn();
   render(
     <RevealScreen
+      name="Fabi"
       isImpostor={false}
       word="Messi"
       hint={null}
@@ -33,6 +34,21 @@ describe("RevealScreen", () => {
     expect(onSeen).toHaveBeenCalled();
     fireEvent.pointerUp(card, { clientY: 300, pointerId: 1 });
     expect(screen.queryByText("Messi")).not.toBeInTheDocument();
+  });
+
+  it("zeigt immer, wessen Karte es ist – auch nach dem Zurückschieben", () => {
+    const { card } = setup();
+    expect(screen.getByRole("heading", { name: "Fabi" })).toBeInTheDocument();
+    expect(screen.getByText("Karte von Fabi")).toBeInTheDocument();
+    drag(card, 400, 300);
+    fireEvent.pointerUp(card, { clientY: 300, pointerId: 1 });
+    expect(screen.getByRole("heading", { name: "Fabi" })).toBeInTheDocument();
+    expect(screen.getByText("Karte von Fabi")).toBeInTheDocument();
+  });
+
+  it("zeigt Paul auch hier mit Regenbogen", () => {
+    setup({ name: "Paul" });
+    expect(screen.getByRole("heading", { name: "Paul 🌈" })).toBeInTheDocument();
   });
 
   it("deckt bei zu kurzem Zug nicht auf", () => {

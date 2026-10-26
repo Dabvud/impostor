@@ -1,6 +1,8 @@
 import RevealCard from "../components/RevealCard";
+import { displayName } from "../displayName";
 
 type Props = {
+  name: string;
   isImpostor: boolean;
   word: string;
   hint: string | null;
@@ -9,10 +11,12 @@ type Props = {
   onPassOn: () => void;
 };
 
-export default function RevealScreen({ isImpostor, word, hint, canPass, onSeen, onPassOn }: Props) {
+export default function RevealScreen({ name, isImpostor, word, hint, canPass, onSeen, onPassOn }: Props) {
   return (
     <main className="screen reveal">
-      <RevealCard onReveal={onSeen}>
+      {/* Name bleibt sichtbar, falls beim Weiterreichen versehentlich gewischt wurde */}
+      <h1 className="reveal-name">{displayName(name)}</h1>
+      <RevealCard owner={displayName(name)} onReveal={onSeen}>
         {isImpostor ? (
           <div className="impostor-card">
             <span className="impostor">🕵️ Du bist der Impostor</span>

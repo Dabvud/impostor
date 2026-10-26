@@ -99,6 +99,7 @@ export default function App() {
         return (
           <RevealScreen
             key={state.index}
+            name={name}
             isImpostor={state.round.impostors.includes(name)}
             word={state.round.word.name}
             hint={state.round.hint}

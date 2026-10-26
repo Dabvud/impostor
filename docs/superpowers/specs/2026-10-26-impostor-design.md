@@ -62,8 +62,10 @@ type Round = {
 function drawRound(settings, pool: Footballer[], used: string[], rng: () => number): Round
 ```
 
-- Kandidaten = alle Fußballer mit `tier <= difficulty`, die nicht in `used` stehen.
-  Ist diese Menge leer, wird `used` für diese Schwierigkeit zurückgesetzt.
+- Pool der Schwierigkeit = alle Fußballer mit `tier <= difficulty`.
+- Stehen bereits **mindestens 50 %** dieses Pools in `used`, wird `used` vor dem Ziehen
+  komplett geleert. So ist nie vorhersehbar, welche Fußballer „noch übrig“ sind.
+- Kandidaten = Pool der Schwierigkeit ohne die Einträge in `used`.
 - Impostor, Reihenfolge und Starter werden unabhängig voneinander zufällig gezogen.
 
 ### 3.2 state.ts – Phasen
@@ -77,7 +79,7 @@ setup → handoff(i) → reveal(i) → … (für jeden Spieler in revealOrder)
 
 - `settings`: Namen, Impostor-Anzahl, Schwierigkeit (bleiben über Sitzungen erhalten).
 - `currentRound` + aktuelle Phase: Damit überlebt eine Runde Bildschirmsperre und Neuladen.
-- `usedFootballers`: bereits gespielte Namen (für „keine Wiederholung“).
+- `usedFootballers`: bereits gespielte Namen (keine Wiederholung, bis 50 % des Pools gespielt sind).
 
 ## 4. Bildschirme
 
@@ -125,7 +127,8 @@ setup → handoff(i) → reveal(i) → … (für jeden Spieler in revealOrder)
 - `drawRound`: richtige Anzahl Impostor; Impostor, Starter und Reihenfolge stammen nur
   aus den Spielernamen; die Reihenfolge enthält jeden Spieler genau einmal;
   das Wort entspricht der Schwierigkeit; benutzte Spieler werden ausgelassen;
-  der Pool wird zurückgesetzt, wenn er erschöpft ist.
+  `used` wird geleert, sobald 50 % des Pools der Schwierigkeit erreicht sind
+  (knapp darunter wird es noch nicht geleert).
 - Zustandsautomat: korrekte Phasenwechsel und Wiederherstellung beim Übergabe-Bildschirm.
 - Validierung der Einstellungen (Mindestspielerzahl, Impostor-Grenze, doppelte Namen).
 - Datenprüfung von `players.json`: keine Duplikate, gültige Stufen, keine leeren Namen.

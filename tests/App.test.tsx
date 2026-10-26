@@ -45,7 +45,11 @@ describe("App", () => {
 
     expect(screen.getByRole("heading", { name: /beginnt$/ })).toBeInTheDocument();
     fireEvent.pointerDown(screen.getByRole("button", { name: "Auflösen" }));
-    expect(await screen.findByText("Das Wort war", {}, { timeout: 2000 })).toBeInTheDocument();
+    expect(await screen.findByText(/erwischt\?$/, {}, { timeout: 2000 })).toBeInTheDocument();
+    await new Promise((r) => setTimeout(r, 550));
+    await user.click(screen.getByRole("button", { name: "Nein" }));
+    expect(screen.getByText("Das Wort war")).toBeInTheDocument();
+    expect(screen.getByText("Impostor gewinnt 🕵️")).toBeInTheDocument();
 
     await new Promise((r) => setTimeout(r, 550));
     await user.click(screen.getByRole("button", { name: "Neue Runde" }));
@@ -144,6 +148,76 @@ describe("Gruppen", () => {
     await user.click(screen.getByRole("button", { name: "Gruppe löschen" }));
     expect(screen.queryByRole("button", { name: "Alt" })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Ohne Gruppe" })).toHaveAttribute("aria-pressed", "true");
+    expect(localStorage.getItem("impostor:v1:stats:g1")).toBeNull();
+  });
+});
+
+describe("Statistik-Protokoll", () => {
+  const group = {
+    id: "g1",
+    name: "Freitagsrunde",
+    members: [
+      { id: "a", name: "Anna" },
+      { id: "b", name: "Ben" },
+      { id: "c", name: "Cem" },
+    ],
+    selected: ["a", "b", "c"],
+    evening: 1,
+  };
+  const settings = {
+    names: ["Anna", "Ben", "Cem"],
+    impostorCount: 1,
+    mode: "vereine-de",
+    difficulty: 1,
+    hintsEnabled: true,
+    secretImpostors: false,
+    thinkSeconds: null,
+    discussSeconds: null,
+    groupId: "g1",
+    guessEnabled: true,
+  };
+  const stats = () => JSON.parse(localStorage.getItem("impostor:v1:stats:g1") ?? "[]");
+
+  beforeEach(() => {
+    localStorage.setItem("impostor:v1:groups", JSON.stringify([group]));
+    localStorage.setItem("impostor:v1:settings", JSON.stringify(settings));
+  });
+
+  it("trägt eine abgeschlossene Runde genau einmal ein – auch nach Neuladen", async () => {
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    const first = render(<App />);
+    await new Promise((r) => setTimeout(r, 550));
+    fireEvent.click(screen.getByRole("button", { name: "Nein" }));
+    expect(stats()).toHaveLength(1);
+    expect(stats()[0]).toMatchObject({ roundId: "r1", impostors: ["b"], starter: "c", winner: "impostor", mode: "vereine-de" });
+    first.unmount();
+    render(<App />);
+    expect(screen.getByText("Impostor gewinnt 🕵️")).toBeInTheDocument();
+    expect(stats()).toHaveLength(1);
+  });
+
+  it("führt durchs Raten und trägt den Crew-Sieg ein", async () => {
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    render(<App />);
+    const click = async (name: string) => {
+      await new Promise((r) => setTimeout(r, 550));
+      fireEvent.click(screen.getByRole("button", { name }));
+    };
+    await click("Ja");
+    expect(screen.getByText("Ben darf jetzt das Wort raten")).toBeInTheDocument();
+    expect(stats()).toHaveLength(0);
+    await click("Wort aufdecken");
+    await click("Nein");
+    expect(screen.getByText("Crew gewinnt 🎯")).toBeInTheDocument();
+    expect(stats()[0].winner).toBe("crew");
+  });
+
+  it("trägt ohne Gruppe nichts ein", async () => {
+    localStorage.setItem("impostor:v1:settings", JSON.stringify({ ...settings, groupId: null }));
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    render(<App />);
+    await new Promise((r) => setTimeout(r, 550));
+    fireEvent.click(screen.getByRole("button", { name: "Nein" }));
     expect(localStorage.getItem("impostor:v1:stats:g1")).toBeNull();
   });
 });

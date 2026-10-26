@@ -4,6 +4,7 @@ import playersJson from "./data/players.json";
 import { unlockAudio } from "./alarm";
 import { type Group } from "./game/groups";
 import { nextRound } from "./game/session";
+import { toRecord } from "./game/stats";
 import { reducer, restore, type GameState } from "./game/state";
 import type { Club, Footballer, Settings } from "./game/types";
 import CluesScreen from "./screens/CluesScreen";
@@ -14,6 +15,7 @@ import ResolutionScreen from "./screens/ResolutionScreen";
 import RevealScreen from "./screens/RevealScreen";
 import SetupScreen from "./screens/SetupScreen";
 import {
+  appendRecord,
   clearStats,
   loadGame,
   loadGroups,
@@ -47,6 +49,13 @@ export default function App() {
   phase.current = state.phase;
 
   useEffect(() => saveGame(state), [state]);
+
+  // Abgeschlossene Runde in die Statistik der Gruppe – appendRecord ignoriert Doppelte (Neuladen).
+  useEffect(() => {
+    if (state.phase !== "resolution" || state.step !== "done" || !state.round.id || !settings?.groupId) return;
+    const group = groups.find((g) => g.id === settings.groupId);
+    if (group) appendRecord(group.id, toRecord(state.round, group, settings.mode, state.winner, new Date().toISOString()));
+  }, [state, settings, groups]);
 
   // Jeder Fingertipp schaltet den Ton frei, damit der Timer-Piep auch auf dem iPhone kommt.
   useEffect(() => {
@@ -185,6 +194,11 @@ export default function App() {
         return (
           <ResolutionScreen
             round={state.round}
+            step={state.step}
+            winner={state.winner}
+            onCaught={(yes) => dispatch({ type: "caught", yes })}
+            onRevealWord={() => dispatch({ type: "revealWord" })}
+            onGuessed={(yes) => dispatch({ type: "guessed", yes })}
             onNewRound={() => (settings ? startRound(settings) : dispatch({ type: "toSetup" }))}
             onSettings={() => dispatch({ type: "toSetup" })}
           />

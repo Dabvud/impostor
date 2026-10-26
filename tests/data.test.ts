@@ -53,6 +53,59 @@ const CLUB_VALUES = {
   ],
 };
 
+const PLAYER_EXTRA_VALUES: Record<string, string[] | RegExp | "frei"> = {
+  continent: ["Europa", "Südamerika", "Nordamerika", "Afrika", "Asien", "Ozeanien"],
+  league: [
+    "Bundesliga", "Premier League", "LaLiga", "Serie A", "Ligue 1", "Eredivisie", "Liga Portugal", "Süper Lig",
+    "Scottish Premiership", "MLS", "Saudi Pro League", "Brasilianische Liga", "Argentinische Liga", "andere Liga",
+  ],
+  playStyle: "frei",
+  trait: "frei",
+  moment: [
+    "wichtiges WM-Tor", "wichtiges EM-Tor", "Finaltor", "Last-Minute-Tor", "Elfmeter-Held",
+    "Hattrick in großem Spiel", "Traumtor", "Platzverweis in großem Spiel",
+  ],
+  competition: [
+    "WM", "EM", "Champions League", "Europa League", "Copa América", "Afrika-Cup", "Asienmeisterschaft",
+    "Gold Cup", "Olympia", "nationale Meisterschaft", "nationaler Pokal",
+  ],
+  title: [
+    "Weltmeister", "Europameister", "Champions-League-Sieger", "Copa-América-Sieger", "Afrika-Cup-Sieger",
+    "Ballon d'Or", "Meister", "Pokalsieger", "keine großen Titel",
+  ],
+  hair: [
+    "blond", "dunkle Haare", "rote Haare", "graue Haare", "Glatze", "Locken", "lange Haare", "Kurzhaarschnitt",
+    "Irokese", "gefärbte Haare",
+  ],
+  look: ["Bart", "Tattoos", "Stirnband", "Brille"],
+  era: ["1950er", "1960er", "1970er", "1980er", "1990er", "2000er", "2010er", "2020er"],
+  build: ["klein und wendig", "groß gewachsen", "kräftig", "schlank", "durchschnittlich"],
+  foot: ["Linksfuß", "Rechtsfuß", "beidfüßig"],
+  careerType: ["Vereinstreue", "Wandervogel", "Spätstarter", "Wunderkind", "Karriere im Ausland"],
+  shirtNumber: /^trug die \d{1,2}$/,
+  status: ["aktiv", "Karriere beendet"],
+  afterCareer: ["Trainer", "TV-Experte", "Funktionär", "Unternehmer"],
+  bundesliga: ["spielte in der Bundesliga", "nie in der Bundesliga"],
+  transfer: ["Rekordtransfer", "teurer Transfer", "ablösefrei gewechselt", "Eigengewächs", "Schnäppchen"],
+};
+
+const CLUB_EXTRA_VALUES: Record<string, string[] | RegExp> = {
+  stadium: ["großes Stadion", "mittelgroßes Stadion", "kleines Stadion"],
+  founded: /^(18|19|20)\d0er$/,
+  cityType: ["Großstadt", "Kleinstadt", "Hauptstadt", "Industriestadt"],
+  derby: ["hat ein großes Derby", "kein großes Derby"],
+  sponsor: [
+    "Auto", "Getränke", "Airline", "Versicherung", "Telekommunikation", "Bank", "Energie", "Wettanbieter",
+    "Technik", "Online-Handel", "Reisen", "Andere",
+  ],
+  mascot: ["Tier-Maskottchen", "Figur-Maskottchen", "kein bekanntes Maskottchen"],
+};
+
+function allowed(rule: string[] | RegExp | "frei", value: string): boolean {
+  if (rule === "frei") return value.trim().length > 0 && !/\d/.test(value);
+  return Array.isArray(rule) ? rule.includes(value) : rule.test(value);
+}
+
 const words = (s: string) =>
   s
     .normalize("NFD")
@@ -115,6 +168,47 @@ describe("players.json", () => {
     expect(players.filter((p) => p.tags.includes("cl-legende")).length).toBeGreaterThanOrEqual(50);
     expect(players.filter((p) => p.tags.includes("wm-legende")).length).toBeGreaterThanOrEqual(50);
     expect(players.filter((p) => p.tags.includes("fifa-icon")).length).toBeGreaterThanOrEqual(120);
+  });
+});
+
+describe("Tipps für die Runde, in der alle Impostor sind", () => {
+  it("hat für jeden Spieler alle 18 Zusatzfelder mit erlaubten Werten", () => {
+    const invalid = players.flatMap((p) =>
+      Object.entries(PLAYER_EXTRA_VALUES)
+        .filter(([key, rule]) => {
+          const value = (p.extras as Record<string, string | null> | undefined)?.[key];
+          return value === undefined || (value !== null && !allowed(rule, value));
+        })
+        .map(([key]) => `${p.name}.${key}: ${(p.extras as Record<string, unknown> | undefined)?.[key]}`),
+    );
+    expect(invalid).toEqual([]);
+  });
+
+  it("hat für jeden Spieler mindestens 14 von 20 Kategorien", () => {
+    const thin = players.filter((p) => 2 + Object.values(p.extras ?? {}).filter(Boolean).length < 14);
+    expect(thin.map((p) => p.name)).toEqual([]);
+  });
+
+  it("hat für jeden Verein mindestens 10 von 12 Kategorien mit erlaubten Werten", () => {
+    const invalid = clubs.flatMap((c) =>
+      Object.entries(CLUB_EXTRA_VALUES)
+        .filter(([key, rule]) => {
+          const value = (c.extras as Record<string, string | null> | undefined)?.[key];
+          return value === undefined || (value !== null && !allowed(rule, value));
+        })
+        .map(([key]) => `${c.name}.${key}`),
+    );
+    expect(invalid).toEqual([]);
+    expect(clubs.filter((c) => 6 + Object.values(c.extras ?? {}).filter(Boolean).length < 10).map((c) => c.name)).toEqual([]);
+  });
+
+  it("verrät in keinem Zusatz-Tipp den Namen", () => {
+    const leaking = [...players, ...clubs].flatMap((e) =>
+      Object.values(e.extras ?? {})
+        .filter((v): v is string => typeof v === "string" && leaks(e.name, v))
+        .map((v) => `${e.name}: ${v}`),
+    );
+    expect(leaking).toEqual([]);
   });
 });
 

@@ -22,7 +22,29 @@ export type ModeId =
   | "fifa-icons"
   | "vereine-de"
   | "vereine-int";
-export type Settings = { names: string[]; impostorCount: number; mode: ModeId; difficulty: Tier; hintsEnabled: boolean };
-export type Round = { word: Entry; hint: string | null; impostors: string[]; revealOrder: string[]; starter: string };
+export type Settings = {
+  names: string[];
+  impostorCount: number;
+  mode: ModeId;
+  difficulty: Tier;
+  hintsEnabled: boolean;
+  /** Anzahl der Impostor wird jede Runde geheim ausgelost (0 bis Maximum). */
+  secretImpostors: boolean;
+  /** Überlegzeit pro Spieler in der Hinweisrunde; null = keine Hinweisrunde. */
+  thinkSeconds: number | null;
+  /** Diskussionszeit; null = kein Diskussions-Timer. */
+  discussSeconds: number | null;
+};
+export type Round = {
+  word: Entry;
+  hint: string | null;
+  impostors: string[];
+  revealOrder: string[];
+  starter: string;
+  /** Hinweisrunde: ab dem Starter in der Reihenfolge der eingetragenen Namen. */
+  speakingOrder: string[];
+  thinkSeconds: number | null;
+  discussSeconds: number | null;
+};
 /** Liefert Zufallszahlen in [0, 1). */
 export type Rng = () => number;

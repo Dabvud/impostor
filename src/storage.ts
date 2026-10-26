@@ -36,9 +36,18 @@ function isSettings(v: unknown): v is Settings {
     typeof v.impostorCount === "number" &&
     MODES.some((m) => m.id === v.mode) &&
     [1, 2, 3].includes(v.difficulty as number) &&
-    (v.hintsEnabled === undefined || typeof v.hintsEnabled === "boolean")
+    (v.hintsEnabled === undefined || typeof v.hintsEnabled === "boolean") &&
+    (v.secretImpostors === undefined || typeof v.secretImpostors === "boolean") &&
+    isOptionalSeconds(v.thinkSeconds) &&
+    isOptionalSeconds(v.discussSeconds)
   );
 }
+
+function isOptionalSeconds(v: unknown): boolean {
+  return v === undefined || v === null || (typeof v === "number" && v > 0);
+}
+
+const secondsOrNull = (v: unknown): number | null => (typeof v === "number" && v > 0 ? v : null);
 
 function isRound(v: unknown): v is Round {
   return (
@@ -52,13 +61,18 @@ function isRound(v: unknown): v is Round {
   );
 }
 
-/** Runden aus v1.0 haben noch kein `hint` und `word.hint` statt `word.hints`. */
+/** Ältere Runden: v1.0 ohne Tipp, v1.1 ohne Hinweisrunde und Timer. */
 function upgradeRound(round: Round): Round {
   const hints = (round.word as { hints?: unknown }).hints;
+  const start = Math.max(0, round.revealOrder.indexOf(round.starter));
+  const fallbackOrder = [...round.revealOrder.slice(start), ...round.revealOrder.slice(0, start)];
   return {
     ...round,
     word: { name: round.word.name, hints: isStringArray(hints) ? hints : [] },
     hint: typeof round.hint === "string" ? round.hint : null,
+    speakingOrder: isStringArray(round.speakingOrder) && round.speakingOrder.length > 0 ? round.speakingOrder : fallbackOrder,
+    thinkSeconds: secondsOrNull(round.thinkSeconds),
+    discussSeconds: secondsOrNull(round.discussSeconds),
   };
 }
 
@@ -70,6 +84,14 @@ function isGameState(v: unknown): v is GameState {
     case "handoff":
     case "reveal":
       return isRound(v.round) && typeof v.index === "number" && v.index >= 0 && v.index < v.round.revealOrder.length;
+    case "clues":
+      return (
+        isRound(v.round) &&
+        isStringArray(v.round.speakingOrder) &&
+        typeof v.index === "number" &&
+        v.index >= 0 &&
+        v.index < v.round.speakingOrder.length
+      );
     case "discussion":
     case "resolution":
       return isRound(v.round);
@@ -80,7 +102,14 @@ function isGameState(v: unknown): v is GameState {
 
 export function loadSettings(): Settings | null {
   const v = read(KEYS.settings);
-  return isSettings(v) ? { ...v, hintsEnabled: v.hintsEnabled ?? true } : null;
+  if (!isSettings(v)) return null;
+  return {
+    ...v,
+    hintsEnabled: v.hintsEnabled ?? true,
+    secretImpostors: v.secretImpostors ?? false,
+    thinkSeconds: secondsOrNull(v.thinkSeconds),
+    discussSeconds: secondsOrNull(v.discussSeconds),
+  };
 }
 
 export function saveSettings(s: Settings): void {

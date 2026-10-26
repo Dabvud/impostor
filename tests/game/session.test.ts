@@ -18,6 +18,9 @@ const settings: Settings = {
   mode: "vereine-de",
   difficulty: 2,
   hintsEnabled: true,
+  secretImpostors: false,
+  thinkSeconds: 30,
+  discussSeconds: 120,
 };
 
 describe("nextRound", () => {
@@ -32,6 +35,21 @@ describe("nextRound", () => {
   it("gibt mit eingeschaltetem Schalter einen Tipp, sonst keinen", () => {
     expect(["Rot", "Großklub"]).toContain(nextRound(settings, players, clubs, {}, seededRng(5)).round.hint);
     expect(nextRound({ ...settings, hintsEnabled: false }, players, clubs, {}, seededRng(5)).round.hint).toBeNull();
+  });
+
+  it("übernimmt die Timer-Einstellungen in die Runde", () => {
+    const { round } = nextRound(settings, players, clubs, {}, seededRng(5));
+    expect(round.thinkSeconds).toBe(30);
+    expect(round.discussSeconds).toBe(120);
+  });
+
+  it("lost im geheimen Modus 0 bis max Impostor aus", () => {
+    const secret = { ...settings, names: ["A", "B", "C", "D", "E", "F", "G"], secretImpostors: true, impostorCount: 1 };
+    const seen = new Set<number>();
+    for (let seed = 0; seed < 300; seed++) {
+      seen.add(nextRound(secret, players, clubs, {}, seededRng(seed)).round.impostors.length);
+    }
+    expect(seen).toEqual(new Set([0, 1, 2, 3]));
   });
 
   it("verwendet normalisierte Namen", () => {

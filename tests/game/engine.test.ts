@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { drawRound } from "../../src/game/engine";
+import { drawImpostorCount, drawRound } from "../../src/game/engine";
 import type { Entry } from "../../src/game/types";
 import { seededRng } from "../helpers/rng";
 
@@ -89,7 +89,48 @@ describe("drawRound", () => {
     expect(drawRound(names, 1, bare, [], seededRng(1), true).round.hint).toBeNull();
   });
 
+  it("legt die Hinweis-Reihenfolge ab dem Starter in Namensreihenfolge fest", () => {
+    for (let seed = 0; seed < 20; seed++) {
+      const { round } = drawRound(names, 1, pool, [], seededRng(seed));
+      const start = names.indexOf(round.starter);
+      expect(round.speakingOrder).toEqual([...names.slice(start), ...names.slice(0, start)]);
+    }
+  });
+
+  it("erlaubt eine Runde ohne Impostor", () => {
+    expect(drawRound(names, 0, pool, [], seededRng(3)).round.impostors).toEqual([]);
+  });
+
   it("wirft bei leerem Topf", () => {
     expect(() => drawRound(names, 1, [], [], seededRng(1))).toThrow("Leerer Topf");
+  });
+});
+
+describe("drawImpostorCount", () => {
+  function distribution(max: number, draws = 20000) {
+    const rng = seededRng(42);
+    const counts = new Array(max + 1).fill(0);
+    for (let i = 0; i < draws; i++) counts[drawImpostorCount(max, rng)]++;
+    return counts.map((c) => c / draws);
+  }
+
+  it("gibt in 10 % der Fälle keinen Impostor, sonst gleich verteilt (max 1)", () => {
+    const [none, one] = distribution(1);
+    expect(none).toBeCloseTo(0.1, 1);
+    expect(one).toBeCloseTo(0.9, 1);
+  });
+
+  it.each([2, 3])("verteilt bei max %i die übrigen 90 %% gleichmäßig", (max) => {
+    const shares = distribution(max);
+    expect(shares).toHaveLength(max + 1);
+    expect(shares[0]).toBeCloseTo(0.1, 1);
+    for (const share of shares.slice(1)) expect(share).toBeCloseTo(0.9 / max, 1);
+  });
+
+  it("bleibt immer zwischen 0 und max", () => {
+    expect(drawImpostorCount(2, () => 0)).toBe(0);
+    expect(drawImpostorCount(2, () => 0.0999)).toBe(0);
+    expect(drawImpostorCount(2, () => 0.1)).toBe(1);
+    expect(drawImpostorCount(2, () => 0.9999999)).toBe(2);
   });
 });

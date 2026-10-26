@@ -8,7 +8,11 @@ const round: Round = {
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
   starter: "Cem",
+  speakingOrder: ["Cem", "Anna", "Ben"],
+  thinkSeconds: null,
+  discussSeconds: null,
 };
+const withClues: Round = { ...round, thinkSeconds: 15 };
 const setup: GameState = { phase: "setup" };
 const run = (state: GameState, ...actions: Action[]) => actions.reduce(reducer, state);
 const turn: Action[] = [{ type: "confirm" }, { type: "seen" }, { type: "passOn" }];
@@ -54,6 +58,31 @@ describe("reducer", () => {
 
   it("bricht aus jeder Phase zur Einrichtung ab", () => {
     expect(reducer({ phase: "reveal", round, index: 1, seen: true }, { type: "toSetup" })).toEqual(setup);
+  });
+});
+
+describe("Hinweisrunde", () => {
+  it("folgt nach dem Aufdecken, wenn eine Überlegzeit eingestellt ist", () => {
+    const s = run(setup, { type: "start", round: withClues }, ...turn, ...turn, ...turn);
+    expect(s).toEqual({ phase: "clues", round: withClues, index: 0 });
+  });
+
+  it("geht mit Weiter durch alle Spieler und dann in die Diskussion", () => {
+    let s: GameState = { phase: "clues", round: withClues, index: 0 };
+    s = run(s, { type: "nextClue" });
+    expect(s).toEqual({ phase: "clues", round: withClues, index: 1 });
+    s = run(s, { type: "nextClue" }, { type: "nextClue" });
+    expect(s).toEqual({ phase: "discussion", round: withClues });
+  });
+
+  it("ignoriert Weiter außerhalb der Hinweisrunde", () => {
+    const s: GameState = { phase: "discussion", round: withClues };
+    expect(reducer(s, { type: "nextClue" })).toBe(s);
+  });
+
+  it("bleibt beim Wiederherstellen beim aktuellen Spieler", () => {
+    const s: GameState = { phase: "clues", round: withClues, index: 2 };
+    expect(restore(s)).toBe(s);
   });
 });
 

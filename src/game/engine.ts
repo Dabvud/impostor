@@ -38,6 +38,22 @@ export function drawRound(
   const revealOrder = shuffle(names, rng);
   const starter = pick(names, rng);
   const hint = withHint && word.hints.length > 0 ? pick(word.hints, rng) : null;
+  const start = names.indexOf(starter);
+  const speakingOrder = [...names.slice(start), ...names.slice(0, start)];
 
-  return { round: { word, hint, impostors, revealOrder, starter }, used: [...baseUsed, word.name] };
+  return {
+    round: { word, hint, impostors, revealOrder, starter, speakingOrder, thinkSeconds: null, discussSeconds: null },
+    used: [...baseUsed, word.name],
+  };
+}
+
+/** Wahrscheinlichkeit für eine Runde ganz ohne Impostor im geheimen Modus. */
+const NO_IMPOSTOR_CHANCE = 0.1;
+
+/** Geheimer Modus: 10 % kein Impostor, die übrigen 90 % gleich verteilt auf 1 bis max. */
+export function drawImpostorCount(max: number, rng: Rng): number {
+  const r = rng();
+  if (r < NO_IMPOSTOR_CHANCE) return 0;
+  const share = (r - NO_IMPOSTOR_CHANCE) / (1 - NO_IMPOSTOR_CHANCE);
+  return Math.min(max, 1 + Math.floor(share * max));
 }

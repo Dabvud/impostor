@@ -4,6 +4,7 @@ export type GameState =
   | { phase: "setup" }
   | { phase: "handoff"; round: Round; index: number }
   | { phase: "reveal"; round: Round; index: number; seen: boolean }
+  | { phase: "clues"; round: Round; index: number }
   | { phase: "discussion"; round: Round }
   | { phase: "resolution"; round: Round };
 
@@ -12,6 +13,7 @@ export type Action =
   | { type: "confirm" }
   | { type: "seen" }
   | { type: "passOn" }
+  | { type: "nextClue" }
   | { type: "resolve" }
   | { type: "toSetup" }
   | { type: "hide" }; // App geht in den Hintergrund: offene Karte verdecken
@@ -30,8 +32,16 @@ export function reducer(state: GameState, action: Action): GameState {
     case "passOn": {
       if (state.phase !== "reveal" || !state.seen) return state;
       const index = state.index + 1;
-      return index < state.round.revealOrder.length
-        ? { phase: "handoff", round: state.round, index }
+      if (index < state.round.revealOrder.length) return { phase: "handoff", round: state.round, index };
+      return state.round.thinkSeconds
+        ? { phase: "clues", round: state.round, index: 0 }
+        : { phase: "discussion", round: state.round };
+    }
+    case "nextClue": {
+      if (state.phase !== "clues") return state;
+      const index = state.index + 1;
+      return index < state.round.speakingOrder.length
+        ? { phase: "clues", round: state.round, index }
         : { phase: "discussion", round: state.round };
     }
     case "resolve":

@@ -9,6 +9,9 @@ const settings: Settings = {
   mode: "vereine-int",
   difficulty: 2,
   hintsEnabled: false,
+  secretImpostors: true,
+  thinkSeconds: 30,
+  discussSeconds: 60,
 };
 const game: GameState = {
   phase: "reveal",
@@ -20,6 +23,9 @@ const game: GameState = {
     impostors: ["Ben"],
     revealOrder: ["Anna", "Ben", "Cem"],
     starter: "Cem",
+    speakingOrder: ["Cem", "Anna", "Ben"],
+    thinkSeconds: 30,
+    discussSeconds: null,
   },
 };
 
@@ -49,16 +55,32 @@ describe("speichern und laden", () => {
 });
 
 describe("Spielstände aus v1.0", () => {
-  it("schaltet den Tipp bei alten Einstellungen ohne Schalter ein", () => {
-    const { hintsEnabled: _, ...old } = settings;
+  it("ergänzt bei alten Einstellungen Tipp an, kein Geheim-Modus, keine Timer", () => {
+    const { hintsEnabled: _a, secretImpostors: _b, thinkSeconds: _c, discussSeconds: _d, ...old } = settings;
     localStorage.setItem("impostor:v1:settings", JSON.stringify(old));
-    expect(loadSettings()).toEqual({ ...settings, hintsEnabled: true });
+    expect(loadSettings()).toEqual({
+      ...settings,
+      hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: null,
+    });
   });
 
   it("lädt alte Runden ohne Tipp mit hint null", () => {
     const oldRound = { word: { name: "Messi", hint: null }, impostors: ["Ben"], revealOrder: ["Anna", "Ben", "Cem"], starter: "Cem" };
     localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "discussion", round: oldRound }));
-    expect(loadGame()).toEqual({ phase: "discussion", round: { ...oldRound, word: { name: "Messi", hints: [] }, hint: null } });
+    expect(loadGame()).toEqual({
+      phase: "discussion",
+      round: {
+        ...oldRound,
+        word: { name: "Messi", hints: [] },
+        hint: null,
+        speakingOrder: ["Cem", "Anna", "Ben"],
+        thinkSeconds: null,
+        discussSeconds: null,
+      },
+    });
   });
 });
 
@@ -76,6 +98,14 @@ describe("kaputte Daten", () => {
     localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "voting", round: game.round }));
     expect(loadGame()).toBeNull();
     localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "handoff", index: 0 }));
+    expect(loadGame()).toBeNull();
+  });
+
+  it("lädt eine Hinweisrunde und verwirft einen ungültigen Index", () => {
+    const clues = { phase: "clues", round: game.round, index: 2 };
+    localStorage.setItem("impostor:v1:game", JSON.stringify(clues));
+    expect(loadGame()).toEqual(clues);
+    localStorage.setItem("impostor:v1:game", JSON.stringify({ ...clues, index: 3 }));
     expect(loadGame()).toBeNull();
   });
 

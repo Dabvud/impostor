@@ -17,6 +17,7 @@ export function validateSettings(s: Settings): string[] {
   const errors: string[] = [];
   if (names.length < MIN_PLAYERS) errors.push(`Mindestens ${MIN_PLAYERS} Spieler`);
   if (new Set(names.map((n) => n.toLowerCase())).size !== names.length) errors.push("Namen doppelt");
+  if (s.secretImpostors) return errors;
   if (s.impostorCount < 1) errors.push("Mindestens 1 Impostor");
   else if (names.length >= MIN_PLAYERS && s.impostorCount > maxImpostors(names.length)) {
     errors.push(`Höchstens ${maxImpostors(names.length)} Impostor bei ${names.length} Spielern`);

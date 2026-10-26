@@ -76,7 +76,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -149,7 +150,9 @@
   {
     "name": "Zlatan Ibrahimović",
     "tier": 1,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -157,7 +160,8 @@
     "tier": 1,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -166,7 +170,8 @@
     "tier": 1,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -199,7 +204,8 @@
     "name": "Marcelo",
     "tier": 1,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -216,7 +222,8 @@
     "tier": 1,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -225,7 +232,8 @@
     "tier": 1,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -387,7 +395,8 @@
     "name": "Gareth Bale",
     "tier": 1,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -423,7 +432,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -438,7 +448,9 @@
   {
     "name": "Fernando Torres",
     "tier": 1,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -509,7 +521,9 @@
   {
     "name": "Giorgio Chiellini",
     "tier": 1,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -599,7 +613,8 @@
     "name": "Wayne Rooney",
     "tier": 1,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -626,7 +641,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -645,7 +661,8 @@
     "tier": 2,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -959,7 +976,8 @@
     "tier": 2,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1301,7 +1319,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1710,7 +1729,8 @@
     "name": "Pelé",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1718,7 +1738,8 @@
     "name": "Diego Maradona",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1728,7 +1749,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1738,7 +1760,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1747,7 +1770,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1756,7 +1780,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1766,7 +1791,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1775,7 +1801,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1784,7 +1811,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1793,7 +1821,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1801,7 +1830,8 @@
     "name": "Francesco Totti",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1810,7 +1840,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1818,7 +1849,8 @@
     "name": "Ronaldo Nazário",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1826,7 +1858,8 @@
     "name": "Rivaldo",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1842,7 +1875,8 @@
     "name": "Kaká",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1851,7 +1885,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1860,7 +1895,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1893,7 +1929,8 @@
     "name": "Garrincha",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1901,7 +1938,8 @@
     "name": "Zico",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1909,7 +1947,8 @@
     "name": "Sócrates",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1917,7 +1956,8 @@
     "name": "Jairzinho",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1925,7 +1965,8 @@
     "name": "Carlos Alberto",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1964,7 +2005,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1972,7 +2014,8 @@
     "name": "Gheorghe Hagi",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1980,7 +2023,8 @@
     "name": "Luís Figo",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1988,7 +2032,8 @@
     "name": "Rui Costa",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -1997,7 +2042,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2005,7 +2051,8 @@
     "name": "Deco",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2022,7 +2069,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2039,7 +2087,8 @@
     "name": "Marco van Basten",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2047,7 +2096,8 @@
     "name": "Ruud Gullit",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2055,7 +2105,8 @@
     "name": "Frank Rijkaard",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2063,7 +2114,8 @@
     "name": "Dennis Bergkamp",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2071,7 +2123,8 @@
     "name": "Patrick Kluivert",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2080,7 +2133,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2088,7 +2142,8 @@
     "name": "Clarence Seedorf",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2104,7 +2159,8 @@
     "name": "Edwin van der Sar",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2129,7 +2185,8 @@
     "name": "Robin van Persie",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2169,7 +2226,8 @@
     "name": "Cha Bum-kun",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2178,7 +2236,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2321,7 +2380,9 @@
   {
     "name": "Hugo Sánchez",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -2558,7 +2619,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2566,7 +2628,8 @@
     "name": "Alessandro Nesta",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2574,7 +2637,8 @@
     "name": "Fabio Cannavaro",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2582,7 +2646,8 @@
     "name": "Gianluca Zambrotta",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2607,7 +2672,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2616,7 +2682,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2633,7 +2700,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2641,7 +2709,8 @@
     "name": "Filippo Inzaghi",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2649,7 +2718,8 @@
     "name": "Ian Rush",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2657,7 +2727,8 @@
     "name": "Roberto Baggio",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2715,7 +2786,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2795,7 +2867,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2803,7 +2876,8 @@
     "name": "Fernando Hierro",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2834,7 +2908,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2842,7 +2917,8 @@
     "name": "Pep Guardiola",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2894,7 +2970,8 @@
     "name": "Javier Zanetti",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2907,14 +2984,17 @@
   {
     "name": "Juan Sebastián Verón",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
     "name": "Juan Román Riquelme",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -2929,7 +3009,9 @@
   {
     "name": "Hernán Crespo",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -2996,7 +3078,8 @@
     "name": "David Trezeguet",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3004,7 +3087,8 @@
     "name": "Patrick Vieira",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3012,7 +3096,8 @@
     "name": "Claude Makélélé",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3020,7 +3105,8 @@
     "name": "Lilian Thuram",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3029,7 +3115,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3065,7 +3152,9 @@
   {
     "name": "Eric Cantona",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -3090,7 +3179,8 @@
     "tier": 3,
     "tags": [
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3124,21 +3214,25 @@
     "name": "Lew Jaschin",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
   {
     "name": "Alan Shearer",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
     "name": "Kenny Dalglish",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3146,7 +3240,8 @@
     "name": "Bobby Moore",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3154,7 +3249,8 @@
     "name": "Gary Lineker",
     "tier": 3,
     "tags": [
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3168,7 +3264,8 @@
     "name": "George Best",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3182,7 +3279,8 @@
     "name": "Didier Drogba",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3190,7 +3288,8 @@
     "name": "Samuel Eto’o",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3203,7 +3302,9 @@
   {
     "name": "Michael Essien",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -3211,7 +3312,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3249,14 +3351,17 @@
   {
     "name": "Michael Owen",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
     "name": "David Beckham",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3264,7 +3369,8 @@
     "name": "Steven Gerrard",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3272,7 +3378,8 @@
     "name": "Frank Lampard",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3280,7 +3387,8 @@
     "name": "Paul Scholes",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3288,7 +3396,8 @@
     "name": "Ryan Giggs",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3296,7 +3405,8 @@
     "name": "Roy Keane",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3309,7 +3419,9 @@
   {
     "name": "Rio Ferdinand",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
@@ -3323,14 +3435,17 @@
   {
     "name": "Ashley Cole",
     "tier": 3,
-    "tags": [],
+    "tags": [
+      "fifa-icon"
+    ],
     "hint": null
   },
   {
     "name": "Peter Schmeichel",
     "tier": 3,
     "tags": [
-      "cl-legende"
+      "cl-legende",
+      "fifa-icon"
     ],
     "hint": null
   },
@@ -3923,6 +4038,198 @@
     "tier": 3,
     "tags": [
       "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Petr Čech",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Laurent Blanc",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sol Campbell",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ronald Koeman",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nemanja Vidić",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "John Barnes",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michael Laudrup",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jari Litmanen",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hidetoshi Nakata",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pavel Nedvěd",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marc Overmars",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Emmanuel Petit",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Robert Pirès",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Claudio Marchisio",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Emilio Butragueño",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andy Cole",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luis Hernández",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Henrik Larsson",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andrij Schewtschenko",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Davor Šuker",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christian Vieri",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ian Wright",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gianfranco Zola",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dirk Kuyt",
+    "tier": 3,
+    "tags": [
+      "fifa-icon"
     ],
     "hint": null
   }

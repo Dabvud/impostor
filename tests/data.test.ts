@@ -6,7 +6,7 @@ import type { Club, Footballer, Tier } from "../src/game/types";
 
 const players = playersJson as Footballer[];
 const clubs = clubsJson as Club[];
-const TAGS = ["bundesliga", "cl-legende", "wm-legende"];
+const TAGS = ["bundesliga", "cl-legende", "wm-legende", "fifa-icon"];
 
 function duplicates(names: string[]): string[] {
   const seen = new Set<string>();
@@ -36,6 +36,7 @@ describe("players.json", () => {
     expect(players.filter((p) => p.tags.includes("bundesliga")).length).toBeGreaterThanOrEqual(150);
     expect(players.filter((p) => p.tags.includes("cl-legende")).length).toBeGreaterThanOrEqual(50);
     expect(players.filter((p) => p.tags.includes("wm-legende")).length).toBeGreaterThanOrEqual(50);
+    expect(players.filter((p) => p.tags.includes("fifa-icon")).length).toBeGreaterThanOrEqual(120);
   });
 });
 

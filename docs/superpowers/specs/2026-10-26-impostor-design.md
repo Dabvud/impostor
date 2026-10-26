@@ -28,7 +28,7 @@ passieren mündlich.
 | Spielende | Minimal: Starter anzeigen → mündlich diskutieren → Auflösung → neue Runde |
 | Starter | Zufällig aus **allen** Spielern, Impostor eingeschlossen (sonst Info-Leck) |
 | Redereihenfolge | Klärt die Gruppe selbst, die App zeigt nur den Starter |
-| Spielmodi | 6 Modi (Abschnitt 4), technisch als Filter über den Datenbestand |
+| Spielmodi | 7 Modi (Abschnitt 4), technisch als Filter über den Datenbestand |
 | Schwierigkeit | Nur im Modus „Alle Fußballer“, Stufen 1–3 kumulativ |
 | Wiederholungen | Pro Topf keine Wiederholung, bis 50 % gespielt sind, dann Reset |
 | Hilfswort | Nicht in v1.0, kommt in v1.1 als Einstellung |
@@ -56,7 +56,7 @@ bekommt den Zufallsgenerator als Parameter, damit Tests reproduzierbar sind.
 ### 3.1 Datentypen
 
 ```ts
-type Tag = "bundesliga" | "cl-legende" | "wm-legende";
+type Tag = "bundesliga" | "cl-legende" | "wm-legende" | "fifa-icon";
 type Footballer = { name: string; tier: 1 | 2 | 3; tags: Tag[]; hint: string | null };
 type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hint: string | null };
 type Entry = { name: string; hint: string | null };   // gemeinsamer Nenner für die Engine
@@ -116,6 +116,7 @@ setup → handoff(i) → reveal(i) → … (für jeden Spieler in revealOrder)
 | 🇩🇪 Bundesliga | Fußballer mit Tag `bundesliga` (aktuell oder früher, alle Stufen) | – |
 | 🏆 CL-Legenden | Fußballer mit Tag `cl-legende` | – |
 | 🌍 WM-Legenden | Fußballer mit Tag `wm-legende` | – |
+| 🎮 FIFA Icons | Fußballer mit Tag `fifa-icon`: alle männlichen Icons (weiße Karten) aus FIFA 19 – EA FC 26 | – |
 | 🏟️ Vereine Bundesliga | Vereine mit `region: "de"` | – |
 | 🌐 Alle Vereine | Vereine mit `inAllClubs: true` (alle internationalen + die relevanten Bundesliga-Vereine) | – |
 

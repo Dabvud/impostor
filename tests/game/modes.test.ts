@@ -5,7 +5,7 @@ import type { Club, Footballer } from "../../src/game/types";
 const players: Footballer[] = [
   { name: "A", tier: 1, tags: ["bundesliga"], hint: null },
   { name: "B", tier: 2, tags: ["cl-legende"], hint: null },
-  { name: "C", tier: 3, tags: ["wm-legende", "bundesliga"], hint: null },
+  { name: "C", tier: 3, tags: ["wm-legende", "bundesliga", "fifa-icon"], hint: null },
 ];
 const clubs: Club[] = [
   { name: "X", region: "de", inAllClubs: true, hint: null },
@@ -30,6 +30,7 @@ describe("poolFor", () => {
   it("filtert Legenden und Vereine", () => {
     expect(names("cl-legenden")).toEqual(["B"]);
     expect(names("wm-legenden")).toEqual(["C"]);
+    expect(names("fifa-icons")).toEqual(["C"]);
     expect(names("vereine-de")).toEqual(["X", "Z"]);
     expect(names("vereine-int")).toEqual(["X", "Y"]);
   });
@@ -51,12 +52,13 @@ describe("poolKey", () => {
 });
 
 describe("MODES", () => {
-  it("hat sechs Modi mit exakten Labels, nur 'alle' mit Schwierigkeit", () => {
+  it("hat sieben Modi mit exakten Labels, nur 'alle' mit Schwierigkeit", () => {
     expect(MODES).toEqual([
       { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
       { id: "bundesliga", label: "🇩🇪 Bundesliga", hasDifficulty: false },
       { id: "cl-legenden", label: "🏆 CL-Legenden", hasDifficulty: false },
       { id: "wm-legenden", label: "🌍 WM-Legenden", hasDifficulty: false },
+      { id: "fifa-icons", label: "🎮 FIFA Icons", hasDifficulty: false },
       { id: "vereine-de", label: "🏟️ Vereine Bundesliga", hasDifficulty: false },
       { id: "vereine-int", label: "🌐 Alle Vereine", hasDifficulty: false },
     ]);

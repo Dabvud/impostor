@@ -10,6 +10,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Telekommunikation",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -23,6 +31,14 @@
       "character": "Stimmungshochburg",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Telekommunikation",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -36,6 +52,14 @@
       "character": "Werksklub",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Versicherung",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -49,6 +73,14 @@
       "character": "Investorenklub",
       "success": "Pokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "2000er",
+      "cityType": "Großstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Getränke",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -62,6 +94,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Online-Handel",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -75,6 +115,14 @@
       "character": "Werksklub",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1940er",
+      "cityType": "Industriestadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Auto",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -88,6 +136,14 @@
       "character": "Stimmungshochburg",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -101,6 +157,14 @@
       "character": "Investorenklub",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1890er",
+      "cityType": "Kleinstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -114,6 +178,14 @@
       "character": "Traditionsverein",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -127,6 +199,14 @@
       "character": "Ausbildungsverein",
       "success": "noch nie Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -140,6 +220,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -153,6 +241,14 @@
       "character": "Arbeiterklub",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -166,6 +262,14 @@
       "character": "Kultklub",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -179,6 +283,14 @@
       "character": "Traditionsverein",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Versicherung",
+      "mascot": "kein bekanntes Maskottchen"
     }
   },
   {
@@ -192,6 +304,14 @@
       "character": "Kultklub",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1940er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -205,6 +325,14 @@
       "character": "Traditionsverein",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -218,6 +346,14 @@
       "character": "Traditionsverein",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1880er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Versicherung",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -231,6 +367,14 @@
       "character": "Kultklub",
       "success": "Pokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1960er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -244,6 +388,14 @@
       "character": "Traditionsverein",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -257,6 +409,14 @@
       "character": "Kultklub",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "kein bekanntes Maskottchen"
     }
   },
   {
@@ -270,6 +430,14 @@
       "character": "Traditionsverein",
       "success": "Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -283,6 +451,14 @@
       "character": "Arbeiterklub",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1840er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -296,6 +472,14 @@
       "character": "Traditionsverein",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "2000er",
+      "cityType": "Industriestadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -309,6 +493,14 @@
       "character": "Investorenklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1880er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -322,6 +514,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1870er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -335,6 +535,14 @@
       "character": "Stimmungshochburg",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -348,6 +556,14 @@
       "character": "Investorenklub",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -361,6 +577,14 @@
       "character": "Großklub",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1880er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -374,6 +598,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1880er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Versicherung",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -387,6 +619,14 @@
       "character": "Arbeiterklub",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Getränke",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -400,6 +640,14 @@
       "character": "Traditionsverein",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1870er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Reisen",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -413,6 +661,14 @@
       "character": "Arbeiterklub",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -426,6 +682,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1870er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -439,6 +703,14 @@
       "character": "Traditionsverein",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1880er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -452,6 +724,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Krone im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "kein bekanntes Maskottchen"
     }
   },
   {
@@ -465,6 +745,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreuz im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -478,6 +766,14 @@
       "character": "Stimmungshochburg",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -491,6 +787,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": null,
+      "mascot": "kein bekanntes Maskottchen"
     }
   },
   {
@@ -504,6 +808,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1910er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -517,6 +829,14 @@
       "character": "Ausbildungsverein",
       "success": "Europapokalsieger",
       "crest": "Krone im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1920er",
+      "cityType": "Kleinstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -530,6 +850,14 @@
       "character": "Ausbildungsverein",
       "success": "Meister",
       "crest": "Kreuz im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -543,6 +871,14 @@
       "character": "Kultklub",
       "success": "Meister",
       "crest": "Krone im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -556,6 +892,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1890er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Auto",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -569,6 +913,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -582,6 +934,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreuz im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -595,6 +955,14 @@
       "character": "Kultklub",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1920er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Reisen",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -608,6 +976,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1920er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -621,6 +997,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": null,
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -634,6 +1018,14 @@
       "character": "Ausbildungsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Getränke",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -647,6 +1039,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1920er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Telekommunikation",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -660,6 +1060,14 @@
       "character": "Investorenklub",
       "success": "noch nie Meister",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1900er",
+      "cityType": "Kleinstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Bank",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -673,6 +1081,14 @@
       "character": "Investorenklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1970er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -686,6 +1102,14 @@
       "character": "Stimmungshochburg",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "kein bekanntes Maskottchen"
     }
   },
   {
@@ -699,6 +1123,14 @@
       "character": "Ausbildungsverein",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1950er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -712,6 +1144,14 @@
       "character": "Ausbildungsverein",
       "success": "Meister",
       "crest": "Krone im Wappen"
+    },
+    "extras": {
+      "stadium": "kleines Stadion",
+      "founded": "1920er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -725,6 +1165,14 @@
       "character": "Ausbildungsverein",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1940er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -738,6 +1186,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Airline",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -751,6 +1207,14 @@
       "character": "Großklub",
       "success": "Champions-League-Sieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1890er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -764,6 +1228,14 @@
       "character": "Ausbildungsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -777,6 +1249,14 @@
       "character": "Ausbildungsverein",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Hauptstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Telekommunikation",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -790,6 +1270,14 @@
       "character": "Werksklub",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1910er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -803,6 +1291,14 @@
       "character": "Arbeiterklub",
       "success": "Champions-League-Sieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Technik",
+      "mascot": "Figur-Maskottchen"
     }
   },
   {
@@ -816,6 +1312,14 @@
       "character": "Kultklub",
       "success": "Champions-League-Sieger",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1880er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -829,6 +1333,14 @@
       "character": "Traditionsverein",
       "success": "Europapokalsieger",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1870er",
+      "cityType": "Industriestadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Wettanbieter",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -842,6 +1354,14 @@
       "character": "Stimmungshochburg",
       "success": "Europapokalsieger",
       "crest": "Buchstaben im Wappen"
+    },
+    "extras": {
+      "stadium": "großes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Andere",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -855,6 +1375,14 @@
       "character": "Großklub",
       "success": "Meister",
       "crest": "Kreis-Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1900er",
+      "cityType": "Großstadt",
+      "derby": "hat ein großes Derby",
+      "sponsor": "Auto",
+      "mascot": "Tier-Maskottchen"
     }
   },
   {
@@ -868,6 +1396,14 @@
       "character": "Ausbildungsverein",
       "success": "Meister",
       "crest": "Tier im Wappen"
+    },
+    "extras": {
+      "stadium": "mittelgroßes Stadion",
+      "founded": "1930er",
+      "cityType": "Großstadt",
+      "derby": "kein großes Derby",
+      "sponsor": "Getränke",
+      "mascot": "Tier-Maskottchen"
     }
   }
 ]

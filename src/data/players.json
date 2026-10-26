@@ -1,0 +1,3449 @@
+[
+  {
+    "name": "Messi",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Neymar",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Erling Haaland",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kylian Mbappé",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Robert Lewandowski",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thomas Müller",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Manuel Neuer",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Toni Kroos",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luka Modrić",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mohamed Salah",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jude Bellingham",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jamal Musiala",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Florian Wirtz",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Harry Kane",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Karim Benzema",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luis Suárez",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Zlatan Ibrahimović",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Andrés Iniesta",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Xavi",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sergio Busquets",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sergio Ramos",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gerard Piqué",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marcelo",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dani Alves",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Iker Casillas",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gianluigi Buffon",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Eden Hazard",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Antoine Griezmann",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paul Pogba",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "N'Golo Kanté",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Olivier Giroud",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Raphaël Varane",
+    "tier": 1,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hugo Lloris",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thibaut Courtois",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marc-André ter Stegen",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alisson",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Ederson",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Virgil van Dijk",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Sadio Mané",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roberto Firmino",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bukayo Saka",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Phil Foden",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Sergio Agüero",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Rodri",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Bernardo Silva",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Bruno Fernandes",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Son Heung-min",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gareth Bale",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ángel Di María",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mesut Özil",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sami Khedira",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bastian Schweinsteiger",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "David Villa",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fernando Torres",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "David Silva",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Cesc Fàbregas",
+    "tier": 1,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Edinson Cavani",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Radamel Falcao",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "James Rodríguez",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alexis Sánchez",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Romelu Lukaku",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "David de Gea",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Jan Oblak",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Gianluigi Donnarumma",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Giorgio Chiellini",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Leonardo Bonucci",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Paulo Dybala",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Lautaro Martínez",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Victor Osimhen",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Achraf Hakimi",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alphonso Davies",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Vinícius Júnior",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Rodrygo",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Raphinha",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Federico Valverde",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Declan Rice",
+    "tier": 1,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Ousmane Dembélé",
+    "tier": 1,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Wayne Rooney",
+    "tier": 1,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marco Reus",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mats Hummels",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Philipp Lahm",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jérôme Boateng",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Franck Ribéry",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Arjen Robben",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mario Götze",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin Großkreutz",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Max Kruse",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Serge Gnabry",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Leroy Sané",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Joshua Kimmich",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "İlkay Gündoğan",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Granit Xhaka",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andrej Kramarić",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Vincenzo Grifo",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Leon Goretzka",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Julian Brandt",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Julian Draxler",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Julian Weigl",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kai Havertz",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Timo Werner",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mario Gomez",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lukas Podolski",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "André Schürrle",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Per Mertesacker",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Benedikt Höwedes",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christoph Kramer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Shkodran Mustafi",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ron-Robert Zieler",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roman Weidenfeller",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin Trapp",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bernd Leno",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Oliver Baumann",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alexander Nübel",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Yann Sommer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gregor Kobel",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Péter Gulácsi",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lukáš Hrádecký",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Koen Casteels",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ralf Fährmann",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sven Ulreich",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jens Lehmann",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "René Adler",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Tim Wiese",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Timo Hildebrand",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hans-Jörg Butt",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Naldo",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dante",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lúcio",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Daniel van Buyten",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Martín Demichelis",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Holger Badstuber",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Niklas Süle",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nico Schlotterbeck",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Waldemar Anton",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jonathan Tah",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Matthias Ginter",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Robin Koch",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Benjamin Pavard",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lucas Hernández",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dayot Upamecano",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ibrahima Konaté",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Willi Orbán",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Łukasz Piszczek",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marcel Schmelzer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Erik Durm",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marcel Jansen",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dennis Aogo",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christian Günter",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jonas Hector",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Philipp Max",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "David Raum",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Robin Gosens",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Borna Sosa",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Angeliño",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jeremie Frimpong",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mitchell Weiser",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Danny da Costa",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Julian Ryerson",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Rafinha",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "David Alaba",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Javi Martínez",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Xabi Alonso",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Arturo Vidal",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thiago",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Corentin Tolisso",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marcel Sabitzer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Konrad Laimer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sebastian Rode",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sebastian Kehl",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sven Bender",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lars Bender",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Emre Can",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mahmoud Dahoud",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nuri Şahin",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Shinji Kagawa",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Tomáš Rosický",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Diego",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Torsten Frings",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Claudio Pizarro",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Simon Rolfes",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Stefan Kießling",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gonzalo Castro",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin Kampl",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christoph Baumgartner",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Xaver Schlager",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Amadou Haidara",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dani Olmo",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Xavi Simons",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin-Prince Boateng",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hakan Çalhanoğlu",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dominik Szoboszlai",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Naby Keïta",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin Volland",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lewis Holtby",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Aaron Hunt",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marko Marin",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Niclas Füllkrug",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Zlatko Junuzović",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Deniz Undav",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Vedad Ibišević",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Edin Džeko",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Grafite",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bas Dost",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Wout Weghorst",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Anthony Modeste",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sébastien Haller",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luka Jović",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ante Rebić",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Filip Kostić",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Randal Kolo Muani",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Loïs Openda",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Benjamin Šeško",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Patrik Schick",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Victor Boniface",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pierre-Emerick Aubameyang",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michy Batshuayi",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Adrián Ramos",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lucas Barrios",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Shinji Okazaki",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Serhou Guirassy",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michael Olise",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ritsu Dōan",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Daichi Kamada",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Makoto Hasebe",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Wataru Endō",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Takuma Asano",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pelé",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Diego Maradona",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Franz Beckenbauer",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gerd Müller",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Zinédine Zidane",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ronaldinho",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Oliver Kahn",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michael Ballack",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Miroslav Klose",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paolo Maldini",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Francesco Totti",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thierry Henry",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ronaldo Nazário",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Rivaldo",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Romário",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kaká",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Cafu",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roberto Carlos",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dida",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dunga",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bebeto",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Garrincha",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Zico",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sócrates",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jairzinho",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Carlos Alberto",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gilberto Silva",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Stefan Reuter",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Juninho Pernambucano",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Park Ji-sung",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Hristo Stoitschkow",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gheorghe Hagi",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luís Figo",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Rui Costa",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Eusébio",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Deco",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Eric Maxim Choupo-Moting",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Johan Cruyff",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Johan Neeskens",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marco van Basten",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ruud Gullit",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Frank Rijkaard",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dennis Bergkamp",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Patrick Kluivert",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ruud van Nistelrooy",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Clarence Seedorf",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Landon Donovan",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Edwin van der Sar",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jaap Stam",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Wesley Sneijder",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Robin van Persie",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Shinji Ono",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mark van Bommel",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roy Makaay",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Giovanni van Bronckhorst",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Cha Bum-kun",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lothar Matthäus",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andreas Brehme",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jürgen Klinsmann",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Rudi Völler",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Karl-Heinz Rummenigge",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Uwe Seeler",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fritz Walter",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Helmut Rahn",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sepp Maier",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Berti Vogts",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paul Breitner",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Wolfgang Overath",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Günter Netzer",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pierre Littbarski",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thomas Häßler",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andreas Möller",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hugo Sánchez",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Carlos Valderrama",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Guido Buchwald",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jürgen Kohler",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Karl-Heinz Riedle",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Matthias Sammer",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Stefan Effenberg",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mehmet Scholl",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Giovane Élber",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mario Mandžukić",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Peter Crouch",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Uli Hoeneß",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dieter Hoeneß",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Klaus Allofs",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dieter Müller",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Horst Hrubesch",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Felix Magath",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Manfred Kaltz",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ulf Kirsten",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Tim Cahill",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bernd Schneider",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hamit Altıntop",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dani Carvajal",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pepe",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Oliver Bierhoff",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Stefan Kuntz",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "İlhan Mansız",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Dariusz Wosz",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Franco Baresi",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alessandro Nesta",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fabio Cannavaro",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gianluca Zambrotta",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marco Materazzi",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fabio Grosso",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andrea Pirlo",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gennaro Gattuso",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Daniele De Rossi",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alessandro Del Piero",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Filippo Inzaghi",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ian Rush",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roberto Baggio",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paolo Rossi",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kevin Keegan",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gianluca Vialli",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hakan Şükür",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alfredo Di Stéfano",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dino Zoff",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ferenc Puskás",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dimitar Berbatov",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Zé Roberto",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andreas Herzog",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Toni Polster",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hans Sarpei",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sergej Barbarez",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marquinhos",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Luca Toni",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Aílton",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Raúl",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fernando Hierro",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Fernando Morientes",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Guti",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Fernando Redondo",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Carles Puyol",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pep Guardiola",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Luis Enrique",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Dédé",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jan Koller",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Santiago Cañizares",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Míchel Salgado",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Ivan Rakitić",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Javier Zanetti",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Esteban Cambiasso",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Juan Sebastián Verón",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Juan Román Riquelme",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gabriel Batistuta",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Hernán Crespo",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Claudio Caniggia",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Diego Simeone",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Diego Forlán",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gonzalo Higuaín",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Carlos Tévez",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Javier Mascherano",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ivan Perišić",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Diego Milito",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "David Trezeguet",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Patrick Vieira",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Claude Makélélé",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lilian Thuram",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marcel Desailly",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Klaus Augenthaler",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bixente Lizarazu",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Willy Sagnol",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Eric Cantona",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Jean-Pierre Papin",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michel Platini",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bobby Charlton",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Just Fontaine",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Didier Deschamps",
+    "tier": 3,
+    "tags": [
+      "cl-legende",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Youri Djorkaeff",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lew Jaschin",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alan Shearer",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Kenny Dalglish",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Bobby Moore",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gary Lineker",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Éric Abidal",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "George Best",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "George Weah",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Didier Drogba",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Samuel Eto’o",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Yaya Touré",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Michael Essien",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Jay-Jay Okocha",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nwankwo Kanu",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Roger Milla",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Abédi Pelé",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "El Hadji Diouf",
+    "tier": 3,
+    "tags": [
+      "wm-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michael Owen",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "David Beckham",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Steven Gerrard",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Frank Lampard",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paul Scholes",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ryan Giggs",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roy Keane",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Gary Neville",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Rio Ferdinand",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "John Terry",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ashley Cole",
+    "tier": 3,
+    "tags": [],
+    "hint": null
+  },
+  {
+    "name": "Peter Schmeichel",
+    "tier": 3,
+    "tags": [
+      "cl-legende"
+    ],
+    "hint": null
+  }
+]

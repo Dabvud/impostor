@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Bayern München",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Borussia Dortmund",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Bayer Leverkusen",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "RB Leipzig",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Borussia Mönchengladbach",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "VfL Wolfsburg",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Eintracht Frankfurt",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "TSG Hoffenheim",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "VfB Stuttgart",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "SC Freiburg",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Werder Bremen",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Schalke 04",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Mainz 05",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "FC Augsburg",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "1. FC Köln",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Hertha BSC",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Hamburger SV",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Union Berlin",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Hannover 96",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Fortuna Düsseldorf",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "1. FC Nürnberg",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "VfL Bochum",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "1. FC Heidenheim",
+    "region": "de",
+    "hint": null
+  },
+  {
+    "name": "Manchester City",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Manchester United",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Liverpool",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Chelsea",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Arsenal",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Tottenham",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Newcastle",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Aston Villa",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "West Ham",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Everton",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Leicester City",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Real Madrid",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "FC Barcelona",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Atlético Madrid",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "FC Sevilla",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Valencia",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Villarreal",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Athletic Bilbao",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Real Betis",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Juventus",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Inter Mailand",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "AC Mailand",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "SSC Neapel",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "AS Rom",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Lazio Rom",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Atalanta",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Fiorentina",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Como",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Paris Saint-Germain",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Olympique Marseille",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Olympique Lyon",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "AS Monaco",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "OSC Lille",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Benfica",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "FC Porto",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Sporting Lissabon",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Ajax Amsterdam",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "PSV Eindhoven",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Feyenoord",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Celtic",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Rangers",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Galatasaray",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "Fenerbahçe",
+    "region": "int",
+    "hint": null
+  },
+  {
+    "name": "RB Salzburg",
+    "region": "int",
+    "hint": null
+  }
+]

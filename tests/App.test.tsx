@@ -41,6 +41,7 @@ describe("App", () => {
     fireEvent.pointerDown(screen.getByRole("button", { name: "Auflösen" }));
     expect(await screen.findByText("Das Wort war", {}, { timeout: 2000 })).toBeInTheDocument();
 
+    await new Promise((r) => setTimeout(r, 550));
     await user.click(screen.getByRole("button", { name: "Neue Runde" }));
     expect(screen.getByRole("heading", { name: /ist dran$/ })).toBeInTheDocument();
   });
@@ -50,6 +51,19 @@ describe("App", () => {
     render(<App />);
     expect(screen.getByRole("heading", { name: "Ben ist dran" })).toBeInTheDocument();
     expect(screen.queryByText("Schalke 04")).not.toBeInTheDocument();
+  });
+
+  it("verdeckt die Karte, wenn das Handy gesperrt oder die App gewechselt wird", () => {
+    saveGame({ phase: "handoff", round, index: 0 });
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Ich bin Anna" }));
+    expect(screen.getByTestId("reveal-card")).toBeInTheDocument();
+
+    const visibility = vi.spyOn(document, "visibilityState", "get").mockReturnValue("hidden");
+    fireEvent(document, new Event("visibilitychange"));
+    visibility.mockReturnValue("visible");
+
+    expect(screen.getByRole("heading", { name: "Anna ist dran" })).toBeInTheDocument();
   });
 
   it("fragt bei der Zurück-Geste, ob die Runde abgebrochen werden soll", () => {

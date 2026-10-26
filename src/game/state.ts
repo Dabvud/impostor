@@ -13,7 +13,8 @@ export type Action =
   | { type: "seen" }
   | { type: "passOn" }
   | { type: "resolve" }
-  | { type: "toSetup" };
+  | { type: "toSetup" }
+  | { type: "hide" }; // App geht in den Hintergrund: offene Karte verdecken
 
 /** Aktionen, die in der aktuellen Phase nicht gültig sind, lassen den Zustand unverändert. */
 export function reducer(state: GameState, action: Action): GameState {
@@ -37,6 +38,8 @@ export function reducer(state: GameState, action: Action): GameState {
       return state.phase === "discussion" ? { phase: "resolution", round: state.round } : state;
     case "toSetup":
       return state.phase === "setup" ? state : { phase: "setup" };
+    case "hide":
+      return restore(state);
   }
 }
 

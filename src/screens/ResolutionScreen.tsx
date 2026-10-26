@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import type { Round } from "../game/types";
+
+/** Nach dem Gedrückthalten von „Auflösen“ kann iOS beim Loslassen einen Klick nachschicken. */
+const CLICK_GUARD_MS = 500;
 
 type Props = { round: Round; onNewRound: () => void; onSettings: () => void };
 
 export default function ResolutionScreen({ round, onNewRound, onSettings }: Props) {
+  const [armed, setArmed] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setArmed(true), CLICK_GUARD_MS);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <main className="screen">
       <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>
@@ -13,10 +24,10 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
       </ul>
       <p className="eyebrow">Das Wort war</p>
       <p className="word">{round.word.name}</p>
-      <button type="button" className="primary" onClick={onNewRound}>
+      <button type="button" className="primary" onClick={() => armed && onNewRound()}>
         Neue Runde
       </button>
-      <button type="button" onClick={onSettings}>
+      <button type="button" onClick={() => armed && onSettings()}>
         Einstellungen
       </button>
     </main>

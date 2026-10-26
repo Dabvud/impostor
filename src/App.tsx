@@ -28,6 +28,15 @@ export default function App() {
 
   useEffect(() => saveGame(state), [state]);
 
+  // Sperrbildschirm oder App-Wechsel: offene Karte verdecken, zurück zur Übergabe.
+  useEffect(() => {
+    function onVisibilityChange() {
+      if (document.visibilityState === "hidden") dispatch({ type: "hide" });
+    }
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    return () => document.removeEventListener("visibilitychange", onVisibilityChange);
+  }, []);
+
   // Während einer Runde liegt ein zusätzlicher History-Eintrag oben, damit die
   // Zurück-Geste abgefangen wird statt die App zu verlassen.
   useEffect(() => {

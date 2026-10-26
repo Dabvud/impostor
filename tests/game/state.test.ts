@@ -66,3 +66,18 @@ describe("restore", () => {
     expect(restore(s)).toBe(s);
   });
 });
+
+describe("hide", () => {
+  it("verdeckt eine offene Karte, wenn die App in den Hintergrund geht", () => {
+    expect(reducer({ phase: "reveal", round, index: 1, seen: true }, { type: "hide" })).toEqual({
+      phase: "handoff",
+      round,
+      index: 1,
+    });
+  });
+
+  it("lässt andere Phasen unverändert", () => {
+    const s: GameState = { phase: "discussion", round };
+    expect(reducer(s, { type: "hide" })).toBe(s);
+  });
+});

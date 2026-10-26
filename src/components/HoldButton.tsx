@@ -29,7 +29,7 @@ export default function HoldButton({ label, durationMs = 1000, onComplete }: Pro
     <button
       type="button"
       className={holding ? "primary hold holding" : "primary hold"}
-      style={{ "--hold-ms": `${durationMs}ms` } as CSSProperties}
+      style={{ "--hold-ms": `${durationMs}ms`, touchAction: "none" } as CSSProperties}
       onPointerDown={start}
       onPointerUp={cancel}
       onPointerLeave={cancel}

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import type { Round } from "../../src/game/types";
@@ -29,9 +29,30 @@ describe("ResolutionScreen", () => {
     expect(screen.getByText("Ben")).toBeInTheDocument();
     expect(screen.getByText("Dana")).toBeInTheDocument();
     expect(screen.getByText("Messi")).toBeInTheDocument();
+    await new Promise((r) => setTimeout(r, 550));
     await user.click(screen.getByRole("button", { name: "Neue Runde" }));
     await user.click(screen.getByRole("button", { name: "Einstellungen" }));
     expect(onNewRound).toHaveBeenCalledOnce();
     expect(onSettings).toHaveBeenCalledOnce();
+  });
+});
+
+describe("ResolutionScreen Klickschutz", () => {
+  it("ignoriert Klicks in den ersten 500 ms (Geisterklick nach dem Halten)", () => {
+    vi.useFakeTimers();
+    try {
+      const onNewRound = vi.fn();
+      const onSettings = vi.fn();
+      render(<ResolutionScreen round={round} onNewRound={onNewRound} onSettings={onSettings} />);
+      fireEvent.click(screen.getByRole("button", { name: "Neue Runde" }));
+      fireEvent.click(screen.getByRole("button", { name: "Einstellungen" }));
+      expect(onNewRound).not.toHaveBeenCalled();
+      expect(onSettings).not.toHaveBeenCalled();
+      act(() => vi.advanceTimersByTime(500));
+      fireEvent.click(screen.getByRole("button", { name: "Neue Runde" }));
+      expect(onNewRound).toHaveBeenCalledOnce();
+    } finally {
+      vi.useRealTimers();
+    }
   });
 });

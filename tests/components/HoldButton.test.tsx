@@ -29,3 +29,8 @@ describe("HoldButton", () => {
     expect(onComplete).not.toHaveBeenCalled();
   });
 });
+
+it("verhindert Scroll-Gesten, damit Android das Halten nicht abbricht", () => {
+  render(<HoldButton label="Auflösen" onComplete={vi.fn()} />);
+  expect(screen.getByRole("button", { name: "Auflösen" })).toHaveStyle({ touchAction: "none" });
+});

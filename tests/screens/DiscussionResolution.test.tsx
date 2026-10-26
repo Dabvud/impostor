@@ -100,6 +100,8 @@ describe("ResolutionScreen alle Impostor", () => {
   it("feiert, wenn alle Impostor waren", () => {
     render(<ResolutionScreen round={{ ...round, impostors: [...round.revealOrder] }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
     expect(screen.getByText("Alle waren Impostor! 🤯")).toBeInTheDocument();
+    expect(screen.getByText("Es gab gar keinen Spieler.")).toBeInTheDocument();
+    expect(screen.queryByText("Das Wort war")).not.toBeInTheDocument();
   });
 
   it("zeigt, wer welchen Tipp hatte", () => {

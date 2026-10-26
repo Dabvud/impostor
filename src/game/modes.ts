@@ -1,4 +1,4 @@
-import type { Club, ClubExtras, ClubHints, Entry, Footballer, ModeId, PlayerExtras, Tag, Tier } from "./types";
+import type { Club, ClubExtras, ClubHints, Entry, Footballer, ModeId, PlayerExtras, Tag, Team, Tier, Tip } from "./types";
 
 export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
@@ -13,27 +13,47 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
 /** Kommen weniger Spieler eines Landes im Topf vor, verrät die Nation als Tipp zu viel. */
 const MIN_SAME_NATION = 5;
 const CLUB_HINT_KEYS: (keyof ClubHints)[] = ["region", "color", "league", "character", "success", "crest"];
-const PLAYER_EXTRA_KEYS: (keyof PlayerExtras)[] = [
-  "continent",
-  "league",
-  "playStyle",
-  "trait",
-  "moment",
-  "competition",
-  "title",
-  "hair",
-  "look",
-  "era",
-  "build",
-  "foot",
-  "careerType",
-  "shirtNumber",
-  "status",
-  "afterCareer",
-  "bundesliga",
-  "transfer",
+/** Zusatz-Kategorien der Spieler und ihr Konflikt-Slot (siehe `Tip`). */
+const PLAYER_EXTRA_SLOTS: [keyof PlayerExtras, string][] = [
+  ["continent", "herkunft"],
+  ["league", "liga"],
+  ["playStyle", "spielart"],
+  ["trait", "eigenschaft"],
+  ["moment", "erfolg"],
+  ["competition", "erfolg"],
+  ["title", "erfolg"],
+  ["hair", "frisur"],
+  ["look", "aussehen"],
+  ["era", "zeit"],
+  ["build", "koerperbau"],
+  ["foot", "fuss"],
+  ["careerType", "karriere"],
+  ["shirtNumber", "nummer"],
+  ["status", "zeit"],
+  ["afterCareer", "zeit"],
+  ["bundesliga", "liga"],
+  ["transfer", "transfer"],
+];
+const PLAYER_SLOTS = ["herkunft", "position", ...PLAYER_EXTRA_SLOTS.map(([, slot]) => slot)];
+const CLUB_SLOTS = [
+  "ort", "farbe", "ort", "charakter", "erfolg", "wappen", // region, color, league, character, success, crest
+  "stadion", "gruendung", "ort", "derby", "sponsor", "maskottchen",
 ];
 const CLUB_EXTRA_KEYS: (keyof ClubExtras)[] = ["stadium", "founded", "cityType", "derby", "sponsor", "mascot"];
+
+const TEAMS: Record<string, Team> = {
+  Torwart: "Tor",
+  Innenverteidiger: "Abwehr",
+  Außenverteidiger: "Abwehr",
+  "Defensives Mittelfeld": "Mittelfeld",
+  "Zentrales Mittelfeld": "Mittelfeld",
+  "Offensives Mittelfeld": "Mittelfeld",
+  Flügelspieler: "Angriff",
+  Stürmer: "Angriff",
+};
+
+const toTips = (row: (string | null)[], slots: string[]): Tip[] =>
+  row.flatMap((value, c) => (value ? [{ slot: slots[c], value }] : []));
 
 const isText = (h: string | null | undefined): h is string => Boolean(h);
 
@@ -63,12 +83,17 @@ function playerEntries(players: Footballer[]): Entry[] {
   const nations = countBy(players, (p) => p.hints.nation);
   // Spalte 0 = Nation (strengere Grenze), danach Position und die Zusatz-Kategorien
   const all = sharedOnly(
-    players.map((p) => [p.hints.nation, p.hints.position, ...PLAYER_EXTRA_KEYS.map((k) => p.extras?.[k])]),
+    players.map((p) => [p.hints.nation, p.hints.position, ...PLAYER_EXTRA_SLOTS.map(([k]) => p.extras?.[k])]),
     (c) => (c === 0 ? MIN_SAME_NATION : 2),
   );
   return players.map(({ name, hints }, i) => {
     const nation = (nations.get(hints.nation) ?? 0) >= MIN_SAME_NATION ? hints.nation : null;
-    return { name, hints: [nation, hints.position, hints.special].filter(isText), allHints: all[i].filter(isText) };
+    return {
+      name,
+      hints: [nation, hints.position, hints.special].filter(isText),
+      allHints: toTips(all[i], PLAYER_SLOTS),
+      team: TEAMS[hints.position],
+    };
   });
 }
 
@@ -84,7 +109,7 @@ function clubEntries(clubs: Club[]): Entry[] {
   return clubs.map(({ name }, i) => ({
     name,
     hints: all[i].slice(0, CLUB_HINT_KEYS.length).filter(isText),
-    allHints: all[i].filter(isText),
+    allHints: toTips(all[i], CLUB_SLOTS),
   }));
 }
 

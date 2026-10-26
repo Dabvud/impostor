@@ -12,6 +12,38 @@ function shuffle<T>(items: T[], rng: Rng): T[] {
 const pick = <T>(items: T[], rng: Rng): T => items[Math.floor(rng() * items.length)];
 
 /**
+ * Alle sind Impostor: Jeder bekommt einen Tipp von einem anderen, zufälligen Spieler. Damit die
+ * Tipps sich nicht verraten, kommen alle Tipp-Geber aus einem Mannschaftsteil (nie Torwart) und
+ * jeder Konflikt-Slot (z. B. Herkunft = Nation oder Kontinent) wird nur einmal vergeben.
+ */
+function personalTips(names: string[], pool: Entry[], rng: Rng): Record<string, string> | null {
+  const field = pool.filter((e) => e.team !== "Tor" && (e.allHints?.length ?? 0) > 0);
+  if (field.length === 0) return null;
+  const team = pick([...new Set(field.map((e) => e.team))], rng);
+  const donors = shuffle(
+    field.filter((e) => e.team === team),
+    rng,
+  );
+  const usedSlots = new Set<string>();
+  const tips: Record<string, string> = {};
+  let next = 0;
+  for (const name of names) {
+    // nächster Tipp-Geber, der noch einen freien Slot hat
+    for (let tries = 0; tries < donors.length; tries++) {
+      const donor = donors[(next + tries) % donors.length];
+      const open = (donor.allHints ?? []).filter((t) => !usedSlots.has(t.slot));
+      if (open.length === 0) continue;
+      const tip = pick(open, rng);
+      tips[name] = tip.value;
+      usedSlots.add(tip.slot);
+      next = (next + tries + 1) % donors.length;
+      break;
+    }
+  }
+  return Object.keys(tips).length > 0 ? tips : null;
+}
+
+/**
  * Lost eine Runde aus. Stehen mindestens 50 % des Topfs in `used`, wird `used`
  * vorher geleert, damit nie vorhersehbar ist, welche Begriffe noch übrig sind.
  */
@@ -37,14 +69,11 @@ export function drawRound(
   const impostors = shuffle(names, rng).slice(0, impostorCount);
   const revealOrder = shuffle(names, rng);
   const starter = pick(names, rng);
-  // Sind alle Impostor, bekommt jeder einen eigenen Tipp aus einer anderen Kategorie.
-  const allHints = word.allHints ?? [];
   const everyone = names.length > 0 && impostors.length === names.length;
   let hint: string | null = null;
   let personalHints: Record<string, string> | null = null;
-  if (withHint && everyone && allHints.length > 0) {
-    const tips = shuffle(allHints, rng);
-    personalHints = Object.fromEntries(names.map((n, i) => [n, tips[i % tips.length]]));
+  if (withHint && everyone) {
+    personalHints = personalTips(names, pool, rng);
   } else if (withHint && word.hints.length > 0) {
     hint = pick(word.hints, rng);
   }

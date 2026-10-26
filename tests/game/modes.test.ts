@@ -36,11 +36,19 @@ describe("poolFor – Tipps für die Runde, in der alle Impostor sind", () => {
     p("K", "Torwart", { continent: "Südamerika", foot: "Rechtsfuß", era: "2010er", hair: "Locken" }),
   ];
 
-  it("sammelt pro Kategorie einen Tipp, wenn ihn mind. 2, aber nicht alle im Topf teilen", () => {
-    const byName = Object.fromEntries(poolFor("alle", 1, squad, []).map((e) => [e.name, e.allHints]));
-    expect(byName.M).toEqual(["Stürmer", "Südamerika", "Linksfuß"]);
-    expect(byName.R).toEqual(["Stürmer", "Linksfuß"]);
-    expect(byName.K).toEqual(["Südamerika"]);
+  it("sammelt geteilte Tipps mit ihrer Konfliktgruppe und den Mannschaftsteil", () => {
+    const byName = Object.fromEntries(poolFor("alle", 1, squad, []).map((e) => [e.name, e]));
+    expect(byName.M.allHints).toEqual([
+      { slot: "position", value: "Stürmer" },
+      { slot: "herkunft", value: "Südamerika" },
+      { slot: "fuss", value: "Linksfuß" },
+    ]);
+    expect(byName.R.allHints).toEqual([
+      { slot: "position", value: "Stürmer" },
+      { slot: "fuss", value: "Linksfuß" },
+    ]);
+    expect(byName.K.allHints).toEqual([{ slot: "herkunft", value: "Südamerika" }]);
+    expect([byName.M.team, byName.K.team]).toEqual(["Angriff", "Tor"]);
   });
 
   it("nimmt bei Vereinen auch Stadion, Gründungszeit und Co. dazu", () => {
@@ -51,9 +59,12 @@ describe("poolFor – Tipps für die Runde, in der alle Impostor sind", () => {
     });
     const league = [c("A", "großes Stadion", "1900er"), c("B", "großes Stadion", "1910er"), c("D", "kleines Stadion", "1910er")];
     expect(poolFor("vereine-de", 1, [], league).map((e) => e.allHints)).toEqual([
-      ["großes Stadion"],
-      ["großes Stadion", "1910er"],
-      ["1910er"],
+      [{ slot: "stadion", value: "großes Stadion" }],
+      [
+        { slot: "stadion", value: "großes Stadion" },
+        { slot: "gruendung", value: "1910er" },
+      ],
+      [{ slot: "gruendung", value: "1910er" }],
     ]);
   });
 });

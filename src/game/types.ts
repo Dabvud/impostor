@@ -42,8 +42,13 @@ export type ClubExtras = {
 export type Footballer = { name: string; tier: Tier; tags: Tag[]; hints: PlayerHints; extras?: PlayerExtras };
 /** `inAllClubs`: erscheint im Modus „Alle Vereine“ (internationale Vereine immer, Bundesliga nur die relevanten). */
 export type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hints: ClubHints; extras?: ClubExtras };
-/** `allHints`: ein Tipp je Kategorie für die Runde, in der alle Impostor sind. */
-export type Entry = { name: string; hints: string[]; allHints?: string[] };
+/**
+ * Tipp für die Runde, in der alle Impostor sind. `slot` fasst Kategorien zusammen, die sich
+ * widersprechen könnten (z. B. Nation und Kontinent) – pro Runde wird jeder Slot nur einmal vergeben.
+ */
+export type Tip = { slot: string; value: string };
+export type Team = "Tor" | "Abwehr" | "Mittelfeld" | "Angriff";
+export type Entry = { name: string; hints: string[]; allHints?: Tip[]; team?: Team };
 export type ModeId =
   | "alle"
   | "bundesliga"

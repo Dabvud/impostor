@@ -101,30 +101,44 @@ describe("drawRound", () => {
     expect(drawRound(names, 0, pool, [], seededRng(3)).round.impostors).toEqual([]);
   });
 
-  it("gibt jedem einen eigenen Tipp aus verschiedenen Kategorien, wenn alle Impostor sind", () => {
-    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f", "g"] }];
-    for (let seed = 0; seed < 20; seed++) {
-      const { round } = drawRound(names, names.length, rich, [], seededRng(seed), true);
-      const tips = names.map((n) => round.personalHints?.[n]);
-      expect(new Set(tips).size).toBe(names.length);
-      tips.forEach((t) => expect(rich[0].allHints).toContain(t));
-      expect(round.hint).toBeNull();
-    }
-  });
+  describe("wenn alle Impostor sind", () => {
+    const SLOTS = ["herkunft", "position", "liga", "spielart", "eigenschaft", "erfolg", "frisur", "zeit"];
+    const donor = (name: string, team: Entry["team"]): Entry => ({
+      name,
+      hints: ["h"],
+      team,
+      allHints: SLOTS.map((slot) => ({ slot, value: `${slot}:${name}` })),
+    });
+    const squad: Entry[] = [
+      donor("T1", "Tor"),
+      donor("T2", "Tor"),
+      ...["A1", "A2", "A3", "A4", "A5", "A6"].map((n) => donor(n, "Angriff")),
+      ...["V1", "V2", "V3", "V4", "V5", "V6"].map((n) => donor(n, "Abwehr")),
+    ];
+    const tipsOf = (seed: number) =>
+      Object.values(drawRound(names, names.length, squad, [], seededRng(seed), true).round.personalHints ?? {});
 
-  it("verteilt die Kategorien zufällig", () => {
-    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f", "g"] }];
-    const firstTips = new Set<string>();
-    for (let seed = 0; seed < 40; seed++) {
-      firstTips.add(drawRound(names, names.length, rich, [], seededRng(seed), true).round.personalHints?.Anna ?? "");
-    }
-    expect(firstTips.size).toBeGreaterThan(4);
-  });
+    it("gibt jedem einen Tipp aus einer anderen Konfliktgruppe", () => {
+      for (let seed = 0; seed < 30; seed++) {
+        const tips = tipsOf(seed);
+        expect(tips).toHaveLength(names.length);
+        expect(new Set(tips.map((t) => t.split(":")[0])).size).toBe(names.length);
+      }
+    });
 
-  it("gibt ohne Tipp-Schalter oder ohne „alle Impostor“ keine persönlichen Tipps", () => {
-    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f"] }];
-    expect(drawRound(names, names.length, rich, [], seededRng(1), false).round.personalHints).toBeNull();
-    expect(drawRound(names, 2, rich, [], seededRng(1), true).round.personalHints).toBeNull();
+    it("nimmt die Tipps von verschiedenen Spielern desselben Mannschaftsteils, nie vom Torwart", () => {
+      for (let seed = 0; seed < 30; seed++) {
+        const donors = tipsOf(seed).map((t) => t.split(":")[1]);
+        expect(new Set(donors).size).toBe(names.length);
+        expect(donors.some((d) => d.startsWith("T"))).toBe(false);
+        expect(new Set(donors.map((d) => d[0])).size).toBe(1);
+      }
+    });
+
+    it("gibt keinen gemeinsamen Tipp, wenn Tipp-Schalter aus oder nicht alle Impostor sind", () => {
+      expect(drawRound(names, names.length, squad, [], seededRng(1), false).round.personalHints).toBeNull();
+      expect(drawRound(names, 2, squad, [], seededRng(1), true).round.personalHints).toBeNull();
+    });
   });
 
   it("wirft bei leerem Topf", () => {

@@ -15,13 +15,17 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
     return () => clearTimeout(timer);
   }, []);
 
+  // Alle Impostor: die Tipps stammen von verschiedenen Spielern, ein gemeinsames Wort gab es nicht.
+  const everyone = round.impostors.length > 0 && round.impostors.length === round.revealOrder.length;
+
   return (
     <main className="screen">
       {round.impostors.length === 0 ? (
         <h1 className="big-name">Keiner war Impostor! 😄</h1>
-      ) : round.impostors.length === round.revealOrder.length ? (
+      ) : everyone ? (
         <>
           <h1 className="big-name">Alle waren Impostor! 🤯</h1>
+          <p className="hint">Es gab gar keinen Spieler.</p>
           {round.personalHints && (
             <ul className="personal-tips">
               {Object.entries(round.personalHints).map(([name, tip]) => (
@@ -42,9 +46,13 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
           </ul>
         </>
       )}
-      <p className="eyebrow">Das Wort war</p>
-      <p className="word">{round.word.name}</p>
-      {round.hint && <p className="hint">Tipp war: {round.hint}</p>}
+      {!everyone && (
+        <>
+          <p className="eyebrow">Das Wort war</p>
+          <p className="word">{round.word.name}</p>
+          {round.hint && <p className="hint">Tipp war: {round.hint}</p>}
+        </>
+      )}
       <button type="button" className="primary" onClick={() => armed && onNewRound()}>
         Neue Runde
       </button>

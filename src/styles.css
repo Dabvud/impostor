@@ -256,3 +256,41 @@ button.primary {
   font-size: 48px;
   color: var(--accent);
 }
+
+.hint {
+  margin: 0;
+  color: var(--muted);
+}
+
+.hold {
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
+
+.hold-fill {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 35, 18, 0.35);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.holding .hold-fill {
+  transform: scaleX(1);
+  transition: transform var(--hold-ms) linear;
+}
+
+.hold-label {
+  position: relative;
+}
+
+.impostor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: clamp(30px, 9vw, 44px);
+  font-weight: 800;
+  color: var(--danger);
+}

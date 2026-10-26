@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
+import { useState } from "react";
+import type { Group } from "../../src/game/groups";
 import type { Settings } from "../../src/game/types";
 import SetupScreen from "../../src/screens/SetupScreen";
 
@@ -249,5 +251,105 @@ describe("SetupScreen", () => {
     for (const n of ["Anna", "Ben", "Cem"]) await user.type(screen.getByLabelText("Name"), `${n}{Enter}`);
     await user.click(screen.getByRole("button", { name: "Start" }));
     expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ hintsEnabled: false }));
+  });
+});
+
+describe("SetupScreen mit Gruppen", () => {
+  const group: Group = {
+    id: "g1",
+    name: "Freitagsrunde",
+    members: [
+      { id: "a", name: "Anna" },
+      { id: "b", name: "Ben" },
+      { id: "c", name: "Cem" },
+      { id: "d", name: "Dana" },
+    ],
+    selected: [],
+    evening: 1,
+  };
+
+  function Harness(props: { initial?: Settings | null; onStart?: (s: Settings) => void; onOpen?: () => void }) {
+    const [groups, setGroups] = useState<Group[]>([group]);
+    return (
+      <SetupScreen
+        initial={props.initial ?? null}
+        onStart={props.onStart ?? vi.fn()}
+        groups={groups}
+        onGroupsChange={setGroups}
+        onEditGroup={vi.fn()}
+        onOpen={props.onOpen ?? vi.fn()}
+      />
+    );
+  }
+
+  it("wählt Mitspieler in Sitzreihenfolge aus und startet mit Gruppe", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<Harness onStart={onStart} />);
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    expect(screen.queryByLabelText("Name")).not.toBeInTheDocument();
+    for (const n of ["Cem", "Anna", "Dana"]) await user.click(screen.getByRole("button", { name: new RegExp(`^${n}`) }));
+    expect(screen.getByRole("button", { name: /^Cem/ })).toHaveTextContent("1");
+    expect(screen.getByRole("button", { name: /^Dana/ })).toHaveTextContent("3");
+    await user.click(screen.getByRole("button", { name: /^Anna/ }));
+    expect(screen.getByRole("button", { name: /^Dana/ })).toHaveTextContent("2");
+    await user.click(screen.getByRole("button", { name: /^Ben/ }));
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ names: ["Cem", "Dana", "Ben"], groupId: "g1" }));
+  });
+
+  it("sperrt Start bei weniger als 3 ausgewählten Mitspielern", async () => {
+    const user = userEvent.setup();
+    render(<Harness />);
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    await user.click(screen.getByRole("button", { name: /^Anna/ }));
+    await user.click(screen.getByRole("button", { name: /^Ben/ }));
+    expect(screen.getByRole("button", { name: "Start" })).toBeDisabled();
+    expect(screen.getByText("Mindestens 3 Spieler")).toBeInTheDocument();
+  });
+
+  it("nimmt neue Mitglieder direkt in den Kader auf und wählt sie aus", async () => {
+    const user = userEvent.setup();
+    render(<Harness />);
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    await user.type(screen.getByLabelText("Neues Mitglied"), "Eli{Enter}");
+    expect(screen.getByRole("button", { name: /^Eli/ })).toHaveTextContent("1");
+    await user.type(screen.getByLabelText("Neues Mitglied"), "anna{Enter}");
+    expect(screen.getByText("Anna ist schon dabei")).toBeInTheDocument();
+  });
+
+  it("fällt auf „Ohne Gruppe“ zurück, wenn die gespeicherte Gruppe gelöscht wurde", () => {
+    const initial: Settings = {
+      names: ["X", "Y", "Z"],
+      impostorCount: 1,
+      mode: "alle",
+      difficulty: 1,
+      hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: null,
+      groupId: "geloescht",
+      guessEnabled: true,
+    };
+    render(<Harness initial={initial} />);
+    expect(screen.getByRole("button", { name: "Ohne Gruppe" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByText("X")).toBeInTheDocument();
+  });
+
+  it("schaltet „Impostor darf raten“ und öffnet Regeln, Statistik und Teilen", async () => {
+    const user = userEvent.setup();
+    const onOpen = vi.fn();
+    const onStart = vi.fn();
+    render(<Harness onOpen={onOpen} onStart={onStart} />);
+    expect(screen.queryByRole("button", { name: "Statistik" })).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    for (const n of ["Anna", "Ben", "Cem"]) await user.click(screen.getByRole("button", { name: new RegExp(`^${n}`) }));
+    const guess = screen.getByRole("switch", { name: "Impostor darf raten" });
+    expect(guess).toBeChecked();
+    await user.click(guess);
+    for (const view of ["Regeln", "Statistik", "App teilen"]) await user.click(screen.getByRole("button", { name: view }));
+    expect(onOpen.mock.calls.map((c) => c[0])).toEqual(["rules", "stats", "share"]);
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ guessEnabled: false }));
   });
 });

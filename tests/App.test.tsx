@@ -111,6 +111,43 @@ describe("App", () => {
   });
 });
 
+describe("Gruppen", () => {
+  it("legt eine Gruppe an, kehrt zur Einrichtung zurück und startet mit ihr", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.type(screen.getByLabelText("Name"), "Gast{Enter}");
+    await user.click(screen.getByRole("button", { name: "+ Neue Gruppe" }));
+    await user.type(screen.getByLabelText("Gruppenname"), "Freitagsrunde");
+    for (const n of ["Luca", "Fabi", "Jonas"]) await user.type(screen.getByLabelText("Neues Mitglied"), `${n}{Enter}`);
+    await user.click(screen.getByRole("button", { name: "Speichern" }));
+    expect(screen.getByRole("button", { name: "Freitagsrunde" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByRole("button", { name: /^Fabi/ })).toHaveTextContent("2");
+    await user.click(screen.getByRole("button", { name: "Ohne Gruppe" }));
+    expect(screen.getByText("Gast")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(screen.getByRole("heading", { name: /ist dran$/ })).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem("impostor:v1:groups") ?? "[]")[0].name).toBe("Freitagsrunde");
+  });
+
+  it("löscht eine Gruppe samt Statistik und fällt auf „Ohne Gruppe“ zurück", async () => {
+    const user = userEvent.setup();
+    localStorage.setItem(
+      "impostor:v1:groups",
+      JSON.stringify([{ id: "g1", name: "Alt", members: [{ id: "a", name: "Anna" }], selected: ["a"], evening: 1 }]),
+    );
+    localStorage.setItem("impostor:v1:stats:g1", JSON.stringify([]));
+    vi.spyOn(window, "confirm").mockReturnValue(true);
+    render(<App />);
+    await user.click(screen.getByRole("button", { name: "Alt" }));
+    await user.click(screen.getByRole("button", { name: "Gruppe bearbeiten" }));
+    await user.click(screen.getByRole("button", { name: "Gruppe löschen" }));
+    expect(screen.queryByRole("button", { name: "Alt" })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Ohne Gruppe" })).toHaveAttribute("aria-pressed", "true");
+    expect(localStorage.getItem("impostor:v1:stats:g1")).toBeNull();
+  });
+});
+
 describe("Runde beenden", () => {
   it("ist während der Runde immer sichtbar und fragt vor dem Abbrechen nach", async () => {
     saveGame({ phase: "reveal", round, index: 1, seen: false });

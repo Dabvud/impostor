@@ -212,5 +212,9 @@ export function appendRecord(groupId: string, record: RoundRecord): void {
 }
 
 export function clearStats(groupId: string): void {
-  write(statsKey(groupId), []);
+  try {
+    localStorage.removeItem(statsKey(groupId));
+  } catch {
+    // Speicher blockiert: nichts zu löschen
+  }
 }

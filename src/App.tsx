@@ -2,19 +2,34 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import clubsJson from "./data/clubs.json";
 import playersJson from "./data/players.json";
 import { unlockAudio } from "./alarm";
+import { type Group } from "./game/groups";
 import { nextRound } from "./game/session";
 import { reducer, restore, type GameState } from "./game/state";
 import type { Club, Footballer, Settings } from "./game/types";
 import CluesScreen from "./screens/CluesScreen";
+import GroupScreen from "./screens/GroupScreen";
 import DiscussionScreen from "./screens/DiscussionScreen";
 import HandoffScreen from "./screens/HandoffScreen";
 import ResolutionScreen from "./screens/ResolutionScreen";
 import RevealScreen from "./screens/RevealScreen";
 import SetupScreen from "./screens/SetupScreen";
-import { loadGame, loadSettings, loadUsed, saveGame, saveSettings, saveUsed } from "./storage";
+import {
+  clearStats,
+  loadGame,
+  loadGroups,
+  loadSettings,
+  loadUsed,
+  saveGame,
+  saveGroups,
+  saveSettings,
+  saveUsed,
+} from "./storage";
 
 const players = playersJson as Footballer[];
 const clubs = clubsJson as Club[];
+
+/** Bildschirme neben dem Spiel – nicht gespeichert, nach Neuladen geht es ins Spiel. */
+type View = { kind: "game" } | { kind: "group"; groupId: string | null } | { kind: "rules" | "stats" | "share" };
 
 function initialState(): GameState {
   const saved = loadGame();
@@ -24,6 +39,9 @@ function initialState(): GameState {
 export default function App() {
   const [state, dispatch] = useReducer(reducer, undefined, initialState);
   const [settings, setSettings] = useState<Settings | null>(loadSettings);
+  const [groups, setGroups] = useState<Group[]>(loadGroups);
+  const [draft, setDraft] = useState<{ settings: Settings; freeNames: string[] } | null>(null);
+  const [view, setView] = useState<View>({ kind: "game" });
   const phase = useRef(state.phase);
   const guarded = useRef(false);
   phase.current = state.phase;
@@ -73,6 +91,26 @@ export default function App() {
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
+  function updateGroups(next: Group[]) {
+    setGroups(next);
+    saveGroups(next);
+  }
+
+  function saveGroup(group: Group) {
+    const exists = groups.some((g) => g.id === group.id);
+    updateGroups(exists ? groups.map((g) => (g.id === group.id ? group : g)) : [...groups, group]);
+    // Neu angelegte bzw. bearbeitete Gruppe ist danach ausgewählt
+    if (draft) setDraft({ ...draft, settings: { ...draft.settings, groupId: group.id } });
+    setView({ kind: "game" });
+  }
+
+  function deleteGroup(id: string) {
+    updateGroups(groups.filter((g) => g.id !== id));
+    clearStats(id);
+    if (draft?.settings.groupId === id) setDraft({ ...draft, settings: { ...draft.settings, groupId: null } });
+    setView({ kind: "game" });
+  }
+
   function startRound(s: Settings) {
     const { round, used } = nextRound(s, players, clubs, loadUsed(), Math.random);
     saveUsed(used);
@@ -82,9 +120,24 @@ export default function App() {
   function renderScreen() {
     switch (state.phase) {
       case "setup":
+        if (view.kind === "group") {
+          return (
+            <GroupScreen
+              group={groups.find((g) => g.id === view.groupId) ?? null}
+              onSave={saveGroup}
+              onDelete={deleteGroup}
+              onBack={() => setView({ kind: "game" })}
+            />
+          );
+        }
         return (
           <SetupScreen
-            initial={settings}
+            initial={draft?.settings ?? settings}
+            initialFreeNames={draft?.freeNames}
+            groups={groups}
+            onGroupsChange={updateGroups}
+            onEditGroup={(groupId) => setView({ kind: "group", groupId })}
+            onDraftChange={(s, freeNames) => setDraft({ settings: s, freeNames })}
             onStart={(s) => {
               setSettings(s);
               saveSettings(s);

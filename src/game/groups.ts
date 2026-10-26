@@ -55,3 +55,8 @@ export function selectedNames(g: Group): string[] {
 export function startEvening(g: Group): Group {
   return { ...g, evening: g.evening + 1 };
 }
+
+/** Zufällige ID für Gruppen und Mitglieder (eindeutig genug für ein Handy). */
+export function newId(): string {
+  return Math.random().toString(36).slice(2, 10);
+}

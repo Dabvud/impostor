@@ -1,6 +1,7 @@
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { formatTime } from "../components/useCountdown";
 import { displayName } from "../displayName";
+import { addMember, newId, selectedNames, toggleSelected, type Group } from "../game/groups";
 import { MODES } from "../game/modes";
 import { maxImpostors, normalizeNames, validateSettings } from "../game/settings";
 import type { ModeId, Settings, Tier } from "../game/types";
@@ -28,10 +29,45 @@ function stepDiscuss(current: number, direction: 1 | -1): number {
   return next ?? current;
 }
 
-type Props = { initial: Settings | null; onStart: (s: Settings) => void };
+export type SetupView = "rules" | "stats" | "share";
 
-export default function SetupScreen({ initial, onStart }: Props) {
-  const [names, setNames] = useState<string[]>(initial?.names ?? []);
+type Props = {
+  initial: Settings | null;
+  onStart: (s: Settings) => void;
+  groups?: Group[];
+  onGroupsChange?: (groups: Group[]) => void;
+  onEditGroup?: (groupId: string | null) => void;
+  onOpen?: (view: SetupView) => void;
+  /** Frei eingetippte Namen, damit sie beim Wechsel zu einer Gruppe und zurück erhalten bleiben. */
+  initialFreeNames?: string[];
+  /** Meldet jede Änderung, damit die Eingaben einen Ausflug zu Regeln/Gruppen überstehen. */
+  onDraftChange?: (settings: Settings, freeNames: string[]) => void;
+};
+
+const noop = () => {};
+
+export default function SetupScreen({
+  initial,
+  onStart,
+  groups = [],
+  onGroupsChange = noop,
+  onEditGroup = noop,
+  onOpen = noop,
+  initialFreeNames,
+  onDraftChange = noop,
+}: Props) {
+  // Gespeicherte Gruppe, die es nicht mehr gibt → ohne Gruppe weiter
+  const [groupId, setGroupId] = useState<string | null>(
+    groups.some((g) => g.id === initial?.groupId) ? (initial?.groupId ?? null) : null,
+  );
+  const group = groups.find((g) => g.id === groupId) ?? null;
+  const [freeNames, setNames] = useState<string[]>(
+    initialFreeNames ?? (initial?.groupId && group ? [] : (initial?.names ?? [])),
+  );
+  const names = group ? selectedNames(group) : freeNames;
+  const [memberDraft, setMemberDraft] = useState("");
+  const [memberHint, setMemberHint] = useState<string | null>(null);
+  const [guessEnabled, setGuessEnabled] = useState(initial?.guessEnabled ?? true);
   const [draft, setDraft] = useState("");
   const [duplicateHint, setDuplicateHint] = useState<string | null>(null);
   const nameInput = useRef<HTMLInputElement>(null);
@@ -54,10 +90,14 @@ export default function SetupScreen({ initial, onStart }: Props) {
     secretImpostors,
     thinkSeconds,
     discussSeconds,
-    groupId: initial?.groupId ?? null,
-    guessEnabled: initial?.guessEnabled ?? true,
+    groupId,
+    guessEnabled,
   };
   const errors = validateSettings(settings);
+
+  const draftKey = JSON.stringify([settings, freeNames]);
+  // nur bei echten Änderungen melden (Objekte entstehen bei jedem Rendern neu)
+  useEffect(() => onDraftChange(settings, freeNames), [draftKey]);
   const hasDifficulty = MODES.find((m) => m.id === mode)?.hasDifficulty ?? false;
 
   function addName(e: FormEvent) {
@@ -78,9 +118,25 @@ export default function SetupScreen({ initial, onStart }: Props) {
   }
 
   function removeName(index: number) {
-    const next = names.filter((_, i) => i !== index);
+    const next = freeNames.filter((_, i) => i !== index);
     setNames(next);
     setImpostorCount((c) => Math.min(c, maxImpostors(next.length)));
+  }
+
+  function updateGroup(next: Group) {
+    onGroupsChange(groups.map((g) => (g.id === next.id ? next : g)));
+    setImpostorCount((c) => Math.min(c, maxImpostors(selectedNames(next).length)));
+  }
+
+  function addToGroup(e: FormEvent) {
+    e.preventDefault();
+    if (!group) return;
+    const result = addMember(group, memberDraft, newId);
+    setMemberHint(result.error);
+    if (!result.error) {
+      updateGroup(result.group);
+      setMemberDraft("");
+    }
   }
 
   return (
@@ -89,34 +145,86 @@ export default function SetupScreen({ initial, onStart }: Props) {
 
       <section className="panel">
         <h2>Spieler</h2>
-        <ul className="name-list">
-          {names.map((name, i) => (
-            <li key={`${name}-${i}`}>
-              <span>{displayName(name)}</span>
-              <button type="button" className="icon-button" aria-label={`${name} entfernen`} onClick={() => removeName(i)}>
-                ✕
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className="hint">Namen so eintragen, wie ihr sitzt</p>
-        <form className="add-name" onSubmit={addName}>
-          <input
-            ref={nameInput}
-            aria-label="Name"
-            enterKeyHint="enter"
-            placeholder="Name"
-            value={draft}
-            maxLength={20}
-            autoComplete="off"
-            onChange={(e) => setDraft(e.target.value)}
-          />
-          {/* preventDefault: Tippen auf den Button soll das Namensfeld nicht verlassen */}
-          <button type="submit" onPointerDown={(e) => e.preventDefault()} onMouseDown={(e) => e.preventDefault()}>
-            Hinzufügen
+        <div className="group-bar" role="group" aria-label="Gruppe">
+          <button type="button" aria-pressed={group === null} onClick={() => setGroupId(null)}>
+            Ohne Gruppe
           </button>
-        </form>
-        {duplicateHint && <p className="field-hint">{duplicateHint}</p>}
+          {groups.map((g) => (
+            <button key={g.id} type="button" aria-pressed={g.id === groupId} onClick={() => setGroupId(g.id)}>
+              {g.name}
+            </button>
+          ))}
+          <button type="button" className="group-new" onClick={() => onEditGroup(null)}>
+            + Neue Gruppe
+          </button>
+        </div>
+        {group ? (
+          <>
+            <ul className="roster">
+              {group.members.map((m) => {
+                const seat = group.selected.indexOf(m.id) + 1;
+                return (
+                  <li key={m.id}>
+                    <button type="button" aria-pressed={seat > 0} onClick={() => updateGroup(toggleSelected(group, m.id))}>
+                      {displayName(m.name)}
+                      {seat > 0 && <span className="seat">{seat}</span>}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="hint">In Sitzreihenfolge antippen</p>
+            <form className="add-name" onSubmit={addToGroup}>
+              <input
+                aria-label="Neues Mitglied"
+                enterKeyHint="enter"
+                placeholder="+ Neues Mitglied"
+                value={memberDraft}
+                maxLength={20}
+                autoComplete="off"
+                onChange={(e) => setMemberDraft(e.target.value)}
+              />
+              <button type="submit" onPointerDown={(e) => e.preventDefault()} onMouseDown={(e) => e.preventDefault()}>
+                Hinzufügen
+              </button>
+            </form>
+            {memberHint && <p className="field-hint">{memberHint}</p>}
+            <button type="button" className="text-button" onClick={() => onEditGroup(group.id)}>
+              Gruppe bearbeiten
+            </button>
+          </>
+        ) : (
+          <>
+            <ul className="name-list">
+              {freeNames.map((name, i) => (
+                <li key={`${name}-${i}`}>
+                  <span>{displayName(name)}</span>
+                  <button type="button" className="icon-button" aria-label={`${name} entfernen`} onClick={() => removeName(i)}>
+                    ✕
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <p className="hint">Namen so eintragen, wie ihr sitzt</p>
+            <form className="add-name" onSubmit={addName}>
+              <input
+                ref={nameInput}
+                aria-label="Name"
+                enterKeyHint="enter"
+                placeholder="Name"
+                value={draft}
+                maxLength={20}
+                autoComplete="off"
+                onChange={(e) => setDraft(e.target.value)}
+              />
+              {/* preventDefault: Tippen auf den Button soll das Namensfeld nicht verlassen */}
+              <button type="submit" onPointerDown={(e) => e.preventDefault()} onMouseDown={(e) => e.preventDefault()}>
+                Hinzufügen
+              </button>
+            </form>
+            {duplicateHint && <p className="field-hint">{duplicateHint}</p>}
+          </>
+        )}
       </section>
 
       <section className="panel">
@@ -128,6 +236,15 @@ export default function SetupScreen({ initial, onStart }: Props) {
             role="switch"
             checked={hintsEnabled}
             onChange={(e) => setHintsEnabled(e.target.checked)}
+          />
+        </label>
+        <label className="switch-row">
+          <span>Impostor darf raten</span>
+          <input
+            type="checkbox"
+            role="switch"
+            checked={guessEnabled}
+            onChange={(e) => setGuessEnabled(e.target.checked)}
           />
         </label>
         <label className="switch-row">
@@ -257,6 +374,20 @@ export default function SetupScreen({ initial, onStart }: Props) {
       <button type="button" className="primary" disabled={errors.length > 0} onClick={() => onStart({ ...settings, names: normalizeNames(names) })}>
         Start
       </button>
+
+      <nav className="setup-links">
+        <button type="button" onClick={() => onOpen("rules")}>
+          Regeln
+        </button>
+        {group && (
+          <button type="button" onClick={() => onOpen("stats")}>
+            Statistik
+          </button>
+        )}
+        <button type="button" onClick={() => onOpen("share")}>
+          App teilen
+        </button>
+      </nav>
     </main>
   );
 }

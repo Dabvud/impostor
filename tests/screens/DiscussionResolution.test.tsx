@@ -39,6 +39,15 @@ describe("ResolutionScreen", () => {
   });
 });
 
+describe("Regenbogen für Paul", () => {
+  it("zeigt ihn beim Starter und bei den Impostorn", () => {
+    render(<DiscussionScreen starter="Paul" onResolve={vi.fn()} />);
+    expect(screen.getByText("Paul 🌈 beginnt")).toBeInTheDocument();
+    render(<ResolutionScreen round={{ ...round, impostors: ["Paul"] }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
+    expect(screen.getByText("Paul 🌈")).toBeInTheDocument();
+  });
+});
+
 describe("ResolutionScreen Klickschutz", () => {
   it("ignoriert Klicks in den ersten 500 ms (Geisterklick nach dem Halten)", () => {
     vi.useFakeTimers();

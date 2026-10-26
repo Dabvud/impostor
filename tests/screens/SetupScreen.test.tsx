@@ -23,6 +23,16 @@ describe("SetupScreen", () => {
     expect(screen.queryByText("Anna")).not.toBeInTheDocument();
   });
 
+  it("zeigt Paul in der Namensliste mit Regenbogen, speichert aber den echten Namen", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<SetupScreen initial={null} onStart={onStart} />);
+    await addNames(user, ["Paul", "Ben", "Cem"]);
+    expect(screen.getByText("Paul 🌈")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ names: ["Paul", "Ben", "Cem"] }));
+  });
+
   it("aktiviert Start erst ab 3 Spielern und zeigt die Fehlermeldung", async () => {
     const user = userEvent.setup();
     render(<SetupScreen initial={null} onStart={vi.fn()} />);

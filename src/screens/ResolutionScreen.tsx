@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { displayName } from "../displayName";
 import type { Round } from "../game/types";
 
 /** Nach dem Gedrückthalten von „Auflösen“ kann iOS beim Loslassen einen Klick nachschicken. */
@@ -19,7 +20,7 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
       <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>
       <ul className="impostor-list">
         {round.impostors.map((name) => (
-          <li key={name}>{name}</li>
+          <li key={name}>{displayName(name)}</li>
         ))}
       </ul>
       <p className="eyebrow">Das Wort war</p>

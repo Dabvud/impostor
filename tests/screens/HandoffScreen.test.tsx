@@ -10,3 +10,9 @@ it("zeigt, wer dran ist, und bestätigt per Button", async () => {
   await userEvent.setup().click(screen.getByRole("button", { name: "Ich bin Luca" }));
   expect(onConfirm).toHaveBeenCalledOnce();
 });
+
+it("zeigt bei Paul einen Regenbogen", () => {
+  render(<HandoffScreen name="Paul" onConfirm={vi.fn()} />);
+  expect(screen.getByText("Paul 🌈 ist dran")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: "Ich bin Paul 🌈" })).toBeInTheDocument();
+});

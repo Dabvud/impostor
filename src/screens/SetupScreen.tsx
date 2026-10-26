@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { displayName } from "../displayName";
 import { MODES } from "../game/modes";
 import { maxImpostors, normalizeNames, validateSettings } from "../game/settings";
 import type { ModeId, Settings, Tier } from "../game/types";
@@ -46,7 +47,7 @@ export default function SetupScreen({ initial, onStart }: Props) {
         <ul className="name-list">
           {names.map((name, i) => (
             <li key={`${name}-${i}`}>
-              <span>{name}</span>
+              <span>{displayName(name)}</span>
               <button type="button" className="icon-button" aria-label={`${name} entfernen`} onClick={() => removeName(i)}>
                 ✕
               </button>

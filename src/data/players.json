@@ -6,7 +6,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Flügelspieler",
+      "special": "La Pulga"
+    }
   },
   {
     "name": "Cristiano Ronaldo",
@@ -15,7 +19,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Stürmer",
+      "special": "Siuuu"
+    }
   },
   {
     "name": "Neymar",
@@ -23,7 +31,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Regenbogenflick"
+    }
   },
   {
     "name": "Erling Haaland",
@@ -31,7 +43,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Norwegen",
+      "position": "Stürmer",
+      "special": "Torroboter"
+    }
   },
   {
     "name": "Kylian Mbappé",
@@ -39,7 +55,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Dreierpack im WM-Finale"
+    }
   },
   {
     "name": "Robert Lewandowski",
@@ -48,7 +68,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Polen",
+      "position": "Stürmer",
+      "special": "Fünferpack in neun Minuten"
+    }
   },
   {
     "name": "Thomas Müller",
@@ -58,7 +82,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Raumdeuter"
+    }
   },
   {
     "name": "Manuel Neuer",
@@ -68,7 +96,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Mitspielender Torwart"
+    }
   },
   {
     "name": "Toni Kroos",
@@ -79,7 +111,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Querpasskönig"
+    }
   },
   {
     "name": "Luka Modrić",
@@ -88,7 +124,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Goldener Ball 2018"
+    }
   },
   {
     "name": "Mohamed Salah",
@@ -96,7 +136,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ägypten",
+      "position": "Flügelspieler",
+      "special": "Ägyptischer König"
+    }
   },
   {
     "name": "Jude Bellingham",
@@ -104,7 +148,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Offensives Mittelfeld",
+      "special": "Jubel mit offenen Armen"
+    }
   },
   {
     "name": "Jamal Musiala",
@@ -112,7 +160,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Bambi"
+    }
   },
   {
     "name": "Florian Wirtz",
@@ -120,7 +172,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Normale Kartoffeln"
+    }
   },
   {
     "name": "Harry Kane",
@@ -129,7 +185,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Englands Rekordtorschütze"
+    }
   },
   {
     "name": "Karim Benzema",
@@ -137,7 +197,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Goldener Ball 2022"
+    }
   },
   {
     "name": "Luis Suárez",
@@ -145,7 +209,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Uruguay",
+      "position": "Stürmer",
+      "special": "El Pistolero"
+    }
   },
   {
     "name": "Zlatan Ibrahimović",
@@ -153,7 +221,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweden",
+      "position": "Stürmer",
+      "special": "Fallrückzieher gegen England"
+    }
   },
   {
     "name": "Andrés Iniesta",
@@ -163,7 +235,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "WM-Finaltor 2010"
+    }
   },
   {
     "name": "Xavi",
@@ -173,7 +249,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Tiki-Taka"
+    }
   },
   {
     "name": "Sergio Busquets",
@@ -181,7 +261,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Defensives Mittelfeld",
+      "special": "Taktgeber vor der Abwehr"
+    }
   },
   {
     "name": "Sergio Ramos",
@@ -190,7 +274,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Innenverteidiger",
+      "special": "Ausgleich in letzter Minute"
+    }
   },
   {
     "name": "Gerard Piqué",
@@ -198,7 +286,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Innenverteidiger",
+      "special": "Kings League"
+    }
   },
   {
     "name": "Marcelo",
@@ -207,7 +299,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "Lockenkopf"
+    }
   },
   {
     "name": "Dani Alves",
@@ -215,7 +311,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "Offensiver Rechtsverteidiger"
+    }
   },
   {
     "name": "Iker Casillas",
@@ -225,7 +325,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Torwart",
+      "special": "Heiliger im Tor"
+    }
   },
   {
     "name": "Gianluigi Buffon",
@@ -235,7 +339,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Torwart",
+      "special": "Gigi"
+    }
   },
   {
     "name": "Kevin De Bruyne",
@@ -244,13 +352,21 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Offensives Mittelfeld",
+      "special": "Vorlagenkönig"
+    }
   },
   {
     "name": "Eden Hazard",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Flügelspieler",
+      "special": "Dribbelkünstler"
+    }
   },
   {
     "name": "Antoine Griezmann",
@@ -258,7 +374,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Telefonjubel"
+    }
   },
   {
     "name": "Paul Pogba",
@@ -266,19 +386,31 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Zentrales Mittelfeld",
+      "special": "Dab-Jubel"
+    }
   },
   {
     "name": "N'Golo Kanté",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Defensives Mittelfeld",
+      "special": "Unermüdlicher Balleroberer"
+    }
   },
   {
     "name": "Olivier Giroud",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Skorpiontor"
+    }
   },
   {
     "name": "Raphaël Varane",
@@ -287,7 +419,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": "Weltmeister 2018"
+    }
   },
   {
     "name": "Hugo Lloris",
@@ -295,7 +431,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Torwart",
+      "special": "Weltmeisterkapitän 2018"
+    }
   },
   {
     "name": "Thibaut Courtois",
@@ -303,7 +443,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Torwart",
+      "special": "Paraden im Königsklassenfinale"
+    }
   },
   {
     "name": "Marc-André ter Stegen",
@@ -311,25 +455,41 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Torwart mit Passqualität"
+    }
   },
   {
     "name": "Alisson",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Torwart",
+      "special": "Kopfballtor als Torwart"
+    }
   },
   {
     "name": "Ederson",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Torwart",
+      "special": "Lange Abschläge"
+    }
   },
   {
     "name": "Virgil van Dijk",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Innenverteidiger",
+      "special": "Abwehrchef"
+    }
   },
   {
     "name": "Sadio Mané",
@@ -337,7 +497,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Senegal",
+      "position": "Flügelspieler",
+      "special": "Afrikameister 2022"
+    }
   },
   {
     "name": "Roberto Firmino",
@@ -345,43 +509,71 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "No-Look-Tore"
+    }
   },
   {
     "name": "Bukayo Saka",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": "Starboy"
+    }
   },
   {
     "name": "Phil Foden",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Sergio Agüero",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Meistertor in letzter Sekunde"
+    }
   },
   {
     "name": "Rodri",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Defensives Mittelfeld",
+      "special": "Goldener Ball 2024"
+    }
   },
   {
     "name": "Bernardo Silva",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Bruno Fernandes",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Offensives Mittelfeld",
+      "special": "Sprung beim Elfmeter"
+    }
   },
   {
     "name": "Son Heung-min",
@@ -389,7 +581,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Südkorea",
+      "position": "Flügelspieler",
+      "special": "Kamerajubel"
+    }
   },
   {
     "name": "Gareth Bale",
@@ -398,7 +594,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Wales",
+      "position": "Flügelspieler",
+      "special": "Golf"
+    }
   },
   {
     "name": "Ángel Di María",
@@ -406,7 +606,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Flügelspieler",
+      "special": "Herzjubel"
+    }
   },
   {
     "name": "Mesut Özil",
@@ -415,7 +619,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Vorlagenkünstler"
+    }
   },
   {
     "name": "Sami Khedira",
@@ -424,7 +632,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Weltmeister 2014"
+    }
   },
   {
     "name": "Bastian Schweinsteiger",
@@ -435,7 +647,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Fußballgott"
+    }
   },
   {
     "name": "David Villa",
@@ -443,7 +659,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "El Guaje"
+    }
   },
   {
     "name": "Fernando Torres",
@@ -451,13 +671,21 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "El Niño"
+    }
   },
   {
     "name": "David Silva",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Offensives Mittelfeld",
+      "special": "Zauberer"
+    }
   },
   {
     "name": "Cesc Fàbregas",
@@ -465,19 +693,31 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Vorlage zum WM-Finaltor"
+    }
   },
   {
     "name": "Edinson Cavani",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Uruguay",
+      "position": "Stürmer",
+      "special": "El Matador"
+    }
   },
   {
     "name": "Radamel Falcao",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Kolumbien",
+      "position": "Stürmer",
+      "special": "El Tigre"
+    }
   },
   {
     "name": "James Rodríguez",
@@ -486,37 +726,61 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kolumbien",
+      "position": "Offensives Mittelfeld",
+      "special": "WM-Torschützenkönig 2014"
+    }
   },
   {
     "name": "Alexis Sánchez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Chile",
+      "position": "Flügelspieler",
+      "special": "Copa-América-Sieger"
+    }
   },
   {
     "name": "Romelu Lukaku",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Stürmer",
+      "special": "Belgiens Rekordtorschütze"
+    }
   },
   {
     "name": "David de Gea",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Jan Oblak",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Slowenien",
+      "position": "Torwart",
+      "special": "Elfmeterkiller"
+    }
   },
   {
     "name": "Gianluigi Donnarumma",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Torwart",
+      "special": "Bester Spieler der EM"
+    }
   },
   {
     "name": "Giorgio Chiellini",
@@ -524,25 +788,41 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Rustikaler Abwehrchef"
+    }
   },
   {
     "name": "Leonardo Bonucci",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Lange Diagonalbälle"
+    }
   },
   {
     "name": "Paulo Dybala",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "La Joya"
+    }
   },
   {
     "name": "Lautaro Martínez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "El Toro"
+    }
   },
   {
     "name": "Victor Osimhen",
@@ -550,7 +830,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Nigeria",
+      "position": "Stürmer",
+      "special": "Schutzmaske"
+    }
   },
   {
     "name": "Achraf Hakimi",
@@ -558,7 +842,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Marokko",
+      "position": "Außenverteidiger",
+      "special": "Pinguinjubel"
+    }
   },
   {
     "name": "Alphonso Davies",
@@ -566,7 +854,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kanada",
+      "position": "Außenverteidiger",
+      "special": "Roadrunner"
+    }
   },
   {
     "name": "Vinícius Júnior",
@@ -574,31 +866,51 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Sambadribblings"
+    }
   },
   {
     "name": "Rodrygo",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Doppelpack gegen City"
+    }
   },
   {
     "name": "Raphinha",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Federico Valverde",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Uruguay",
+      "position": "Zentrales Mittelfeld",
+      "special": "Distanzschüsse"
+    }
   },
   {
     "name": "Declan Rice",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Ousmane Dembélé",
@@ -607,7 +919,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Beidfüßiger Dribbler"
+    }
   },
   {
     "name": "Wayne Rooney",
@@ -616,7 +932,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Fallrückzieher im Derby"
+    }
   },
   {
     "name": "Marco Reus",
@@ -624,7 +944,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Treue zur Borussia"
+    }
   },
   {
     "name": "Mats Hummels",
@@ -633,7 +957,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Grätschen und Spieleröffnung"
+    }
   },
   {
     "name": "Philipp Lahm",
@@ -644,7 +972,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Weltmeisterkapitän 2014"
+    }
   },
   {
     "name": "Jérôme Boateng",
@@ -654,7 +986,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Lange Diagonalbälle"
+    }
   },
   {
     "name": "Franck Ribéry",
@@ -664,7 +1000,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Kaiser"
+    }
   },
   {
     "name": "Arjen Robben",
@@ -674,7 +1014,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Flügelspieler",
+      "special": "Nach innen ziehen"
+    }
   },
   {
     "name": "Mario Götze",
@@ -683,7 +1027,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "WM-Finaltor"
+    }
   },
   {
     "name": "Kevin Großkreutz",
@@ -691,7 +1039,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Döner"
+    }
   },
   {
     "name": "Max Kruse",
@@ -699,7 +1051,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Poker"
+    }
   },
   {
     "name": "Serge Gnabry",
@@ -707,7 +1063,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Kochjubel"
+    }
   },
   {
     "name": "Leroy Sané",
@@ -715,7 +1075,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Tempo auf dem Flügel"
+    }
   },
   {
     "name": "Joshua Kimmich",
@@ -724,7 +1088,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "İlkay Gündoğan",
@@ -732,7 +1100,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Kapitän beim Triple"
+    }
   },
   {
     "name": "Granit Xhaka",
@@ -740,7 +1112,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Defensives Mittelfeld",
+      "special": "Unbesiegter Meister 2024"
+    }
   },
   {
     "name": "Andrej Kramarić",
@@ -748,7 +1124,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Vincenzo Grifo",
@@ -756,7 +1136,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Flügelspieler",
+      "special": "Freistoßspezialist"
+    }
   },
   {
     "name": "Leon Goretzka",
@@ -764,7 +1148,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Muskelpaket"
+    }
   },
   {
     "name": "Julian Brandt",
@@ -772,7 +1160,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Julian Draxler",
@@ -780,7 +1172,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Confed-Cup-Kapitän"
+    }
   },
   {
     "name": "Julian Weigl",
@@ -788,7 +1184,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Kai Havertz",
@@ -797,7 +1197,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Siegtor im Königsklassenfinale"
+    }
   },
   {
     "name": "Timo Werner",
@@ -805,7 +1209,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Turbo"
+    }
   },
   {
     "name": "Mario Gomez",
@@ -813,7 +1221,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Torero"
+    }
   },
   {
     "name": "Lukas Podolski",
@@ -822,7 +1234,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Prinz Poldi"
+    }
   },
   {
     "name": "André Schürrle",
@@ -831,7 +1247,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Vorlage zum WM-Finaltor"
+    }
   },
   {
     "name": "Per Mertesacker",
@@ -840,7 +1260,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Eistonne"
+    }
   },
   {
     "name": "Benedikt Höwedes",
@@ -849,7 +1273,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Weltmeister 2014"
+    }
   },
   {
     "name": "Christoph Kramer",
@@ -857,7 +1285,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Fußballexperte"
+    }
   },
   {
     "name": "Shkodran Mustafi",
@@ -865,7 +1297,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Weltmeister 2014"
+    }
   },
   {
     "name": "Ron-Robert Zieler",
@@ -873,7 +1309,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Roman Weidenfeller",
@@ -881,7 +1321,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Grandioses Englisch"
+    }
   },
   {
     "name": "Kevin Trapp",
@@ -889,7 +1333,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Europapokalheld 2022"
+    }
   },
   {
     "name": "Bernd Leno",
@@ -897,7 +1345,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Oliver Baumann",
@@ -905,7 +1357,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Alexander Nübel",
@@ -913,7 +1369,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Yann Sommer",
@@ -921,7 +1381,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Torwart",
+      "special": "Elfmeterparade gegen Frankreich"
+    }
   },
   {
     "name": "Gregor Kobel",
@@ -929,7 +1393,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Péter Gulácsi",
@@ -937,7 +1405,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ungarn",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Lukáš Hrádecký",
@@ -945,7 +1417,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Finnland",
+      "position": "Torwart",
+      "special": "Unbesiegter Meisterkapitän"
+    }
   },
   {
     "name": "Koen Casteels",
@@ -953,7 +1429,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Ralf Fährmann",
@@ -961,7 +1441,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Sven Ulreich",
@@ -969,7 +1453,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Jens Lehmann",
@@ -979,7 +1467,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Elfmeterzettel"
+    }
   },
   {
     "name": "René Adler",
@@ -987,7 +1479,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Tim Wiese",
@@ -995,7 +1491,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Wrestling"
+    }
   },
   {
     "name": "Naldo",
@@ -1003,7 +1503,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "Freistoßhammer"
+    }
   },
   {
     "name": "Dante",
@@ -1011,7 +1515,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "Lockenkopf"
+    }
   },
   {
     "name": "Lúcio",
@@ -1021,7 +1529,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "Sturmläufe aus der Abwehr"
+    }
   },
   {
     "name": "Martín Demichelis",
@@ -1029,7 +1541,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Innenverteidiger",
+      "special": "Micho"
+    }
   },
   {
     "name": "Holger Badstuber",
@@ -1037,7 +1553,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Spielaufbau mit links"
+    }
   },
   {
     "name": "Niklas Süle",
@@ -1045,7 +1565,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Nico Schlotterbeck",
@@ -1053,7 +1577,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Waldemar Anton",
@@ -1061,7 +1589,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Jonathan Tah",
@@ -1069,7 +1601,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Unbesiegter Meister 2024"
+    }
   },
   {
     "name": "Antonio Rüdiger",
@@ -1077,7 +1613,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Kantiger Abwehrchef"
+    }
   },
   {
     "name": "Matthias Ginter",
@@ -1085,7 +1625,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Robin Koch",
@@ -1093,7 +1637,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Benjamin Pavard",
@@ -1102,7 +1650,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Volleytor gegen Argentinien"
+    }
   },
   {
     "name": "Lucas Hernández",
@@ -1110,7 +1662,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": "Weltmeister 2018"
+    }
   },
   {
     "name": "Dayot Upamecano",
@@ -1118,7 +1674,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Ibrahima Konaté",
@@ -1126,7 +1686,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Willi Orbán",
@@ -1134,7 +1698,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ungarn",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Łukasz Piszczek",
@@ -1142,7 +1710,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Polen",
+      "position": "Außenverteidiger",
+      "special": "Vom Stürmer zum Verteidiger"
+    }
   },
   {
     "name": "Marcel Schmelzer",
@@ -1150,7 +1722,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Erik Durm",
@@ -1158,7 +1734,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Weltmeister 2014"
+    }
   },
   {
     "name": "Dennis Aogo",
@@ -1166,7 +1746,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Christian Günter",
@@ -1174,7 +1758,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Jonas Hector",
@@ -1182,7 +1770,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Entscheidender Elfmeter 2016"
+    }
   },
   {
     "name": "David Raum",
@@ -1190,7 +1782,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Robin Gosens",
@@ -1198,7 +1794,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "EM-Spiel gegen Portugal"
+    }
   },
   {
     "name": "Jeremie Frimpong",
@@ -1206,7 +1806,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Außenverteidiger",
+      "special": "Tempo auf der Außenbahn"
+    }
   },
   {
     "name": "Mitchell Weiser",
@@ -1214,7 +1818,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Danny da Costa",
@@ -1222,7 +1830,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Julian Ryerson",
@@ -1230,7 +1842,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Norwegen",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "David Alaba",
@@ -1239,7 +1855,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Außenverteidiger",
+      "special": "Stuhl-Jubel"
+    }
   },
   {
     "name": "Javi Martínez",
@@ -1247,7 +1867,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Defensives Mittelfeld",
+      "special": "Kopfballheld im Supercup"
+    }
   },
   {
     "name": "Xabi Alonso",
@@ -1258,7 +1882,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Defensives Mittelfeld",
+      "special": "Lange Diagonalpässe"
+    }
   },
   {
     "name": "Arturo Vidal",
@@ -1266,7 +1894,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Chile",
+      "position": "Zentrales Mittelfeld",
+      "special": "Krieger"
+    }
   },
   {
     "name": "Thiago",
@@ -1274,7 +1906,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Techniker im Mittelfeld"
+    }
   },
   {
     "name": "Corentin Tolisso",
@@ -1282,7 +1918,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Zentrales Mittelfeld",
+      "special": "Weltmeister 2018"
+    }
   },
   {
     "name": "Marcel Sabitzer",
@@ -1290,7 +1930,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Konrad Laimer",
@@ -1298,7 +1942,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Zentrales Mittelfeld",
+      "special": "Pressingmaschine"
+    }
   },
   {
     "name": "Sebastian Rode",
@@ -1306,7 +1954,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Europapokalsieger 2022"
+    }
   },
   {
     "name": "Sebastian Kehl",
@@ -1314,7 +1966,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Sven Bender",
@@ -1322,7 +1978,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Lars Bender",
@@ -1330,7 +1990,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Emre Can",
@@ -1338,7 +2002,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Fallrückzieher gegen Watford"
+    }
   },
   {
     "name": "Mahmoud Dahoud",
@@ -1346,7 +2014,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Nuri Şahin",
@@ -1354,7 +2026,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Zentrales Mittelfeld",
+      "special": "Meister-Spielmacher 2011"
+    }
   },
   {
     "name": "Shinji Kagawa",
@@ -1362,7 +2038,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Japan",
+      "position": "Offensives Mittelfeld",
+      "special": "Doppelpasskünstler"
+    }
   },
   {
     "name": "Diego",
@@ -1370,7 +2050,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Tor aus der Ferne"
+    }
   },
   {
     "name": "Torsten Frings",
@@ -1379,7 +2063,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Lutscher"
+    }
   },
   {
     "name": "Claudio Pizarro",
@@ -1387,7 +2075,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Peru",
+      "position": "Stürmer",
+      "special": "Andenbomber"
+    }
   },
   {
     "name": "Stefan Kießling",
@@ -1395,7 +2087,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Phantomtor"
+    }
   },
   {
     "name": "Gonzalo Castro",
@@ -1403,7 +2099,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Kevin Kampl",
@@ -1411,7 +2111,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Slowenien",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Dani Olmo",
@@ -1419,7 +2123,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Offensives Mittelfeld",
+      "special": "EM-Torschützenkönig 2024"
+    }
   },
   {
     "name": "Xavi Simons",
@@ -1427,7 +2135,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Kevin-Prince Boateng",
@@ -1435,7 +2147,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ghana",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Hakan Çalhanoğlu",
@@ -1443,7 +2159,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Zentrales Mittelfeld",
+      "special": "Freistoß aus vierzig Metern"
+    }
   },
   {
     "name": "Dominik Szoboszlai",
@@ -1451,7 +2171,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ungarn",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Kevin Volland",
@@ -1459,7 +2183,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Blitztor nach neun Sekunden"
+    }
   },
   {
     "name": "Aaron Hunt",
@@ -1467,7 +2195,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Marko Marin",
@@ -1475,7 +2207,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Niclas Füllkrug",
@@ -1483,7 +2219,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Lücke"
+    }
   },
   {
     "name": "Deniz Undav",
@@ -1491,7 +2231,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Vedad Ibišević",
@@ -1499,7 +2243,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Bosnien und Herzegowina",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Edin Džeko",
@@ -1507,7 +2255,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Bosnien und Herzegowina",
+      "position": "Stürmer",
+      "special": "Bosnischer Diamant"
+    }
   },
   {
     "name": "Grafite",
@@ -1515,7 +2267,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Hackentor gegen Bayern"
+    }
   },
   {
     "name": "Bas Dost",
@@ -1523,7 +2279,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Wout Weghorst",
@@ -1531,7 +2291,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Freistoßtrick gegen Argentinien"
+    }
   },
   {
     "name": "Anthony Modeste",
@@ -1539,7 +2303,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Brillenjubel"
+    }
   },
   {
     "name": "Sébastien Haller",
@@ -1547,7 +2315,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Elfenbeinküste",
+      "position": "Stürmer",
+      "special": "Vier Tore beim Königsklassendebüt"
+    }
   },
   {
     "name": "Ante Rebić",
@@ -1555,7 +2327,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Flügelspieler",
+      "special": "Pokalfinaldoppelpack 2018"
+    }
   },
   {
     "name": "Filip Kostić",
@@ -1563,7 +2339,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Serbien",
+      "position": "Flügelspieler",
+      "special": "Flankenspezialist"
+    }
   },
   {
     "name": "Randal Kolo Muani",
@@ -1571,7 +2351,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Loïs Openda",
@@ -1579,7 +2363,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Benjamin Šeško",
@@ -1587,7 +2375,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Slowenien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Patrik Schick",
@@ -1595,7 +2387,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Tschechien",
+      "position": "Stürmer",
+      "special": "Mittellinientor bei der EM"
+    }
   },
   {
     "name": "Victor Boniface",
@@ -1603,7 +2399,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Nigeria",
+      "position": "Stürmer",
+      "special": "Unbesiegter Meister 2024"
+    }
   },
   {
     "name": "Pierre-Emerick Aubameyang",
@@ -1611,7 +2411,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Gabun",
+      "position": "Stürmer",
+      "special": "Maskenjubel"
+    }
   },
   {
     "name": "Michy Batshuayi",
@@ -1619,7 +2423,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Stürmer",
+      "special": "Batman-Jubel"
+    }
   },
   {
     "name": "Adrián Ramos",
@@ -1627,7 +2435,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kolumbien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Lucas Barrios",
@@ -1635,7 +2447,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Paraguay",
+      "position": "Stürmer",
+      "special": "La Pantera"
+    }
   },
   {
     "name": "Serhou Guirassy",
@@ -1643,7 +2459,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Guinea",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Michael Olise",
@@ -1651,7 +2471,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Ritsu Dōan",
@@ -1659,7 +2483,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Japan",
+      "position": "Flügelspieler",
+      "special": "WM-Tor gegen Deutschland"
+    }
   },
   {
     "name": "Pelé",
@@ -1668,7 +2496,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Dreifacher Weltmeister"
+    }
   },
   {
     "name": "Diego Maradona",
@@ -1677,7 +2509,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Offensives Mittelfeld",
+      "special": "Hand Gottes"
+    }
   },
   {
     "name": "Franz Beckenbauer",
@@ -1688,7 +2524,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Kaiser"
+    }
   },
   {
     "name": "Gerd Müller",
@@ -1699,7 +2539,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Bomber der Nation"
+    }
   },
   {
     "name": "Zinédine Zidane",
@@ -1709,7 +2553,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Offensives Mittelfeld",
+      "special": "Volleytor im Königsklassenfinale"
+    }
   },
   {
     "name": "Ronaldinho",
@@ -1719,7 +2567,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Zahnlücke und Zauberfuß"
+    }
   },
   {
     "name": "Oliver Kahn",
@@ -1730,7 +2582,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Titan"
+    }
   },
   {
     "name": "Michael Ballack",
@@ -1740,7 +2596,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Capitano"
+    }
   },
   {
     "name": "Miroslav Klose",
@@ -1750,7 +2610,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "WM-Rekordtorschütze"
+    }
   },
   {
     "name": "Paolo Maldini",
@@ -1760,7 +2624,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Außenverteidiger",
+      "special": "Abwehrlegende aus Mailand"
+    }
   },
   {
     "name": "Francesco Totti",
@@ -1769,7 +2637,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Offensives Mittelfeld",
+      "special": "Il Capitano"
+    }
   },
   {
     "name": "Thierry Henry",
@@ -1779,7 +2651,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Invincibles"
+    }
   },
   {
     "name": "Ronaldo Nazário",
@@ -1788,7 +2664,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Il Fenomeno"
+    }
   },
   {
     "name": "Rivaldo",
@@ -1797,13 +2677,21 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Fallrückzieher gegen Valencia"
+    }
   },
   {
     "name": "Romário",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Strafraumgenie"
+    }
   },
   {
     "name": "Kaká",
@@ -1812,7 +2700,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Goldener Ball 2007"
+    }
   },
   {
     "name": "Cafu",
@@ -1822,7 +2714,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "Drei WM-Finals"
+    }
   },
   {
     "name": "Roberto Carlos",
@@ -1832,7 +2728,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "Bananenfreistoß"
+    }
   },
   {
     "name": "Dida",
@@ -1840,7 +2740,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Torwart",
+      "special": "Elfmeterkiller"
+    }
   },
   {
     "name": "Dunga",
@@ -1848,13 +2752,21 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Defensives Mittelfeld",
+      "special": "Weltmeisterkapitän 1994"
+    }
   },
   {
     "name": "Bebeto",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Babywiegenjubel"
+    }
   },
   {
     "name": "Garrincha",
@@ -1863,7 +2775,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Dribbelkünstler"
+    }
   },
   {
     "name": "Zico",
@@ -1872,7 +2788,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Weißer Pelé"
+    }
   },
   {
     "name": "Sócrates",
@@ -1881,7 +2801,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Doktor"
+    }
   },
   {
     "name": "Jairzinho",
@@ -1890,7 +2814,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Tor in jedem WM-Spiel"
+    }
   },
   {
     "name": "Carlos Alberto",
@@ -1899,7 +2827,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "WM-Finaltor 1970"
+    }
   },
   {
     "name": "Gilberto Silva",
@@ -1907,7 +2839,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Defensives Mittelfeld",
+      "special": "Unsichtbare Wand"
+    }
   },
   {
     "name": "Stefan Reuter",
@@ -1916,19 +2852,31 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Turbo"
+    }
   },
   {
     "name": "Juninho Pernambucano",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Flatterfreistöße"
+    }
   },
   {
     "name": "Park Ji-sung",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Südkorea",
+      "position": "Flügelspieler",
+      "special": "Drei Lungen"
+    }
   },
   {
     "name": "Hristo Stoitschkow",
@@ -1938,7 +2886,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Bulgarien",
+      "position": "Stürmer",
+      "special": "Goldener Ball 1994"
+    }
   },
   {
     "name": "Gheorghe Hagi",
@@ -1947,7 +2899,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Rumänien",
+      "position": "Offensives Mittelfeld",
+      "special": "Karpaten-Maradona"
+    }
   },
   {
     "name": "Luís Figo",
@@ -1956,7 +2912,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Flügelspieler",
+      "special": "Wechsel zum Erzrivalen"
+    }
   },
   {
     "name": "Rui Costa",
@@ -1965,7 +2925,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Offensives Mittelfeld",
+      "special": "Maestro"
+    }
   },
   {
     "name": "Eusébio",
@@ -1975,7 +2939,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Stürmer",
+      "special": "Schwarzer Panther"
+    }
   },
   {
     "name": "Deco",
@@ -1984,7 +2952,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Offensives Mittelfeld",
+      "special": "Magier"
+    }
   },
   {
     "name": "Eric Maxim Choupo-Moting",
@@ -1992,7 +2964,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kamerun",
+      "position": "Stürmer",
+      "special": "Weltklasse als Joker"
+    }
   },
   {
     "name": "Johan Cruyff",
@@ -2002,7 +2978,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Offensives Mittelfeld",
+      "special": "Totaler Fußball"
+    }
   },
   {
     "name": "Johan Neeskens",
@@ -2010,7 +2990,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Zentrales Mittelfeld",
+      "special": "Totaler Fußball"
+    }
   },
   {
     "name": "Marco van Basten",
@@ -2019,7 +3003,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Volleytor im EM-Finale"
+    }
   },
   {
     "name": "Ruud Gullit",
@@ -2028,7 +3016,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Offensives Mittelfeld",
+      "special": "Rasta-Locken"
+    }
   },
   {
     "name": "Frank Rijkaard",
@@ -2037,7 +3029,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Defensives Mittelfeld",
+      "special": "Abräumer"
+    }
   },
   {
     "name": "Dennis Bergkamp",
@@ -2046,7 +3042,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Non-Flying Dutchman"
+    }
   },
   {
     "name": "Patrick Kluivert",
@@ -2055,7 +3055,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Finaltorschütze mit achtzehn"
+    }
   },
   {
     "name": "Ruud van Nistelrooy",
@@ -2065,7 +3069,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Torjäger im Strafraum"
+    }
   },
   {
     "name": "Clarence Seedorf",
@@ -2074,7 +3082,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Zentrales Mittelfeld",
+      "special": "Königsklassensieger mit drei Vereinen"
+    }
   },
   {
     "name": "Landon Donovan",
@@ -2082,7 +3094,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "USA",
+      "position": "Stürmer",
+      "special": "Captain America"
+    }
   },
   {
     "name": "Edwin van der Sar",
@@ -2091,7 +3107,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Torwart",
+      "special": "Elfmeterheld in Moskau"
+    }
   },
   {
     "name": "Jaap Stam",
@@ -2099,7 +3119,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Innenverteidiger",
+      "special": "Abwehrkante"
+    }
   },
   {
     "name": "Wesley Sneijder",
@@ -2108,7 +3132,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Offensives Mittelfeld",
+      "special": "WM-Finalist 2010"
+    }
   },
   {
     "name": "Robin van Persie",
@@ -2117,7 +3145,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Fliegender Holländer"
+    }
   },
   {
     "name": "Shinji Ono",
@@ -2125,7 +3157,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Japan",
+      "position": "Offensives Mittelfeld",
+      "special": "Techniker"
+    }
   },
   {
     "name": "Mark van Bommel",
@@ -2133,7 +3169,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Defensives Mittelfeld",
+      "special": "Aggressive Zweikämpfe"
+    }
   },
   {
     "name": "Roy Makaay",
@@ -2141,7 +3181,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Phantom"
+    }
   },
   {
     "name": "Giovanni van Bronckhorst",
@@ -2149,7 +3193,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Außenverteidiger",
+      "special": "Distanzhammer im WM-Halbfinale"
+    }
   },
   {
     "name": "Cha Bum-kun",
@@ -2158,7 +3206,11 @@
       "bundesliga",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Südkorea",
+      "position": "Stürmer",
+      "special": "Tscha Bum"
+    }
   },
   {
     "name": "Lothar Matthäus",
@@ -2168,7 +3220,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Rekordnationalspieler"
+    }
   },
   {
     "name": "Andreas Brehme",
@@ -2176,7 +3232,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Finalelfmeter 1990"
+    }
   },
   {
     "name": "Jürgen Klinsmann",
@@ -2184,7 +3244,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Diver-Jubel"
+    }
   },
   {
     "name": "Rudi Völler",
@@ -2193,7 +3257,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Tante Käthe"
+    }
   },
   {
     "name": "Karl-Heinz Rummenigge",
@@ -2202,7 +3270,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Kalle"
+    }
   },
   {
     "name": "Uwe Seeler",
@@ -2210,13 +3282,21 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Uns Uwe"
+    }
   },
   {
     "name": "Fritz Walter",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Wunder von Bern"
+    }
   },
   {
     "name": "Helmut Rahn",
@@ -2224,7 +3304,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Aus dem Hintergrund"
+    }
   },
   {
     "name": "Sepp Maier",
@@ -2233,7 +3317,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Katze von Anzing"
+    }
   },
   {
     "name": "Berti Vogts",
@@ -2241,7 +3329,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Terrier"
+    }
   },
   {
     "name": "Paul Breitner",
@@ -2250,7 +3342,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Afro und Vollbart"
+    }
   },
   {
     "name": "Wolfgang Overath",
@@ -2258,7 +3354,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Weltmeister 1974"
+    }
   },
   {
     "name": "Günter Netzer",
@@ -2266,7 +3366,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Selbsteinwechslung im Pokalfinale"
+    }
   },
   {
     "name": "Pierre Littbarski",
@@ -2274,7 +3378,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Dribbelkünstler"
+    }
   },
   {
     "name": "Thomas Häßler",
@@ -2282,7 +3390,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Icke"
+    }
   },
   {
     "name": "Andreas Möller",
@@ -2291,7 +3403,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Heulsuse"
+    }
   },
   {
     "name": "Hugo Sánchez",
@@ -2299,13 +3415,21 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Mexiko",
+      "position": "Stürmer",
+      "special": "Fallrückzieher und Salto"
+    }
   },
   {
     "name": "Carlos Valderrama",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Kolumbien",
+      "position": "Offensives Mittelfeld",
+      "special": "Blonde Lockenmähne"
+    }
   },
   {
     "name": "Guido Buchwald",
@@ -2313,7 +3437,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Diego"
+    }
   },
   {
     "name": "Jürgen Kohler",
@@ -2323,7 +3451,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Zweikampfmaschine"
+    }
   },
   {
     "name": "Karl-Heinz Riedle",
@@ -2332,7 +3464,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Air"
+    }
   },
   {
     "name": "Matthias Sammer",
@@ -2341,7 +3477,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Goldener Ball 1996"
+    }
   },
   {
     "name": "Stefan Effenberg",
@@ -2350,7 +3490,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Tiger"
+    }
   },
   {
     "name": "Mehmet Scholl",
@@ -2359,7 +3503,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Dribbelkünstler"
+    }
   },
   {
     "name": "Giovane Élber",
@@ -2368,7 +3516,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Samba im Strafraum"
+    }
   },
   {
     "name": "Mario Mandžukić",
@@ -2378,13 +3530,21 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Stürmer",
+      "special": "Fallrückzieher im Königsklassenfinale"
+    }
   },
   {
     "name": "Peter Crouch",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Robotertanz"
+    }
   },
   {
     "name": "Uli Hoeneß",
@@ -2393,7 +3553,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Managerlegende"
+    }
   },
   {
     "name": "Dieter Hoeneß",
@@ -2401,7 +3565,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Turban im Pokalfinale"
+    }
   },
   {
     "name": "Klaus Allofs",
@@ -2409,7 +3577,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "EM-Torschützenkönig 1980"
+    }
   },
   {
     "name": "Dieter Müller",
@@ -2417,7 +3589,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Sechs Tore gegen Bremen"
+    }
   },
   {
     "name": "Horst Hrubesch",
@@ -2426,7 +3602,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Kopfballungeheuer"
+    }
   },
   {
     "name": "Felix Magath",
@@ -2435,7 +3615,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Quälix"
+    }
   },
   {
     "name": "Manfred Kaltz",
@@ -2444,7 +3628,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Bananenflanken"
+    }
   },
   {
     "name": "Ulf Kirsten",
@@ -2452,7 +3640,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Der Schwatte"
+    }
   },
   {
     "name": "Tim Cahill",
@@ -2460,7 +3652,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Australien",
+      "position": "Offensives Mittelfeld",
+      "special": "Boxen mit der Eckfahne"
+    }
   },
   {
     "name": "Bernd Schneider",
@@ -2469,7 +3665,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Weißer Brasilianer"
+    }
   },
   {
     "name": "Hamit Altıntop",
@@ -2477,7 +3677,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Zentrales Mittelfeld",
+      "special": "Volleytor des Jahres"
+    }
   },
   {
     "name": "Dani Carvajal",
@@ -2486,7 +3690,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Außenverteidiger",
+      "special": "Kopfball im Königsklassenfinale"
+    }
   },
   {
     "name": "Pepe",
@@ -2494,7 +3702,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Innenverteidiger",
+      "special": "Kompromissloser Zweikämpfer"
+    }
   },
   {
     "name": "Oliver Bierhoff",
@@ -2502,7 +3714,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Golden Goal"
+    }
   },
   {
     "name": "Stefan Kuntz",
@@ -2510,13 +3726,21 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Europameister 1996"
+    }
   },
   {
     "name": "İlhan Mansız",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Stürmer",
+      "special": "Golden Goal gegen Senegal"
+    }
   },
   {
     "name": "Dariusz Wosz",
@@ -2524,7 +3748,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Zaubermaus"
+    }
   },
   {
     "name": "Franco Baresi",
@@ -2534,7 +3762,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Libero-Legende"
+    }
   },
   {
     "name": "Alessandro Nesta",
@@ -2543,7 +3775,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Eleganter Abwehrspieler"
+    }
   },
   {
     "name": "Fabio Cannavaro",
@@ -2552,7 +3788,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Goldener Ball 2006"
+    }
   },
   {
     "name": "Gianluca Zambrotta",
@@ -2561,7 +3801,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Außenverteidiger",
+      "special": "Weltmeister 2006"
+    }
   },
   {
     "name": "Marco Materazzi",
@@ -2569,7 +3813,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Innenverteidiger",
+      "special": "Kopfballtor im WM-Finale"
+    }
   },
   {
     "name": "Fabio Grosso",
@@ -2577,7 +3825,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Außenverteidiger",
+      "special": "Elfmeter zum WM-Titel"
+    }
   },
   {
     "name": "Andrea Pirlo",
@@ -2587,7 +3839,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Defensives Mittelfeld",
+      "special": "Maestro"
+    }
   },
   {
     "name": "Gennaro Gattuso",
@@ -2597,7 +3853,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Defensives Mittelfeld",
+      "special": "Kampfhund"
+    }
   },
   {
     "name": "Daniele De Rossi",
@@ -2605,7 +3865,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Defensives Mittelfeld",
+      "special": "Weltmeister 2006"
+    }
   },
   {
     "name": "Alessandro Del Piero",
@@ -2615,7 +3879,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Pinturicchio"
+    }
   },
   {
     "name": "Filippo Inzaghi",
@@ -2624,7 +3892,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Am Abseits geboren"
+    }
   },
   {
     "name": "Ian Rush",
@@ -2633,7 +3905,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Wales",
+      "position": "Stürmer",
+      "special": "Schnurrbart"
+    }
   },
   {
     "name": "Roberto Baggio",
@@ -2642,13 +3918,21 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Offensives Mittelfeld",
+      "special": "Göttlicher Pferdeschwanz"
+    }
   },
   {
     "name": "Paolo Rossi",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "WM-Torschützenkönig 1982"
+    }
   },
   {
     "name": "Kevin Keegan",
@@ -2657,7 +3941,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Mighty Mouse"
+    }
   },
   {
     "name": "Gianluca Vialli",
@@ -2665,7 +3953,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Königsklassensieger 1996"
+    }
   },
   {
     "name": "Hakan Şükür",
@@ -2673,7 +3965,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Stürmer",
+      "special": "Schnellstes WM-Tor"
+    }
   },
   {
     "name": "Alfredo Di Stéfano",
@@ -2681,13 +3977,21 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "Blonder Pfeil"
+    }
   },
   {
     "name": "Dino Zoff",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Torwart",
+      "special": "Weltmeister mit vierzig"
+    }
   },
   {
     "name": "Ferenc Puskás",
@@ -2697,7 +4001,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ungarn",
+      "position": "Stürmer",
+      "special": "Linker Hammer"
+    }
   },
   {
     "name": "Dimitar Berbatov",
@@ -2705,7 +4013,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Bulgarien",
+      "position": "Stürmer",
+      "special": "Elegante Ballannahme"
+    }
   },
   {
     "name": "Zé Roberto",
@@ -2713,7 +4025,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Fitnesswunder"
+    }
   },
   {
     "name": "Andreas Herzog",
@@ -2721,7 +4037,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Offensives Mittelfeld",
+      "special": "Alpen-Maradona"
+    }
   },
   {
     "name": "Toni Polster",
@@ -2729,7 +4049,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Stürmer",
+      "special": "Doppelpack"
+    }
   },
   {
     "name": "Hans Sarpei",
@@ -2737,7 +4061,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ghana",
+      "position": "Außenverteidiger",
+      "special": "Kultfigur"
+    }
   },
   {
     "name": "Sergej Barbarez",
@@ -2745,13 +4073,21 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Bosnien und Herzegowina",
+      "position": "Stürmer",
+      "special": "Kopfballstarker Torjäger"
+    }
   },
   {
     "name": "Marquinhos",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Luca Toni",
@@ -2760,7 +4096,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Ohrschrauberjubel"
+    }
   },
   {
     "name": "Aílton",
@@ -2768,7 +4108,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Kugelblitz"
+    }
   },
   {
     "name": "Raúl",
@@ -2778,7 +4122,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "Ringkuss"
+    }
   },
   {
     "name": "Fernando Hierro",
@@ -2787,7 +4135,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Innenverteidiger",
+      "special": "Torgefährlicher Abwehrchef"
+    }
   },
   {
     "name": "Fernando Morientes",
@@ -2795,13 +4147,21 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "Kopfballstarker Torjäger"
+    }
   },
   {
     "name": "Guti",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Hackenvorlagen"
+    }
   },
   {
     "name": "Fernando Redondo",
@@ -2809,7 +4169,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Defensives Mittelfeld",
+      "special": "Hackentrick gegen Manchester"
+    }
   },
   {
     "name": "Carles Puyol",
@@ -2819,7 +4183,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Innenverteidiger",
+      "special": "Löwenmähne"
+    }
   },
   {
     "name": "Pep Guardiola",
@@ -2828,13 +4196,21 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Defensives Mittelfeld",
+      "special": "Trainerlegende"
+    }
   },
   {
     "name": "Luis Enrique",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Trainer beim Triple"
+    }
   },
   {
     "name": "Dédé",
@@ -2842,7 +4218,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "Kult-Linksverteidiger"
+    }
   },
   {
     "name": "Jan Koller",
@@ -2850,19 +4230,31 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Tschechien",
+      "position": "Stürmer",
+      "special": "Zwei-Meter-Stürmer"
+    }
   },
   {
     "name": "Santiago Cañizares",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Torwart",
+      "special": "Blondierter Torwart"
+    }
   },
   {
     "name": "Míchel Salgado",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Außenverteidiger",
+      "special": "Kämpfer auf rechts"
+    }
   },
   {
     "name": "Ivan Rakitić",
@@ -2872,7 +4264,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Königsklassen-Finaltor 2015"
+    }
   },
   {
     "name": "Javier Zanetti",
@@ -2881,13 +4277,21 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Außenverteidiger",
+      "special": "Il Trattore"
+    }
   },
   {
     "name": "Esteban Cambiasso",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Defensives Mittelfeld",
+      "special": "Cuchu"
+    }
   },
   {
     "name": "Juan Sebastián Verón",
@@ -2895,7 +4299,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Zentrales Mittelfeld",
+      "special": "La Brujita"
+    }
   },
   {
     "name": "Juan Román Riquelme",
@@ -2904,13 +4312,21 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Offensives Mittelfeld",
+      "special": "Klassischer Spielmacher"
+    }
   },
   {
     "name": "Gabriel Batistuta",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Batigol"
+    }
   },
   {
     "name": "Hernán Crespo",
@@ -2918,19 +4334,31 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Valdanito"
+    }
   },
   {
     "name": "Claudio Caniggia",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Flügelspieler",
+      "special": "Blonder Flitzer"
+    }
   },
   {
     "name": "Diego Simeone",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Defensives Mittelfeld",
+      "special": "El Cholo"
+    }
   },
   {
     "name": "Diego Forlán",
@@ -2938,19 +4366,31 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Uruguay",
+      "position": "Stürmer",
+      "special": "Goldener Ball der WM"
+    }
   },
   {
     "name": "Gonzalo Higuaín",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "El Pipita"
+    }
   },
   {
     "name": "Carlos Tévez",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Apache"
+    }
   },
   {
     "name": "Javier Mascherano",
@@ -2959,7 +4399,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Defensives Mittelfeld",
+      "special": "El Jefecito"
+    }
   },
   {
     "name": "Ivan Perišić",
@@ -2968,7 +4412,11 @@
       "bundesliga",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Flügelspieler",
+      "special": "Beidfüßiger Flankengeber"
+    }
   },
   {
     "name": "Diego Milito",
@@ -2976,7 +4424,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Doppelpack im Königsklassenfinale"
+    }
   },
   {
     "name": "David Trezeguet",
@@ -2985,7 +4437,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Golden Goal 2000"
+    }
   },
   {
     "name": "Patrick Vieira",
@@ -2994,7 +4450,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Defensives Mittelfeld",
+      "special": "Invincibles-Kapitän"
+    }
   },
   {
     "name": "Claude Makélélé",
@@ -3003,7 +4463,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Defensives Mittelfeld",
+      "special": "Abräumer vor der Abwehr"
+    }
   },
   {
     "name": "Lilian Thuram",
@@ -3012,7 +4476,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Doppelpack im WM-Halbfinale"
+    }
   },
   {
     "name": "Marcel Desailly",
@@ -3022,7 +4490,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": "Der Fels"
+    }
   },
   {
     "name": "Klaus Augenthaler",
@@ -3030,7 +4502,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Libero mit Distanzschuss"
+    }
   },
   {
     "name": "Bixente Lizarazu",
@@ -3040,7 +4516,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Baskischer Linksverteidiger"
+    }
   },
   {
     "name": "Willy Sagnol",
@@ -3050,7 +4530,11 @@
       "cl-legende",
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Flankengott"
+    }
   },
   {
     "name": "Eric Cantona",
@@ -3058,7 +4542,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Aufgestellter Kragen"
+    }
   },
   {
     "name": "Jean-Pierre Papin",
@@ -3067,7 +4555,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Volleyspezialist"
+    }
   },
   {
     "name": "Michel Platini",
@@ -3075,7 +4567,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Offensives Mittelfeld",
+      "special": "Neun EM-Tore 1984"
+    }
   },
   {
     "name": "Bobby Charlton",
@@ -3085,13 +4581,21 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Offensives Mittelfeld",
+      "special": "Weltmeister 1966"
+    }
   },
   {
     "name": "Just Fontaine",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": "Dreizehn WM-Tore 1958"
+    }
   },
   {
     "name": "Didier Deschamps",
@@ -3099,7 +4603,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Defensives Mittelfeld",
+      "special": "Wasserträger"
+    }
   },
   {
     "name": "Youri Djorkaeff",
@@ -3107,7 +4615,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Offensives Mittelfeld",
+      "special": "Die Schlange"
+    }
   },
   {
     "name": "Lew Jaschin",
@@ -3116,7 +4628,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Sowjetunion",
+      "position": "Torwart",
+      "special": "Schwarze Spinne"
+    }
   },
   {
     "name": "Alan Shearer",
@@ -3124,7 +4640,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Jubel mit erhobenem Arm"
+    }
   },
   {
     "name": "Kenny Dalglish",
@@ -3133,7 +4653,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schottland",
+      "position": "Stürmer",
+      "special": "Spielertrainer"
+    }
   },
   {
     "name": "Bobby Moore",
@@ -3142,7 +4666,11 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Innenverteidiger",
+      "special": "Weltmeisterkapitän 1966"
+    }
   },
   {
     "name": "Gary Lineker",
@@ -3151,13 +4679,21 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Keine gelbe Karte"
+    }
   },
   {
     "name": "Éric Abidal",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Königsklassenpokal als Kapitän"
+    }
   },
   {
     "name": "George Best",
@@ -3166,13 +4702,21 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Nordirland",
+      "position": "Flügelspieler",
+      "special": "Fünfter Beatle"
+    }
   },
   {
     "name": "George Weah",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Liberia",
+      "position": "Stürmer",
+      "special": "Goldener Ball 1995"
+    }
   },
   {
     "name": "Didier Drogba",
@@ -3181,7 +4725,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Elfenbeinküste",
+      "position": "Stürmer",
+      "special": "Finalheld von München"
+    }
   },
   {
     "name": "Samuel Eto’o",
@@ -3190,13 +4738,21 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kamerun",
+      "position": "Stürmer",
+      "special": "Zwei aufeinanderfolgende Triples"
+    }
   },
   {
     "name": "Yaya Touré",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Elfenbeinküste",
+      "position": "Zentrales Mittelfeld",
+      "special": "Wuchtige Mittelfeldläufe"
+    }
   },
   {
     "name": "Michael Essien",
@@ -3204,7 +4760,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ghana",
+      "position": "Defensives Mittelfeld",
+      "special": "Bison"
+    }
   },
   {
     "name": "Jay-Jay Okocha",
@@ -3214,19 +4774,31 @@
       "wm-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Nigeria",
+      "position": "Offensives Mittelfeld",
+      "special": "Übersteiger"
+    }
   },
   {
     "name": "Nwankwo Kanu",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Nigeria",
+      "position": "Stürmer",
+      "special": "Olympiasieger 1996"
+    }
   },
   {
     "name": "Roger Milla",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Kamerun",
+      "position": "Stürmer",
+      "special": "Eckfahnentanz"
+    }
   },
   {
     "name": "Abédi Pelé",
@@ -3235,7 +4807,11 @@
       "bundesliga",
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ghana",
+      "position": "Offensives Mittelfeld",
+      "special": "Afrikanischer Spielmacher"
+    }
   },
   {
     "name": "El Hadji Diouf",
@@ -3243,7 +4819,11 @@
     "tags": [
       "wm-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Senegal",
+      "position": "Flügelspieler",
+      "special": "WM-Überraschung 2002"
+    }
   },
   {
     "name": "Michael Owen",
@@ -3251,7 +4831,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Golden Boy"
+    }
   },
   {
     "name": "David Beckham",
@@ -3260,7 +4844,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": "Freistoßspezialist"
+    }
   },
   {
     "name": "Steven Gerrard",
@@ -3269,7 +4857,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Zentrales Mittelfeld",
+      "special": "Wunder von Istanbul"
+    }
   },
   {
     "name": "Frank Lampard",
@@ -3278,7 +4870,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Zentrales Mittelfeld",
+      "special": "Torgefährlicher Mittelfeldmotor"
+    }
   },
   {
     "name": "Paul Scholes",
@@ -3287,7 +4883,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Zentrales Mittelfeld",
+      "special": "Rotschopf"
+    }
   },
   {
     "name": "Ryan Giggs",
@@ -3296,7 +4896,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Wales",
+      "position": "Flügelspieler",
+      "special": "Solo im Pokalhalbfinale"
+    }
   },
   {
     "name": "Roy Keane",
@@ -3305,13 +4909,21 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Irland",
+      "position": "Defensives Mittelfeld",
+      "special": "Kompromissloser Kapitän"
+    }
   },
   {
     "name": "Gary Neville",
     "tier": 3,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Außenverteidiger",
+      "special": "Class of 92"
+    }
   },
   {
     "name": "Rio Ferdinand",
@@ -3319,7 +4931,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Innenverteidiger",
+      "special": "Eleganter Abwehrchef"
+    }
   },
   {
     "name": "John Terry",
@@ -3327,7 +4943,11 @@
     "tags": [
       "cl-legende"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Innenverteidiger",
+      "special": "Langjähriger Chelsea-Kapitän"
+    }
   },
   {
     "name": "Ashley Cole",
@@ -3335,7 +4955,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Außenverteidiger",
+      "special": "Invincibles"
+    }
   },
   {
     "name": "Peter Schmeichel",
@@ -3344,7 +4968,11 @@
       "cl-legende",
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Torwart",
+      "special": "Europameister 1992"
+    }
   },
   {
     "name": "Jadon Sancho",
@@ -3352,7 +4980,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": "Straßenfußballer"
+    }
   },
   {
     "name": "Christian Pulisic",
@@ -3360,7 +4992,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "USA",
+      "position": "Flügelspieler",
+      "special": "Captain America"
+    }
   },
   {
     "name": "Neven Subotić",
@@ -3368,7 +5004,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Serbien",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Kuba Błaszczykowski",
@@ -3376,7 +5016,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Polen",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Henrikh Mkhitaryan",
@@ -3384,7 +5028,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Armenien",
+      "position": "Offensives Mittelfeld",
+      "special": "Bundesliga-Spieler der Saison"
+    }
   },
   {
     "name": "Sokratis",
@@ -3392,7 +5040,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Griechenland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Roman Bürki",
@@ -3400,7 +5052,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Raphaël Guerreiro",
@@ -3408,7 +5064,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Außenverteidiger",
+      "special": "Europameister 2016"
+    }
   },
   {
     "name": "Axel Witsel",
@@ -3416,7 +5076,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Defensives Mittelfeld",
+      "special": "Afro"
+    }
   },
   {
     "name": "Thorgan Hazard",
@@ -3424,7 +5088,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Giovanni Reyna",
@@ -3432,7 +5100,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "USA",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Youssoufa Moukoko",
@@ -3440,7 +5112,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Jüngster Bundesliga-Torschütze"
+    }
   },
   {
     "name": "Karim Adeyemi",
@@ -3448,7 +5124,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Donyell Malen",
@@ -3456,7 +5136,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Thomas Meunier",
@@ -3464,7 +5148,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Belgien",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Manuel Akanji",
@@ -3472,7 +5160,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Innenverteidiger",
+      "special": "Kopfrechnen"
+    }
   },
   {
     "name": "Marc Bartra",
@@ -3480,7 +5172,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Paco Alcácer",
@@ -3488,7 +5184,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "Jokertore"
+    }
   },
   {
     "name": "Ciro Immobile",
@@ -3496,7 +5196,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Goldener Schuh 2020"
+    }
   },
   {
     "name": "Felix Nmecha",
@@ -3504,7 +5208,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Jamie Gittens",
@@ -3512,7 +5220,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Maximilian Beier",
@@ -3520,7 +5232,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Pascal Groß",
@@ -3528,7 +5244,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Alexander Isak",
@@ -3536,7 +5256,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweden",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Jonas Hofmann",
@@ -3544,7 +5268,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Andriy Yarmolenko",
@@ -3552,7 +5280,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ukraine",
+      "position": "Flügelspieler",
+      "special": "Linker Fuß"
+    }
   },
   {
     "name": "Marin Pongračić",
@@ -3560,7 +5292,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Moritz Leitner",
@@ -3568,7 +5304,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Julian Schieber",
@@ -3576,7 +5316,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Oliver Kirch",
@@ -3584,7 +5328,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Leonardo Bittencourt",
@@ -3592,7 +5340,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Marvin Ducksch",
@@ -3600,7 +5352,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Hässliche Vögel"
+    }
   },
   {
     "name": "Felipe Santana",
@@ -3608,7 +5364,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "Malaga-Wunder"
+    }
   },
   {
     "name": "Chris Löwe",
@@ -3616,7 +5376,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Mitchell Langerak",
@@ -3624,7 +5388,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Australien",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Ömer Toprak",
@@ -3632,7 +5400,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Jeremy Toljan",
@@ -3640,7 +5412,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Dan-Axel Zagadou",
@@ -3648,7 +5424,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Maximilian Philipp",
@@ -3656,7 +5436,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Abdou Diallo",
@@ -3664,7 +5448,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Senegal",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Thomas Delaney",
@@ -3672,7 +5460,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Marius Wolf",
@@ -3680,7 +5472,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Jacob Bruun Larsen",
@@ -3688,7 +5484,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Nico Schulz",
@@ -3696,7 +5496,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Ansgar Knauff",
@@ -3704,7 +5508,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Europapokalsieger 2022"
+    }
   },
   {
     "name": "Salih Özcan",
@@ -3712,7 +5520,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Felix Passlack",
@@ -3720,7 +5532,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Mikel Merino",
@@ -3728,7 +5544,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Siegtor gegen Deutschland"
+    }
   },
   {
     "name": "Emre Mor",
@@ -3736,7 +5556,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Mohamed Zidan",
@@ -3744,7 +5568,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ägypten",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Nelson Valdez",
@@ -3752,7 +5580,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Paraguay",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Tinga",
@@ -3760,7 +5592,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Antonio da Silva",
@@ -3768,7 +5604,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Patrick Owomoyela",
@@ -3776,7 +5616,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "Podcast"
+    }
   },
   {
     "name": "Christian Wörns",
@@ -3784,7 +5628,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Steffen Freund",
@@ -3792,7 +5640,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Kampfschwein"
+    }
   },
   {
     "name": "Heiko Herrlich",
@@ -3800,7 +5652,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Bundesliga-Torschützenkönig 1995"
+    }
   },
   {
     "name": "Lars Ricken",
@@ -3808,7 +5664,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Lupfer im Königsklassenfinale"
+    }
   },
   {
     "name": "Michael Zorc",
@@ -3816,7 +5676,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "Susi"
+    }
   },
   {
     "name": "Stéphane Chapuisat",
@@ -3824,7 +5688,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Stürmer",
+      "special": "Chappi"
+    }
   },
   {
     "name": "Paulo Sousa",
@@ -3832,7 +5700,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Defensives Mittelfeld",
+      "special": "Königsklassensieger mit zwei Vereinen"
+    }
   },
   {
     "name": "Júlio César",
@@ -3840,7 +5712,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "Königsklassensieger 1997"
+    }
   },
   {
     "name": "Ewerthon",
@@ -3848,7 +5724,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Márcio Amoroso",
@@ -3856,7 +5736,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": "Bundesliga-Torschützenkönig 2002"
+    }
   },
   {
     "name": "Norbert Dickel",
@@ -3864,7 +5748,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Held von Berlin"
+    }
   },
   {
     "name": "Teddy de Beer",
@@ -3872,7 +5760,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Kulttorwart"
+    }
   },
   {
     "name": "Lothar Emmerich",
@@ -3880,7 +5772,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Emma"
+    }
   },
   {
     "name": "Siggi Held",
@@ -3888,7 +5784,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Europapokalsieger 1966"
+    }
   },
   {
     "name": "Yan Couto",
@@ -3896,7 +5796,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Daniel Svensson",
@@ -3904,7 +5808,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweden",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Carney Chukwuemeka",
@@ -3912,7 +5820,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Österreich",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Ramy Bensebaini",
@@ -3920,7 +5832,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Algerien",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Ian Maatsen",
@@ -3928,7 +5844,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Florian Kringe",
@@ -3936,7 +5856,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Petr Čech",
@@ -3944,7 +5868,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Tschechien",
+      "position": "Torwart",
+      "special": "Schutzhelm"
+    }
   },
   {
     "name": "Laurent Blanc",
@@ -3952,7 +5880,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Innenverteidiger",
+      "special": "Kuss auf die Glatze"
+    }
   },
   {
     "name": "Sol Campbell",
@@ -3960,7 +5892,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Innenverteidiger",
+      "special": "Invincibles"
+    }
   },
   {
     "name": "Ronald Koeman",
@@ -3968,7 +5904,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Innenverteidiger",
+      "special": "Freistoß zum Königsklassentitel"
+    }
   },
   {
     "name": "Nemanja Vidić",
@@ -3976,7 +5916,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Serbien",
+      "position": "Innenverteidiger",
+      "special": "Harter Zweikämpfer"
+    }
   },
   {
     "name": "John Barnes",
@@ -3984,7 +5928,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Michael Laudrup",
@@ -3992,7 +5940,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Offensives Mittelfeld",
+      "special": "Eleganter Spielmacher"
+    }
   },
   {
     "name": "Jari Litmanen",
@@ -4000,7 +5952,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Finnland",
+      "position": "Offensives Mittelfeld",
+      "special": "König"
+    }
   },
   {
     "name": "Hidetoshi Nakata",
@@ -4008,7 +5964,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Japan",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Pavel Nedvěd",
@@ -4016,7 +5976,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Tschechien",
+      "position": "Flügelspieler",
+      "special": "Goldener Ball 2003"
+    }
   },
   {
     "name": "Marc Overmars",
@@ -4024,7 +5988,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Flügelspieler",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Emmanuel Petit",
@@ -4032,7 +6000,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Defensives Mittelfeld",
+      "special": "Blonder Pferdeschwanz"
+    }
   },
   {
     "name": "Robert Pirès",
@@ -4040,7 +6012,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Invincibles"
+    }
   },
   {
     "name": "Claudio Marchisio",
@@ -4048,7 +6024,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Il Principino"
+    }
   },
   {
     "name": "Emilio Butragueño",
@@ -4056,7 +6036,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "El Buitre"
+    }
   },
   {
     "name": "Andy Cole",
@@ -4064,7 +6048,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Triple 1999"
+    }
   },
   {
     "name": "Luis Hernández",
@@ -4072,7 +6060,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Mexiko",
+      "position": "Stürmer",
+      "special": "Blonde Mähne"
+    }
   },
   {
     "name": "Henrik Larsson",
@@ -4080,7 +6072,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweden",
+      "position": "Stürmer",
+      "special": "König von Glasgow"
+    }
   },
   {
     "name": "Andrij Schewtschenko",
@@ -4088,7 +6084,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ukraine",
+      "position": "Stürmer",
+      "special": "Goldener Ball 2004"
+    }
   },
   {
     "name": "Davor Šuker",
@@ -4096,7 +6096,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Stürmer",
+      "special": "WM-Torschützenkönig 1998"
+    }
   },
   {
     "name": "Christian Vieri",
@@ -4104,7 +6108,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Bobo"
+    }
   },
   {
     "name": "Ian Wright",
@@ -4112,7 +6120,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Stürmer",
+      "special": "Arsenal-Legende"
+    }
   },
   {
     "name": "Gianfranco Zola",
@@ -4120,7 +6132,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Offensives Mittelfeld",
+      "special": "Zauberzwerg"
+    }
   },
   {
     "name": "Dirk Kuyt",
@@ -4128,7 +6144,11 @@
     "tags": [
       "fifa-icon"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Flügelspieler",
+      "special": "Arbeitstier"
+    }
   },
   {
     "name": "Nicklas Bendtner",
@@ -4136,115 +6156,191 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Stürmer",
+      "special": "Lord"
+    }
   },
   {
     "name": "Lamine Yamal",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Flügelspieler",
+      "special": "Jüngster EM-Torschütze"
+    }
   },
   {
     "name": "Pedri",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Gavi",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Cole Palmer",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Offensives Mittelfeld",
+      "special": "Kältejubel"
+    }
   },
   {
     "name": "Martin Ødegaard",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Norwegen",
+      "position": "Offensives Mittelfeld",
+      "special": "Wunderkind"
+    }
   },
   {
     "name": "Khvicha Kvaratskhelia",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Georgien",
+      "position": "Flügelspieler",
+      "special": "Dribbelkünstler aus Georgien"
+    }
   },
   {
     "name": "Rafael Leão",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Flügelspieler",
+      "special": "Lächelnder Dribbler"
+    }
   },
   {
     "name": "Nico Williams",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Flügelspieler",
+      "special": "EM-Finaltor 2024"
+    }
   },
   {
     "name": "Désiré Doué",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Doppelpack im Königsklassenfinale"
+    }
   },
   {
     "name": "Arda Güler",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Türkei",
+      "position": "Offensives Mittelfeld",
+      "special": "Goldjunge vom Bosporus"
+    }
   },
   {
     "name": "Endrick",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Viktor Gyökeres",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Schweden",
+      "position": "Stürmer",
+      "special": "Maskenjubel"
+    }
   },
   {
     "name": "Julián Álvarez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "Die Spinne"
+    }
   },
   {
     "name": "Enzo Fernández",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Bester WM-Jungprofi 2022"
+    }
   },
   {
     "name": "Alexis Mac Allister",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Zentrales Mittelfeld",
+      "special": "Weltmeister 2022"
+    }
   },
   {
     "name": "Emiliano Martínez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Torwart",
+      "special": "Elfmeterpsychospiele"
+    }
   },
   {
     "name": "Luis Díaz",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Kolumbien",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Darwin Núñez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Uruguay",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Joško Gvardiol",
@@ -4252,7 +6348,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Innenverteidiger",
+      "special": "Maske bei der WM"
+    }
   },
   {
     "name": "Kim Min-jae",
@@ -4260,13 +6360,21 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Südkorea",
+      "position": "Innenverteidiger",
+      "special": "Monster"
+    }
   },
   {
     "name": "Frenkie de Jong",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Matthijs de Ligt",
@@ -4274,121 +6382,201 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Innenverteidiger",
+      "special": "Junger Ajax-Kapitän"
+    }
   },
   {
     "name": "Rúben Dias",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Innenverteidiger",
+      "special": "Abwehrchef"
+    }
   },
   {
     "name": "Kyle Walker",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Außenverteidiger",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Trent Alexander-Arnold",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Außenverteidiger",
+      "special": "Schnelle Ecke gegen Barcelona"
+    }
   },
   {
     "name": "Marcus Rashford",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Raheem Sterling",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Jack Grealish",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "England",
+      "position": "Flügelspieler",
+      "special": "Waden"
+    }
   },
   {
     "name": "Riyad Mahrez",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Algerien",
+      "position": "Flügelspieler",
+      "special": "Meistermärchen 2016"
+    }
   },
   {
     "name": "Thiago Silva",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Innenverteidiger",
+      "special": "O Monstro"
+    }
   },
   {
     "name": "Casemiro",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Defensives Mittelfeld",
+      "special": "Abräumer"
+    }
   },
   {
     "name": "Kalidou Koulibaly",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Senegal",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Christian Eriksen",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Offensives Mittelfeld",
+      "special": "Standardspezialist"
+    }
   },
   {
     "name": "Mario Balotelli",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Stürmer",
+      "special": "Warum immer ich?"
+    }
   },
   {
     "name": "Diego Costa",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Stürmer",
+      "special": "Kantiger Mittelstürmer"
+    }
   },
   {
     "name": "Dušan Vlahović",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Serbien",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Nicolò Barella",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Federico Chiesa",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Italien",
+      "position": "Flügelspieler",
+      "special": "Europameister 2021"
+    }
   },
   {
     "name": "João Félix",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Stürmer",
+      "special": "Golden Boy 2019"
+    }
   },
   {
     "name": "Theo Hernández",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Außenverteidiger",
+      "special": "Offensive Sturmläufe"
+    }
   },
   {
     "name": "Mike Maignan",
     "tier": 1,
     "tags": [],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Torwart",
+      "special": "Elfmeterkiller"
+    }
   },
   {
     "name": "Kingsley Coman",
@@ -4396,7 +6584,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Königsklassen-Finaltor 2020"
+    }
   },
   {
     "name": "Douglas Costa",
@@ -4404,7 +6596,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Flügelspieler",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Xherdan Shaqiri",
@@ -4412,7 +6608,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Flügelspieler",
+      "special": "Alpen-Messi"
+    }
   },
   {
     "name": "Medhi Benatia",
@@ -4420,7 +6620,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Marokko",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Juan Bernat",
@@ -4428,7 +6632,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Außenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Sebastian Rudy",
@@ -4436,7 +6644,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Luiz Gustavo",
@@ -4444,7 +6656,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Pierre-Emile Højbjerg",
@@ -4452,7 +6668,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Anatoliy Tymoshchuk",
@@ -4460,7 +6680,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ukraine",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "João Palhinha",
@@ -4468,7 +6692,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Portugal",
+      "position": "Defensives Mittelfeld",
+      "special": "Grätschenspezialist"
+    }
   },
   {
     "name": "Aleksandar Pavlović",
@@ -4476,7 +6704,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Josip Stanišić",
@@ -4484,7 +6716,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Außenverteidiger",
+      "special": "Unbesiegter Meister 2024"
+    }
   },
   {
     "name": "Klaas-Jan Huntelaar",
@@ -4492,7 +6728,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Stürmer",
+      "special": "Hunter"
+    }
   },
   {
     "name": "Kevin Kurányi",
@@ -4500,7 +6740,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Jefferson Farfán",
@@ -4508,7 +6752,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Peru",
+      "position": "Flügelspieler",
+      "special": "La Foquita"
+    }
   },
   {
     "name": "Max Meyer",
@@ -4516,7 +6764,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Rafael van der Vaart",
@@ -4524,7 +6776,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Niederlande",
+      "position": "Offensives Mittelfeld",
+      "special": "Kleiner Engel"
+    }
   },
   {
     "name": "Ivica Olić",
@@ -4532,7 +6788,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Stürmer",
+      "special": "Dreierpack im Königsklassenhalbfinale"
+    }
   },
   {
     "name": "Mladen Petrić",
@@ -4540,7 +6800,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Kroatien",
+      "position": "Stürmer",
+      "special": "Freistoßspezialist"
+    }
   },
   {
     "name": "Pierre-Michel Lasogga",
@@ -4548,7 +6812,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Raffael",
@@ -4556,7 +6824,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Offensives Mittelfeld",
+      "special": "Maestro"
+    }
   },
   {
     "name": "Lars Stindl",
@@ -4564,7 +6836,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "Confed-Cup-Finaltor"
+    }
   },
   {
     "name": "Patrick Herrmann",
@@ -4572,7 +6848,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Flaco"
+    }
   },
   {
     "name": "Juan Arango",
@@ -4580,7 +6860,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Venezuela",
+      "position": "Flügelspieler",
+      "special": "Linker Zauberfuß"
+    }
   },
   {
     "name": "Marcus Thuram",
@@ -4588,7 +6872,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Alassane Pléa",
@@ -4596,7 +6884,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Denis Zakaria",
@@ -4604,7 +6896,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Defensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Florian Neuhaus",
@@ -4612,7 +6908,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Breel Embolo",
@@ -4620,7 +6920,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Tony Jantschke",
@@ -4628,7 +6932,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Fußballgott"
+    }
   },
   {
     "name": "Leon Bailey",
@@ -4636,7 +6944,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Jamaika",
+      "position": "Flügelspieler",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Moussa Diaby",
@@ -4644,7 +6956,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Flügelspieler",
+      "special": "Sprinttempo"
+    }
   },
   {
     "name": "Alejandro Grimaldo",
@@ -4652,7 +6968,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Spanien",
+      "position": "Außenverteidiger",
+      "special": "Freistoßspezialist"
+    }
   },
   {
     "name": "Edmond Tapsoba",
@@ -4660,7 +6980,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Burkina Faso",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Piero Hincapié",
@@ -4668,7 +6992,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ecuador",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Robert Andrich",
@@ -4676,7 +7004,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "Unbesiegter Meister 2024"
+    }
   },
   {
     "name": "Omar Marmoush",
@@ -4684,7 +7016,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Ägypten",
+      "position": "Stürmer",
+      "special": "Pharao"
+    }
   },
   {
     "name": "Hugo Ekitiké",
@@ -4692,7 +7028,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Diego Benaglio",
@@ -4700,7 +7040,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Torwart",
+      "special": "Meistertorwart 2009"
+    }
   },
   {
     "name": "Ricardo Rodríguez",
@@ -4708,7 +7052,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Außenverteidiger",
+      "special": "Elfmeter und Freistöße"
+    }
   },
   {
     "name": "Maximilian Arnold",
@@ -4716,7 +7064,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Yussuf Poulsen",
@@ -4724,7 +7076,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Christopher Nkunku",
@@ -4732,7 +7088,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Offensives Mittelfeld",
+      "special": "Ballon-Jubel"
+    }
   },
   {
     "name": "Cacau",
@@ -4740,7 +7100,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Helmut"
+    }
   },
   {
     "name": "Chris Führich",
@@ -4748,7 +7112,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": null
+    }
   },
   {
     "name": "Enzo Millot",
@@ -4756,7 +7124,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Frankreich",
+      "position": "Offensives Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Sandro Wagner",
@@ -4764,7 +7136,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Kopfballstarker Mittelstürmer"
+    }
   },
   {
     "name": "Kevin Vogt",
@@ -4772,7 +7148,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": null
+    }
   },
   {
     "name": "Nadiem Amiri",
@@ -4780,7 +7160,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": null
+    }
   },
   {
     "name": "Timo Horn",
@@ -4788,7 +7172,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": null
+    }
   },
   {
     "name": "Mark Uth",
@@ -4796,7 +7184,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Jonathan Burkardt",
@@ -4804,7 +7196,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": null
+    }
   },
   {
     "name": "Nils Petersen",
@@ -4812,7 +7208,11 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Rekordjoker"
+    }
   },
   {
     "name": "Ridle Baku",
@@ -4820,6 +7220,10 @@
     "tags": [
       "bundesliga"
     ],
-    "hint": null
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "U21-Europameister 2021"
+    }
   }
 ]

@@ -3,402 +3,603 @@
     "name": "Bayern München",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Süddeutschland",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Borussia Dortmund",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Ruhrpott",
+      "colors": "Schwarz-Gelb"
+    }
   },
   {
     "name": "Bayer Leverkusen",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Rheinland",
+      "colors": "Schwarz-Rot"
+    }
   },
   {
     "name": "RB Leipzig",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Sachsen",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Borussia Mönchengladbach",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Niederrhein",
+      "colors": "Schwarz-Weiß-Grün"
+    }
   },
   {
     "name": "VfL Wolfsburg",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Niedersachsen",
+      "colors": "Grün-Weiß"
+    }
   },
   {
     "name": "Eintracht Frankfurt",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Hessen",
+      "colors": "Schwarz-Weiß-Rot"
+    }
   },
   {
     "name": "TSG Hoffenheim",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Kraichgau",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "VfB Stuttgart",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Schwaben",
+      "colors": "Weiß-Rot"
+    }
   },
   {
     "name": "SC Freiburg",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Breisgau",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Werder Bremen",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Norddeutschland",
+      "colors": "Grün-Weiß"
+    }
   },
   {
     "name": "Schalke 04",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Ruhrpott",
+      "colors": "Königsblau"
+    }
   },
   {
     "name": "Mainz 05",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Rheinhessen",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "FC Augsburg",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Schwaben",
+      "colors": "Rot-Grün-Weiß"
+    }
   },
   {
     "name": "1. FC Köln",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Rheinland",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Hertha BSC",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Berlin",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Hamburger SV",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Norddeutschland",
+      "colors": "Blau-Weiß-Schwarz"
+    }
   },
   {
     "name": "Union Berlin",
     "region": "de",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Hauptstadtregion",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Hannover 96",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Niedersachsen",
+      "colors": "Schwarz-Weiß-Grün"
+    }
   },
   {
     "name": "Fortuna Düsseldorf",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Rheinland",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "1. FC Nürnberg",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Franken",
+      "colors": "Rot-Schwarz"
+    }
   },
   {
     "name": "VfL Bochum",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Ruhrpott",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "1. FC Heidenheim",
     "region": "de",
     "inAllClubs": false,
-    "hint": null
+    "hints": {
+      "region": "Ostwürttemberg",
+      "colors": "Rot-Blau"
+    }
   },
   {
     "name": "Manchester City",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Himmelblau-Weiß"
+    }
   },
   {
     "name": "Manchester United",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Rot-Weiß-Schwarz"
+    }
   },
   {
     "name": "Liverpool",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Rot"
+    }
   },
   {
     "name": "Chelsea",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Arsenal",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Tottenham",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Weiß-Marineblau"
+    }
   },
   {
     "name": "Newcastle",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Schwarz-Weiß"
+    }
   },
   {
     "name": "Aston Villa",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Weinrot-Hellblau"
+    }
   },
   {
     "name": "West Ham",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Weinrot-Hellblau"
+    }
   },
   {
     "name": "Everton",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Leicester City",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "England",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Real Madrid",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Weiß"
+    }
   },
   {
     "name": "FC Barcelona",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Blau-Rot"
+    }
   },
   {
     "name": "Atlético Madrid",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Rot-Weiß-Blau"
+    }
   },
   {
     "name": "FC Sevilla",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Weiß-Rot"
+    }
   },
   {
     "name": "Valencia",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Weiß-Schwarz"
+    }
   },
   {
     "name": "Villarreal",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Gelb"
+    }
   },
   {
     "name": "Athletic Bilbao",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Real Betis",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Spanien",
+      "colors": "Grün-Weiß"
+    }
   },
   {
     "name": "Juventus",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Schwarz-Weiß"
+    }
   },
   {
     "name": "Inter Mailand",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Schwarz-Blau"
+    }
   },
   {
     "name": "AC Mailand",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Rot-Schwarz"
+    }
   },
   {
     "name": "SSC Neapel",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Himmelblau-Weiß"
+    }
   },
   {
     "name": "AS Rom",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Rot-Gelb"
+    }
   },
   {
     "name": "Lazio Rom",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Hellblau-Weiß"
+    }
   },
   {
     "name": "Atalanta",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Schwarz-Blau"
+    }
   },
   {
     "name": "Fiorentina",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Violett-Weiß"
+    }
   },
   {
     "name": "Como",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Italien",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Paris Saint-Germain",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Frankreich",
+      "colors": "Blau-Rot-Weiß"
+    }
   },
   {
     "name": "Olympique Marseille",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Frankreich",
+      "colors": "Weiß-Hellblau"
+    }
   },
   {
     "name": "Olympique Lyon",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Frankreich",
+      "colors": "Weiß-Rot-Blau"
+    }
   },
   {
     "name": "AS Monaco",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Riviera",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "OSC Lille",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Frankreich",
+      "colors": "Rot-Weiß-Blau"
+    }
   },
   {
     "name": "Benfica",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Portugal",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "FC Porto",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Portugal",
+      "colors": "Blau-Weiß"
+    }
   },
   {
     "name": "Sporting Lissabon",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Portugal",
+      "colors": "Grün-Weiß"
+    }
   },
   {
     "name": "Ajax Amsterdam",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Niederlande",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "PSV Eindhoven",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Niederlande",
+      "colors": "Rot-Weiß"
+    }
   },
   {
     "name": "Feyenoord",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Niederlande",
+      "colors": "Rot-Weiß-Schwarz"
+    }
   },
   {
     "name": "Celtic",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Schottland",
+      "colors": "Grün-Weiß"
+    }
   },
   {
     "name": "Rangers",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Schottland",
+      "colors": "Blau-Weiß-Rot"
+    }
   },
   {
     "name": "Galatasaray",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Türkei",
+      "colors": "Gelb-Rot"
+    }
   },
   {
     "name": "Fenerbahçe",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Türkei",
+      "colors": "Gelb-Marineblau"
+    }
   },
   {
     "name": "RB Salzburg",
     "region": "int",
     "inAllClubs": true,
-    "hint": null
+    "hints": {
+      "region": "Österreich",
+      "colors": "Rot-Weiß"
+    }
   }
 ]

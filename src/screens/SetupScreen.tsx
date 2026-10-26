@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { displayName } from "../displayName";
 import { MODES } from "../game/modes";
 import { maxImpostors, normalizeNames, validateSettings } from "../game/settings";
@@ -15,6 +15,8 @@ type Props = { initial: Settings | null; onStart: (s: Settings) => void };
 export default function SetupScreen({ initial, onStart }: Props) {
   const [names, setNames] = useState<string[]>(initial?.names ?? []);
   const [draft, setDraft] = useState("");
+  const [duplicateHint, setDuplicateHint] = useState<string | null>(null);
+  const nameInput = useRef<HTMLInputElement>(null);
   const [impostorCount, setImpostorCount] = useState(initial?.impostorCount ?? 1);
   const [mode, setMode] = useState<ModeId>(initial?.mode ?? "alle");
   const [difficulty, setDifficulty] = useState<Tier>(initial?.difficulty ?? 1);
@@ -28,8 +30,18 @@ export default function SetupScreen({ initial, onStart }: Props) {
   function addName(e: FormEvent) {
     e.preventDefault();
     const [name] = normalizeNames([draft]);
-    if (name) setNames([...names, name]);
-    setDraft("");
+    const existing = name && names.find((n) => n.toLowerCase() === name.toLowerCase());
+    if (existing) {
+      // Name bleibt stehen, damit man nur noch z. B. „M.“ ergänzen muss.
+      setDuplicateHint(`${existing} ist schon dabei – z. B. „${existing} M.“ eintragen`);
+      setDraft(`${name} `);
+    } else {
+      if (name) setNames([...names, name]);
+      setDuplicateHint(null);
+      setDraft("");
+    }
+    // Fokus behalten, damit die Handy-Tastatur für den nächsten Namen offen bleibt.
+    nameInput.current?.focus();
   }
 
   function removeName(index: number) {
@@ -56,15 +68,21 @@ export default function SetupScreen({ initial, onStart }: Props) {
         </ul>
         <form className="add-name" onSubmit={addName}>
           <input
+            ref={nameInput}
             aria-label="Name"
+            enterKeyHint="enter"
             placeholder="Name"
             value={draft}
             maxLength={20}
             autoComplete="off"
             onChange={(e) => setDraft(e.target.value)}
           />
-          <button type="submit">Hinzufügen</button>
+          {/* preventDefault: Tippen auf den Button soll das Namensfeld nicht verlassen */}
+          <button type="submit" onPointerDown={(e) => e.preventDefault()} onMouseDown={(e) => e.preventDefault()}>
+            Hinzufügen
+          </button>
         </form>
+        {duplicateHint && <p className="field-hint">{duplicateHint}</p>}
       </section>
 
       <section className="panel">

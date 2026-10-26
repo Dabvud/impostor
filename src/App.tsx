@@ -112,6 +112,7 @@ export default function App() {
   return (
     <>
       {renderScreen()}
+      <footer className="signature">von Dabvud</footer>
       <footer className="version">
         {__APP_VERSION__} · {__BUILD_DATE__}
       </footer>

@@ -82,6 +82,13 @@ describe("App", () => {
   });
 });
 
+describe("Signatur", () => {
+  it("zeigt unten die Signatur von Dabvud", () => {
+    render(<App />);
+    expect(screen.getByText("von Dabvud")).toBeInTheDocument();
+  });
+});
+
 describe("Versionsanzeige", () => {
   it("zeigt Version und Build-Datum auf jedem Bildschirm", () => {
     render(<App />);

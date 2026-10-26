@@ -605,7 +605,7 @@
   },
   {
     "name": "Marco Reus",
-    "tier": 2,
+    "tier": 1,
     "tags": [
       "bundesliga"
     ],
@@ -613,7 +613,7 @@
   },
   {
     "name": "Mats Hummels",
-    "tier": 2,
+    "tier": 1,
     "tags": [
       "bundesliga",
       "wm-legende"
@@ -661,7 +661,7 @@
   },
   {
     "name": "Mario Götze",
-    "tier": 2,
+    "tier": 1,
     "tags": [
       "bundesliga",
       "wm-legende"
@@ -711,7 +711,7 @@
   },
   {
     "name": "İlkay Gündoğan",
-    "tier": 2,
+    "tier": 1,
     "tags": [
       "bundesliga"
     ],
@@ -1724,7 +1724,7 @@
   },
   {
     "name": "Pierre-Emerick Aubameyang",
-    "tier": 2,
+    "tier": 1,
     "tags": [
       "bundesliga"
     ],
@@ -3443,6 +3443,598 @@
     "tier": 3,
     "tags": [
       "cl-legende"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jadon Sancho",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christian Pulisic",
+    "tier": 1,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Neven Subotić",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Kuba Błaszczykowski",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Henrikh Mkhitaryan",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Sokratis",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Roman Bürki",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Raphaël Guerreiro",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Axel Witsel",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thorgan Hazard",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Giovanni Reyna",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Youssoufa Moukoko",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Karim Adeyemi",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Donyell Malen",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thomas Meunier",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Manuel Akanji",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marc Bartra",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paco Alcácer",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ciro Immobile",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Felix Nmecha",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jamie Gittens",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Maximilian Beier",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Pascal Groß",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Alexander Isak",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jonas Hofmann",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Andriy Yarmolenko",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marin Pongračić",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Moritz Leitner",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Julian Schieber",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Oliver Kirch",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Leonardo Bittencourt",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marvin Ducksch",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Felipe Santana",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Chris Löwe",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mitchell Langerak",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ömer Toprak",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jeremy Toljan",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Dan-Axel Zagadou",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Maximilian Philipp",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Abdou Diallo",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Thomas Delaney",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Marius Wolf",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Jacob Bruun Larsen",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nico Schulz",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ansgar Knauff",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Salih Özcan",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Felix Passlack",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mikel Merino",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Emre Mor",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Mohamed Zidan",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nelson Valdez",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Tinga",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Antonio da Silva",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Patrick Owomoyela",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Christian Wörns",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Steffen Freund",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Heiko Herrlich",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lars Ricken",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Michael Zorc",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Stéphane Chapuisat",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Paulo Sousa",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Júlio César",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ewerthon",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Márcio Amoroso",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Norbert Dickel",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Teddy de Beer",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Lothar Emmerich",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Siggi Held",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Yan Couto",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Daniel Svensson",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Carney Chukwuemeka",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ramy Bensebaini",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Ian Maatsen",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Florian Kringe",
+    "tier": 3,
+    "tags": [
+      "bundesliga"
     ],
     "hint": null
   }

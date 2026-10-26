@@ -19,6 +19,7 @@ const rec = (o: Partial<RoundRecord>): RoundRecord => ({
   impostors: ["a"],
   starter: "a",
   winner: "crew",
+  caught: o.winner === "impostor" ? false : true,
   ...o,
 });
 
@@ -49,6 +50,11 @@ describe("computeStats", () => {
       { name: "Cem", rounds: 6, impostor: 1, impostorWins: 0, caught: 1 },
       { name: "Dana", rounds: 6, impostor: 0, impostorWins: 0, caught: 0 },
     ]);
+  });
+
+  it("zählt als „erwischt“ auch Impostor, die erwischt wurden, aber richtig geraten haben", () => {
+    const s = computeStats([rec({ impostors: ["d"], winner: "impostor", caught: true })], members, "all");
+    expect(s.table.find((r) => r.name === "Dana")).toMatchObject({ impostorWins: 1, caught: 1 });
   });
 
   it("beschränkt „Heute“ auf den aktuellen Abend", () => {
@@ -85,7 +91,11 @@ describe("toRecord bei geänderter Gruppe", () => {
   it("überspringt Namen, die während der Runde umbenannt oder entfernt wurden", () => {
     const group: Group = { id: "g", name: "G", members: members.slice(1), selected: [], evening: 1 };
     const round = { id: "r2", revealOrder: ["Anna", "Ben", "Cem"], impostors: ["Anna"], starter: "Anna" } as Round;
-    expect(toRecord(round, group, "alle", "crew", "t")).toMatchObject({ players: ["b", "c"], impostors: [], starter: "" });
+    expect(toRecord(round, group, "alle", { winner: "crew", caught: true }, "t")).toMatchObject({
+      players: ["b", "c"],
+      impostors: [],
+      starter: "",
+    });
   });
 });
 
@@ -98,7 +108,7 @@ describe("toRecord", () => {
       impostors: ["Ben"],
       starter: "Anna",
     } as Round;
-    expect(toRecord(round, group, "bvb", "impostor", "2026-10-26T21:00:00.000Z")).toEqual({
+    expect(toRecord(round, group, "bvb", { winner: "impostor", caught: false }, "2026-10-26T21:00:00.000Z")).toEqual({
       roundId: "r1",
       evening: 3,
       at: "2026-10-26T21:00:00.000Z",
@@ -107,6 +117,7 @@ describe("toRecord", () => {
       impostors: ["b"],
       starter: "a",
       winner: "impostor",
+      caught: false,
     });
   });
 });

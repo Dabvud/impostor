@@ -13,6 +13,7 @@ type Props = {
   round: Round;
   step?: ResolutionStep;
   winner?: Winner | null;
+  caught?: boolean | null;
   onCaught?: (yes: boolean) => void;
   onRevealWord?: () => void;
   onGuessed?: (yes: boolean) => void;
@@ -26,6 +27,7 @@ export default function ResolutionScreen({
   round,
   step = "done",
   winner = null,
+  caught = null,
   onCaught = noop,
   onRevealWord = noop,
   onGuessed = noop,
@@ -125,7 +127,7 @@ export default function ResolutionScreen({
       {step === "done" && (
         <>
           {winner && (
-            <p className={`winner winner-${winner}`}>{winner === "crew" ? "Crew gewinnt 🎯" : "Impostor gewinnt 🕵️"}</p>
+            <p className={`winner winner-${winner}`}>{winner === "crew" ? "Crew gewinnt 🎯" : caught ? "Impostor gewinnt trotzdem 🕵️" : "Impostor gewinnt 🕵️"}</p>
           )}
           <button type="button" className="primary" onClick={guard(onNewRound)}>
             Neue Runde

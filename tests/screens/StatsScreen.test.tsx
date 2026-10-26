@@ -27,6 +27,7 @@ const rec = (evening: number, impostor: string, winner: "crew" | "impostor"): Ro
   impostors: [impostor],
   starter: "c",
   winner,
+  caught: winner === "crew",
 });
 const records = [rec(1, "a", "impostor"), rec(1, "a", "crew"), rec(2, "b", "impostor")];
 

@@ -140,14 +140,14 @@ describe("kaputte Daten", () => {
   });
 
   it("lädt eine Auflösung mitten im Ablauf unverändert", () => {
-    const mid = { phase: "resolution", round: game.round, step: "guess", winner: null };
+    const mid = { phase: "resolution", round: game.round, step: "guess", winner: null, caught: true };
     localStorage.setItem("impostor:v1:game", JSON.stringify(mid));
     expect(loadGame()).toEqual(mid);
   });
 
   it("lädt eine Auflösung aus v1.3 (ohne Schritt) als abgeschlossen", () => {
     localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "resolution", round: game.round }));
-    expect(loadGame()).toEqual({ phase: "resolution", round: game.round, step: "done", winner: null });
+    expect(loadGame()).toEqual({ phase: "resolution", round: game.round, step: "done", winner: null, caught: null });
   });
 
   it("verwirft einen unbekannten Auflösungs-Schritt", () => {
@@ -227,6 +227,7 @@ describe("Statistik speichern", () => {
     impostors: ["a"],
     starter: "b",
     winner: "crew" as const,
+    caught: true,
   };
 
   it("hängt Runden pro Gruppe an und speichert dieselbe Runde nur einmal", () => {

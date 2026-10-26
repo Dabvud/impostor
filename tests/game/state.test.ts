@@ -30,7 +30,7 @@ describe("reducer", () => {
     s = run(s, ...turn, ...turn);
     expect(s).toEqual({ phase: "discussion", round });
     s = run(s, { type: "resolve" });
-    expect(s).toEqual({ phase: "resolution", round, step: "caught?", winner: null });
+    expect(s).toEqual({ phase: "resolution", round, step: "caught?", winner: null, caught: null });
     s = run(s, { type: "caught", yes: false });
     const next = { ...round, starter: "Anna" };
     expect(run(s, { type: "start", round: next })).toEqual({ phase: "handoff", round: next, index: 0 });
@@ -54,7 +54,7 @@ describe("reducer", () => {
     [{ phase: "handoff", round, index: 0 }, { type: "seen" }],
     [{ phase: "reveal", round, index: 0, seen: true }, { type: "confirm" }],
     [{ phase: "discussion", round }, { type: "passOn" }],
-    [{ phase: "resolution", round, step: "done", winner: "crew" }, { type: "resolve" }],
+    [{ phase: "resolution", round, step: "done", winner: "crew", caught: true }, { type: "resolve" }],
   ])("ignoriert ungültige Aktionen (%o, %o)", (state, action) => {
     expect(reducer(state, action)).toBe(state);
   });
@@ -65,12 +65,11 @@ describe("reducer", () => {
 });
 
 describe("Auflösung", () => {
-  const at = (step: "caught?" | "guess" | "guessed?" | "done", winner: "crew" | "impostor" | null = null): GameState => ({
-    phase: "resolution",
-    round,
-    step,
-    winner,
-  });
+  const at = (
+    step: "caught?" | "guess" | "guessed?" | "done",
+    winner: "crew" | "impostor" | null = null,
+    caught: boolean | null = null,
+  ): GameState => ({ phase: "resolution", round, step, winner, caught });
   const discussion: GameState = { phase: "discussion", round };
 
   it("fragt zuerst, ob der Impostor erwischt wurde", () => {
@@ -78,21 +77,28 @@ describe("Auflösung", () => {
   });
 
   it("nicht erwischt → Impostor gewinnt", () => {
-    expect(reducer(at("caught?"), { type: "caught", yes: false })).toEqual(at("done", "impostor"));
+    expect(reducer(at("caught?"), { type: "caught", yes: false })).toEqual(at("done", "impostor", false));
   });
 
   it("erwischt mit Raten → raten, Wort aufdecken, Ergebnis", () => {
     let s = reducer(at("caught?"), { type: "caught", yes: true });
-    expect(s).toEqual(at("guess"));
+    expect(s).toEqual(at("guess", null, true));
     s = reducer(s, { type: "revealWord" });
-    expect(s).toEqual(at("guessed?"));
-    expect(reducer(s, { type: "guessed", yes: true })).toEqual(at("done", "impostor"));
-    expect(reducer(s, { type: "guessed", yes: false })).toEqual(at("done", "crew"));
+    expect(s).toEqual(at("guessed?", null, true));
+    // erwischt, aber richtig geraten: Impostor gewinnt trotzdem – „erwischt“ bleibt gespeichert
+    expect(reducer(s, { type: "guessed", yes: true })).toEqual(at("done", "impostor", true));
+    expect(reducer(s, { type: "guessed", yes: false })).toEqual(at("done", "crew", true));
   });
 
   it("erwischt ohne Raten → Crew gewinnt", () => {
-    const noGuess: GameState = { phase: "resolution", round: { ...round, guessEnabled: false }, step: "caught?", winner: null };
-    expect(reducer(noGuess, { type: "caught", yes: true })).toEqual({ ...noGuess, step: "done", winner: "crew" });
+    const noGuess: GameState = {
+      phase: "resolution",
+      round: { ...round, guessEnabled: false },
+      step: "caught?",
+      winner: null,
+      caught: null,
+    };
+    expect(reducer(noGuess, { type: "caught", yes: true })).toEqual({ ...noGuess, step: "done", winner: "crew", caught: true });
   });
 
   it.each([
@@ -100,7 +106,13 @@ describe("Auflösung", () => {
     ["alle Impostor", ["Anna", "Ben", "Cem"]],
   ])("überspringt bei %s alle Fragen", (_, impostors) => {
     const s: GameState = { phase: "discussion", round: { ...round, impostors } };
-    expect(reducer(s, { type: "resolve" })).toEqual({ phase: "resolution", round: { ...round, impostors }, step: "done", winner: null });
+    expect(reducer(s, { type: "resolve" })).toEqual({
+      phase: "resolution",
+      round: { ...round, impostors },
+      step: "done",
+      winner: null,
+      caught: null,
+    });
   });
 
   it.each<[GameState, Action]>([

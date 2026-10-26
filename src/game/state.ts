@@ -13,7 +13,7 @@ export type GameState =
   | { phase: "reveal"; round: Round; index: number; seen: boolean }
   | { phase: "clues"; round: Round; index: number }
   | { phase: "discussion"; round: Round }
-  | { phase: "resolution"; round: Round; step: ResolutionStep; winner: Winner | null };
+  | { phase: "resolution"; round: Round; step: ResolutionStep; winner: Winner | null; caught: boolean | null };
 
 export type Action =
   | { type: "start"; round: Round }
@@ -59,12 +59,14 @@ export function reducer(state: GameState, action: Action): GameState {
       const { impostors, revealOrder } = state.round;
       // Ohne oder mit nur Impostorn gibt es nichts zu entscheiden
       const decided = impostors.length === 0 || impostors.length === revealOrder.length;
-      return { phase: "resolution", round: state.round, step: decided ? "done" : "caught?", winner: null };
+      return { phase: "resolution", round: state.round, step: decided ? "done" : "caught?", winner: null, caught: null };
     }
     case "caught":
       if (state.phase !== "resolution" || state.step !== "caught?") return state;
-      if (!action.yes) return { ...state, step: "done", winner: "impostor" };
-      return state.round.guessEnabled ? { ...state, step: "guess" } : { ...state, step: "done", winner: "crew" };
+      if (!action.yes) return { ...state, step: "done", winner: "impostor", caught: false };
+      return state.round.guessEnabled
+        ? { ...state, step: "guess", caught: true }
+        : { ...state, step: "done", winner: "crew", caught: true };
     case "revealWord":
       return state.phase === "resolution" && state.step === "guess" ? { ...state, step: "guessed?" } : state;
     case "guessed":

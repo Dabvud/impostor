@@ -184,12 +184,19 @@ describe("Statistik-Protokoll", () => {
   });
 
   it("trägt eine abgeschlossene Runde genau einmal ein – auch nach Neuladen", async () => {
-    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null, caught: null });
     const first = render(<App />);
     await new Promise((r) => setTimeout(r, 550));
     fireEvent.click(screen.getByRole("button", { name: "Nein" }));
     expect(stats()).toHaveLength(1);
-    expect(stats()[0]).toMatchObject({ roundId: "r1", impostors: ["b"], starter: "c", winner: "impostor", mode: "vereine-de" });
+    expect(stats()[0]).toMatchObject({
+      roundId: "r1",
+      impostors: ["b"],
+      starter: "c",
+      winner: "impostor",
+      caught: false,
+      mode: "vereine-de",
+    });
     first.unmount();
     render(<App />);
     expect(screen.getByText("Impostor gewinnt 🕵️")).toBeInTheDocument();
@@ -197,7 +204,7 @@ describe("Statistik-Protokoll", () => {
   });
 
   it("führt durchs Raten und trägt den Crew-Sieg ein", async () => {
-    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null, caught: null });
     render(<App />);
     const click = async (name: string) => {
       await new Promise((r) => setTimeout(r, 550));
@@ -214,7 +221,7 @@ describe("Statistik-Protokoll", () => {
 
   it("trägt ohne Gruppe nichts ein", async () => {
     localStorage.setItem("impostor:v1:settings", JSON.stringify({ ...settings, groupId: null }));
-    saveGame({ phase: "resolution", round, step: "caught?", winner: null });
+    saveGame({ phase: "resolution", round, step: "caught?", winner: null, caught: null });
     render(<App />);
     await new Promise((r) => setTimeout(r, 550));
     fireEvent.click(screen.getByRole("button", { name: "Nein" }));

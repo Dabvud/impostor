@@ -60,7 +60,7 @@ export default function App() {
   useEffect(() => {
     if (state.phase !== "resolution" || state.step !== "done" || !state.round.id || !settings?.groupId) return;
     const group = groups.find((g) => g.id === settings.groupId);
-    if (group) appendRecord(group.id, toRecord(state.round, group, settings.mode, state.winner, new Date().toISOString()));
+    if (group) appendRecord(group.id, toRecord(state.round, group, settings.mode, { winner: state.winner, caught: state.caught }, new Date().toISOString()));
   }, [state, settings, groups]);
 
   // Jeder Fingertipp schaltet den Ton frei, damit der Timer-Piep auch auf dem iPhone kommt.
@@ -223,6 +223,7 @@ export default function App() {
             round={state.round}
             step={state.step}
             winner={state.winner}
+            caught={state.caught}
             onCaught={(yes) => dispatch({ type: "caught", yes })}
             onRevealWord={() => dispatch({ type: "revealWord" })}
             onGuessed={(yes) => dispatch({ type: "guessed", yes })}

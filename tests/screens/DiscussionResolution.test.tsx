@@ -186,7 +186,10 @@ describe("ResolutionScreen Ablauf mit Ergebnis", () => {
     expect(screen.getByText("Crew gewinnt 🎯")).toBeInTheDocument();
     expect(screen.getByText("Messi")).toBeInTheDocument();
     unmount();
-    render(<ResolutionScreen round={single} step="done" winner="impostor" onNewRound={vi.fn()} onSettings={vi.fn()} />);
+    const again = render(<ResolutionScreen round={single} step="done" winner="impostor" caught={false} onNewRound={vi.fn()} onSettings={vi.fn()} />);
     expect(screen.getByText("Impostor gewinnt 🕵️")).toBeInTheDocument();
+    again.unmount();
+    render(<ResolutionScreen round={single} step="done" winner="impostor" caught onNewRound={vi.fn()} onSettings={vi.fn()} />);
+    expect(screen.getByText("Impostor gewinnt trotzdem 🕵️")).toBeInTheDocument();
   });
 });

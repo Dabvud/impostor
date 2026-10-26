@@ -112,7 +112,8 @@ function isGameState(v: unknown): v is GameState {
       return (
         isRound(v.round) &&
         (v.step === undefined || ["caught?", "guess", "guessed?", "done"].includes(v.step as string)) &&
-        (v.winner === undefined || v.winner === null || v.winner === "crew" || v.winner === "impostor")
+        (v.winner === undefined || v.winner === null || v.winner === "crew" || v.winner === "impostor") &&
+        (v.caught === undefined || v.caught === null || typeof v.caught === "boolean")
       );
     default:
       return false;
@@ -142,7 +143,7 @@ export function loadGame(): GameState | null {
   if (!isGameState(v)) return null;
   if (v.phase === "setup") return v;
   if (v.phase === "resolution") {
-    return { ...v, round: upgradeRound(v.round), step: v.step ?? "done", winner: v.winner ?? null };
+    return { ...v, round: upgradeRound(v.round), step: v.step ?? "done", winner: v.winner ?? null, caught: v.caught ?? null };
   }
   return { ...v, round: upgradeRound(v.round) };
 }
@@ -196,7 +197,8 @@ function isRoundRecord(v: unknown): v is RoundRecord {
     isStringArray(v.players) &&
     isStringArray(v.impostors) &&
     typeof v.starter === "string" &&
-    (v.winner === null || v.winner === "crew" || v.winner === "impostor")
+    (v.winner === null || v.winner === "crew" || v.winner === "impostor") &&
+    (v.caught === null || typeof v.caught === "boolean")
   );
 }
 

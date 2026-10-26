@@ -12,6 +12,8 @@ export type RoundRecord = {
   impostors: string[];
   starter: string;
   winner: Winner | null;
+  /** Wurde der Impostor erwischt? (Er kann trotzdem gewinnen, wenn er das Wort errät.) */
+  caught: boolean | null;
 };
 export type StatsRow = { name: string; rounds: number; impostor: number; impostorWins: number; caught: number };
 export type StatsSummary = {
@@ -24,7 +26,9 @@ export type StatsSummary = {
   table: StatsRow[];
 };
 
-export function toRecord(round: Round, group: Group, mode: ModeId, winner: Winner | null, at: string): RoundRecord {
+export type Outcome = { winner: Winner | null; caught: boolean | null };
+
+export function toRecord(round: Round, group: Group, mode: ModeId, outcome: Outcome, at: string): RoundRecord {
   // Wer während der Runde umbenannt oder entfernt wurde, wird übersprungen statt abzustürzen.
   const ids = (names: string[]) => names.flatMap((name) => group.members.find((m) => m.name === name)?.id ?? []);
   return {
@@ -35,7 +39,8 @@ export function toRecord(round: Round, group: Group, mode: ModeId, winner: Winne
     players: ids(round.revealOrder),
     impostors: ids(round.impostors),
     starter: ids([round.starter])[0] ?? "",
-    winner,
+    winner: outcome.winner,
+    caught: outcome.caught,
   };
 }
 
@@ -49,7 +54,7 @@ export function computeStats(records: RoundRecord[], members: Member[], scope: "
       rounds: rounds.filter((r) => r.players.includes(m.id)).length,
       impostor: impostor.length,
       impostorWins: impostor.filter((r) => r.winner === "impostor").length,
-      caught: impostor.filter((r) => r.winner === "crew").length,
+      caught: impostor.filter((r) => r.caught === true).length,
       starts: rounds.filter((r) => r.starter === m.id).length,
     };
   });

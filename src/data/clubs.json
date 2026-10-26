@@ -2,336 +2,403 @@
   {
     "name": "Bayern München",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Borussia Dortmund",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Bayer Leverkusen",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "RB Leipzig",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Borussia Mönchengladbach",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "VfL Wolfsburg",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Eintracht Frankfurt",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "TSG Hoffenheim",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "VfB Stuttgart",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "SC Freiburg",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Werder Bremen",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Schalke 04",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Mainz 05",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "FC Augsburg",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "1. FC Köln",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Hertha BSC",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Hamburger SV",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Union Berlin",
     "region": "de",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Hannover 96",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "Fortuna Düsseldorf",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "1. FC Nürnberg",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "VfL Bochum",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "1. FC Heidenheim",
     "region": "de",
+    "inAllClubs": false,
     "hint": null
   },
   {
     "name": "Manchester City",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Manchester United",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Liverpool",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Chelsea",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Arsenal",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Tottenham",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Newcastle",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Aston Villa",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "West Ham",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Everton",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Leicester City",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Real Madrid",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "FC Barcelona",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Atlético Madrid",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "FC Sevilla",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Valencia",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Villarreal",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Athletic Bilbao",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Real Betis",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Juventus",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Inter Mailand",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "AC Mailand",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "SSC Neapel",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "AS Rom",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Lazio Rom",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Atalanta",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Fiorentina",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Como",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Paris Saint-Germain",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Olympique Marseille",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Olympique Lyon",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "AS Monaco",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "OSC Lille",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Benfica",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "FC Porto",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Sporting Lissabon",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Ajax Amsterdam",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "PSV Eindhoven",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Feyenoord",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Celtic",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Rangers",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Galatasaray",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "Fenerbahçe",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   },
   {
     "name": "RB Salzburg",
     "region": "int",
+    "inAllClubs": true,
     "hint": null
   }
 ]

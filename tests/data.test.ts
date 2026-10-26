@@ -49,6 +49,13 @@ describe("clubs.json", () => {
     expect(clubs.filter((c) => c.region === "de")).toHaveLength(23);
     expect(clubs.filter((c) => c.region === "int")).toHaveLength(44);
   });
+
+  it("nimmt alle internationalen und 17 Bundesliga-Vereine in „Alle Vereine“ auf", () => {
+    expect(clubs.filter((c) => c.region === "int" && !c.inAllClubs)).toEqual([]);
+    expect(
+      clubs.filter((c) => c.region === "de" && !c.inAllClubs).map((c) => c.name).sort(),
+    ).toEqual(["1. FC Heidenheim", "1. FC Nürnberg", "FC Augsburg", "Fortuna Düsseldorf", "Hannover 96", "VfL Bochum"]);
+  });
 });
 
 describe("Spielmodi", () => {

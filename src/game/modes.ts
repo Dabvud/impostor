@@ -6,7 +6,7 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "cl-legenden", label: "🏆 CL-Legenden", hasDifficulty: false },
   { id: "wm-legenden", label: "🌍 WM-Legenden", hasDifficulty: false },
   { id: "vereine-de", label: "🏟️ Vereine Bundesliga", hasDifficulty: false },
-  { id: "vereine-int", label: "🌐 Vereine International", hasDifficulty: false },
+  { id: "vereine-int", label: "🌐 Alle Vereine", hasDifficulty: false },
 ];
 
 const toEntry = ({ name, hint }: { name: string; hint: string | null }): Entry => ({ name, hint });
@@ -27,7 +27,7 @@ export function poolFor(mode: ModeId, difficulty: Tier, players: Footballer[], c
     case "vereine-de":
       return clubs.filter((c) => c.region === "de").map(toEntry);
     case "vereine-int":
-      return clubs.filter((c) => c.region === "int").map(toEntry);
+      return clubs.filter((c) => c.inAllClubs).map(toEntry);
   }
 }
 

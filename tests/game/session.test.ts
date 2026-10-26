@@ -5,9 +5,9 @@ import { seededRng } from "../helpers/rng";
 
 const players: Footballer[] = [{ name: "A", tier: 1, tags: [], hint: null }];
 const clubs: Club[] = [
-  { name: "X", region: "de", hint: null },
-  { name: "Y", region: "de", hint: null },
-  { name: "Z", region: "de", hint: null },
+  { name: "X", region: "de", inAllClubs: true, hint: null },
+  { name: "Y", region: "de", inAllClubs: true, hint: null },
+  { name: "Z", region: "de", inAllClubs: true, hint: null },
 ];
 const settings: Settings = { names: [" Anna ", "Ben", "Cem"], impostorCount: 1, mode: "vereine-de", difficulty: 2 };
 

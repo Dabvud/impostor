@@ -58,7 +58,7 @@ bekommt den Zufallsgenerator als Parameter, damit Tests reproduzierbar sind.
 ```ts
 type Tag = "bundesliga" | "cl-legende" | "wm-legende";
 type Footballer = { name: string; tier: 1 | 2 | 3; tags: Tag[]; hint: string | null };
-type Club = { name: string; region: "de" | "int"; hint: string | null };
+type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hint: string | null };
 type Entry = { name: string; hint: string | null };   // gemeinsamer Nenner für die Engine
 ```
 
@@ -117,7 +117,7 @@ setup → handoff(i) → reveal(i) → … (für jeden Spieler in revealOrder)
 | 🏆 CL-Legenden | Fußballer mit Tag `cl-legende` | – |
 | 🌍 WM-Legenden | Fußballer mit Tag `wm-legende` | – |
 | 🏟️ Vereine Bundesliga | Vereine mit `region: "de"` | – |
-| 🌐 Vereine International | Vereine mit `region: "int"` | – |
+| 🌐 Alle Vereine | Vereine mit `inAllClubs: true` (alle internationalen + die relevanten Bundesliga-Vereine) | – |
 
 ## 5. Bildschirme
 
@@ -167,7 +167,7 @@ setup → handoff(i) → reveal(i) → … (für jeden Spieler in revealOrder)
 
 ### 7.2 Vereine (`clubs.json`)
 
-Einträge `{ "name", "region", "hint" }`. Startliste, vom Nutzer festgelegt:
+Einträge `{ "name", "region", "inAllClubs", "hint" }`. Startliste, vom Nutzer festgelegt:
 
 **Bundesliga (`de`, 23):** Bayern München, Borussia Dortmund, Bayer Leverkusen, RB Leipzig,
 Borussia Mönchengladbach, VfL Wolfsburg, Eintracht Frankfurt, TSG Hoffenheim, VfB Stuttgart,
@@ -177,7 +177,10 @@ Hamburger SV, Union Berlin, Hannover 96, Fortuna Düsseldorf, 1. FC Nürnberg, V
 Bewusst nicht dabei: Vereine mit nur kurzen Bundesliga-Gastspielen (Bielefeld, Paderborn,
 Fürth, Darmstadt, Ingolstadt, Braunschweig, Kiel, St. Pauli).
 
-**International (`int`):**
+Im Modus „Alle Vereine“ fehlen (`inAllClubs: false`): Heidenheim, Bochum, Nürnberg, Düsseldorf,
+Augsburg, Hannover 96. Alle übrigen 17 Bundesliga-Vereine sind dort dabei.
+
+**International (`int`, alle mit `inAllClubs: true`):**
 - England: Manchester City, Manchester United, Liverpool, Chelsea, Arsenal, Tottenham,
   Newcastle, Aston Villa, West Ham, Everton, Leicester City
 - Spanien: Real Madrid, FC Barcelona, Atlético Madrid, FC Sevilla, Valencia, Villarreal,

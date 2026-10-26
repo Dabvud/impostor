@@ -8,8 +8,9 @@ const players: Footballer[] = [
   { name: "C", tier: 3, tags: ["wm-legende", "bundesliga"], hint: null },
 ];
 const clubs: Club[] = [
-  { name: "X", region: "de", hint: null },
-  { name: "Y", region: "int", hint: null },
+  { name: "X", region: "de", inAllClubs: true, hint: null },
+  { name: "Y", region: "int", inAllClubs: true, hint: null },
+  { name: "Z", region: "de", inAllClubs: false, hint: null },
 ];
 const names = (mode: Parameters<typeof poolFor>[0], difficulty: 1 | 2 | 3 = 1) =>
   poolFor(mode, difficulty, players, clubs).map((e) => e.name);
@@ -29,13 +30,16 @@ describe("poolFor", () => {
   it("filtert Legenden und Vereine", () => {
     expect(names("cl-legenden")).toEqual(["B"]);
     expect(names("wm-legenden")).toEqual(["C"]);
-    expect(names("vereine-de")).toEqual(["X"]);
-    expect(names("vereine-int")).toEqual(["Y"]);
+    expect(names("vereine-de")).toEqual(["X", "Z"]);
+    expect(names("vereine-int")).toEqual(["X", "Y"]);
   });
 
   it("liefert nur name und hint", () => {
     expect(poolFor("alle", 1, players, clubs)).toEqual([{ name: "A", hint: null }]);
-    expect(poolFor("vereine-de", 1, players, clubs)).toEqual([{ name: "X", hint: null }]);
+    expect(poolFor("vereine-int", 1, players, clubs)).toEqual([
+      { name: "X", hint: null },
+      { name: "Y", hint: null },
+    ]);
   });
 });
 
@@ -54,7 +58,7 @@ describe("MODES", () => {
       { id: "cl-legenden", label: "🏆 CL-Legenden", hasDifficulty: false },
       { id: "wm-legenden", label: "🌍 WM-Legenden", hasDifficulty: false },
       { id: "vereine-de", label: "🏟️ Vereine Bundesliga", hasDifficulty: false },
-      { id: "vereine-int", label: "🌐 Vereine International", hasDifficulty: false },
+      { id: "vereine-int", label: "🌐 Alle Vereine", hasDifficulty: false },
     ]);
   });
 });

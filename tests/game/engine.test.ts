@@ -107,30 +107,28 @@ describe("drawRound", () => {
 });
 
 describe("drawImpostorCount", () => {
-  function distribution(max: number, draws = 20000) {
+  const PLAYERS = 7;
+  function distribution(max: number, draws = 50000) {
     const rng = seededRng(42);
-    const counts = new Array(max + 1).fill(0);
-    for (let i = 0; i < draws; i++) counts[drawImpostorCount(max, rng)]++;
+    const counts = new Array(PLAYERS + 1).fill(0);
+    for (let i = 0; i < draws; i++) counts[drawImpostorCount(max, PLAYERS, rng)]++;
     return counts.map((c) => c / draws);
   }
 
-  it("gibt in 10 % der Fälle keinen Impostor, sonst gleich verteilt (max 1)", () => {
-    const [none, one] = distribution(1);
-    expect(none).toBeCloseTo(0.1, 1);
-    expect(one).toBeCloseTo(0.9, 1);
-  });
-
-  it.each([2, 3])("verteilt bei max %i die übrigen 90 %% gleichmäßig", (max) => {
+  it.each([1, 2, 3])("max %i: 1 %% alle, 10 %% keiner, Rest gleich verteilt", (max) => {
     const shares = distribution(max);
-    expect(shares).toHaveLength(max + 1);
+    expect(shares[PLAYERS]).toBeCloseTo(0.01, 2);
     expect(shares[0]).toBeCloseTo(0.1, 1);
-    for (const share of shares.slice(1)) expect(share).toBeCloseTo(0.9 / max, 1);
+    for (let k = 1; k <= max; k++) expect(shares[k]).toBeCloseTo(0.89 / max, 1);
+    for (let k = max + 1; k < PLAYERS; k++) expect(shares[k]).toBe(0);
   });
 
-  it("bleibt immer zwischen 0 und max", () => {
-    expect(drawImpostorCount(2, () => 0)).toBe(0);
-    expect(drawImpostorCount(2, () => 0.0999)).toBe(0);
-    expect(drawImpostorCount(2, () => 0.1)).toBe(1);
-    expect(drawImpostorCount(2, () => 0.9999999)).toBe(2);
+  it("trifft die Grenzen genau", () => {
+    expect(drawImpostorCount(2, PLAYERS, () => 0)).toBe(PLAYERS);
+    expect(drawImpostorCount(2, PLAYERS, () => 0.0099)).toBe(PLAYERS);
+    expect(drawImpostorCount(2, PLAYERS, () => 0.01)).toBe(0);
+    expect(drawImpostorCount(2, PLAYERS, () => 0.1099)).toBe(0);
+    expect(drawImpostorCount(2, PLAYERS, () => 0.11)).toBe(1);
+    expect(drawImpostorCount(2, PLAYERS, () => 0.9999999)).toBe(2);
   });
 });

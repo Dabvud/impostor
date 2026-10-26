@@ -72,7 +72,8 @@ describe("SetupScreen", () => {
     await addNames(user, ["Anna", "Ben", "Cem"]);
     await user.click(screen.getByRole("switch", { name: "Geheime Anzahl" }));
     expect(screen.queryByLabelText("Anzahl Impostor")).not.toBeInTheDocument();
-    expect(screen.getByText("Jede Runde 0 bis 1 Impostor – niemand weiß, wie viele")).toBeInTheDocument();
+    expect(screen.getByText("Lasst euch überraschen")).toBeInTheDocument();
+    expect(screen.queryByText(/0 bis/)).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Start" }));
     expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ secretImpostors: true }));
   });

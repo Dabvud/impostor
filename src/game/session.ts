@@ -16,7 +16,7 @@ export function nextRound(
   const key = poolKey(s.mode, s.difficulty);
   const pool = poolFor(s.mode, s.difficulty, players, clubs);
   const names = normalizeNames(s.names);
-  const impostorCount = s.secretImpostors ? drawImpostorCount(maxImpostors(names.length), rng) : s.impostorCount;
+  const impostorCount = s.secretImpostors ? drawImpostorCount(maxImpostors(names.length), names.length, rng) : s.impostorCount;
   const result = drawRound(names, impostorCount, pool, used[key] ?? [], rng, s.hintsEnabled);
   const round = { ...result.round, thinkSeconds: s.thinkSeconds, discussSeconds: s.discussSeconds };
   return { round, used: { ...used, [key]: result.used } };

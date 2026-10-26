@@ -19,6 +19,8 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
     <main className="screen">
       {round.impostors.length === 0 ? (
         <h1 className="big-name">Keiner war Impostor! 😄</h1>
+      ) : round.impostors.length === round.revealOrder.length ? (
+        <h1 className="big-name">Alle waren Impostor! 🤯</h1>
       ) : (
         <>
           <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>

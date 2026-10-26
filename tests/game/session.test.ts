@@ -49,7 +49,9 @@ describe("nextRound", () => {
     for (let seed = 0; seed < 300; seed++) {
       seen.add(nextRound(secret, players, clubs, {}, seededRng(seed)).round.impostors.length);
     }
-    expect(seen).toEqual(new Set([0, 1, 2, 3]));
+    // 1 % „alle“ taucht in 300 Runden nicht zuverlässig auf – geprüft wird es in drawImpostorCount
+    expect([...seen].filter((n) => n <= 3).sort()).toEqual([0, 1, 2, 3]);
+    expect([...seen].every((n) => n <= 3 || n === 7)).toBe(true);
   });
 
   it("verwendet normalisierte Namen", () => {

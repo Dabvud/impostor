@@ -47,13 +47,19 @@ export function drawRound(
   };
 }
 
-/** Wahrscheinlichkeit für eine Runde ganz ohne Impostor im geheimen Modus. */
+/** Geheimer Modus: Chance, dass ausnahmslos alle Impostor sind. */
+const ALL_IMPOSTORS_CHANCE = 0.01;
+/** Geheimer Modus: Chance auf eine Runde ganz ohne Impostor. */
 const NO_IMPOSTOR_CHANCE = 0.1;
 
-/** Geheimer Modus: 10 % kein Impostor, die übrigen 90 % gleich verteilt auf 1 bis max. */
-export function drawImpostorCount(max: number, rng: Rng): number {
+/**
+ * Geheimer Modus: 1 % alle Spieler, 10 % keiner, die übrigen 89 % gleich verteilt auf 1 bis max.
+ */
+export function drawImpostorCount(max: number, playerCount: number, rng: Rng): number {
   const r = rng();
-  if (r < NO_IMPOSTOR_CHANCE) return 0;
-  const share = (r - NO_IMPOSTOR_CHANCE) / (1 - NO_IMPOSTOR_CHANCE);
+  if (r < ALL_IMPOSTORS_CHANCE) return playerCount;
+  if (r < ALL_IMPOSTORS_CHANCE + NO_IMPOSTOR_CHANCE) return 0;
+  const rest = ALL_IMPOSTORS_CHANCE + NO_IMPOSTOR_CHANCE;
+  const share = (r - rest) / (1 - rest);
   return Math.min(max, 1 + Math.floor(share * max));
 }

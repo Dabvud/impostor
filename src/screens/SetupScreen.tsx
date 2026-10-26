@@ -138,7 +138,7 @@ export default function SetupScreen({ initial, onStart }: Props) {
           />
         </label>
         {secretImpostors ? (
-          <p className="hint">Jede Runde 0 bis {max} Impostor – niemand weiß, wie viele</p>
+          <p className="hint">Lasst euch überraschen</p>
         ) : (
           <div className="stepper">
             <button

@@ -96,6 +96,13 @@ describe("ResolutionScreen ohne Impostor", () => {
   });
 });
 
+describe("ResolutionScreen alle Impostor", () => {
+  it("feiert, wenn alle Impostor waren", () => {
+    render(<ResolutionScreen round={{ ...round, impostors: [...round.revealOrder] }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
+    expect(screen.getByText("Alle waren Impostor! 🤯")).toBeInTheDocument();
+  });
+});
+
 describe("ResolutionScreen Klickschutz", () => {
   it("ignoriert Klicks in den ersten 500 ms (Geisterklick nach dem Halten)", () => {
     vi.useFakeTimers();

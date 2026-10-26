@@ -11,6 +11,9 @@ const round = {
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
   starter: "Cem",
+  speakingOrder: ["Cem", "Anna", "Ben"],
+  thinkSeconds: null,
+  discussSeconds: null,
 };
 
 function revealAndPass() {
@@ -45,6 +48,19 @@ describe("App", () => {
     await new Promise((r) => setTimeout(r, 550));
     await user.click(screen.getByRole("button", { name: "Neue Runde" }));
     expect(screen.getByRole("heading", { name: /ist dran$/ })).toBeInTheDocument();
+  });
+
+  it("führt mit Überlegzeit durch die Hinweisrunde ab dem Starter", () => {
+    saveGame({ phase: "reveal", round: { ...round, thinkSeconds: 15 }, index: 2, seen: true });
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Ich bin Cem" }));
+    revealAndPass();
+    expect(screen.getByRole("heading", { name: "Cem" })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Weiter ▶" }));
+    expect(screen.getByRole("heading", { name: "Anna" })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Weiter ▶" }));
+    fireEvent.click(screen.getByRole("button", { name: "Weiter ▶" }));
+    expect(screen.getByRole("heading", { name: "Diskussion" })).toBeInTheDocument();
   });
 
   it("setzt nach Neuladen beim Übergabe-Bildschirm des aktuellen Spielers fort", () => {

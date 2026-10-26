@@ -60,6 +60,76 @@ describe("SetupScreen", () => {
     expect(screen.queryByText(/ist schon dabei/)).not.toBeInTheDocument();
   });
 
+  it("bittet darum, die Namen in Sitzreihenfolge einzutragen", () => {
+    render(<SetupScreen initial={null} onStart={vi.fn()} />);
+    expect(screen.getByText("Namen so eintragen, wie ihr sitzt")).toBeInTheDocument();
+  });
+
+  it("lost die Impostor-Anzahl im geheimen Modus aus und blendet die Zahl aus", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<SetupScreen initial={null} onStart={onStart} />);
+    await addNames(user, ["Anna", "Ben", "Cem"]);
+    await user.click(screen.getByRole("switch", { name: "Geheime Anzahl" }));
+    expect(screen.queryByLabelText("Anzahl Impostor")).not.toBeInTheDocument();
+    expect(screen.getByText("Jede Runde 0 bis 1 Impostor – niemand weiß, wie viele")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ secretImpostors: true }));
+  });
+
+  it("lässt die Überlegzeit an- und abschalten und aus 15 Sek. bis 2 Min. wählen", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<SetupScreen initial={null} onStart={onStart} />);
+    await addNames(user, ["Anna", "Ben", "Cem"]);
+    expect(screen.queryByRole("button", { name: "1 Min." })).not.toBeInTheDocument();
+    await user.click(screen.getByRole("switch", { name: "Überlegzeit" }));
+    for (const label of ["15 Sek.", "30 Sek.", "1 Min.", "2 Min."]) {
+      expect(screen.getByRole("button", { name: label })).toBeInTheDocument();
+    }
+    expect(screen.getByRole("button", { name: "30 Sek." })).toHaveAttribute("aria-pressed", "true");
+    await user.click(screen.getByRole("button", { name: "1 Min." }));
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ thinkSeconds: 60, discussSeconds: null }));
+  });
+
+  it("stellt die Diskussionszeit von 30 Sek. in Minutenschritten bis 10 Min. ein", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<SetupScreen initial={null} onStart={onStart} />);
+    await addNames(user, ["Anna", "Ben", "Cem"]);
+    await user.click(screen.getByRole("switch", { name: "Diskussionszeit" }));
+    const value = screen.getByLabelText("Dauer Diskussion");
+    expect(value).toHaveTextContent("2:00");
+    await user.click(screen.getByRole("button", { name: "Weniger Zeit" }));
+    expect(value).toHaveTextContent("1:00");
+    await user.click(screen.getByRole("button", { name: "Weniger Zeit" }));
+    expect(value).toHaveTextContent("0:30");
+    expect(screen.getByRole("button", { name: "Weniger Zeit" })).toBeDisabled();
+    for (let i = 0; i < 12; i++) await user.click(screen.getByRole("button", { name: "Mehr Zeit" }));
+    expect(value).toHaveTextContent("10:00");
+    expect(screen.getByRole("button", { name: "Mehr Zeit" })).toBeDisabled();
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ discussSeconds: 600, thinkSeconds: null }));
+  });
+
+  it("übernimmt gespeicherte Timer- und Geheim-Einstellungen", () => {
+    const initial: Settings = {
+      names: ["Anna", "Ben", "Cem"],
+      impostorCount: 1,
+      mode: "alle",
+      difficulty: 1,
+      hintsEnabled: true,
+      secretImpostors: true,
+      thinkSeconds: 15,
+      discussSeconds: 180,
+    };
+    render(<SetupScreen initial={initial} onStart={vi.fn()} />);
+    expect(screen.getByRole("switch", { name: "Geheime Anzahl" })).toBeChecked();
+    expect(screen.getByRole("button", { name: "15 Sek." })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByLabelText("Dauer Diskussion")).toHaveTextContent("3:00");
+  });
+
   it("aktiviert Start erst ab 3 Spielern und zeigt die Fehlermeldung", async () => {
     const user = userEvent.setup();
     render(<SetupScreen initial={null} onStart={vi.fn()} />);
@@ -95,6 +165,9 @@ describe("SetupScreen", () => {
       mode: "alle",
       difficulty: 1,
       hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: null,
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await user.click(screen.getByRole("button", { name: "Finn entfernen" }));
@@ -114,6 +187,9 @@ describe("SetupScreen", () => {
       mode: "alle",
       difficulty: 3,
       hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: null,
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await addNames(user, ["  Dana  "]);
@@ -125,6 +201,9 @@ describe("SetupScreen", () => {
       mode: "cl-legenden",
       difficulty: 3,
       hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: null,
     });
   });
 

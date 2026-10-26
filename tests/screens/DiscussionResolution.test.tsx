@@ -1,8 +1,11 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { Round } from "../../src/game/types";
+import { alarm } from "../../src/alarm";
 import DiscussionScreen from "../../src/screens/DiscussionScreen";
+
+vi.mock("../../src/alarm", () => ({ alarm: vi.fn() }));
 import ResolutionScreen from "../../src/screens/ResolutionScreen";
 
 const round: Round = {
@@ -11,12 +14,49 @@ const round: Round = {
   impostors: ["Ben", "Dana"],
   revealOrder: ["Anna", "Ben", "Cem", "Dana", "Eli"],
   starter: "Jonas",
+  speakingOrder: ["Anna", "Ben", "Cem", "Dana", "Eli"],
+  thinkSeconds: null,
+  discussSeconds: null,
 };
 
 describe("DiscussionScreen", () => {
   it("zeigt den Starter und den Auflösen-Button", () => {
-    render(<DiscussionScreen starter="Jonas" onResolve={vi.fn()} />);
+    render(<DiscussionScreen starter="Jonas" seconds={null} onResolve={vi.fn()} />);
     expect(screen.getByText("Jonas beginnt")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Auflösen" })).toBeInTheDocument();
+  });
+});
+
+describe("DiscussionScreen mit Timer", () => {
+  beforeEach(() => vi.useFakeTimers());
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.mocked(alarm).mockClear();
+  });
+
+  it("zeigt nach der Hinweisrunde „Diskussion“ statt eines Starters", () => {
+    render(<DiscussionScreen starter={null} seconds={null} onResolve={vi.fn()} />);
+    expect(screen.getByRole("heading", { name: "Diskussion" })).toBeInTheDocument();
+  });
+
+  it("zählt herunter, lässt pausieren und um 30 Sekunden verlängern", () => {
+    render(<DiscussionScreen starter="Jonas" seconds={60} onResolve={vi.fn()} />);
+    expect(screen.getByText("1:00")).toBeInTheDocument();
+    act(() => vi.advanceTimersByTime(10000));
+    expect(screen.getByText("0:50")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Pause" }));
+    act(() => vi.advanceTimersByTime(10000));
+    expect(screen.getByText("0:50")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Weiter" }));
+    fireEvent.click(screen.getByRole("button", { name: "+30 Sek." }));
+    expect(screen.getByText("1:20")).toBeInTheDocument();
+  });
+
+  it("meldet bei 0 „Zeit um – stimmt ab!“ und lässt weiter auflösen", () => {
+    render(<DiscussionScreen starter="Jonas" seconds={30} onResolve={vi.fn()} />);
+    act(() => vi.advanceTimersByTime(30000));
+    expect(screen.getByText("Zeit um – stimmt ab!")).toBeInTheDocument();
+    expect(alarm).toHaveBeenCalledOnce();
     expect(screen.getByRole("button", { name: "Auflösen" })).toBeInTheDocument();
   });
 });
@@ -41,10 +81,18 @@ describe("ResolutionScreen", () => {
 
 describe("Regenbogen für Paul", () => {
   it("zeigt ihn beim Starter und bei den Impostorn", () => {
-    render(<DiscussionScreen starter="Paul" onResolve={vi.fn()} />);
+    render(<DiscussionScreen starter="Paul" seconds={null} onResolve={vi.fn()} />);
     expect(screen.getByText("Paul 🌈 beginnt")).toBeInTheDocument();
     render(<ResolutionScreen round={{ ...round, impostors: ["Paul"] }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
     expect(screen.getByText("Paul 🌈")).toBeInTheDocument();
+  });
+});
+
+describe("ResolutionScreen ohne Impostor", () => {
+  it("verrät erst bei der Auflösung, dass keiner Impostor war", () => {
+    render(<ResolutionScreen round={{ ...round, impostors: [], hint: null }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
+    expect(screen.getByText("Keiner war Impostor! 😄")).toBeInTheDocument();
+    expect(screen.queryByText(/Impostor war(en)?$/)).not.toBeInTheDocument();
   });
 });
 

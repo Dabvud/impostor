@@ -3,7 +3,7 @@ import { MODES, poolFor, poolKey } from "../../src/game/modes";
 import type { Club, Entry, Footballer, PlayerExtras } from "../../src/game/types";
 
 const players: Footballer[] = [
-  { name: "A", tier: 1, tags: ["bundesliga"], hints: { nation: "Land A", position: "Torwart", special: "Trick A" } },
+  { name: "A", tier: 1, tags: ["bundesliga", "bvb"], hints: { nation: "Land A", position: "Torwart", special: "Trick A" } },
   { name: "B", tier: 2, tags: ["cl-legende"], hints: { nation: "Land B", position: "Stürmer", special: null } },
   { name: "C", tier: 3, tags: ["wm-legende", "bundesliga", "fifa-icon"], hints: { nation: "Land C", position: "Stürmer", special: null } },
 ];
@@ -85,6 +85,7 @@ describe("poolFor", () => {
     expect(names("cl-legenden")).toEqual(["B"]);
     expect(names("wm-legenden")).toEqual(["C"]);
     expect(names("fifa-icons")).toEqual(["C"]);
+    expect(names("bvb")).toEqual(["A"]);
     expect(names("vereine-de")).toEqual(["X", "Z"]);
     expect(names("vereine-int")).toEqual(["X", "Y"]);
   });
@@ -143,14 +144,16 @@ describe("poolKey", () => {
   it("enthält die Schwierigkeit nur bei 'alle'", () => {
     expect(poolKey("alle", 2)).toBe("alle-2");
     expect(poolKey("vereine-de", 3)).toBe("vereine-de");
+    expect(poolKey("bvb", 2)).toBe("bvb");
   });
 });
 
 describe("MODES", () => {
-  it("hat sieben Modi mit exakten Labels, nur 'alle' mit Schwierigkeit", () => {
+  it("hat acht Modi mit exakten Labels, nur 'alle' mit Schwierigkeit", () => {
     expect(MODES).toEqual([
       { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
       { id: "bundesliga", label: "🇩🇪 Bundesliga", hasDifficulty: false },
+      { id: "bvb", label: "🟡 BVB", hasDifficulty: false },
       { id: "cl-legenden", label: "🏆 CL-Legenden", hasDifficulty: false },
       { id: "wm-legenden", label: "🌍 WM-Legenden", hasDifficulty: false },
       { id: "fifa-icons", label: "🎮 FIFA Icons", hasDifficulty: false },

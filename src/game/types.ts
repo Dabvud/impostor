@@ -1,5 +1,5 @@
 export type Tier = 1 | 2 | 3;
-export type Tag = "bundesliga" | "cl-legende" | "wm-legende" | "fifa-icon";
+export type Tag = "bundesliga" | "cl-legende" | "wm-legende" | "fifa-icon" | "bvb";
 /** Merkmale, aus denen der Tipp für den Impostor gezogen wird. */
 export type PlayerHints = { nation: string; position: string; special: string | null };
 export type ClubHints = {
@@ -52,6 +52,7 @@ export type Entry = { name: string; hints: string[]; allHints?: Tip[]; team?: Te
 export type ModeId =
   | "alle"
   | "bundesliga"
+  | "bvb"
   | "cl-legenden"
   | "wm-legenden"
   | "fifa-icons"

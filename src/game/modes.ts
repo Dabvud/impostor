@@ -3,6 +3,7 @@ import type { Club, ClubExtras, ClubHints, Entry, Footballer, ModeId, PlayerExtr
 export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
   { id: "bundesliga", label: "🇩🇪 Bundesliga", hasDifficulty: false },
+  { id: "bvb", label: "🟡 BVB", hasDifficulty: false },
   { id: "cl-legenden", label: "🏆 CL-Legenden", hasDifficulty: false },
   { id: "wm-legenden", label: "🌍 WM-Legenden", hasDifficulty: false },
   { id: "fifa-icons", label: "🎮 FIFA Icons", hasDifficulty: false },
@@ -122,6 +123,8 @@ export function poolFor(mode: ModeId, difficulty: Tier, players: Footballer[], c
       return playerEntries(players.filter((p) => p.tier <= difficulty));
     case "bundesliga":
       return playerEntries(withTag(players, "bundesliga"));
+    case "bvb":
+      return playerEntries(withTag(players, "bvb"));
     case "cl-legenden":
       return playerEntries(withTag(players, "cl-legende"));
     case "wm-legenden":

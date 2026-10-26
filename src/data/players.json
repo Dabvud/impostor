@@ -101,7 +101,8 @@
     "name": "Erling Haaland",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Norwegen",
@@ -166,7 +167,8 @@
     "tier": 1,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Polen",
@@ -366,7 +368,8 @@
     "name": "Jude Bellingham",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "England",
@@ -2260,7 +2263,8 @@
     "name": "Achraf Hakimi",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Marokko",
@@ -2477,7 +2481,8 @@
     "tier": 1,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Frankreich",
@@ -2542,7 +2547,8 @@
     "name": "Marco Reus",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -2575,7 +2581,8 @@
     "tier": 1,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -2745,7 +2752,8 @@
     "tier": 1,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -2777,7 +2785,8 @@
     "name": "Kevin Großkreutz",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -2938,7 +2947,8 @@
     "name": "İlkay Gündoğan",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -3098,7 +3108,8 @@
     "name": "Julian Brandt",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -3162,7 +3173,8 @@
     "name": "Julian Weigl",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -3325,7 +3337,8 @@
     "tier": 2,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -3519,7 +3532,8 @@
     "name": "Roman Weidenfeller",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -3711,7 +3725,8 @@
     "name": "Gregor Kobel",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweiz",
@@ -3905,7 +3920,8 @@
     "tags": [
       "bundesliga",
       "wm-legende",
-      "fifa-icon"
+      "fifa-icon",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4163,7 +4179,8 @@
     "name": "Niklas Süle",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4195,7 +4212,8 @@
     "name": "Nico Schlotterbeck",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4227,7 +4245,8 @@
     "name": "Waldemar Anton",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4323,7 +4342,8 @@
     "name": "Matthias Ginter",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4548,7 +4568,8 @@
     "name": "Łukasz Piszczek",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Polen",
@@ -4580,7 +4601,8 @@
     "name": "Marcel Schmelzer",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4612,7 +4634,8 @@
     "name": "Erik Durm",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -4900,7 +4923,8 @@
     "name": "Julian Ryerson",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Norwegen",
@@ -5128,7 +5152,8 @@
     "name": "Marcel Sabitzer",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Österreich",
@@ -5192,7 +5217,8 @@
     "name": "Sebastian Rode",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5224,7 +5250,8 @@
     "name": "Sebastian Kehl",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5256,7 +5283,8 @@
     "name": "Sven Bender",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5320,7 +5348,8 @@
     "name": "Emre Can",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5352,7 +5381,8 @@
     "name": "Mahmoud Dahoud",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5384,7 +5414,8 @@
     "name": "Nuri Şahin",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Türkei",
@@ -5416,7 +5447,8 @@
     "name": "Shinji Kagawa",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Japan",
@@ -5481,7 +5513,8 @@
     "tier": 2,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5577,7 +5610,8 @@
     "name": "Gonzalo Castro",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -5609,7 +5643,8 @@
     "name": "Kevin Kampl",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Slowenien",
@@ -5705,7 +5740,8 @@
     "name": "Kevin-Prince Boateng",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Ghana",
@@ -5897,7 +5933,8 @@
     "name": "Niclas Füllkrug",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -6121,7 +6158,8 @@
     "name": "Anthony Modeste",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Frankreich",
@@ -6153,7 +6191,8 @@
     "name": "Sébastien Haller",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Elfenbeinküste",
@@ -6409,7 +6448,8 @@
     "name": "Pierre-Emerick Aubameyang",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Gabun",
@@ -6441,7 +6481,8 @@
     "name": "Michy Batshuayi",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Belgien",
@@ -6473,7 +6514,8 @@
     "name": "Adrián Ramos",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Kolumbien",
@@ -6505,7 +6547,8 @@
     "name": "Lucas Barrios",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Paraguay",
@@ -6537,7 +6580,8 @@
     "name": "Serhou Guirassy",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Guinea",
@@ -7530,7 +7574,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -8928,7 +8973,8 @@
     "name": "Thomas Häßler",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -8961,7 +9007,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -9089,7 +9136,8 @@
     "tags": [
       "bundesliga",
       "cl-legende",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -9122,7 +9170,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -9155,7 +9204,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -9480,7 +9530,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "cl-legende"
+      "cl-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -10711,7 +10762,8 @@
     "name": "Sergej Barbarez",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Bosnien und Herzegowina",
@@ -11096,7 +11148,8 @@
     "name": "Dédé",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -11128,7 +11181,8 @@
     "name": "Jan Koller",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Tschechien",
@@ -11630,7 +11684,8 @@
     "tier": 3,
     "tags": [
       "bundesliga",
-      "wm-legende"
+      "wm-legende",
+      "bvb"
     ],
     "hints": {
       "nation": "Kroatien",
@@ -13118,7 +13173,8 @@
     "name": "Jadon Sancho",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "England",
@@ -13150,7 +13206,8 @@
     "name": "Christian Pulisic",
     "tier": 1,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "USA",
@@ -13182,7 +13239,8 @@
     "name": "Neven Subotić",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Serbien",
@@ -13214,7 +13272,8 @@
     "name": "Kuba Błaszczykowski",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Polen",
@@ -13246,7 +13305,8 @@
     "name": "Henrikh Mkhitaryan",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Armenien",
@@ -13278,7 +13338,8 @@
     "name": "Sokratis",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Griechenland",
@@ -13310,7 +13371,8 @@
     "name": "Roman Bürki",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweiz",
@@ -13342,7 +13404,8 @@
     "name": "Raphaël Guerreiro",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Portugal",
@@ -13374,7 +13437,8 @@
     "name": "Axel Witsel",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Belgien",
@@ -13406,7 +13470,8 @@
     "name": "Thorgan Hazard",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Belgien",
@@ -13438,7 +13503,8 @@
     "name": "Giovanni Reyna",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "USA",
@@ -13470,7 +13536,8 @@
     "name": "Youssoufa Moukoko",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13502,7 +13569,8 @@
     "name": "Karim Adeyemi",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13534,7 +13602,8 @@
     "name": "Donyell Malen",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Niederlande",
@@ -13566,7 +13635,8 @@
     "name": "Thomas Meunier",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Belgien",
@@ -13598,7 +13668,8 @@
     "name": "Manuel Akanji",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweiz",
@@ -13630,7 +13701,8 @@
     "name": "Marc Bartra",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Spanien",
@@ -13662,7 +13734,8 @@
     "name": "Paco Alcácer",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Spanien",
@@ -13694,7 +13767,8 @@
     "name": "Ciro Immobile",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Italien",
@@ -13726,7 +13800,8 @@
     "name": "Felix Nmecha",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13758,7 +13833,8 @@
     "name": "Jamie Gittens",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "England",
@@ -13790,7 +13866,8 @@
     "name": "Maximilian Beier",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13822,7 +13899,8 @@
     "name": "Pascal Groß",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13854,7 +13932,8 @@
     "name": "Alexander Isak",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweden",
@@ -13886,7 +13965,8 @@
     "name": "Jonas Hofmann",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -13918,7 +13998,8 @@
     "name": "Andriy Yarmolenko",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Ukraine",
@@ -13950,7 +14031,8 @@
     "name": "Marin Pongračić",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Kroatien",
@@ -13982,7 +14064,8 @@
     "name": "Moritz Leitner",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14014,7 +14097,8 @@
     "name": "Julian Schieber",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14046,7 +14130,8 @@
     "name": "Oliver Kirch",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14078,7 +14163,8 @@
     "name": "Leonardo Bittencourt",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14110,7 +14196,8 @@
     "name": "Marvin Ducksch",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14142,7 +14229,8 @@
     "name": "Felipe Santana",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -14174,7 +14262,8 @@
     "name": "Chris Löwe",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14206,7 +14295,8 @@
     "name": "Mitchell Langerak",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Australien",
@@ -14238,7 +14328,8 @@
     "name": "Ömer Toprak",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Türkei",
@@ -14270,7 +14361,8 @@
     "name": "Jeremy Toljan",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14302,7 +14394,8 @@
     "name": "Dan-Axel Zagadou",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Frankreich",
@@ -14334,7 +14427,8 @@
     "name": "Maximilian Philipp",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14366,7 +14460,8 @@
     "name": "Abdou Diallo",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Senegal",
@@ -14398,7 +14493,8 @@
     "name": "Thomas Delaney",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Dänemark",
@@ -14430,7 +14526,8 @@
     "name": "Marius Wolf",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14462,7 +14559,8 @@
     "name": "Jacob Bruun Larsen",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Dänemark",
@@ -14494,7 +14592,8 @@
     "name": "Nico Schulz",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14526,7 +14625,8 @@
     "name": "Ansgar Knauff",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14558,7 +14658,8 @@
     "name": "Salih Özcan",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Türkei",
@@ -14590,7 +14691,8 @@
     "name": "Felix Passlack",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14622,7 +14724,8 @@
     "name": "Mikel Merino",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Spanien",
@@ -14654,7 +14757,8 @@
     "name": "Emre Mor",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Türkei",
@@ -14686,7 +14790,8 @@
     "name": "Mohamed Zidan",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Ägypten",
@@ -14718,7 +14823,8 @@
     "name": "Nelson Valdez",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Paraguay",
@@ -14750,7 +14856,8 @@
     "name": "Tinga",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -14782,7 +14889,8 @@
     "name": "Antonio da Silva",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -14814,7 +14922,8 @@
     "name": "Patrick Owomoyela",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14846,7 +14955,8 @@
     "name": "Christian Wörns",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14878,7 +14988,8 @@
     "name": "Steffen Freund",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14910,7 +15021,8 @@
     "name": "Heiko Herrlich",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14942,7 +15054,8 @@
     "name": "Lars Ricken",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -14974,7 +15087,8 @@
     "name": "Michael Zorc",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -15006,7 +15120,8 @@
     "name": "Stéphane Chapuisat",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweiz",
@@ -15038,7 +15153,8 @@
     "name": "Paulo Sousa",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Portugal",
@@ -15070,7 +15186,8 @@
     "name": "Júlio César",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -15102,7 +15219,8 @@
     "name": "Ewerthon",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -15134,7 +15252,8 @@
     "name": "Márcio Amoroso",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -15166,7 +15285,8 @@
     "name": "Norbert Dickel",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -15198,7 +15318,8 @@
     "name": "Teddy de Beer",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -15230,7 +15351,8 @@
     "name": "Lothar Emmerich",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -15262,7 +15384,8 @@
     "name": "Siggi Held",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -15294,7 +15417,8 @@
     "name": "Yan Couto",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Brasilien",
@@ -15326,7 +15450,8 @@
     "name": "Daniel Svensson",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Schweden",
@@ -15358,7 +15483,8 @@
     "name": "Carney Chukwuemeka",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Österreich",
@@ -15390,7 +15516,8 @@
     "name": "Ramy Bensebaini",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Algerien",
@@ -15422,7 +15549,8 @@
     "name": "Ian Maatsen",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Niederlande",
@@ -15454,7 +15582,8 @@
     "name": "Florian Kringe",
     "tier": 3,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Deutschland",
@@ -18098,7 +18227,8 @@
     "name": "Mladen Petrić",
     "tier": 2,
     "tags": [
-      "bundesliga"
+      "bundesliga",
+      "bvb"
     ],
     "hints": {
       "nation": "Kroatien",
@@ -19244,6 +19374,1269 @@
       "afterCareer": null,
       "bundesliga": "spielte in der Bundesliga",
       "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Adnan Januzaj",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Belgien",
+      "position": "Flügelspieler",
+      "special": "Dribbler"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "LaLiga",
+      "playStyle": "Dribbler",
+      "trait": "Ballkontrolle",
+      "moment": "wichtiges WM-Tor",
+      "competition": "WM",
+      "title": "Pokalsieger",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2010er",
+      "build": "schlank",
+      "foot": "Linksfuß",
+      "careerType": "Wunderkind",
+      "shirtNumber": "trug die 9",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Alexander Frei",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Stürmer",
+      "special": "Torinstinkt"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "Torjäger",
+      "trait": "Abschlussstärke",
+      "moment": "wichtiges WM-Tor",
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "durchschnittlich",
+      "foot": "beidfüßig",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 13",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Alexander Meyer",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "reflexstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "reaktionsschnell",
+      "trait": "Elfmeterspezialist",
+      "moment": "Elfmeter-Held",
+      "competition": "nationaler Pokal",
+      "title": "keine großen Titel",
+      "hair": "Kurzhaarschnitt",
+      "look": "Bart",
+      "era": "2020er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 33",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Christian Nerlinger",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "laufstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "laufstark",
+      "trait": "Allrounder",
+      "moment": null,
+      "competition": "Europa League",
+      "title": "Meister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "1990er",
+      "build": "durchschnittlich",
+      "foot": "Linksfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 16",
+      "status": "Karriere beendet",
+      "afterCareer": "Funktionär",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "David Odonkor",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "wm-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "schnell"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "schnell",
+      "trait": "Flankengeber",
+      "moment": null,
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 11",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Eigengewächs"
+    }
+  },
+  {
+    "name": "Delron Buckley",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Südafrika",
+      "position": "Flügelspieler",
+      "special": "antrittsstark"
+    },
+    "extras": {
+      "continent": "Afrika",
+      "league": "Bundesliga",
+      "playStyle": "schnell",
+      "trait": "Dribbelstärke",
+      "moment": null,
+      "competition": "WM",
+      "title": "Pokalsieger",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "klein und wendig",
+      "foot": "Linksfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 16",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Diego Klimowicz",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Stürmer",
+      "special": "kopfballstark"
+    },
+    "extras": {
+      "continent": "Südamerika",
+      "league": "Bundesliga",
+      "playStyle": "Torjäger",
+      "trait": "Kopfballspezialist",
+      "moment": null,
+      "competition": "nationaler Pokal",
+      "title": "keine großen Titel",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "groß gewachsen",
+      "foot": "beidfüßig",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 9",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Ebi Smolarek",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Polen",
+      "position": "Stürmer",
+      "special": "wendig"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "schnell",
+      "trait": "Abschlussstärke",
+      "moment": null,
+      "competition": "WM",
+      "title": null,
+      "hair": "lange Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 14",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Evanilson",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Außenverteidiger",
+      "special": "offensivstark"
+    },
+    "extras": {
+      "continent": "Südamerika",
+      "league": "Bundesliga",
+      "playStyle": "offensivstark",
+      "trait": "Flankengeber",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Meister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "schlank",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 2",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Flávio Conceição",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Brasilien",
+      "position": "Zentrales Mittelfeld",
+      "special": "passsicher"
+    },
+    "extras": {
+      "continent": "Südamerika",
+      "league": "LaLiga",
+      "playStyle": "passsicher",
+      "trait": "Ballverteiler",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "durchschnittlich",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 6",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Flemming Povlsen",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Dänemark",
+      "position": "Stürmer",
+      "special": "Europameister"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "laufstark",
+      "trait": "mannschaftsdienlich",
+      "moment": null,
+      "competition": "EM",
+      "title": "Europameister",
+      "hair": "blond",
+      "look": null,
+      "era": "1990er",
+      "build": "kräftig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 9",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Frank Mill",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Weltmeister"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "Torjäger",
+      "trait": "Abschlussstärke",
+      "moment": "Finaltor",
+      "competition": "nationaler Pokal",
+      "title": "Weltmeister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "1980er",
+      "build": "durchschnittlich",
+      "foot": "Rechtsfuß",
+      "careerType": "Vereinstreue",
+      "shirtNumber": "trug die 11",
+      "status": "Karriere beendet",
+      "afterCareer": "Unternehmer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Fredi Bobic",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Europameister"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "Torjäger",
+      "trait": "Strafraumstürmer",
+      "moment": "Finaltor",
+      "competition": "EM",
+      "title": "Europameister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 9",
+      "status": "Karriere beendet",
+      "afterCareer": "Funktionär",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Giuseppe Reina",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "Kultfigur"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "Dribbler",
+      "trait": "Antrittsstärke",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 13",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Guy Demel",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Elfenbeinküste",
+      "position": "Außenverteidiger",
+      "special": "zweikampfstark"
+    },
+    "extras": {
+      "continent": "Afrika",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Allrounder",
+      "moment": null,
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "kräftig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 20",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Jobe Bellingham",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "England",
+      "position": "Zentrales Mittelfeld",
+      "special": "Ballkontrolle"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "technisch stark",
+      "trait": "Allrounder",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "keine großen Titel",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2020er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Wunderkind",
+      "shirtNumber": "trug die 77",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Jörg Heinrich",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Außenverteidiger",
+      "special": "vielseitig"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "laufstark",
+      "trait": "Allrounder",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "beidfüßig",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 17",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Jürgen Wegmann",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "Kultfigur"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "Torjäger",
+      "trait": "Strafraumstürmer",
+      "moment": "Last-Minute-Tor",
+      "competition": "nationale Meisterschaft",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "1980er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 9",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Knut Reinhardt",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Flügelspieler",
+      "special": "laufstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "laufstark",
+      "trait": "Flankengeber",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "1990er",
+      "build": "schlank",
+      "foot": "Linksfuß",
+      "careerType": "Vereinstreue",
+      "shirtNumber": "trug die 4",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Leonardo Balerdi",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Argentinien",
+      "position": "Innenverteidiger",
+      "special": "Aufbauspiel"
+    },
+    "extras": {
+      "continent": "Südamerika",
+      "league": "Ligue 1",
+      "playStyle": "passsicher",
+      "trait": "Antizipation",
+      "moment": null,
+      "competition": "Europa League",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2020er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 5",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Manuel Friedrich",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "kopfballstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Kopfballspezialist",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 5",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Markus Feulner",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Zentrales Mittelfeld",
+      "special": "vielseitig"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "laufstark",
+      "trait": "Allrounder",
+      "moment": null,
+      "competition": "Europa League",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2010er",
+      "build": "durchschnittlich",
+      "foot": "Rechtsfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 14",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Martin Kree",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "schussstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Distanzschütze",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "Linksfuß",
+      "careerType": "Vereinstreue",
+      "shirtNumber": "trug die 16",
+      "status": "Karriere beendet",
+      "afterCareer": "Unternehmer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Marwin Hitz",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Torwart",
+      "special": "reflexstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "reaktionsschnell",
+      "trait": "Strafraumbeherrschung",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Pokalsieger",
+      "hair": "Kurzhaarschnitt",
+      "look": "Bart",
+      "era": "2010er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 35",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Mateu Morey",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Spanien",
+      "position": "Außenverteidiger",
+      "special": "offensivstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "offensivstark",
+      "trait": "Flankengeber",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Pokalsieger",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2020er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 2",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Michael Rummenigge",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Offensives Mittelfeld",
+      "special": "technisch stark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "technisch stark",
+      "trait": "Ballkontrolle",
+      "moment": null,
+      "competition": "Europa League",
+      "title": "Meister",
+      "hair": "blond",
+      "look": null,
+      "era": "1980er",
+      "build": "klein und wendig",
+      "foot": "beidfüßig",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 10",
+      "status": "Karriere beendet",
+      "afterCareer": "Unternehmer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Michael Schulz",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "kopfballstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Kopfballspezialist",
+      "moment": null,
+      "competition": "Olympia",
+      "title": "keine großen Titel",
+      "hair": "lange Haare",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "Linksfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 14",
+      "status": "Karriere beendet",
+      "afterCareer": "TV-Experte",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Otto Addo",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Ghana",
+      "position": "Offensives Mittelfeld",
+      "special": "Dribbler"
+    },
+    "extras": {
+      "continent": "Afrika",
+      "league": "Bundesliga",
+      "playStyle": "Dribbler",
+      "trait": "Ballkontrolle",
+      "moment": null,
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "2000er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 23",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Patrik Berger",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Tschechien",
+      "position": "Offensives Mittelfeld",
+      "special": "schussstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Premier League",
+      "playStyle": "schussstark",
+      "trait": "Distanzschütze",
+      "moment": "Finaltor",
+      "competition": "EM",
+      "title": "Pokalsieger",
+      "hair": "lange Haare",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "Linksfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 15",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Philipp Degen",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Schweiz",
+      "position": "Außenverteidiger",
+      "special": "offensivstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "offensivstark",
+      "trait": "Flankengeber",
+      "moment": null,
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 23",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "René Tretschok",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Defensives Mittelfeld",
+      "special": "schussstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "schussstark",
+      "trait": "Distanzschütze",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "1990er",
+      "build": "durchschnittlich",
+      "foot": "Linksfuß",
+      "careerType": "Wandervogel",
+      "shirtNumber": "trug die 23",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Stefan Klos",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "cl-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "reflexstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "reaktionsschnell",
+      "trait": "Stellungsspiel",
+      "moment": null,
+      "competition": "Champions League",
+      "title": "Champions-League-Sieger",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "1990er",
+      "build": "durchschnittlich",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 1",
+      "status": "Karriere beendet",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Eigengewächs"
+    }
+  },
+  {
+    "name": "Steffen Tigges",
+    "tier": 3,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Stürmer",
+      "special": "kopfballstark"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "kopfballstark",
+      "trait": "Strafraumstürmer",
+      "moment": null,
+      "competition": "nationaler Pokal",
+      "title": "Pokalsieger",
+      "hair": "dunkle Haare",
+      "look": "Bart",
+      "era": "2020er",
+      "build": "groß gewachsen",
+      "foot": "Linksfuß",
+      "careerType": "Spätstarter",
+      "shirtNumber": "trug die 27",
+      "status": "aktiv",
+      "afterCareer": null,
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Steven Pienaar",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Südafrika",
+      "position": "Offensives Mittelfeld",
+      "special": "technisch stark"
+    },
+    "extras": {
+      "continent": "Afrika",
+      "league": "Premier League",
+      "playStyle": "Dribbler",
+      "trait": "Ballkontrolle",
+      "moment": null,
+      "competition": "WM",
+      "title": "Meister",
+      "hair": "lange Haare",
+      "look": null,
+      "era": "2010er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 20",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
+    }
+  },
+  {
+    "name": "Sunday Oliseh",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "wm-legende"
+    ],
+    "hints": {
+      "nation": "Nigeria",
+      "position": "Defensives Mittelfeld",
+      "special": "schussstark"
+    },
+    "extras": {
+      "continent": "Afrika",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Distanzschütze",
+      "moment": "wichtiges WM-Tor",
+      "competition": "WM",
+      "title": "Afrika-Cup-Sieger",
+      "hair": "Kurzhaarschnitt",
+      "look": null,
+      "era": "1990er",
+      "build": "kräftig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 19",
+      "status": "Karriere beendet",
+      "afterCareer": "Trainer",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Tamás Hajnal",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Ungarn",
+      "position": "Offensives Mittelfeld",
+      "special": "Spielmacher"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "technisch stark",
+      "trait": "Standardspezialist",
+      "moment": null,
+      "competition": "nationale Meisterschaft",
+      "title": "Meister",
+      "hair": "dunkle Haare",
+      "look": null,
+      "era": "2000er",
+      "build": "klein und wendig",
+      "foot": "Rechtsfuß",
+      "careerType": "Karriere im Ausland",
+      "shirtNumber": "trug die 30",
+      "status": "Karriere beendet",
+      "afterCareer": "Funktionär",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "Schnäppchen"
+    }
+  },
+  {
+    "name": "Thomas Helmer",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Innenverteidiger",
+      "special": "Europameister"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "zweikampfstark",
+      "trait": "Aufbauspiel",
+      "moment": null,
+      "competition": "EM",
+      "title": "Europameister",
+      "hair": "blond",
+      "look": null,
+      "era": "1990er",
+      "build": "groß gewachsen",
+      "foot": "Rechtsfuß",
+      "careerType": "Vereinstreue",
+      "shirtNumber": "trug die 5",
+      "status": "Karriere beendet",
+      "afterCareer": "TV-Experte",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "teurer Transfer"
+    }
+  },
+  {
+    "name": "Toni Schumacher",
+    "tier": 2,
+    "tags": [
+      "bundesliga",
+      "bvb",
+      "wm-legende"
+    ],
+    "hints": {
+      "nation": "Deutschland",
+      "position": "Torwart",
+      "special": "Europameister"
+    },
+    "extras": {
+      "continent": "Europa",
+      "league": "Bundesliga",
+      "playStyle": "reflexstark",
+      "trait": "Elfmeterspezialist",
+      "moment": "Elfmeter-Held",
+      "competition": "WM",
+      "title": "Europameister",
+      "hair": "Locken",
+      "look": null,
+      "era": "1980er",
+      "build": "kräftig",
+      "foot": "Rechtsfuß",
+      "careerType": "Vereinstreue",
+      "shirtNumber": "trug die 1",
+      "status": "Karriere beendet",
+      "afterCareer": "Funktionär",
+      "bundesliga": "spielte in der Bundesliga",
+      "transfer": "ablösefrei gewechselt"
     }
   }
 ]

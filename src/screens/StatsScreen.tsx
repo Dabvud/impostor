@@ -93,7 +93,11 @@ export default function StatsScreen({ group, records, onNewEvening, onClear, onB
         </>
       )}
 
-      <button type="button" className="primary" onClick={onNewEvening}>
+      <button
+        type="button"
+        className="primary"
+        onClick={() => window.confirm("Neuen Abend starten? „Heute“ beginnt dann wieder bei null.") && onNewEvening()}
+      >
         Neuer Abend
       </button>
       <nav className="setup-links">

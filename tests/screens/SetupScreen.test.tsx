@@ -298,6 +298,31 @@ describe("SetupScreen mit Gruppen", () => {
     expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ names: ["Cem", "Dana", "Ben"], groupId: "g1" }));
   });
 
+  it("behält die gewählte Impostor-Anzahl, wenn man zum Umsortieren alle ab- und wieder anwählt", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    const big: Group = {
+      ...group,
+      members: ["A", "B", "C", "D", "E", "F", "G"].map((n) => ({ id: n, name: n })),
+      selected: ["A", "B", "C", "D", "E", "F", "G"],
+    };
+    function BigHarness() {
+      const [groups, setGroups] = useState<Group[]>([big]);
+      const initial: Settings = {
+        names: [], impostorCount: 3, mode: "alle", difficulty: 1, hintsEnabled: true, secretImpostors: false,
+        thinkSeconds: null, discussSeconds: null, groupId: "g1", guessEnabled: true,
+      };
+      return <SetupScreen initial={initial} onStart={onStart} groups={groups} onGroupsChange={setGroups} />;
+    }
+    render(<BigHarness />);
+    expect(screen.getByLabelText("Anzahl Impostor")).toHaveTextContent("3");
+    for (const n of "ABCDEFG") await user.click(screen.getByRole("button", { name: new RegExp(`^${n}[0-9]*$`) }));
+    for (const n of "GFEDCBA") await user.click(screen.getByRole("button", { name: new RegExp(`^${n}[0-9]*$`) }));
+    expect(screen.getByLabelText("Anzahl Impostor")).toHaveTextContent("3");
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ impostorCount: 3, names: [..."GFEDCBA"] }));
+  });
+
   it("sperrt Start bei weniger als 3 ausgewählten Mitspielern", async () => {
     const user = userEvent.setup();
     render(<Harness />);

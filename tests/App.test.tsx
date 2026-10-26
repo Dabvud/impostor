@@ -237,6 +237,7 @@ describe("Regeln, Statistik und Teilen", () => {
     await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
     await user.click(screen.getByRole("button", { name: "Statistik" }));
     expect(screen.getByRole("heading", { name: "Freitagsrunde" })).toBeInTheDocument();
+    vi.spyOn(window, "confirm").mockReturnValue(true);
     await user.click(screen.getByRole("button", { name: "Neuer Abend" }));
     expect(JSON.parse(localStorage.getItem("impostor:v1:groups") ?? "[]")[0].evening).toBe(2);
     await user.click(screen.getByRole("button", { name: "Zurück" }));

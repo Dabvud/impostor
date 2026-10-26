@@ -81,9 +81,12 @@ export default function SetupScreen({
   const [discussSeconds, setDiscussSeconds] = useState<number | null>(initial?.discussSeconds ?? null);
 
   const max = maxImpostors(names.length);
+  // Gewählte Anzahl bleibt erhalten (z. B. beim Umsortieren der Sitzreihenfolge), angezeigt und
+  // gespielt wird höchstens das, was bei der aktuellen Spielerzahl erlaubt ist.
+  const effectiveImpostors = Math.min(impostorCount, max);
   const settings: Settings = {
     names,
-    impostorCount,
+    impostorCount: effectiveImpostors,
     mode,
     difficulty,
     hintsEnabled,
@@ -120,12 +123,10 @@ export default function SetupScreen({
   function removeName(index: number) {
     const next = freeNames.filter((_, i) => i !== index);
     setNames(next);
-    setImpostorCount((c) => Math.min(c, maxImpostors(next.length)));
   }
 
   function updateGroup(next: Group) {
     onGroupsChange(groups.map((g) => (g.id === next.id ? next : g)));
-    setImpostorCount((c) => Math.min(c, maxImpostors(selectedNames(next).length)));
   }
 
   function addToGroup(e: FormEvent) {
@@ -263,17 +264,17 @@ export default function SetupScreen({
             <button
               type="button"
               aria-label="Weniger Impostor"
-              disabled={impostorCount <= 1}
-              onClick={() => setImpostorCount(impostorCount - 1)}
+              disabled={effectiveImpostors <= 1}
+              onClick={() => setImpostorCount(effectiveImpostors - 1)}
             >
               −
             </button>
-            <output aria-label="Anzahl Impostor">{impostorCount}</output>
+            <output aria-label="Anzahl Impostor">{effectiveImpostors}</output>
             <button
               type="button"
               aria-label="Mehr Impostor"
-              disabled={impostorCount >= max}
-              onClick={() => setImpostorCount(impostorCount + 1)}
+              disabled={effectiveImpostors >= max}
+              onClick={() => setImpostorCount(effectiveImpostors + 1)}
             >
               +
             </button>

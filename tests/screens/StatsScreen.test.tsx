@@ -64,9 +64,14 @@ describe("StatsScreen", () => {
   it("startet einen neuen Abend und löscht nur nach Rückfrage", async () => {
     const user = userEvent.setup();
     const props = setup();
+    const confirm = vi.spyOn(window, "confirm").mockReturnValue(false);
+    await user.click(screen.getByRole("button", { name: "Neuer Abend" }));
+    expect(confirm).toHaveBeenCalledWith("Neuen Abend starten? „Heute“ beginnt dann wieder bei null.");
+    expect(props.onNewEvening).not.toHaveBeenCalled();
+    confirm.mockReturnValue(true);
     await user.click(screen.getByRole("button", { name: "Neuer Abend" }));
     expect(props.onNewEvening).toHaveBeenCalledOnce();
-    const confirm = vi.spyOn(window, "confirm").mockReturnValue(false);
+    confirm.mockReturnValue(false);
     await user.click(screen.getByRole("button", { name: "Statistik löschen" }));
     expect(props.onClear).not.toHaveBeenCalled();
     confirm.mockReturnValue(true);

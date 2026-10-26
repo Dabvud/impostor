@@ -57,6 +57,7 @@ describe("SetupScreen", () => {
       impostorCount: 2,
       mode: "alle",
       difficulty: 1,
+      hintsEnabled: true,
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await user.click(screen.getByRole("button", { name: "Finn entfernen" }));
@@ -70,7 +71,13 @@ describe("SetupScreen", () => {
   it("füllt die letzten Einstellungen vor und startet mit normalisierten Namen", async () => {
     const user = userEvent.setup();
     const onStart = vi.fn();
-    const initial: Settings = { names: ["Anna", "Ben", "Cem"], impostorCount: 1, mode: "alle", difficulty: 3 };
+    const initial: Settings = {
+      names: ["Anna", "Ben", "Cem"],
+      impostorCount: 1,
+      mode: "alle",
+      difficulty: 3,
+      hintsEnabled: true,
+    };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await addNames(user, ["  Dana  "]);
     await user.selectOptions(screen.getByLabelText("Spielmodus"), "cl-legenden");
@@ -80,6 +87,20 @@ describe("SetupScreen", () => {
       impostorCount: 1,
       mode: "cl-legenden",
       difficulty: 3,
+      hintsEnabled: true,
     });
+  });
+
+  it("schaltet den Tipp für Impostor an und aus", async () => {
+    const user = userEvent.setup();
+    const onStart = vi.fn();
+    render(<SetupScreen initial={null} onStart={onStart} />);
+    const toggle = screen.getByRole("switch", { name: "Tipp für Impostor" });
+    expect(toggle).toBeChecked();
+    await user.click(toggle);
+    expect(toggle).not.toBeChecked();
+    for (const n of ["Anna", "Ben", "Cem"]) await user.type(screen.getByLabelText("Name"), `${n}{Enter}`);
+    await user.click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ hintsEnabled: false }));
   });
 });

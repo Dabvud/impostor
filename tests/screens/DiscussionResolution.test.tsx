@@ -6,7 +6,8 @@ import DiscussionScreen from "../../src/screens/DiscussionScreen";
 import ResolutionScreen from "../../src/screens/ResolutionScreen";
 
 const round: Round = {
-  word: { name: "Messi", hint: null },
+  word: { name: "Messi", hints: ["Argentinien"] },
+  hint: "Argentinien",
   impostors: ["Ben", "Dana"],
   revealOrder: ["Anna", "Ben", "Cem", "Dana", "Eli"],
   starter: "Jonas",
@@ -29,6 +30,7 @@ describe("ResolutionScreen", () => {
     expect(screen.getByText("Ben")).toBeInTheDocument();
     expect(screen.getByText("Dana")).toBeInTheDocument();
     expect(screen.getByText("Messi")).toBeInTheDocument();
+    expect(screen.getByText("Tipp war: Argentinien")).toBeInTheDocument();
     await new Promise((r) => setTimeout(r, 550));
     await user.click(screen.getByRole("button", { name: "Neue Runde" }));
     await user.click(screen.getByRole("button", { name: "Einstellungen" }));

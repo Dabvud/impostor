@@ -21,6 +21,7 @@ export function drawRound(
   pool: Entry[],
   used: string[],
   rng: Rng,
+  withHint = false,
 ): { round: Round; used: string[] } {
   if (pool.length === 0) throw new Error("Leerer Topf");
 
@@ -36,6 +37,7 @@ export function drawRound(
   const impostors = shuffle(names, rng).slice(0, impostorCount);
   const revealOrder = shuffle(names, rng);
   const starter = pick(names, rng);
+  const hint = withHint && word.hints.length > 0 ? pick(word.hints, rng) : null;
 
-  return { round: { word, impostors, revealOrder, starter }, used: [...baseUsed, word.name] };
+  return { round: { word, hint, impostors, revealOrder, starter }, used: [...baseUsed, word.name] };
 }

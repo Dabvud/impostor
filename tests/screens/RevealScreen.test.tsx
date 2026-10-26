@@ -5,7 +5,17 @@ import RevealScreen from "../../src/screens/RevealScreen";
 function setup(props: Partial<Parameters<typeof RevealScreen>[0]> = {}) {
   const onSeen = vi.fn();
   const onPassOn = vi.fn();
-  render(<RevealScreen isImpostor={false} word="Messi" canPass={false} onSeen={onSeen} onPassOn={onPassOn} {...props} />);
+  render(
+    <RevealScreen
+      isImpostor={false}
+      word="Messi"
+      hint={null}
+      canPass={false}
+      onSeen={onSeen}
+      onPassOn={onPassOn}
+      {...props}
+    />,
+  );
   return { onSeen, onPassOn, card: screen.getByTestId("reveal-card") };
 }
 
@@ -37,6 +47,18 @@ describe("RevealScreen", () => {
     drag(card, 400, 300);
     expect(screen.getByText("🕵️ Du bist der Impostor")).toBeInTheDocument();
     expect(screen.queryByText("Messi")).not.toBeInTheDocument();
+  });
+
+  it("zeigt dem Impostor den Tipp", () => {
+    const { card } = setup({ isImpostor: true, hint: "Argentinien" });
+    drag(card, 400, 300);
+    expect(screen.getByText("Tipp: Argentinien")).toBeInTheDocument();
+  });
+
+  it("zeigt der Crew keinen Tipp", () => {
+    const { card } = setup({ hint: "Argentinien" });
+    drag(card, 400, 300);
+    expect(screen.queryByText(/Tipp/)).not.toBeInTheDocument();
   });
 
   it("aktiviert Weitergeben erst mit canPass", () => {

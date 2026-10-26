@@ -6,7 +6,8 @@ import type { GameState } from "../src/game/state";
 import { saveGame } from "../src/storage";
 
 const round = {
-  word: { name: "Schalke 04", hint: null },
+  word: { name: "Schalke 04", hints: [] },
+  hint: null,
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
   starter: "Cem",

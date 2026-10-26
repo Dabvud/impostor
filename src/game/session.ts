@@ -15,6 +15,6 @@ export function nextRound(
 ): { round: Round; used: UsedMap } {
   const key = poolKey(s.mode, s.difficulty);
   const pool = poolFor(s.mode, s.difficulty, players, clubs);
-  const result = drawRound(normalizeNames(s.names), s.impostorCount, pool, used[key] ?? [], rng);
+  const result = drawRound(normalizeNames(s.names), s.impostorCount, pool, used[key] ?? [], rng, s.hintsEnabled);
   return { round: result.round, used: { ...used, [key]: result.used } };
 }

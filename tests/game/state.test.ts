@@ -3,7 +3,8 @@ import { reducer, restore, type Action, type GameState } from "../../src/game/st
 import type { Round } from "../../src/game/types";
 
 const round: Round = {
-  word: { name: "Messi", hint: null },
+  word: { name: "Messi", hints: [] },
+  hint: null,
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
   starter: "Cem",

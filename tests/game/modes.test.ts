@@ -3,14 +3,14 @@ import { MODES, poolFor, poolKey } from "../../src/game/modes";
 import type { Club, Footballer } from "../../src/game/types";
 
 const players: Footballer[] = [
-  { name: "A", tier: 1, tags: ["bundesliga"], hint: null },
-  { name: "B", tier: 2, tags: ["cl-legende"], hint: null },
-  { name: "C", tier: 3, tags: ["wm-legende", "bundesliga", "fifa-icon"], hint: null },
+  { name: "A", tier: 1, tags: ["bundesliga"], hints: { nation: "Land A", position: "Torwart", special: "Trick A" } },
+  { name: "B", tier: 2, tags: ["cl-legende"], hints: { nation: "Land B", position: "Stürmer", special: null } },
+  { name: "C", tier: 3, tags: ["wm-legende", "bundesliga", "fifa-icon"], hints: { nation: "Land C", position: "Stürmer", special: null } },
 ];
 const clubs: Club[] = [
-  { name: "X", region: "de", inAllClubs: true, hint: null },
-  { name: "Y", region: "int", inAllClubs: true, hint: null },
-  { name: "Z", region: "de", inAllClubs: false, hint: null },
+  { name: "X", region: "de", inAllClubs: true, hints: { region: "Region X", colors: "Rot" } },
+  { name: "Y", region: "int", inAllClubs: true, hints: { region: "Region Y", colors: "Blau" } },
+  { name: "Z", region: "de", inAllClubs: false, hints: { region: "Region Z", colors: "Grün" } },
 ];
 const names = (mode: Parameters<typeof poolFor>[0], difficulty: 1 | 2 | 3 = 1) =>
   poolFor(mode, difficulty, players, clubs).map((e) => e.name);
@@ -35,11 +35,14 @@ describe("poolFor", () => {
     expect(names("vereine-int")).toEqual(["X", "Y"]);
   });
 
-  it("liefert nur name und hint", () => {
-    expect(poolFor("alle", 1, players, clubs)).toEqual([{ name: "A", hint: null }]);
+  it("liefert Name und die vorhandenen Tipps als Liste", () => {
+    expect(poolFor("alle", 2, players, clubs)).toEqual([
+      { name: "A", hints: ["Land A", "Torwart", "Trick A"] },
+      { name: "B", hints: ["Land B", "Stürmer"] },
+    ]);
     expect(poolFor("vereine-int", 1, players, clubs)).toEqual([
-      { name: "X", hint: null },
-      { name: "Y", hint: null },
+      { name: "X", hints: ["Region X", "Rot"] },
+      { name: "Y", hints: ["Region Y", "Blau"] },
     ]);
   });
 });

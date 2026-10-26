@@ -89,6 +89,7 @@ export default function App() {
             key={state.index}
             isImpostor={state.round.impostors.includes(name)}
             word={state.round.word.name}
+            hint={state.round.hint}
             canPass={state.seen}
             onSeen={() => dispatch({ type: "seen" })}
             onPassOn={() => dispatch({ type: "passOn" })}

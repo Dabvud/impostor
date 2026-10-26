@@ -4,7 +4,7 @@ import type { Entry } from "../../src/game/types";
 import { seededRng } from "../helpers/rng";
 
 const names = ["Anna", "Ben", "Cem", "Dana", "Eli"];
-const pool: Entry[] = Array.from({ length: 10 }, (_, i) => ({ name: `E${i}`, hint: null }));
+const pool: Entry[] = Array.from({ length: 10 }, (_, i) => ({ name: `E${i}`, hints: [`Tipp${i}a`, `Tipp${i}b`] }));
 const poolNames = pool.map((e) => e.name);
 
 describe("drawRound", () => {
@@ -67,6 +67,26 @@ describe("drawRound", () => {
 
   it("ist bei gleichem Seed reproduzierbar", () => {
     expect(drawRound(names, 2, pool, [], seededRng(99))).toEqual(drawRound(names, 2, pool, [], seededRng(99)));
+  });
+
+  it("zieht mit Tipp einen der Tipps des gezogenen Worts", () => {
+    const tips = new Set<string | null>();
+    for (let seed = 0; seed < 50; seed++) {
+      const { round } = drawRound(names, 1, pool, [], seededRng(seed), true);
+      expect(round.word.hints).toContain(round.hint);
+      tips.add(round.hint?.slice(-1) ?? null);
+    }
+    expect(tips).toEqual(new Set(["a", "b"]));
+  });
+
+  it("zieht ohne Tipp-Schalter keinen Tipp", () => {
+    expect(drawRound(names, 1, pool, [], seededRng(1), false).round.hint).toBeNull();
+    expect(drawRound(names, 1, pool, [], seededRng(1)).round.hint).toBeNull();
+  });
+
+  it("liefert keinen Tipp, wenn das Wort keine Tipps hat", () => {
+    const bare: Entry[] = [{ name: "Solo", hints: [] }];
+    expect(drawRound(names, 1, bare, [], seededRng(1), true).round.hint).toBeNull();
   });
 
   it("wirft bei leerem Topf", () => {

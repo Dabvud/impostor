@@ -17,9 +17,10 @@ export default function SetupScreen({ initial, onStart }: Props) {
   const [impostorCount, setImpostorCount] = useState(initial?.impostorCount ?? 1);
   const [mode, setMode] = useState<ModeId>(initial?.mode ?? "alle");
   const [difficulty, setDifficulty] = useState<Tier>(initial?.difficulty ?? 1);
+  const [hintsEnabled, setHintsEnabled] = useState(initial?.hintsEnabled ?? true);
 
   const max = maxImpostors(names.length);
-  const settings: Settings = { names, impostorCount, mode, difficulty };
+  const settings: Settings = { names, impostorCount, mode, difficulty, hintsEnabled };
   const errors = validateSettings(settings);
   const hasDifficulty = MODES.find((m) => m.id === mode)?.hasDifficulty ?? false;
 
@@ -67,6 +68,15 @@ export default function SetupScreen({ initial, onStart }: Props) {
 
       <section className="panel">
         <h2>Impostor</h2>
+        <label className="switch-row">
+          <span>Tipp für Impostor</span>
+          <input
+            type="checkbox"
+            role="switch"
+            checked={hintsEnabled}
+            onChange={(e) => setHintsEnabled(e.target.checked)}
+          />
+        </label>
         <div className="stepper">
           <button
             type="button"

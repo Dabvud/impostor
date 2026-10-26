@@ -3,12 +3,24 @@ import type { GameState } from "../src/game/state";
 import type { Settings } from "../src/game/types";
 import { loadGame, loadSettings, loadUsed, saveGame, saveSettings, saveUsed } from "../src/storage";
 
-const settings: Settings = { names: ["Anna", "Ben", "Cem"], impostorCount: 1, mode: "vereine-int", difficulty: 2 };
+const settings: Settings = {
+  names: ["Anna", "Ben", "Cem"],
+  impostorCount: 1,
+  mode: "vereine-int",
+  difficulty: 2,
+  hintsEnabled: false,
+};
 const game: GameState = {
   phase: "reveal",
   index: 1,
   seen: true,
-  round: { word: { name: "Messi", hint: null }, impostors: ["Ben"], revealOrder: ["Anna", "Ben", "Cem"], starter: "Cem" },
+  round: {
+    word: { name: "Messi", hints: ["Argentinien"] },
+    hint: "Argentinien",
+    impostors: ["Ben"],
+    revealOrder: ["Anna", "Ben", "Cem"],
+    starter: "Cem",
+  },
 };
 
 beforeEach(() => localStorage.clear());
@@ -33,6 +45,20 @@ describe("speichern und laden", () => {
   it("lädt die Einrichtungsphase ohne Runde", () => {
     saveGame({ phase: "setup" });
     expect(loadGame()).toEqual({ phase: "setup" });
+  });
+});
+
+describe("Spielstände aus v1.0", () => {
+  it("schaltet den Tipp bei alten Einstellungen ohne Schalter ein", () => {
+    const { hintsEnabled: _, ...old } = settings;
+    localStorage.setItem("impostor:v1:settings", JSON.stringify(old));
+    expect(loadSettings()).toEqual({ ...settings, hintsEnabled: true });
+  });
+
+  it("lädt alte Runden ohne Tipp mit hint null", () => {
+    const oldRound = { word: { name: "Messi", hint: null }, impostors: ["Ben"], revealOrder: ["Anna", "Ben", "Cem"], starter: "Cem" };
+    localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "discussion", round: oldRound }));
+    expect(loadGame()).toEqual({ phase: "discussion", round: { ...oldRound, word: { name: "Messi", hints: [] }, hint: null } });
   });
 });
 

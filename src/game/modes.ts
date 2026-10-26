@@ -10,7 +10,12 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "vereine-int", label: "🌐 Alle Vereine", hasDifficulty: false },
 ];
 
-const toEntry = ({ name, hint }: { name: string; hint: string | null }): Entry => ({ name, hint });
+const playerEntry = ({ name, hints }: Footballer): Entry => ({
+  name,
+  hints: [hints.nation, hints.position, hints.special].filter((h): h is string => Boolean(h)),
+});
+
+const clubEntry = ({ name, hints }: Club): Entry => ({ name, hints: [hints.region, hints.colors] });
 
 const withTag = (players: Footballer[], tag: Tag) => players.filter((p) => p.tags.includes(tag));
 
@@ -18,19 +23,19 @@ const withTag = (players: Footballer[], tag: Tag) => players.filter((p) => p.tag
 export function poolFor(mode: ModeId, difficulty: Tier, players: Footballer[], clubs: Club[]): Entry[] {
   switch (mode) {
     case "alle":
-      return players.filter((p) => p.tier <= difficulty).map(toEntry);
+      return players.filter((p) => p.tier <= difficulty).map(playerEntry);
     case "bundesliga":
-      return withTag(players, "bundesliga").map(toEntry);
+      return withTag(players, "bundesliga").map(playerEntry);
     case "cl-legenden":
-      return withTag(players, "cl-legende").map(toEntry);
+      return withTag(players, "cl-legende").map(playerEntry);
     case "wm-legenden":
-      return withTag(players, "wm-legende").map(toEntry);
+      return withTag(players, "wm-legende").map(playerEntry);
     case "fifa-icons":
-      return withTag(players, "fifa-icon").map(toEntry);
+      return withTag(players, "fifa-icon").map(playerEntry);
     case "vereine-de":
-      return clubs.filter((c) => c.region === "de").map(toEntry);
+      return clubs.filter((c) => c.region === "de").map(clubEntry);
     case "vereine-int":
-      return clubs.filter((c) => c.inAllClubs).map(toEntry);
+      return clubs.filter((c) => c.inAllClubs).map(clubEntry);
   }
 }
 

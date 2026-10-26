@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { maxImpostors, normalizeNames, validateSettings } from "../../src/game/settings";
 import type { Settings } from "../../src/game/types";
 
-const base: Settings = { names: ["Anna", "Ben", "Cem"], impostorCount: 1, mode: "alle", difficulty: 1 };
+const base: Settings = { names: ["Anna", "Ben", "Cem"], impostorCount: 1, mode: "alle", difficulty: 1, hintsEnabled: true };
 
 describe("maxImpostors", () => {
   it.each([

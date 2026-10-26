@@ -35,7 +35,8 @@ function isSettings(v: unknown): v is Settings {
     isStringArray(v.names) &&
     typeof v.impostorCount === "number" &&
     MODES.some((m) => m.id === v.mode) &&
-    [1, 2, 3].includes(v.difficulty as number)
+    [1, 2, 3].includes(v.difficulty as number) &&
+    (v.hintsEnabled === undefined || typeof v.hintsEnabled === "boolean")
   );
 }
 
@@ -49,6 +50,16 @@ function isRound(v: unknown): v is Round {
     v.revealOrder.length > 0 &&
     typeof v.starter === "string"
   );
+}
+
+/** Runden aus v1.0 haben noch kein `hint` und `word.hint` statt `word.hints`. */
+function upgradeRound(round: Round): Round {
+  const hints = (round.word as { hints?: unknown }).hints;
+  return {
+    ...round,
+    word: { name: round.word.name, hints: isStringArray(hints) ? hints : [] },
+    hint: typeof round.hint === "string" ? round.hint : null,
+  };
 }
 
 function isGameState(v: unknown): v is GameState {
@@ -69,7 +80,7 @@ function isGameState(v: unknown): v is GameState {
 
 export function loadSettings(): Settings | null {
   const v = read(KEYS.settings);
-  return isSettings(v) ? v : null;
+  return isSettings(v) ? { ...v, hintsEnabled: v.hintsEnabled ?? true } : null;
 }
 
 export function saveSettings(s: Settings): void {
@@ -78,7 +89,8 @@ export function saveSettings(s: Settings): void {
 
 export function loadGame(): GameState | null {
   const v = read(KEYS.game);
-  return isGameState(v) ? v : null;
+  if (!isGameState(v)) return null;
+  return v.phase === "setup" ? v : { ...v, round: upgradeRound(v.round) };
 }
 
 export function saveGame(g: GameState): void {

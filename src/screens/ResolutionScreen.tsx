@@ -24,6 +24,7 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
       </ul>
       <p className="eyebrow">Das Wort war</p>
       <p className="word">{round.word.name}</p>
+      {round.hint && <p className="hint">Tipp war: {round.hint}</p>}
       <button type="button" className="primary" onClick={() => armed && onNewRound()}>
         Neue Runde
       </button>

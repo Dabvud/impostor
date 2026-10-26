@@ -998,22 +998,6 @@
     "hint": null
   },
   {
-    "name": "Timo Hildebrand",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
-    "name": "Hans-Jörg Butt",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
     "name": "Naldo",
     "tier": 2,
     "tags": [
@@ -1036,14 +1020,6 @@
       "bundesliga",
       "cl-legende",
       "wm-legende"
-    ],
-    "hint": null
-  },
-  {
-    "name": "Daniel van Buyten",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
     ],
     "hint": null
   },
@@ -1185,14 +1161,6 @@
     "hint": null
   },
   {
-    "name": "Marcel Jansen",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
     "name": "Dennis Aogo",
     "tier": 2,
     "tags": [
@@ -1217,14 +1185,6 @@
     "hint": null
   },
   {
-    "name": "Philipp Max",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
     "name": "David Raum",
     "tier": 2,
     "tags": [
@@ -1234,22 +1194,6 @@
   },
   {
     "name": "Robin Gosens",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
-    "name": "Borna Sosa",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
-    "name": "Angeliño",
     "tier": 2,
     "tags": [
       "bundesliga"
@@ -1282,14 +1226,6 @@
   },
   {
     "name": "Julian Ryerson",
-    "tier": 2,
-    "tags": [
-      "bundesliga"
-    ],
-    "hint": null
-  },
-  {
-    "name": "Rafinha",
     "tier": 2,
     "tags": [
       "bundesliga"
@@ -4230,6 +4166,14 @@
     "tier": 3,
     "tags": [
       "fifa-icon"
+    ],
+    "hint": null
+  },
+  {
+    "name": "Nicklas Bendtner",
+    "tier": 2,
+    "tags": [
+      "bundesliga"
     ],
     "hint": null
   }

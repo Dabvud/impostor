@@ -17,12 +17,18 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
 
   return (
     <main className="screen">
-      <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>
-      <ul className="impostor-list">
-        {round.impostors.map((name) => (
-          <li key={name}>{displayName(name)}</li>
-        ))}
-      </ul>
+      {round.impostors.length === 0 ? (
+        <h1 className="big-name">Keiner war Impostor! 😄</h1>
+      ) : (
+        <>
+          <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>
+          <ul className="impostor-list">
+            {round.impostors.map((name) => (
+              <li key={name}>{displayName(name)}</li>
+            ))}
+          </ul>
+        </>
+      )}
       <p className="eyebrow">Das Wort war</p>
       <p className="word">{round.word.name}</p>
       {round.hint && <p className="hint">Tipp war: {round.hint}</p>}

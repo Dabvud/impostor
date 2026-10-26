@@ -162,12 +162,17 @@ button.primary {
   font-weight: 700;
   min-width: 2ch;
   text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 
 .segmented {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
+}
+
+.think-times {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .segmented button[aria-pressed="true"] {
@@ -196,6 +201,115 @@ button.primary {
   font-size: clamp(36px, 11vw, 56px);
   text-align: center;
   word-break: break-word;
+}
+
+/* Countdown im Anstoßkreis */
+.match-clock {
+  --clock: var(--accent);
+  position: relative;
+  width: min(68vw, 260px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.match-clock.final,
+.match-clock.over {
+  --clock: var(--danger);
+}
+
+.match-clock svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.match-clock-track {
+  fill: none;
+  stroke: #24392c;
+  stroke-width: 6;
+}
+
+.match-clock-ring {
+  fill: none;
+  stroke: var(--clock);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.25s linear, stroke 0.3s;
+}
+
+.match-clock-spot {
+  fill: var(--clock);
+  opacity: 0.35;
+}
+
+.match-clock-time {
+  font-size: clamp(52px, 17vw, 76px);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  color: var(--clock);
+  transition: color 0.3s;
+}
+
+.match-clock.over .match-clock-time {
+  animation: clock-over 0.6s ease-out 2;
+}
+
+@keyframes clock-over {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .match-clock-ring,
+  .match-clock-time {
+    transition: none;
+  }
+
+  .match-clock.over .match-clock-time {
+    animation: none;
+  }
+}
+
+/* Immer erreichbar, aber leise: oben rechts, abseits von Karte und Weiter-Button */
+.end-round {
+  position: fixed;
+  top: max(10px, env(safe-area-inset-top));
+  right: max(10px, env(safe-area-inset-right));
+  z-index: 10;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid #2c4636;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.end-round:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.time-up {
+  margin: 0;
+  color: var(--danger);
+  text-align: center;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.timer-controls button {
+  flex: 1;
 }
 
 .reveal-card {
@@ -331,6 +445,7 @@ button.primary {
   position: relative;
   width: 52px;
   height: 30px;
+  flex-shrink: 0;
   margin: 0;
   border-radius: 999px;
   background: var(--bg);

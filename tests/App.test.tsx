@@ -98,6 +98,25 @@ describe("App", () => {
   });
 });
 
+describe("Runde beenden", () => {
+  it("ist während der Runde immer sichtbar und fragt vor dem Abbrechen nach", async () => {
+    saveGame({ phase: "reveal", round, index: 1, seen: false });
+    const confirm = vi.spyOn(window, "confirm").mockReturnValue(false);
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Runde beenden" }));
+    expect(confirm).toHaveBeenCalledWith("Runde beenden? Namen und Einstellungen bleiben erhalten.");
+    expect(screen.getByRole("heading", { name: "Ben ist dran" })).toBeInTheDocument();
+    confirm.mockReturnValue(true);
+    fireEvent.click(screen.getByRole("button", { name: "Runde beenden" }));
+    expect(screen.getByRole("button", { name: "Start" })).toBeInTheDocument();
+  });
+
+  it("fehlt in der Einrichtung", () => {
+    render(<App />);
+    expect(screen.queryByRole("button", { name: "Runde beenden" })).not.toBeInTheDocument();
+  });
+});
+
 describe("Signatur", () => {
   it("zeigt unten die Signatur von Dabvud", () => {
     render(<App />);

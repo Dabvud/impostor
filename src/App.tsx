@@ -1,9 +1,11 @@
 import { useEffect, useReducer, useRef, useState } from "react";
 import clubsJson from "./data/clubs.json";
 import playersJson from "./data/players.json";
+import { unlockAudio } from "./alarm";
 import { nextRound } from "./game/session";
 import { reducer, restore, type GameState } from "./game/state";
 import type { Club, Footballer, Settings } from "./game/types";
+import CluesScreen from "./screens/CluesScreen";
 import DiscussionScreen from "./screens/DiscussionScreen";
 import HandoffScreen from "./screens/HandoffScreen";
 import ResolutionScreen from "./screens/ResolutionScreen";
@@ -27,6 +29,16 @@ export default function App() {
   phase.current = state.phase;
 
   useEffect(() => saveGame(state), [state]);
+
+  // Jeder Fingertipp schaltet den Ton frei, damit der Timer-Piep auch auf dem iPhone kommt.
+  useEffect(() => {
+    document.addEventListener("pointerdown", unlockAudio);
+    return () => document.removeEventListener("pointerdown", unlockAudio);
+  }, []);
+
+  function endRound() {
+    if (window.confirm("Runde beenden? Namen und Einstellungen bleiben erhalten.")) dispatch({ type: "toSetup" });
+  }
 
   // Sperrbildschirm oder App-Wechsel: offene Karte verdecken, zurück zur Übergabe.
   useEffect(() => {
@@ -96,8 +108,25 @@ export default function App() {
           />
         );
       }
+      case "clues":
+        return (
+          <CluesScreen
+            key={state.index}
+            name={state.round.speakingOrder[state.index]}
+            seconds={state.round.thinkSeconds ?? 0}
+            position={state.index + 1}
+            total={state.round.speakingOrder.length}
+            onNext={() => dispatch({ type: "nextClue" })}
+          />
+        );
       case "discussion":
-        return <DiscussionScreen starter={state.round.starter} onResolve={() => dispatch({ type: "resolve" })} />;
+        return (
+          <DiscussionScreen
+            starter={state.round.thinkSeconds ? null : state.round.starter}
+            seconds={state.round.discussSeconds}
+            onResolve={() => dispatch({ type: "resolve" })}
+          />
+        );
       case "resolution":
         return (
           <ResolutionScreen
@@ -111,6 +140,11 @@ export default function App() {
 
   return (
     <>
+      {state.phase !== "setup" && (
+        <button type="button" className="end-round" onClick={endRound}>
+          <span aria-hidden="true">✕</span> Runde beenden
+        </button>
+      )}
       {renderScreen()}
       <footer className="signature">von Dabvud</footer>
       <footer className="version">

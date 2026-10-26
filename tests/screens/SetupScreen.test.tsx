@@ -113,6 +113,26 @@ describe("SetupScreen", () => {
     expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ discussSeconds: 600, thinkSeconds: null }));
   });
 
+  it("springt bei einem krummen gespeicherten Wert auf die nächste Stufe", async () => {
+    const user = userEvent.setup();
+    const initial: Settings = {
+      names: ["Anna", "Ben", "Cem"],
+      impostorCount: 1,
+      mode: "alle",
+      difficulty: 1,
+      hintsEnabled: true,
+      secretImpostors: false,
+      thinkSeconds: null,
+      discussSeconds: 90,
+    };
+    render(<SetupScreen initial={initial} onStart={vi.fn()} />);
+    await user.click(screen.getByRole("button", { name: "Mehr Zeit" }));
+    expect(screen.getByLabelText("Dauer Diskussion")).toHaveTextContent("2:00");
+    await user.click(screen.getByRole("button", { name: "Weniger Zeit" }));
+    await user.click(screen.getByRole("button", { name: "Weniger Zeit" }));
+    expect(screen.getByLabelText("Dauer Diskussion")).toHaveTextContent("0:30");
+  });
+
   it("übernimmt gespeicherte Timer- und Geheim-Einstellungen", () => {
     const initial: Settings = {
       names: ["Anna", "Ben", "Cem"],

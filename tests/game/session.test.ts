@@ -54,6 +54,18 @@ describe("nextRound", () => {
     expect([...seen].every((n) => n <= 3 || n === 7)).toBe(true);
   });
 
+  it("erlaubt „alle Impostor“ bei Spielern nur bis 10, bei Vereinen nur bis 6 Mitspielern", () => {
+    const allOrNone = (mode: Settings["mode"], count: number) => {
+      const names = Array.from({ length: count }, (_, i) => `S${i}`);
+      const s = { ...settings, mode, names, secretImpostors: true };
+      return nextRound(s, players, clubs, {}, () => 0).round.impostors.length;
+    };
+    expect(allOrNone("vereine-de", 6)).toBe(6);
+    expect(allOrNone("vereine-de", 7)).toBe(0);
+    expect(allOrNone("alle", 10)).toBe(10);
+    expect(allOrNone("alle", 11)).toBe(0);
+  });
+
   it("verwendet normalisierte Namen", () => {
     const { round } = nextRound(settings, players, clubs, {}, seededRng(5));
     expect([...round.revealOrder].sort()).toEqual(["Anna", "Ben", "Cem"]);

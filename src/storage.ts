@@ -28,6 +28,8 @@ function write(key: string, value: unknown): void {
 
 const isObject = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null;
 const isStringArray = (v: unknown): v is string[] => Array.isArray(v) && v.every((x) => typeof x === "string");
+const isStringRecord = (v: unknown): v is Record<string, string> =>
+  isObject(v) && Object.values(v).every((x) => typeof x === "string");
 
 function isSettings(v: unknown): v is Settings {
   return (
@@ -73,6 +75,7 @@ function upgradeRound(round: Round): Round {
     speakingOrder: isStringArray(round.speakingOrder) && round.speakingOrder.length > 0 ? round.speakingOrder : fallbackOrder,
     thinkSeconds: secondsOrNull(round.thinkSeconds),
     discussSeconds: secondsOrNull(round.discussSeconds),
+    personalHints: isStringRecord(round.personalHints) ? round.personalHints : null,
   };
 }
 

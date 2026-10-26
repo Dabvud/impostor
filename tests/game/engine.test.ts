@@ -101,6 +101,32 @@ describe("drawRound", () => {
     expect(drawRound(names, 0, pool, [], seededRng(3)).round.impostors).toEqual([]);
   });
 
+  it("gibt jedem einen eigenen Tipp aus verschiedenen Kategorien, wenn alle Impostor sind", () => {
+    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f", "g"] }];
+    for (let seed = 0; seed < 20; seed++) {
+      const { round } = drawRound(names, names.length, rich, [], seededRng(seed), true);
+      const tips = names.map((n) => round.personalHints?.[n]);
+      expect(new Set(tips).size).toBe(names.length);
+      tips.forEach((t) => expect(rich[0].allHints).toContain(t));
+      expect(round.hint).toBeNull();
+    }
+  });
+
+  it("verteilt die Kategorien zufällig", () => {
+    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f", "g"] }];
+    const firstTips = new Set<string>();
+    for (let seed = 0; seed < 40; seed++) {
+      firstTips.add(drawRound(names, names.length, rich, [], seededRng(seed), true).round.personalHints?.Anna ?? "");
+    }
+    expect(firstTips.size).toBeGreaterThan(4);
+  });
+
+  it("gibt ohne Tipp-Schalter oder ohne „alle Impostor“ keine persönlichen Tipps", () => {
+    const rich: Entry[] = [{ name: "W", hints: ["h"], allHints: ["a", "b", "c", "d", "e", "f"] }];
+    expect(drawRound(names, names.length, rich, [], seededRng(1), false).round.personalHints).toBeNull();
+    expect(drawRound(names, 2, rich, [], seededRng(1), true).round.personalHints).toBeNull();
+  });
+
   it("wirft bei leerem Topf", () => {
     expect(() => drawRound(names, 1, [], [], seededRng(1))).toThrow("Leerer Topf");
   });
@@ -121,6 +147,15 @@ describe("drawImpostorCount", () => {
     expect(shares[0]).toBeCloseTo(0.1, 1);
     for (let k = 1; k <= max; k++) expect(shares[k]).toBeCloseTo(0.89 / max, 1);
     for (let k = max + 1; k < PLAYERS; k++) expect(shares[k]).toBe(0);
+  });
+
+  it("lässt „alle Impostor“ weg, wenn es nicht erlaubt ist (zu viele Spieler)", () => {
+    const rng = seededRng(7);
+    const counts = new Array(PLAYERS + 1).fill(0);
+    for (let i = 0; i < 50000; i++) counts[drawImpostorCount(2, PLAYERS, rng, false)]++;
+    expect(counts[PLAYERS]).toBe(0);
+    expect(counts[0] / 50000).toBeCloseTo(0.1, 1);
+    expect(counts[1] / 50000).toBeCloseTo(0.45, 1);
   });
 
   it("trifft die Grenzen genau", () => {

@@ -101,6 +101,19 @@ describe("ResolutionScreen alle Impostor", () => {
     render(<ResolutionScreen round={{ ...round, impostors: [...round.revealOrder] }} onNewRound={vi.fn()} onSettings={vi.fn()} />);
     expect(screen.getByText("Alle waren Impostor! 🤯")).toBeInTheDocument();
   });
+
+  it("zeigt, wer welchen Tipp hatte", () => {
+    const personalHints = { Anna: "Linksfuß", Ben: "Glatze", Cem: "2010er", Dana: "Südamerika", Eli: "Finaltor" };
+    render(
+      <ResolutionScreen
+        round={{ ...round, impostors: [...round.revealOrder], hint: null, personalHints }}
+        onNewRound={vi.fn()}
+        onSettings={vi.fn()}
+      />,
+    );
+    expect(screen.getByText("Anna: Linksfuß")).toBeInTheDocument();
+    expect(screen.getByText("Eli: Finaltor")).toBeInTheDocument();
+  });
 });
 
 describe("ResolutionScreen Klickschutz", () => {

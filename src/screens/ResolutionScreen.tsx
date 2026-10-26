@@ -20,7 +20,18 @@ export default function ResolutionScreen({ round, onNewRound, onSettings }: Prop
       {round.impostors.length === 0 ? (
         <h1 className="big-name">Keiner war Impostor! 😄</h1>
       ) : round.impostors.length === round.revealOrder.length ? (
-        <h1 className="big-name">Alle waren Impostor! 🤯</h1>
+        <>
+          <h1 className="big-name">Alle waren Impostor! 🤯</h1>
+          {round.personalHints && (
+            <ul className="personal-tips">
+              {Object.entries(round.personalHints).map(([name, tip]) => (
+                <li key={name}>
+                  {displayName(name)}: {tip}
+                </li>
+              ))}
+            </ul>
+          )}
+        </>
       ) : (
         <>
           <p className="eyebrow">{round.impostors.length > 1 ? "Die Impostor waren" : "Der Impostor war"}</p>

@@ -63,6 +63,17 @@ describe("App", () => {
     expect(screen.getByRole("heading", { name: "Diskussion" })).toBeInTheDocument();
   });
 
+  it("zeigt in der Alle-Impostor-Runde jedem seinen eigenen Tipp", () => {
+    const personal = { ...round, impostors: ["Anna", "Ben", "Cem"], personalHints: { Anna: "Linksfuß", Ben: "Glatze", Cem: "2010er" } };
+    saveGame({ phase: "reveal", round: personal, index: 1, seen: false });
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Ich bin Ben" }));
+    const card = screen.getByTestId("reveal-card");
+    fireEvent.pointerDown(card, { clientY: 400, pointerId: 1 });
+    fireEvent.pointerMove(card, { clientY: 250, pointerId: 1 });
+    expect(screen.getByText("Tipp: Glatze")).toBeInTheDocument();
+  });
+
   it("setzt nach Neuladen beim Übergabe-Bildschirm des aktuellen Spielers fort", () => {
     saveGame({ phase: "reveal", round, index: 1, seen: true } satisfies GameState);
     render(<App />);

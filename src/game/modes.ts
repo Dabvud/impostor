@@ -1,4 +1,4 @@
-import type { Club, ClubHints, Entry, Footballer, ModeId, Tag, Tier } from "./types";
+import type { Club, ClubExtras, ClubHints, Entry, Footballer, ModeId, PlayerExtras, Tag, Tier } from "./types";
 
 export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
   { id: "alle", label: "⚽ Alle Fußballer", hasDifficulty: true },
@@ -13,8 +13,29 @@ export const MODES: { id: ModeId; label: string; hasDifficulty: boolean }[] = [
 /** Kommen weniger Spieler eines Landes im Topf vor, verrät die Nation als Tipp zu viel. */
 const MIN_SAME_NATION = 5;
 const CLUB_HINT_KEYS: (keyof ClubHints)[] = ["region", "color", "league", "character", "success", "crest"];
+const PLAYER_EXTRA_KEYS: (keyof PlayerExtras)[] = [
+  "continent",
+  "league",
+  "playStyle",
+  "trait",
+  "moment",
+  "competition",
+  "title",
+  "hair",
+  "look",
+  "era",
+  "build",
+  "foot",
+  "careerType",
+  "shirtNumber",
+  "status",
+  "afterCareer",
+  "bundesliga",
+  "transfer",
+];
+const CLUB_EXTRA_KEYS: (keyof ClubExtras)[] = ["stadium", "founded", "cityType", "derby", "sponsor", "mascot"];
 
-const isText = (h: string | null): h is string => Boolean(h);
+const isText = (h: string | null | undefined): h is string => Boolean(h);
 
 function countBy<T>(items: T[], key: (item: T) => string): Map<string, number> {
   const counts = new Map<string, number>();
@@ -22,26 +43,48 @@ function countBy<T>(items: T[], key: (item: T) => string): Map<string, number> {
   return counts;
 }
 
+/**
+ * Behält pro Spalte (Kategorie) nur Werte, die mindestens `min` Einträge im Topf teilen
+ * (sonst verraten sie den Begriff) und nicht alle (sonst sagen sie nichts).
+ */
+function sharedOnly(rows: (string | null | undefined)[][], min: (column: number) => number): (string | null)[][] {
+  const columns = rows[0]?.length ?? 0;
+  const counts = Array.from({ length: columns }, (_, c) => countBy(rows, (row) => row[c] ?? ""));
+  return rows.map((row) =>
+    row.map((value, c) => {
+      if (!value) return null;
+      const n = counts[c].get(value) ?? 0;
+      return n >= min(c) && n < rows.length ? value : null;
+    }),
+  );
+}
+
 function playerEntries(players: Footballer[]): Entry[] {
   const nations = countBy(players, (p) => p.hints.nation);
-  return players.map(({ name, hints }) => {
+  // Spalte 0 = Nation (strengere Grenze), danach Position und die Zusatz-Kategorien
+  const all = sharedOnly(
+    players.map((p) => [p.hints.nation, p.hints.position, ...PLAYER_EXTRA_KEYS.map((k) => p.extras?.[k])]),
+    (c) => (c === 0 ? MIN_SAME_NATION : 2),
+  );
+  return players.map(({ name, hints }, i) => {
     const nation = (nations.get(hints.nation) ?? 0) >= MIN_SAME_NATION ? hints.nation : null;
-    return { name, hints: [nation, hints.position, hints.special].filter(isText) };
+    return { name, hints: [nation, hints.position, hints.special].filter(isText), allHints: all[i].filter(isText) };
   });
 }
 
 /**
- * Ein Vereins-Tipp taugt nur, wenn ihn mindestens zwei Vereine im Topf teilen (sonst verrät er
- * den Verein) und nicht alle (sonst sagt er nichts, z. B. „Bundesliga“ im Bundesliga-Modus).
+ * Vereins-Tipps nur, wenn mindestens zwei Vereine im Topf sie teilen (sonst verraten sie den
+ * Verein) und nicht alle (sonst sagen sie nichts, z. B. „Bundesliga“ im Bundesliga-Modus).
  */
 function clubEntries(clubs: Club[]): Entry[] {
-  const counts = new Map(CLUB_HINT_KEYS.map((key) => [key, countBy(clubs, (c) => c.hints[key])]));
-  return clubs.map(({ name, hints }) => ({
+  const all = sharedOnly(
+    clubs.map((c) => [...CLUB_HINT_KEYS.map((k) => c.hints[k]), ...CLUB_EXTRA_KEYS.map((k) => c.extras?.[k])]),
+    () => 2,
+  );
+  return clubs.map(({ name }, i) => ({
     name,
-    hints: CLUB_HINT_KEYS.map((key) => {
-      const n = counts.get(key)?.get(hints[key]) ?? 0;
-      return n >= 2 && n < clubs.length ? hints[key] : null;
-    }).filter(isText),
+    hints: all[i].slice(0, CLUB_HINT_KEYS.length).filter(isText),
+    allHints: all[i].filter(isText),
   }));
 }
 

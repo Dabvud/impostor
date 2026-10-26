@@ -102,7 +102,7 @@ export default function App() {
             name={name}
             isImpostor={state.round.impostors.includes(name)}
             word={state.round.word.name}
-            hint={state.round.hint}
+            hint={state.round.personalHints?.[name] ?? state.round.hint}
             canPass={state.seen}
             onSeen={() => dispatch({ type: "seen" })}
             onPassOn={() => dispatch({ type: "passOn" })}

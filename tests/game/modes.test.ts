@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { MODES, poolFor, poolKey } from "../../src/game/modes";
-import type { Club, Footballer } from "../../src/game/types";
+import type { Club, Entry, Footballer, PlayerExtras } from "../../src/game/types";
 
 const players: Footballer[] = [
   { name: "A", tier: 1, tags: ["bundesliga"], hints: { nation: "Land A", position: "Torwart", special: "Trick A" } },
@@ -16,8 +16,47 @@ const clubs: Club[] = [
   club("Y", "int", true, "Region Y|Blau|Liga Y|Großklub|Pokalsieger|Kreuz im Wappen"),
   club("Z", "de", false, "Region Z|Grün|Liga Z|Werksklub|Meister|Tier im Wappen"),
 ];
+/** Nur die normalen Tipps – die Tipps der Alle-Impostor-Runde prüfen eigene Tests. */
+const normal = (entries: Entry[]) => entries.map(({ name, hints }) => ({ name, hints }));
 const names = (mode: Parameters<typeof poolFor>[0], difficulty: 1 | 2 | 3 = 1) =>
   poolFor(mode, difficulty, players, clubs).map((e) => e.name);
+
+describe("poolFor – Tipps für die Runde, in der alle Impostor sind", () => {
+  const extras = (o: Partial<PlayerExtras>): PlayerExtras => ({
+    continent: null, league: null, playStyle: null, trait: null, moment: null, competition: null, title: null,
+    hair: null, look: null, era: null, build: null, foot: null, careerType: null, shirtNumber: null,
+    status: null, afterCareer: null, bundesliga: null, transfer: null, ...o,
+  });
+  const p = (name: string, position: string, o: Partial<PlayerExtras>): Footballer => ({
+    name, tier: 1, tags: [], hints: { nation: "Land " + name, position, special: null }, extras: extras(o),
+  });
+  const squad = [
+    p("M", "Stürmer", { continent: "Südamerika", foot: "Linksfuß", era: "2010er", hair: "Glatze" }),
+    p("R", "Stürmer", { continent: "Europa", foot: "Linksfuß", era: "2010er", hair: "blond" }),
+    p("K", "Torwart", { continent: "Südamerika", foot: "Rechtsfuß", era: "2010er", hair: "Locken" }),
+  ];
+
+  it("sammelt pro Kategorie einen Tipp, wenn ihn mind. 2, aber nicht alle im Topf teilen", () => {
+    const byName = Object.fromEntries(poolFor("alle", 1, squad, []).map((e) => [e.name, e.allHints]));
+    expect(byName.M).toEqual(["Stürmer", "Südamerika", "Linksfuß"]);
+    expect(byName.R).toEqual(["Stürmer", "Linksfuß"]);
+    expect(byName.K).toEqual(["Südamerika"]);
+  });
+
+  it("nimmt bei Vereinen auch Stadion, Gründungszeit und Co. dazu", () => {
+    const c = (name: string, stadium: string, founded: string): Club => ({
+      name, region: "de", inAllClubs: true,
+      hints: { region: "R" + name, color: "C" + name, league: "L" + name, character: "X" + name, success: "S" + name, crest: "W" + name },
+      extras: { stadium, founded, cityType: null, derby: null, sponsor: null, mascot: null },
+    });
+    const league = [c("A", "großes Stadion", "1900er"), c("B", "großes Stadion", "1910er"), c("D", "kleines Stadion", "1910er")];
+    expect(poolFor("vereine-de", 1, [], league).map((e) => e.allHints)).toEqual([
+      ["großes Stadion"],
+      ["großes Stadion", "1910er"],
+      ["1910er"],
+    ]);
+  });
+});
 
 describe("poolFor", () => {
   it("wendet die Schwierigkeit bei 'alle' kumulativ an", () => {
@@ -40,12 +79,12 @@ describe("poolFor", () => {
   });
 
   it("liefert Name und die vorhandenen Tipps als Liste", () => {
-    expect(poolFor("alle", 2, players, clubs)).toEqual([
+    expect(normal(poolFor("alle", 2, players, clubs))).toEqual([
       { name: "A", hints: ["Torwart", "Trick A"] },
       { name: "B", hints: ["Stürmer"] },
     ]);
     // X und Z teilen nur „Meister“ – das trifft auf beide (alle) zu und fällt weg
-    expect(poolFor("vereine-de", 1, players, clubs)).toEqual([
+    expect(normal(poolFor("vereine-de", 1, players, clubs))).toEqual([
       { name: "X", hints: [] },
       { name: "Z", hints: [] },
     ]);
@@ -74,7 +113,7 @@ describe("poolFor", () => {
       club("R", "int", true, "Österreich|Rot|Österreichische Bundesliga|Investorenklub|Meister|Tier im Wappen"),
       club("L", "de", true, "Rheinland|Rot|Bundesliga|Werksklub|Europapokalsieger|Kreuz im Wappen"),
     ];
-    expect(poolFor("vereine-int", 1, [], league)).toEqual([
+    expect(normal(poolFor("vereine-int", 1, [], league))).toEqual([
       { name: "D", hints: ["Ruhrpott", "Bundesliga", "Traditionsverein", "Buchstaben im Wappen"] },
       { name: "S", hints: ["Ruhrpott", "Bundesliga", "Traditionsverein", "Buchstaben im Wappen"] },
       { name: "R", hints: ["Rot"] },

@@ -37,12 +37,32 @@ export function drawRound(
   const impostors = shuffle(names, rng).slice(0, impostorCount);
   const revealOrder = shuffle(names, rng);
   const starter = pick(names, rng);
-  const hint = withHint && word.hints.length > 0 ? pick(word.hints, rng) : null;
+  // Sind alle Impostor, bekommt jeder einen eigenen Tipp aus einer anderen Kategorie.
+  const allHints = word.allHints ?? [];
+  const everyone = names.length > 0 && impostors.length === names.length;
+  let hint: string | null = null;
+  let personalHints: Record<string, string> | null = null;
+  if (withHint && everyone && allHints.length > 0) {
+    const tips = shuffle(allHints, rng);
+    personalHints = Object.fromEntries(names.map((n, i) => [n, tips[i % tips.length]]));
+  } else if (withHint && word.hints.length > 0) {
+    hint = pick(word.hints, rng);
+  }
   const start = names.indexOf(starter);
   const speakingOrder = [...names.slice(start), ...names.slice(0, start)];
 
   return {
-    round: { word, hint, impostors, revealOrder, starter, speakingOrder, thinkSeconds: null, discussSeconds: null },
+    round: {
+      word,
+      hint,
+      personalHints,
+      impostors,
+      revealOrder,
+      starter,
+      speakingOrder,
+      thinkSeconds: null,
+      discussSeconds: null,
+    },
     used: [...baseUsed, word.name],
   };
 }
@@ -54,12 +74,14 @@ const NO_IMPOSTOR_CHANCE = 0.1;
 
 /**
  * Geheimer Modus: 1 % alle Spieler, 10 % keiner, die übrigen 89 % gleich verteilt auf 1 bis max.
+ * Ohne `allowAll` (zu viele Mitspieler für eigene Tipp-Kategorien) entfällt das 1 %.
  */
-export function drawImpostorCount(max: number, playerCount: number, rng: Rng): number {
+export function drawImpostorCount(max: number, playerCount: number, rng: Rng, allowAll = true): number {
+  const allChance = allowAll ? ALL_IMPOSTORS_CHANCE : 0;
   const r = rng();
-  if (r < ALL_IMPOSTORS_CHANCE) return playerCount;
-  if (r < ALL_IMPOSTORS_CHANCE + NO_IMPOSTOR_CHANCE) return 0;
-  const rest = ALL_IMPOSTORS_CHANCE + NO_IMPOSTOR_CHANCE;
+  if (r < allChance) return playerCount;
+  if (r < allChance + NO_IMPOSTOR_CHANCE) return 0;
+  const rest = allChance + NO_IMPOSTOR_CHANCE;
   const share = (r - rest) / (1 - rest);
   return Math.min(max, 1 + Math.floor(share * max));
 }

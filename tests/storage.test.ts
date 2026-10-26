@@ -26,6 +26,7 @@ const game: GameState = {
     speakingOrder: ["Cem", "Anna", "Ben"],
     thinkSeconds: 30,
     discussSeconds: null,
+    personalHints: null,
   },
 };
 
@@ -79,6 +80,7 @@ describe("Spielstände aus v1.0", () => {
         speakingOrder: ["Cem", "Anna", "Ben"],
         thinkSeconds: null,
         discussSeconds: null,
+        personalHints: null,
       },
     });
   });
@@ -99,6 +101,14 @@ describe("kaputte Daten", () => {
     expect(loadGame()).toBeNull();
     localStorage.setItem("impostor:v1:game", JSON.stringify({ phase: "handoff", index: 0 }));
     expect(loadGame()).toBeNull();
+  });
+
+  it("lädt persönliche Tipps einer Alle-Impostor-Runde und verwirft kaputte", () => {
+    const personal = { ...game, round: { ...game.round, personalHints: { Anna: "Linksfuß", Ben: "Glatze", Cem: "2010er" } } };
+    localStorage.setItem("impostor:v1:game", JSON.stringify(personal));
+    expect(loadGame()).toEqual(personal);
+    localStorage.setItem("impostor:v1:game", JSON.stringify({ ...personal, round: { ...personal.round, personalHints: { Anna: 5 } } }));
+    expect((loadGame() as { round: { personalHints: unknown } }).round.personalHints).toBeNull();
   });
 
   it("lädt eine Hinweisrunde und verwirft einen ungültigen Index", () => {

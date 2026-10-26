@@ -10,10 +10,40 @@ export type ClubHints = {
   success: string;
   crest: string;
 };
-export type Footballer = { name: string; tier: Tier; tags: Tag[]; hints: PlayerHints };
+/** Zusätzliche Tipp-Kategorien, nur für die Runde, in der alle Impostor sind. */
+export type PlayerExtras = {
+  continent: string | null;
+  league: string | null;
+  playStyle: string | null;
+  trait: string | null;
+  moment: string | null;
+  competition: string | null;
+  title: string | null;
+  hair: string | null;
+  look: string | null;
+  era: string | null;
+  build: string | null;
+  foot: string | null;
+  careerType: string | null;
+  shirtNumber: string | null;
+  status: string | null;
+  afterCareer: string | null;
+  bundesliga: string | null;
+  transfer: string | null;
+};
+export type ClubExtras = {
+  stadium: string | null;
+  founded: string | null;
+  cityType: string | null;
+  derby: string | null;
+  sponsor: string | null;
+  mascot: string | null;
+};
+export type Footballer = { name: string; tier: Tier; tags: Tag[]; hints: PlayerHints; extras?: PlayerExtras };
 /** `inAllClubs`: erscheint im Modus „Alle Vereine“ (internationale Vereine immer, Bundesliga nur die relevanten). */
-export type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hints: ClubHints };
-export type Entry = { name: string; hints: string[] };
+export type Club = { name: string; region: "de" | "int"; inAllClubs: boolean; hints: ClubHints; extras?: ClubExtras };
+/** `allHints`: ein Tipp je Kategorie für die Runde, in der alle Impostor sind. */
+export type Entry = { name: string; hints: string[]; allHints?: string[] };
 export type ModeId =
   | "alle"
   | "bundesliga"
@@ -45,6 +75,8 @@ export type Round = {
   speakingOrder: string[];
   thinkSeconds: number | null;
   discussSeconds: number | null;
+  /** Nur wenn alle Impostor sind: jeder bekommt einen eigenen Tipp (Name → Tipp). */
+  personalHints?: Record<string, string> | null;
 };
 /** Liefert Zufallszahlen in [0, 1). */
 export type Rng = () => number;

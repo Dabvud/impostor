@@ -56,5 +56,7 @@ export default defineConfig({
     environment: "jsdom",
     include: ["tests/**/*.test.ts?(x)"],
     setupFiles: ["tests/setup.ts"],
+    // UI-Tests mit echten Wartezeiten (Halten, Klickschutz) brauchen unter Last mehr als 5 s
+    testTimeout: 15000,
   },
 });

@@ -63,6 +63,10 @@ describe("players.json", () => {
     expect(invalid.map((p) => p.name)).toEqual([]);
   });
 
+  it("hat für jeden Spieler eine Besonderheit ohne Jahreszahlen oder Daten", () => {
+    expect(players.filter((p) => !p.hints.special || /\d/.test(p.hints.special)).map((p) => p.name)).toEqual([]);
+  });
+
   it("verrät in keinem Tipp den Spielernamen", () => {
     const leaking = players.flatMap((p) =>
       [p.hints.nation, p.hints.special ?? ""].filter((h) => leaks(p.name, h)).map((h) => `${p.name}: ${h}`),

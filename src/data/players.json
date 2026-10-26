@@ -9,7 +9,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Flügelspieler",
-      "special": "La Pulga"
+      "special": "Dribbler"
     }
   },
   {
@@ -22,7 +22,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Stürmer",
-      "special": "Siuuu"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -34,7 +34,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Regenbogenflick"
+      "special": "technisch stark"
     }
   },
   {
@@ -46,7 +46,7 @@
     "hints": {
       "nation": "Norwegen",
       "position": "Stürmer",
-      "special": "Torroboter"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -58,7 +58,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Dreierpack im WM-Finale"
+      "special": "schnell"
     }
   },
   {
@@ -71,7 +71,7 @@
     "hints": {
       "nation": "Polen",
       "position": "Stürmer",
-      "special": "Fünferpack in neun Minuten"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -85,7 +85,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Raumdeuter"
+      "special": "Weltmeister"
     }
   },
   {
@@ -114,7 +114,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Querpasskönig"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -127,7 +127,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Zentrales Mittelfeld",
-      "special": "Goldener Ball 2018"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -139,7 +139,7 @@
     "hints": {
       "nation": "Ägypten",
       "position": "Flügelspieler",
-      "special": "Ägyptischer König"
+      "special": "Konterspieler"
     }
   },
   {
@@ -151,7 +151,7 @@
     "hints": {
       "nation": "England",
       "position": "Offensives Mittelfeld",
-      "special": "Jubel mit offenen Armen"
+      "special": "torgefährlich"
     }
   },
   {
@@ -163,7 +163,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Bambi"
+      "special": "wendig"
     }
   },
   {
@@ -175,7 +175,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Normale Kartoffeln"
+      "special": "Spielmacher"
     }
   },
   {
@@ -188,7 +188,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Englands Rekordtorschütze"
+      "special": "Rekordtorschütze"
     }
   },
   {
@@ -200,7 +200,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Goldener Ball 2022"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -212,7 +212,7 @@
     "hints": {
       "nation": "Uruguay",
       "position": "Stürmer",
-      "special": "El Pistolero"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -224,7 +224,7 @@
     "hints": {
       "nation": "Schweden",
       "position": "Stürmer",
-      "special": "Fallrückzieher gegen England"
+      "special": "technisch stark"
     }
   },
   {
@@ -238,7 +238,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "WM-Finaltor 2010"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -252,7 +252,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Tiki-Taka"
+      "special": "passsicher"
     }
   },
   {
@@ -264,7 +264,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Defensives Mittelfeld",
-      "special": "Taktgeber vor der Abwehr"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -277,7 +277,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Innenverteidiger",
-      "special": "Ausgleich in letzter Minute"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -289,7 +289,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Innenverteidiger",
-      "special": "Kings League"
+      "special": "Weltmeister"
     }
   },
   {
@@ -302,7 +302,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "Lockenkopf"
+      "special": "Flankengeber"
     }
   },
   {
@@ -314,7 +314,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "Offensiver Rechtsverteidiger"
+      "special": "offensivstark"
     }
   },
   {
@@ -328,7 +328,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Torwart",
-      "special": "Heiliger im Tor"
+      "special": "Reflexe"
     }
   },
   {
@@ -342,7 +342,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Torwart",
-      "special": "Gigi"
+      "special": "Weltmeister"
     }
   },
   {
@@ -355,7 +355,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Offensives Mittelfeld",
-      "special": "Vorlagenkönig"
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -365,7 +365,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Flügelspieler",
-      "special": "Dribbelkünstler"
+      "special": "Dribbler"
     }
   },
   {
@@ -377,7 +377,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Telefonjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -389,7 +389,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Zentrales Mittelfeld",
-      "special": "Dab-Jubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -399,7 +399,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Defensives Mittelfeld",
-      "special": "Unermüdlicher Balleroberer"
+      "special": "Balleroberer"
     }
   },
   {
@@ -409,7 +409,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Skorpiontor"
+      "special": "kopfballstark"
     }
   },
   {
@@ -422,7 +422,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": "Weltmeister 2018"
+      "special": "Weltmeister"
     }
   },
   {
@@ -434,7 +434,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Torwart",
-      "special": "Weltmeisterkapitän 2018"
+      "special": "Weltmeister"
     }
   },
   {
@@ -446,7 +446,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Torwart",
-      "special": "Paraden im Königsklassenfinale"
+      "special": "reaktionsschnell"
     }
   },
   {
@@ -458,7 +458,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Torwart mit Passqualität"
+      "special": "passsicher"
     }
   },
   {
@@ -468,7 +468,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Torwart",
-      "special": "Kopfballtor als Torwart"
+      "special": "Mitspielender Torwart"
     }
   },
   {
@@ -478,7 +478,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Torwart",
-      "special": "Lange Abschläge"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -500,7 +500,7 @@
     "hints": {
       "nation": "Senegal",
       "position": "Flügelspieler",
-      "special": "Afrikameister 2022"
+      "special": "antrittsstark"
     }
   },
   {
@@ -512,7 +512,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "No-Look-Tore"
+      "special": "kombinationsstark"
     }
   },
   {
@@ -522,7 +522,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": "Starboy"
+      "special": "wendig"
     }
   },
   {
@@ -532,7 +532,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -542,7 +542,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Meistertor in letzter Sekunde"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -552,7 +552,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Defensives Mittelfeld",
-      "special": "Goldener Ball 2024"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -562,7 +562,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "technisch stark"
     }
   },
   {
@@ -572,7 +572,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Offensives Mittelfeld",
-      "special": "Sprung beim Elfmeter"
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -584,7 +584,7 @@
     "hints": {
       "nation": "Südkorea",
       "position": "Flügelspieler",
-      "special": "Kamerajubel"
+      "special": "beidfüßig"
     }
   },
   {
@@ -597,7 +597,7 @@
     "hints": {
       "nation": "Wales",
       "position": "Flügelspieler",
-      "special": "Golf"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -609,7 +609,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Flügelspieler",
-      "special": "Herzjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -622,7 +622,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Vorlagenkünstler"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -635,7 +635,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Weltmeister 2014"
+      "special": "Weltmeister"
     }
   },
   {
@@ -650,7 +650,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Fußballgott"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -662,7 +662,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "El Guaje"
+      "special": "Weltmeister"
     }
   },
   {
@@ -674,7 +674,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "El Niño"
+      "special": "Europameister"
     }
   },
   {
@@ -684,7 +684,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Offensives Mittelfeld",
-      "special": "Zauberer"
+      "special": "Spielmacher"
     }
   },
   {
@@ -696,7 +696,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Vorlage zum WM-Finaltor"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -706,7 +706,7 @@
     "hints": {
       "nation": "Uruguay",
       "position": "Stürmer",
-      "special": "El Matador"
+      "special": "laufstark"
     }
   },
   {
@@ -716,7 +716,7 @@
     "hints": {
       "nation": "Kolumbien",
       "position": "Stürmer",
-      "special": "El Tigre"
+      "special": "kopfballstark"
     }
   },
   {
@@ -729,7 +729,7 @@
     "hints": {
       "nation": "Kolumbien",
       "position": "Offensives Mittelfeld",
-      "special": "WM-Torschützenkönig 2014"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -739,7 +739,7 @@
     "hints": {
       "nation": "Chile",
       "position": "Flügelspieler",
-      "special": "Copa-América-Sieger"
+      "special": "Dribbler"
     }
   },
   {
@@ -749,7 +749,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Stürmer",
-      "special": "Belgiens Rekordtorschütze"
+      "special": "robust"
     }
   },
   {
@@ -759,7 +759,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Torwart",
-      "special": null
+      "special": "Reflexe"
     }
   },
   {
@@ -779,7 +779,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Torwart",
-      "special": "Bester Spieler der EM"
+      "special": "Europameister"
     }
   },
   {
@@ -791,7 +791,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Rustikaler Abwehrchef"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -801,7 +801,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Lange Diagonalbälle"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -811,7 +811,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "La Joya"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -821,7 +821,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "El Toro"
+      "special": "Weltmeister"
     }
   },
   {
@@ -833,7 +833,7 @@
     "hints": {
       "nation": "Nigeria",
       "position": "Stürmer",
-      "special": "Schutzmaske"
+      "special": "kopfballstark"
     }
   },
   {
@@ -845,7 +845,7 @@
     "hints": {
       "nation": "Marokko",
       "position": "Außenverteidiger",
-      "special": "Pinguinjubel"
+      "special": "schnell"
     }
   },
   {
@@ -857,7 +857,7 @@
     "hints": {
       "nation": "Kanada",
       "position": "Außenverteidiger",
-      "special": "Roadrunner"
+      "special": "antrittsstark"
     }
   },
   {
@@ -869,7 +869,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Sambadribblings"
+      "special": "Dribbler"
     }
   },
   {
@@ -879,7 +879,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Doppelpack gegen City"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -889,7 +889,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Flankengeber"
     }
   },
   {
@@ -899,7 +899,7 @@
     "hints": {
       "nation": "Uruguay",
       "position": "Zentrales Mittelfeld",
-      "special": "Distanzschüsse"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -909,7 +909,7 @@
     "hints": {
       "nation": "England",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Balleroberer"
     }
   },
   {
@@ -922,7 +922,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Beidfüßiger Dribbler"
+      "special": "beidfüßig"
     }
   },
   {
@@ -935,7 +935,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Fallrückzieher im Derby"
+      "special": "Kämpfer"
     }
   },
   {
@@ -947,7 +947,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Treue zur Borussia"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -960,7 +960,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Grätschen und Spieleröffnung"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -975,7 +975,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Weltmeisterkapitän 2014"
+      "special": "Weltmeister"
     }
   },
   {
@@ -989,7 +989,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Lange Diagonalbälle"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1003,7 +1003,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Kaiser"
+      "special": "Dribbler"
     }
   },
   {
@@ -1017,7 +1017,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Flügelspieler",
-      "special": "Nach innen ziehen"
+      "special": "Dribbler"
     }
   },
   {
@@ -1030,7 +1030,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "WM-Finaltor"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -1042,7 +1042,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Döner"
+      "special": "Kultfigur"
     }
   },
   {
@@ -1054,7 +1054,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Poker"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -1066,7 +1066,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Kochjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -1078,7 +1078,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Tempo auf dem Flügel"
+      "special": "schnell"
     }
   },
   {
@@ -1091,7 +1091,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Ballverteiler"
     }
   },
   {
@@ -1103,7 +1103,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Kapitän beim Triple"
+      "special": "passsicher"
     }
   },
   {
@@ -1115,7 +1115,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Defensives Mittelfeld",
-      "special": "Unbesiegter Meister 2024"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -1127,7 +1127,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Stürmer",
-      "special": null
+      "special": "abschlusssicher"
     }
   },
   {
@@ -1151,7 +1151,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Muskelpaket"
+      "special": "robust"
     }
   },
   {
@@ -1163,7 +1163,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -1175,7 +1175,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Confed-Cup-Kapitän"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1187,7 +1187,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "passsicher"
     }
   },
   {
@@ -1200,7 +1200,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Siegtor im Königsklassenfinale"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -1212,7 +1212,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Turbo"
+      "special": "Konterspieler"
     }
   },
   {
@@ -1224,7 +1224,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Torero"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -1237,7 +1237,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Prinz Poldi"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -1250,7 +1250,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Vorlage zum WM-Finaltor"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1263,7 +1263,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Eistonne"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1276,7 +1276,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Weltmeister 2014"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1288,7 +1288,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Fußballexperte"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1300,7 +1300,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Weltmeister 2014"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1312,7 +1312,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Weltmeister"
     }
   },
   {
@@ -1324,7 +1324,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Grandioses Englisch"
+      "special": "Kultfigur"
     }
   },
   {
@@ -1336,7 +1336,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Europapokalheld 2022"
+      "special": "Elfmeterkiller"
     }
   },
   {
@@ -1348,7 +1348,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Reflexe"
     }
   },
   {
@@ -1360,7 +1360,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "reaktionsschnell"
     }
   },
   {
@@ -1372,7 +1372,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Mitspielender Torwart"
     }
   },
   {
@@ -1384,7 +1384,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Torwart",
-      "special": "Elfmeterparade gegen Frankreich"
+      "special": "Reflexe"
     }
   },
   {
@@ -1396,7 +1396,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Torwart",
-      "special": null
+      "special": "reaktionsschnell"
     }
   },
   {
@@ -1408,7 +1408,7 @@
     "hints": {
       "nation": "Ungarn",
       "position": "Torwart",
-      "special": null
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -1420,7 +1420,7 @@
     "hints": {
       "nation": "Finnland",
       "position": "Torwart",
-      "special": "Unbesiegter Meisterkapitän"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -1432,7 +1432,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Torwart",
-      "special": null
+      "special": "Strafraumbeherrschung"
     }
   },
   {
@@ -1444,7 +1444,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Reflexe"
     }
   },
   {
@@ -1456,7 +1456,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -1470,7 +1470,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Elfmeterzettel"
+      "special": "Elfmeterkiller"
     }
   },
   {
@@ -1482,7 +1482,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "reaktionsschnell"
     }
   },
   {
@@ -1494,7 +1494,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Wrestling"
+      "special": "Reflexe"
     }
   },
   {
@@ -1506,7 +1506,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "Freistoßhammer"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -1518,7 +1518,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "Lockenkopf"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -1532,7 +1532,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "Sturmläufe aus der Abwehr"
+      "special": "Vorwärtsdrang"
     }
   },
   {
@@ -1544,7 +1544,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Innenverteidiger",
-      "special": "Micho"
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -1556,7 +1556,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Spielaufbau mit links"
+      "special": "passsicher"
     }
   },
   {
@@ -1568,7 +1568,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -1580,7 +1580,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -1592,7 +1592,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -1604,7 +1604,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Unbesiegter Meister 2024"
+      "special": "Abwehrchef"
     }
   },
   {
@@ -1616,7 +1616,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Kantiger Abwehrchef"
+      "special": "Kämpfer"
     }
   },
   {
@@ -1628,7 +1628,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -1640,7 +1640,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -1653,7 +1653,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Volleytor gegen Argentinien"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -1665,7 +1665,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": "Weltmeister 2018"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1677,7 +1677,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "schnell"
     }
   },
   {
@@ -1689,7 +1689,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -1701,7 +1701,7 @@
     "hints": {
       "nation": "Ungarn",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -1713,7 +1713,7 @@
     "hints": {
       "nation": "Polen",
       "position": "Außenverteidiger",
-      "special": "Vom Stürmer zum Verteidiger"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -1725,7 +1725,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -1737,7 +1737,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Weltmeister 2014"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1749,7 +1749,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Flankengeber"
     }
   },
   {
@@ -1761,7 +1761,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Vereinslegende"
     }
   },
   {
@@ -1773,7 +1773,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Entscheidender Elfmeter 2016"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -1785,7 +1785,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Flankengeber"
     }
   },
   {
@@ -1797,7 +1797,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "EM-Spiel gegen Portugal"
+      "special": "kopfballstark"
     }
   },
   {
@@ -1809,7 +1809,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Außenverteidiger",
-      "special": "Tempo auf der Außenbahn"
+      "special": "antrittsstark"
     }
   },
   {
@@ -1821,7 +1821,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "kombinationsstark"
     }
   },
   {
@@ -1833,7 +1833,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -1845,7 +1845,7 @@
     "hints": {
       "nation": "Norwegen",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Kämpfer"
     }
   },
   {
@@ -1858,7 +1858,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Außenverteidiger",
-      "special": "Stuhl-Jubel"
+      "special": "vielseitig"
     }
   },
   {
@@ -1870,7 +1870,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Defensives Mittelfeld",
-      "special": "Kopfballheld im Supercup"
+      "special": "Balleroberer"
     }
   },
   {
@@ -1885,7 +1885,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Defensives Mittelfeld",
-      "special": "Lange Diagonalpässe"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -1897,7 +1897,7 @@
     "hints": {
       "nation": "Chile",
       "position": "Zentrales Mittelfeld",
-      "special": "Krieger"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -1909,7 +1909,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Techniker im Mittelfeld"
+      "special": "technisch stark"
     }
   },
   {
@@ -1921,7 +1921,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Zentrales Mittelfeld",
-      "special": "Weltmeister 2018"
+      "special": "Weltmeister"
     }
   },
   {
@@ -1933,7 +1933,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Distanzschütze"
     }
   },
   {
@@ -1945,7 +1945,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Zentrales Mittelfeld",
-      "special": "Pressingmaschine"
+      "special": "pressingstark"
     }
   },
   {
@@ -1957,7 +1957,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Europapokalsieger 2022"
+      "special": "Kämpfer"
     }
   },
   {
@@ -1969,7 +1969,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Führungsspieler"
     }
   },
   {
@@ -1981,7 +1981,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Abräumer"
     }
   },
   {
@@ -1993,7 +1993,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -2005,7 +2005,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Fallrückzieher gegen Watford"
+      "special": "robust"
     }
   },
   {
@@ -2017,7 +2017,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -2029,7 +2029,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Zentrales Mittelfeld",
-      "special": "Meister-Spielmacher 2011"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -2041,7 +2041,7 @@
     "hints": {
       "nation": "Japan",
       "position": "Offensives Mittelfeld",
-      "special": "Doppelpasskünstler"
+      "special": "kombinationsstark"
     }
   },
   {
@@ -2053,7 +2053,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Tor aus der Ferne"
+      "special": "Spielmacher"
     }
   },
   {
@@ -2066,7 +2066,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Lutscher"
+      "special": "Kämpfer"
     }
   },
   {
@@ -2078,7 +2078,7 @@
     "hints": {
       "nation": "Peru",
       "position": "Stürmer",
-      "special": "Andenbomber"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -2090,7 +2090,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Phantomtor"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -2102,7 +2102,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "vielseitig"
     }
   },
   {
@@ -2114,7 +2114,7 @@
     "hints": {
       "nation": "Slowenien",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -2126,7 +2126,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Offensives Mittelfeld",
-      "special": "EM-Torschützenkönig 2024"
+      "special": "Europameister"
     }
   },
   {
@@ -2138,7 +2138,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -2150,7 +2150,7 @@
     "hints": {
       "nation": "Ghana",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -2162,7 +2162,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Zentrales Mittelfeld",
-      "special": "Freistoß aus vierzig Metern"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -2174,7 +2174,7 @@
     "hints": {
       "nation": "Ungarn",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Distanzschütze"
     }
   },
   {
@@ -2186,7 +2186,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Blitztor nach neun Sekunden"
+      "special": "antrittsstark"
     }
   },
   {
@@ -2198,7 +2198,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Spielübersicht"
     }
   },
   {
@@ -2210,7 +2210,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": null
+      "special": "wendig"
     }
   },
   {
@@ -2222,7 +2222,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Lücke"
+      "special": "kopfballstark"
     }
   },
   {
@@ -2234,7 +2234,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "abschlusssicher"
     }
   },
   {
@@ -2246,7 +2246,7 @@
     "hints": {
       "nation": "Bosnien und Herzegowina",
       "position": "Stürmer",
-      "special": null
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -2258,7 +2258,7 @@
     "hints": {
       "nation": "Bosnien und Herzegowina",
       "position": "Stürmer",
-      "special": "Bosnischer Diamant"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -2270,7 +2270,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Hackentor gegen Bayern"
+      "special": "technisch stark"
     }
   },
   {
@@ -2282,7 +2282,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": null
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -2294,7 +2294,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Freistoßtrick gegen Argentinien"
+      "special": "kopfballstark"
     }
   },
   {
@@ -2306,7 +2306,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Brillenjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -2318,7 +2318,7 @@
     "hints": {
       "nation": "Elfenbeinküste",
       "position": "Stürmer",
-      "special": "Vier Tore beim Königsklassendebüt"
+      "special": "Wandspieler"
     }
   },
   {
@@ -2330,7 +2330,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Flügelspieler",
-      "special": "Pokalfinaldoppelpack 2018"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -2342,7 +2342,7 @@
     "hints": {
       "nation": "Serbien",
       "position": "Flügelspieler",
-      "special": "Flankenspezialist"
+      "special": "Flankengeber"
     }
   },
   {
@@ -2354,7 +2354,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": null
+      "special": "Konterspieler"
     }
   },
   {
@@ -2366,7 +2366,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Stürmer",
-      "special": null
+      "special": "schnell"
     }
   },
   {
@@ -2378,7 +2378,7 @@
     "hints": {
       "nation": "Slowenien",
       "position": "Stürmer",
-      "special": null
+      "special": "Distanzschütze"
     }
   },
   {
@@ -2390,7 +2390,7 @@
     "hints": {
       "nation": "Tschechien",
       "position": "Stürmer",
-      "special": "Mittellinientor bei der EM"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -2402,7 +2402,7 @@
     "hints": {
       "nation": "Nigeria",
       "position": "Stürmer",
-      "special": "Unbesiegter Meister 2024"
+      "special": "robust"
     }
   },
   {
@@ -2414,7 +2414,7 @@
     "hints": {
       "nation": "Gabun",
       "position": "Stürmer",
-      "special": "Maskenjubel"
+      "special": "schnell"
     }
   },
   {
@@ -2426,7 +2426,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Stürmer",
-      "special": "Batman-Jubel"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -2438,7 +2438,7 @@
     "hints": {
       "nation": "Kolumbien",
       "position": "Stürmer",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -2450,7 +2450,7 @@
     "hints": {
       "nation": "Paraguay",
       "position": "Stürmer",
-      "special": "La Pantera"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -2462,7 +2462,7 @@
     "hints": {
       "nation": "Guinea",
       "position": "Stürmer",
-      "special": null
+      "special": "abschlusssicher"
     }
   },
   {
@@ -2474,7 +2474,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -2486,7 +2486,7 @@
     "hints": {
       "nation": "Japan",
       "position": "Flügelspieler",
-      "special": "WM-Tor gegen Deutschland"
+      "special": "kombinationsstark"
     }
   },
   {
@@ -2499,7 +2499,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Dreifacher Weltmeister"
+      "special": "Weltmeister"
     }
   },
   {
@@ -2512,7 +2512,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Offensives Mittelfeld",
-      "special": "Hand Gottes"
+      "special": "Weltmeister"
     }
   },
   {
@@ -2527,7 +2527,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Kaiser"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -2542,7 +2542,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Bomber der Nation"
+      "special": "Weltmeister"
     }
   },
   {
@@ -2556,7 +2556,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Offensives Mittelfeld",
-      "special": "Volleytor im Königsklassenfinale"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -2570,7 +2570,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Zahnlücke und Zauberfuß"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -2585,7 +2585,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Titan"
+      "special": "Reflexe"
     }
   },
   {
@@ -2599,7 +2599,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Capitano"
+      "special": "kopfballstark"
     }
   },
   {
@@ -2613,7 +2613,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "WM-Rekordtorschütze"
+      "special": "Rekordtorschütze"
     }
   },
   {
@@ -2627,7 +2627,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Außenverteidiger",
-      "special": "Abwehrlegende aus Mailand"
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -2640,7 +2640,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Offensives Mittelfeld",
-      "special": "Il Capitano"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -2654,7 +2654,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Invincibles"
+      "special": "Konterspieler"
     }
   },
   {
@@ -2667,7 +2667,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Il Fenomeno"
+      "special": "antrittsstark"
     }
   },
   {
@@ -2680,7 +2680,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Fallrückzieher gegen Valencia"
+      "special": "technisch stark"
     }
   },
   {
@@ -2690,7 +2690,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Strafraumgenie"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -2703,7 +2703,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Goldener Ball 2007"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -2717,7 +2717,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "Drei WM-Finals"
+      "special": "laufstark"
     }
   },
   {
@@ -2731,7 +2731,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "Bananenfreistoß"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -2755,7 +2755,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Defensives Mittelfeld",
-      "special": "Weltmeisterkapitän 1994"
+      "special": "Weltmeister"
     }
   },
   {
@@ -2765,7 +2765,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Babywiegenjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -2778,7 +2778,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Dribbelkünstler"
+      "special": "Dribbler"
     }
   },
   {
@@ -2791,7 +2791,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Weißer Pelé"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -2804,7 +2804,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Zentrales Mittelfeld",
-      "special": "Doktor"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -2817,7 +2817,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Tor in jedem WM-Spiel"
+      "special": "torgefährlich"
     }
   },
   {
@@ -2830,7 +2830,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "WM-Finaltor 1970"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -2842,7 +2842,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Defensives Mittelfeld",
-      "special": "Unsichtbare Wand"
+      "special": "Abräumer"
     }
   },
   {
@@ -2855,7 +2855,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Turbo"
+      "special": "schnell"
     }
   },
   {
@@ -2865,7 +2865,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Zentrales Mittelfeld",
-      "special": "Flatterfreistöße"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -2875,7 +2875,7 @@
     "hints": {
       "nation": "Südkorea",
       "position": "Flügelspieler",
-      "special": "Drei Lungen"
+      "special": "laufstark"
     }
   },
   {
@@ -2889,7 +2889,7 @@
     "hints": {
       "nation": "Bulgarien",
       "position": "Stürmer",
-      "special": "Goldener Ball 1994"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -2902,7 +2902,7 @@
     "hints": {
       "nation": "Rumänien",
       "position": "Offensives Mittelfeld",
-      "special": "Karpaten-Maradona"
+      "special": "Spielmacher"
     }
   },
   {
@@ -2915,7 +2915,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Flügelspieler",
-      "special": "Wechsel zum Erzrivalen"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -2928,7 +2928,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Offensives Mittelfeld",
-      "special": "Maestro"
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -2942,7 +2942,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Stürmer",
-      "special": "Schwarzer Panther"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -2955,7 +2955,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Offensives Mittelfeld",
-      "special": "Magier"
+      "special": "passsicher"
     }
   },
   {
@@ -2967,7 +2967,7 @@
     "hints": {
       "nation": "Kamerun",
       "position": "Stürmer",
-      "special": "Weltklasse als Joker"
+      "special": "Wandspieler"
     }
   },
   {
@@ -2981,7 +2981,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Offensives Mittelfeld",
-      "special": "Totaler Fußball"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -2993,7 +2993,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Zentrales Mittelfeld",
-      "special": "Totaler Fußball"
+      "special": "pressingstark"
     }
   },
   {
@@ -3006,7 +3006,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Volleytor im EM-Finale"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -3019,7 +3019,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Offensives Mittelfeld",
-      "special": "Rasta-Locken"
+      "special": "vielseitig"
     }
   },
   {
@@ -3045,7 +3045,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Non-Flying Dutchman"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -3058,7 +3058,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Finaltorschütze mit achtzehn"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -3072,7 +3072,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Torjäger im Strafraum"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -3085,7 +3085,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Zentrales Mittelfeld",
-      "special": "Königsklassensieger mit drei Vereinen"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -3097,7 +3097,7 @@
     "hints": {
       "nation": "USA",
       "position": "Stürmer",
-      "special": "Captain America"
+      "special": "Konterspieler"
     }
   },
   {
@@ -3110,7 +3110,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Torwart",
-      "special": "Elfmeterheld in Moskau"
+      "special": "Mitspielender Torwart"
     }
   },
   {
@@ -3122,7 +3122,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Innenverteidiger",
-      "special": "Abwehrkante"
+      "special": "robust"
     }
   },
   {
@@ -3135,7 +3135,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Offensives Mittelfeld",
-      "special": "WM-Finalist 2010"
+      "special": "beidfüßig"
     }
   },
   {
@@ -3148,7 +3148,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Fliegender Holländer"
+      "special": "technisch stark"
     }
   },
   {
@@ -3160,7 +3160,7 @@
     "hints": {
       "nation": "Japan",
       "position": "Offensives Mittelfeld",
-      "special": "Techniker"
+      "special": "passsicher"
     }
   },
   {
@@ -3172,7 +3172,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Defensives Mittelfeld",
-      "special": "Aggressive Zweikämpfe"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -3184,7 +3184,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Phantom"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -3196,7 +3196,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Außenverteidiger",
-      "special": "Distanzhammer im WM-Halbfinale"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -3209,7 +3209,7 @@
     "hints": {
       "nation": "Südkorea",
       "position": "Stürmer",
-      "special": "Tscha Bum"
+      "special": "antrittsstark"
     }
   },
   {
@@ -3223,7 +3223,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Rekordnationalspieler"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -3235,7 +3235,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Finalelfmeter 1990"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -3247,7 +3247,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Diver-Jubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -3260,7 +3260,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Tante Käthe"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -3273,7 +3273,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Kalle"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -3285,7 +3285,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Uns Uwe"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3295,7 +3295,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Wunder von Bern"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3307,7 +3307,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Aus dem Hintergrund"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -3320,7 +3320,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Katze von Anzing"
+      "special": "Reflexe"
     }
   },
   {
@@ -3332,7 +3332,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Terrier"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -3345,7 +3345,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Afro und Vollbart"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3357,7 +3357,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Weltmeister 1974"
+      "special": "passsicher"
     }
   },
   {
@@ -3369,7 +3369,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Selbsteinwechslung im Pokalfinale"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -3381,7 +3381,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Dribbelkünstler"
+      "special": "Dribbler"
     }
   },
   {
@@ -3393,7 +3393,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Icke"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -3406,7 +3406,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Heulsuse"
+      "special": "torgefährlich"
     }
   },
   {
@@ -3418,7 +3418,7 @@
     "hints": {
       "nation": "Mexiko",
       "position": "Stürmer",
-      "special": "Fallrückzieher und Salto"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -3428,7 +3428,7 @@
     "hints": {
       "nation": "Kolumbien",
       "position": "Offensives Mittelfeld",
-      "special": "Blonde Lockenmähne"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -3440,7 +3440,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Diego"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3454,7 +3454,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Zweikampfmaschine"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -3467,7 +3467,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Air"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3480,7 +3480,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Goldener Ball 1996"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -3493,7 +3493,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Tiger"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -3506,7 +3506,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Dribbelkünstler"
+      "special": "wendig"
     }
   },
   {
@@ -3519,7 +3519,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Samba im Strafraum"
+      "special": "technisch stark"
     }
   },
   {
@@ -3533,7 +3533,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Stürmer",
-      "special": "Fallrückzieher im Königsklassenfinale"
+      "special": "pressingstark"
     }
   },
   {
@@ -3543,7 +3543,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Robotertanz"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -3556,7 +3556,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Managerlegende"
+      "special": "schnell"
     }
   },
   {
@@ -3568,7 +3568,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Turban im Pokalfinale"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3580,7 +3580,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "EM-Torschützenkönig 1980"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -3592,7 +3592,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Sechs Tore gegen Bremen"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -3605,7 +3605,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Kopfballungeheuer"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3618,7 +3618,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Quälix"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -3631,7 +3631,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Bananenflanken"
+      "special": "Flankengeber"
     }
   },
   {
@@ -3643,7 +3643,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Der Schwatte"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -3655,7 +3655,7 @@
     "hints": {
       "nation": "Australien",
       "position": "Offensives Mittelfeld",
-      "special": "Boxen mit der Eckfahne"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3668,7 +3668,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Weißer Brasilianer"
+      "special": "technisch stark"
     }
   },
   {
@@ -3680,7 +3680,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Zentrales Mittelfeld",
-      "special": "Volleytor des Jahres"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -3693,7 +3693,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Außenverteidiger",
-      "special": "Kopfball im Königsklassenfinale"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -3705,7 +3705,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Innenverteidiger",
-      "special": "Kompromissloser Zweikämpfer"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -3717,7 +3717,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Golden Goal"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -3729,7 +3729,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Europameister 1996"
+      "special": "Europameister"
     }
   },
   {
@@ -3739,7 +3739,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Stürmer",
-      "special": "Golden Goal gegen Senegal"
+      "special": "wichtiges WM-Tor"
     }
   },
   {
@@ -3751,7 +3751,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Zaubermaus"
+      "special": "Dribbler"
     }
   },
   {
@@ -3765,7 +3765,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Libero-Legende"
+      "special": "Abwehrchef"
     }
   },
   {
@@ -3778,7 +3778,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Eleganter Abwehrspieler"
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -3791,7 +3791,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Goldener Ball 2006"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -3804,7 +3804,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Außenverteidiger",
-      "special": "Weltmeister 2006"
+      "special": "beidfüßig"
     }
   },
   {
@@ -3816,7 +3816,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Innenverteidiger",
-      "special": "Kopfballtor im WM-Finale"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3828,7 +3828,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Außenverteidiger",
-      "special": "Elfmeter zum WM-Titel"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3842,7 +3842,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Defensives Mittelfeld",
-      "special": "Maestro"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -3856,7 +3856,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Defensives Mittelfeld",
-      "special": "Kampfhund"
+      "special": "Kämpfer"
     }
   },
   {
@@ -3868,7 +3868,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Defensives Mittelfeld",
-      "special": "Weltmeister 2006"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3882,7 +3882,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Pinturicchio"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -3895,7 +3895,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Am Abseits geboren"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -3908,7 +3908,7 @@
     "hints": {
       "nation": "Wales",
       "position": "Stürmer",
-      "special": "Schnurrbart"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -3921,7 +3921,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Offensives Mittelfeld",
-      "special": "Göttlicher Pferdeschwanz"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -3931,7 +3931,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "WM-Torschützenkönig 1982"
+      "special": "Weltmeister"
     }
   },
   {
@@ -3944,7 +3944,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Mighty Mouse"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -3956,7 +3956,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Königsklassensieger 1996"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -3968,7 +3968,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Stürmer",
-      "special": "Schnellstes WM-Tor"
+      "special": "kopfballstark"
     }
   },
   {
@@ -3980,7 +3980,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "Blonder Pfeil"
+      "special": "vielseitig"
     }
   },
   {
@@ -3990,7 +3990,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Torwart",
-      "special": "Weltmeister mit vierzig"
+      "special": "Weltmeister"
     }
   },
   {
@@ -4004,7 +4004,7 @@
     "hints": {
       "nation": "Ungarn",
       "position": "Stürmer",
-      "special": "Linker Hammer"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -4016,7 +4016,7 @@
     "hints": {
       "nation": "Bulgarien",
       "position": "Stürmer",
-      "special": "Elegante Ballannahme"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -4028,7 +4028,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Zentrales Mittelfeld",
-      "special": "Fitnesswunder"
+      "special": "laufstark"
     }
   },
   {
@@ -4040,7 +4040,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Offensives Mittelfeld",
-      "special": "Alpen-Maradona"
+      "special": "Spielmacher"
     }
   },
   {
@@ -4052,7 +4052,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Stürmer",
-      "special": "Doppelpack"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -4076,7 +4076,7 @@
     "hints": {
       "nation": "Bosnien und Herzegowina",
       "position": "Stürmer",
-      "special": "Kopfballstarker Torjäger"
+      "special": "kopfballstark"
     }
   },
   {
@@ -4086,7 +4086,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Abwehrchef"
     }
   },
   {
@@ -4099,7 +4099,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Ohrschrauberjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -4111,7 +4111,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Kugelblitz"
+      "special": "antrittsstark"
     }
   },
   {
@@ -4125,7 +4125,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "Ringkuss"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -4138,7 +4138,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Innenverteidiger",
-      "special": "Torgefährlicher Abwehrchef"
+      "special": "torgefährlich"
     }
   },
   {
@@ -4150,7 +4150,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "Kopfballstarker Torjäger"
+      "special": "kopfballstark"
     }
   },
   {
@@ -4160,7 +4160,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Hackenvorlagen"
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -4172,7 +4172,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Defensives Mittelfeld",
-      "special": "Hackentrick gegen Manchester"
+      "special": "pressingresistent"
     }
   },
   {
@@ -4186,7 +4186,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Innenverteidiger",
-      "special": "Löwenmähne"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -4199,7 +4199,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Defensives Mittelfeld",
-      "special": "Trainerlegende"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -4209,7 +4209,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Trainer beim Triple"
+      "special": "vielseitig"
     }
   },
   {
@@ -4221,7 +4221,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": "Kult-Linksverteidiger"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -4233,7 +4233,7 @@
     "hints": {
       "nation": "Tschechien",
       "position": "Stürmer",
-      "special": "Zwei-Meter-Stürmer"
+      "special": "Wandspieler"
     }
   },
   {
@@ -4243,7 +4243,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Torwart",
-      "special": "Blondierter Torwart"
+      "special": "Reflexe"
     }
   },
   {
@@ -4253,7 +4253,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Außenverteidiger",
-      "special": "Kämpfer auf rechts"
+      "special": "Kämpfer"
     }
   },
   {
@@ -4267,7 +4267,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Zentrales Mittelfeld",
-      "special": "Königsklassen-Finaltor 2015"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -4280,7 +4280,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Außenverteidiger",
-      "special": "Il Trattore"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -4290,7 +4290,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Defensives Mittelfeld",
-      "special": "Cuchu"
+      "special": "Balleroberer"
     }
   },
   {
@@ -4302,7 +4302,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Zentrales Mittelfeld",
-      "special": "La Brujita"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -4315,7 +4315,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Offensives Mittelfeld",
-      "special": "Klassischer Spielmacher"
+      "special": "Spielmacher"
     }
   },
   {
@@ -4325,7 +4325,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Batigol"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -4337,7 +4337,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Valdanito"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -4347,7 +4347,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Flügelspieler",
-      "special": "Blonder Flitzer"
+      "special": "schnell"
     }
   },
   {
@@ -4357,7 +4357,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Defensives Mittelfeld",
-      "special": "El Cholo"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -4369,7 +4369,7 @@
     "hints": {
       "nation": "Uruguay",
       "position": "Stürmer",
-      "special": "Goldener Ball der WM"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -4379,7 +4379,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "El Pipita"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -4389,7 +4389,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Apache"
+      "special": "pressingstark"
     }
   },
   {
@@ -4402,7 +4402,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Defensives Mittelfeld",
-      "special": "El Jefecito"
+      "special": "Abräumer"
     }
   },
   {
@@ -4415,7 +4415,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Flügelspieler",
-      "special": "Beidfüßiger Flankengeber"
+      "special": "beidfüßig"
     }
   },
   {
@@ -4427,7 +4427,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Doppelpack im Königsklassenfinale"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -4440,7 +4440,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Golden Goal 2000"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -4453,7 +4453,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Defensives Mittelfeld",
-      "special": "Invincibles-Kapitän"
+      "special": "robust"
     }
   },
   {
@@ -4466,7 +4466,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Defensives Mittelfeld",
-      "special": "Abräumer vor der Abwehr"
+      "special": "Balleroberer"
     }
   },
   {
@@ -4479,7 +4479,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Doppelpack im WM-Halbfinale"
+      "special": "Weltmeister"
     }
   },
   {
@@ -4493,7 +4493,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": "Der Fels"
+      "special": "robust"
     }
   },
   {
@@ -4505,7 +4505,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Libero mit Distanzschuss"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -4519,7 +4519,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Baskischer Linksverteidiger"
+      "special": "laufstark"
     }
   },
   {
@@ -4533,7 +4533,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Flankengott"
+      "special": "Flankengeber"
     }
   },
   {
@@ -4545,7 +4545,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Aufgestellter Kragen"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -4558,7 +4558,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Volleyspezialist"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -4570,7 +4570,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Offensives Mittelfeld",
-      "special": "Neun EM-Tore 1984"
+      "special": "torgefährlich"
     }
   },
   {
@@ -4584,7 +4584,7 @@
     "hints": {
       "nation": "England",
       "position": "Offensives Mittelfeld",
-      "special": "Weltmeister 1966"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -4594,7 +4594,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": "Dreizehn WM-Tore 1958"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -4606,7 +4606,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Defensives Mittelfeld",
-      "special": "Wasserträger"
+      "special": "Abräumer"
     }
   },
   {
@@ -4618,7 +4618,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Offensives Mittelfeld",
-      "special": "Die Schlange"
+      "special": "technisch stark"
     }
   },
   {
@@ -4631,7 +4631,7 @@
     "hints": {
       "nation": "Sowjetunion",
       "position": "Torwart",
-      "special": "Schwarze Spinne"
+      "special": "Elfmeterkiller"
     }
   },
   {
@@ -4643,7 +4643,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Jubel mit erhobenem Arm"
+      "special": "Rekordtorschütze"
     }
   },
   {
@@ -4656,7 +4656,7 @@
     "hints": {
       "nation": "Schottland",
       "position": "Stürmer",
-      "special": "Spielertrainer"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -4669,7 +4669,7 @@
     "hints": {
       "nation": "England",
       "position": "Innenverteidiger",
-      "special": "Weltmeisterkapitän 1966"
+      "special": "Weltmeister"
     }
   },
   {
@@ -4682,7 +4682,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Keine gelbe Karte"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -4692,7 +4692,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Königsklassenpokal als Kapitän"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -4705,7 +4705,7 @@
     "hints": {
       "nation": "Nordirland",
       "position": "Flügelspieler",
-      "special": "Fünfter Beatle"
+      "special": "Dribbler"
     }
   },
   {
@@ -4715,7 +4715,7 @@
     "hints": {
       "nation": "Liberia",
       "position": "Stürmer",
-      "special": "Goldener Ball 1995"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -4728,7 +4728,7 @@
     "hints": {
       "nation": "Elfenbeinküste",
       "position": "Stürmer",
-      "special": "Finalheld von München"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -4741,7 +4741,7 @@
     "hints": {
       "nation": "Kamerun",
       "position": "Stürmer",
-      "special": "Zwei aufeinanderfolgende Triples"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -4751,7 +4751,7 @@
     "hints": {
       "nation": "Elfenbeinküste",
       "position": "Zentrales Mittelfeld",
-      "special": "Wuchtige Mittelfeldläufe"
+      "special": "Vorwärtsdrang"
     }
   },
   {
@@ -4763,7 +4763,7 @@
     "hints": {
       "nation": "Ghana",
       "position": "Defensives Mittelfeld",
-      "special": "Bison"
+      "special": "robust"
     }
   },
   {
@@ -4777,7 +4777,7 @@
     "hints": {
       "nation": "Nigeria",
       "position": "Offensives Mittelfeld",
-      "special": "Übersteiger"
+      "special": "Dribbler"
     }
   },
   {
@@ -4787,7 +4787,7 @@
     "hints": {
       "nation": "Nigeria",
       "position": "Stürmer",
-      "special": "Olympiasieger 1996"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -4797,7 +4797,7 @@
     "hints": {
       "nation": "Kamerun",
       "position": "Stürmer",
-      "special": "Eckfahnentanz"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -4810,7 +4810,7 @@
     "hints": {
       "nation": "Ghana",
       "position": "Offensives Mittelfeld",
-      "special": "Afrikanischer Spielmacher"
+      "special": "Spielmacher"
     }
   },
   {
@@ -4822,7 +4822,7 @@
     "hints": {
       "nation": "Senegal",
       "position": "Flügelspieler",
-      "special": "WM-Überraschung 2002"
+      "special": "Dribbler"
     }
   },
   {
@@ -4834,7 +4834,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Golden Boy"
+      "special": "schnell"
     }
   },
   {
@@ -4860,7 +4860,7 @@
     "hints": {
       "nation": "England",
       "position": "Zentrales Mittelfeld",
-      "special": "Wunder von Istanbul"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -4873,7 +4873,7 @@
     "hints": {
       "nation": "England",
       "position": "Zentrales Mittelfeld",
-      "special": "Torgefährlicher Mittelfeldmotor"
+      "special": "torgefährlich"
     }
   },
   {
@@ -4886,7 +4886,7 @@
     "hints": {
       "nation": "England",
       "position": "Zentrales Mittelfeld",
-      "special": "Rotschopf"
+      "special": "Ballverteiler"
     }
   },
   {
@@ -4899,7 +4899,7 @@
     "hints": {
       "nation": "Wales",
       "position": "Flügelspieler",
-      "special": "Solo im Pokalhalbfinale"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -4912,7 +4912,7 @@
     "hints": {
       "nation": "Irland",
       "position": "Defensives Mittelfeld",
-      "special": "Kompromissloser Kapitän"
+      "special": "Führungsspieler"
     }
   },
   {
@@ -4922,7 +4922,7 @@
     "hints": {
       "nation": "England",
       "position": "Außenverteidiger",
-      "special": "Class of 92"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -4934,7 +4934,7 @@
     "hints": {
       "nation": "England",
       "position": "Innenverteidiger",
-      "special": "Eleganter Abwehrchef"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -4946,7 +4946,7 @@
     "hints": {
       "nation": "England",
       "position": "Innenverteidiger",
-      "special": "Langjähriger Chelsea-Kapitän"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -4958,7 +4958,7 @@
     "hints": {
       "nation": "England",
       "position": "Außenverteidiger",
-      "special": "Invincibles"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -4971,7 +4971,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Torwart",
-      "special": "Europameister 1992"
+      "special": "Europameister"
     }
   },
   {
@@ -4983,7 +4983,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": "Straßenfußballer"
+      "special": "Dribbler"
     }
   },
   {
@@ -4995,7 +4995,7 @@
     "hints": {
       "nation": "USA",
       "position": "Flügelspieler",
-      "special": "Captain America"
+      "special": "schnell"
     }
   },
   {
@@ -5007,7 +5007,7 @@
     "hints": {
       "nation": "Serbien",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -5019,7 +5019,7 @@
     "hints": {
       "nation": "Polen",
       "position": "Flügelspieler",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -5031,7 +5031,7 @@
     "hints": {
       "nation": "Armenien",
       "position": "Offensives Mittelfeld",
-      "special": "Bundesliga-Spieler der Saison"
+      "special": "torgefährlich"
     }
   },
   {
@@ -5043,7 +5043,7 @@
     "hints": {
       "nation": "Griechenland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -5055,7 +5055,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Torwart",
-      "special": null
+      "special": "Reflexe"
     }
   },
   {
@@ -5067,7 +5067,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Außenverteidiger",
-      "special": "Europameister 2016"
+      "special": "Europameister"
     }
   },
   {
@@ -5079,7 +5079,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Defensives Mittelfeld",
-      "special": "Afro"
+      "special": "passsicher"
     }
   },
   {
@@ -5091,7 +5091,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Flügelspieler",
-      "special": null
+      "special": "kombinationsstark"
     }
   },
   {
@@ -5103,7 +5103,7 @@
     "hints": {
       "nation": "USA",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -5115,7 +5115,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Jüngster Bundesliga-Torschütze"
+      "special": "wendig"
     }
   },
   {
@@ -5127,7 +5127,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Sprinttempo"
+      "special": "antrittsstark"
     }
   },
   {
@@ -5139,7 +5139,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": null
+      "special": "Konterspieler"
     }
   },
   {
@@ -5151,7 +5151,7 @@
     "hints": {
       "nation": "Belgien",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -5163,7 +5163,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Innenverteidiger",
-      "special": "Kopfrechnen"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -5175,7 +5175,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "passsicher"
     }
   },
   {
@@ -5187,7 +5187,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "Jokertore"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -5199,7 +5199,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Goldener Schuh 2020"
+      "special": "Europameister"
     }
   },
   {
@@ -5211,7 +5211,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -5223,7 +5223,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -5235,7 +5235,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "schnell"
     }
   },
   {
@@ -5247,7 +5247,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Ballverteiler"
     }
   },
   {
@@ -5259,7 +5259,7 @@
     "hints": {
       "nation": "Schweden",
       "position": "Stürmer",
-      "special": null
+      "special": "technisch stark"
     }
   },
   {
@@ -5271,7 +5271,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Spielübersicht"
     }
   },
   {
@@ -5283,7 +5283,7 @@
     "hints": {
       "nation": "Ukraine",
       "position": "Flügelspieler",
-      "special": "Linker Fuß"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -5295,7 +5295,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -5307,7 +5307,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -5319,7 +5319,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "Wandspieler"
     }
   },
   {
@@ -5331,7 +5331,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "vielseitig"
     }
   },
   {
@@ -5343,7 +5343,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "pressingstark"
     }
   },
   {
@@ -5355,7 +5355,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Hässliche Vögel"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -5367,7 +5367,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "Malaga-Wunder"
+      "special": "kopfballstark"
     }
   },
   {
@@ -5379,7 +5379,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Flankengeber"
     }
   },
   {
@@ -5391,7 +5391,7 @@
     "hints": {
       "nation": "Australien",
       "position": "Torwart",
-      "special": null
+      "special": "reaktionsschnell"
     }
   },
   {
@@ -5403,7 +5403,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Stellungsspiel"
     }
   },
   {
@@ -5415,7 +5415,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -5427,7 +5427,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -5439,7 +5439,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "abschlusssicher"
     }
   },
   {
@@ -5451,7 +5451,7 @@
     "hints": {
       "nation": "Senegal",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -5463,7 +5463,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -5475,7 +5475,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Vorwärtsdrang"
     }
   },
   {
@@ -5487,7 +5487,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Konterspieler"
     }
   },
   {
@@ -5499,7 +5499,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "schnell"
     }
   },
   {
@@ -5511,7 +5511,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Europapokalsieger 2022"
+      "special": "antrittsstark"
     }
   },
   {
@@ -5523,7 +5523,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Balleroberer"
     }
   },
   {
@@ -5535,7 +5535,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "Kämpfer"
     }
   },
   {
@@ -5547,7 +5547,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": "Siegtor gegen Deutschland"
+      "special": "Europameister"
     }
   },
   {
@@ -5559,7 +5559,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -5571,7 +5571,7 @@
     "hints": {
       "nation": "Ägypten",
       "position": "Stürmer",
-      "special": null
+      "special": "wendig"
     }
   },
   {
@@ -5583,7 +5583,7 @@
     "hints": {
       "nation": "Paraguay",
       "position": "Stürmer",
-      "special": null
+      "special": "pressingstark"
     }
   },
   {
@@ -5595,7 +5595,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -5607,7 +5607,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "passsicher"
     }
   },
   {
@@ -5619,7 +5619,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "Podcast"
+      "special": "kopfballstark"
     }
   },
   {
@@ -5631,7 +5631,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Abwehrchef"
     }
   },
   {
@@ -5643,7 +5643,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Kampfschwein"
+      "special": "Europameister"
     }
   },
   {
@@ -5655,7 +5655,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Bundesliga-Torschützenkönig 1995"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -5667,7 +5667,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Lupfer im Königsklassenfinale"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -5679,7 +5679,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": "Susi"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -5691,7 +5691,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Stürmer",
-      "special": "Chappi"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -5703,7 +5703,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Defensives Mittelfeld",
-      "special": "Königsklassensieger mit zwei Vereinen"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -5715,7 +5715,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "Königsklassensieger 1997"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -5727,7 +5727,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": null
+      "special": "Konterspieler"
     }
   },
   {
@@ -5739,7 +5739,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": "Bundesliga-Torschützenkönig 2002"
+      "special": "technisch stark"
     }
   },
   {
@@ -5751,7 +5751,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Held von Berlin"
+      "special": "Kultfigur"
     }
   },
   {
@@ -5763,7 +5763,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": "Kulttorwart"
+      "special": "Kultfigur"
     }
   },
   {
@@ -5775,7 +5775,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Emma"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -5787,7 +5787,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Europapokalsieger 1966"
+      "special": "Kultfigur"
     }
   },
   {
@@ -5799,7 +5799,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "offensivstark"
     }
   },
   {
@@ -5811,7 +5811,7 @@
     "hints": {
       "nation": "Schweden",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -5823,7 +5823,7 @@
     "hints": {
       "nation": "Österreich",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -5835,7 +5835,7 @@
     "hints": {
       "nation": "Algerien",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -5847,7 +5847,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "antrittsstark"
     }
   },
   {
@@ -5859,7 +5859,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "vielseitig"
     }
   },
   {
@@ -5871,7 +5871,7 @@
     "hints": {
       "nation": "Tschechien",
       "position": "Torwart",
-      "special": "Schutzhelm"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -5883,7 +5883,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Innenverteidiger",
-      "special": "Kuss auf die Glatze"
+      "special": "Weltmeister"
     }
   },
   {
@@ -5895,7 +5895,7 @@
     "hints": {
       "nation": "England",
       "position": "Innenverteidiger",
-      "special": "Invincibles"
+      "special": "robust"
     }
   },
   {
@@ -5907,7 +5907,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Innenverteidiger",
-      "special": "Freistoß zum Königsklassentitel"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -5919,7 +5919,7 @@
     "hints": {
       "nation": "Serbien",
       "position": "Innenverteidiger",
-      "special": "Harter Zweikämpfer"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -5931,7 +5931,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -5943,7 +5943,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Offensives Mittelfeld",
-      "special": "Eleganter Spielmacher"
+      "special": "Spielmacher"
     }
   },
   {
@@ -5955,7 +5955,7 @@
     "hints": {
       "nation": "Finnland",
       "position": "Offensives Mittelfeld",
-      "special": "König"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -5967,7 +5967,7 @@
     "hints": {
       "nation": "Japan",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -5979,7 +5979,7 @@
     "hints": {
       "nation": "Tschechien",
       "position": "Flügelspieler",
-      "special": "Goldener Ball 2003"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -5991,7 +5991,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Flügelspieler",
-      "special": "Sprinttempo"
+      "special": "schnell"
     }
   },
   {
@@ -6003,7 +6003,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Defensives Mittelfeld",
-      "special": "Blonder Pferdeschwanz"
+      "special": "Weltmeister"
     }
   },
   {
@@ -6015,7 +6015,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Invincibles"
+      "special": "Weltmeister"
     }
   },
   {
@@ -6027,7 +6027,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Zentrales Mittelfeld",
-      "special": "Il Principino"
+      "special": "laufstark"
     }
   },
   {
@@ -6039,7 +6039,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "El Buitre"
+      "special": "wendig"
     }
   },
   {
@@ -6051,7 +6051,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Triple 1999"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6063,7 +6063,7 @@
     "hints": {
       "nation": "Mexiko",
       "position": "Stürmer",
-      "special": "Blonde Mähne"
+      "special": "Konterspieler"
     }
   },
   {
@@ -6075,7 +6075,7 @@
     "hints": {
       "nation": "Schweden",
       "position": "Stürmer",
-      "special": "König von Glasgow"
+      "special": "Torinstinkt"
     }
   },
   {
@@ -6087,7 +6087,7 @@
     "hints": {
       "nation": "Ukraine",
       "position": "Stürmer",
-      "special": "Goldener Ball 2004"
+      "special": "Ballon d'Or"
     }
   },
   {
@@ -6099,7 +6099,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Stürmer",
-      "special": "WM-Torschützenkönig 1998"
+      "special": "abschlusssicher"
     }
   },
   {
@@ -6111,7 +6111,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Bobo"
+      "special": "robust"
     }
   },
   {
@@ -6123,7 +6123,7 @@
     "hints": {
       "nation": "England",
       "position": "Stürmer",
-      "special": "Arsenal-Legende"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -6135,7 +6135,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Offensives Mittelfeld",
-      "special": "Zauberzwerg"
+      "special": "technisch stark"
     }
   },
   {
@@ -6147,7 +6147,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Flügelspieler",
-      "special": "Arbeitstier"
+      "special": "laufstark"
     }
   },
   {
@@ -6159,7 +6159,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Stürmer",
-      "special": "Lord"
+      "special": "Kultfigur"
     }
   },
   {
@@ -6169,7 +6169,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Flügelspieler",
-      "special": "Jüngster EM-Torschütze"
+      "special": "Europameister"
     }
   },
   {
@@ -6179,7 +6179,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "passsicher"
     }
   },
   {
@@ -6189,7 +6189,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "pressingstark"
     }
   },
   {
@@ -6199,7 +6199,7 @@
     "hints": {
       "nation": "England",
       "position": "Offensives Mittelfeld",
-      "special": "Kältejubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -6209,7 +6209,7 @@
     "hints": {
       "nation": "Norwegen",
       "position": "Offensives Mittelfeld",
-      "special": "Wunderkind"
+      "special": "Spielmacher"
     }
   },
   {
@@ -6219,7 +6219,7 @@
     "hints": {
       "nation": "Georgien",
       "position": "Flügelspieler",
-      "special": "Dribbelkünstler aus Georgien"
+      "special": "Dribbler"
     }
   },
   {
@@ -6229,7 +6229,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Flügelspieler",
-      "special": "Lächelnder Dribbler"
+      "special": "antrittsstark"
     }
   },
   {
@@ -6239,7 +6239,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Flügelspieler",
-      "special": "EM-Finaltor 2024"
+      "special": "Europameister"
     }
   },
   {
@@ -6249,7 +6249,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Doppelpack im Königsklassenfinale"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -6259,7 +6259,7 @@
     "hints": {
       "nation": "Türkei",
       "position": "Offensives Mittelfeld",
-      "special": "Goldjunge vom Bosporus"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -6269,7 +6269,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Stürmer",
-      "special": null
+      "special": "Distanzschütze"
     }
   },
   {
@@ -6279,7 +6279,7 @@
     "hints": {
       "nation": "Schweden",
       "position": "Stürmer",
-      "special": "Maskenjubel"
+      "special": "besonderer Jubel"
     }
   },
   {
@@ -6289,7 +6289,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Stürmer",
-      "special": "Die Spinne"
+      "special": "Weltmeister"
     }
   },
   {
@@ -6299,7 +6299,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Zentrales Mittelfeld",
-      "special": "Bester WM-Jungprofi 2022"
+      "special": "Weltmeister"
     }
   },
   {
@@ -6309,7 +6309,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Zentrales Mittelfeld",
-      "special": "Weltmeister 2022"
+      "special": "Weltmeister"
     }
   },
   {
@@ -6319,7 +6319,7 @@
     "hints": {
       "nation": "Argentinien",
       "position": "Torwart",
-      "special": "Elfmeterpsychospiele"
+      "special": "Elfmeterkiller"
     }
   },
   {
@@ -6329,7 +6329,7 @@
     "hints": {
       "nation": "Kolumbien",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -6339,7 +6339,7 @@
     "hints": {
       "nation": "Uruguay",
       "position": "Stürmer",
-      "special": null
+      "special": "Konterspieler"
     }
   },
   {
@@ -6351,7 +6351,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Innenverteidiger",
-      "special": "Maske bei der WM"
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -6363,7 +6363,7 @@
     "hints": {
       "nation": "Südkorea",
       "position": "Innenverteidiger",
-      "special": "Monster"
+      "special": "zweikampfstark"
     }
   },
   {
@@ -6373,7 +6373,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "pressingresistent"
     }
   },
   {
@@ -6385,7 +6385,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Innenverteidiger",
-      "special": "Junger Ajax-Kapitän"
+      "special": "kopfballstark"
     }
   },
   {
@@ -6395,7 +6395,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Innenverteidiger",
-      "special": "Abwehrchef"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6405,7 +6405,7 @@
     "hints": {
       "nation": "England",
       "position": "Außenverteidiger",
-      "special": "Sprinttempo"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6415,7 +6415,7 @@
     "hints": {
       "nation": "England",
       "position": "Außenverteidiger",
-      "special": "Schnelle Ecke gegen Barcelona"
+      "special": "Flankengeber"
     }
   },
   {
@@ -6425,7 +6425,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": null
+      "special": "schnell"
     }
   },
   {
@@ -6435,7 +6435,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": null
+      "special": "antrittsstark"
     }
   },
   {
@@ -6445,7 +6445,7 @@
     "hints": {
       "nation": "England",
       "position": "Flügelspieler",
-      "special": "Waden"
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -6455,7 +6455,7 @@
     "hints": {
       "nation": "Algerien",
       "position": "Flügelspieler",
-      "special": "Meistermärchen 2016"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6465,7 +6465,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Innenverteidiger",
-      "special": "O Monstro"
+      "special": "Abwehrchef"
     }
   },
   {
@@ -6475,7 +6475,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Defensives Mittelfeld",
-      "special": "Abräumer"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6485,7 +6485,7 @@
     "hints": {
       "nation": "Senegal",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -6495,7 +6495,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Offensives Mittelfeld",
-      "special": "Standardspezialist"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -6505,7 +6505,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Stürmer",
-      "special": "Warum immer ich?"
+      "special": "Distanzschütze"
     }
   },
   {
@@ -6515,7 +6515,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Stürmer",
-      "special": "Kantiger Mittelstürmer"
+      "special": "Wandspieler"
     }
   },
   {
@@ -6525,7 +6525,7 @@
     "hints": {
       "nation": "Serbien",
       "position": "Stürmer",
-      "special": null
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -6535,7 +6535,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "laufstark"
     }
   },
   {
@@ -6545,7 +6545,7 @@
     "hints": {
       "nation": "Italien",
       "position": "Flügelspieler",
-      "special": "Europameister 2021"
+      "special": "Europameister"
     }
   },
   {
@@ -6555,7 +6555,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Stürmer",
-      "special": "Golden Boy 2019"
+      "special": "technisch stark"
     }
   },
   {
@@ -6565,7 +6565,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Außenverteidiger",
-      "special": "Offensive Sturmläufe"
+      "special": "Vorwärtsdrang"
     }
   },
   {
@@ -6587,7 +6587,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Königsklassen-Finaltor 2020"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -6599,7 +6599,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Flügelspieler",
-      "special": "Sprinttempo"
+      "special": "schnell"
     }
   },
   {
@@ -6611,7 +6611,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Flügelspieler",
-      "special": "Alpen-Messi"
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6623,7 +6623,7 @@
     "hints": {
       "nation": "Marokko",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -6635,7 +6635,7 @@
     "hints": {
       "nation": "Spanien",
       "position": "Außenverteidiger",
-      "special": null
+      "special": "kombinationsstark"
     }
   },
   {
@@ -6647,7 +6647,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Ballverteiler"
     }
   },
   {
@@ -6659,7 +6659,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Abräumer"
     }
   },
   {
@@ -6671,7 +6671,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Führungsspieler"
     }
   },
   {
@@ -6683,7 +6683,7 @@
     "hints": {
       "nation": "Ukraine",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Champions-League-Sieger"
     }
   },
   {
@@ -6695,7 +6695,7 @@
     "hints": {
       "nation": "Portugal",
       "position": "Defensives Mittelfeld",
-      "special": "Grätschenspezialist"
+      "special": "Balleroberer"
     }
   },
   {
@@ -6707,7 +6707,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "passsicher"
     }
   },
   {
@@ -6719,7 +6719,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Außenverteidiger",
-      "special": "Unbesiegter Meister 2024"
+      "special": "vielseitig"
     }
   },
   {
@@ -6731,7 +6731,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Stürmer",
-      "special": "Hunter"
+      "special": "Strafraumstürmer"
     }
   },
   {
@@ -6743,7 +6743,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "kopfballstark"
     }
   },
   {
@@ -6755,7 +6755,7 @@
     "hints": {
       "nation": "Peru",
       "position": "Flügelspieler",
-      "special": "La Foquita"
+      "special": "Konterspieler"
     }
   },
   {
@@ -6767,7 +6767,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Ballkontrolle"
     }
   },
   {
@@ -6779,7 +6779,7 @@
     "hints": {
       "nation": "Niederlande",
       "position": "Offensives Mittelfeld",
-      "special": "Kleiner Engel"
+      "special": "Spielübersicht"
     }
   },
   {
@@ -6791,7 +6791,7 @@
     "hints": {
       "nation": "Kroatien",
       "position": "Stürmer",
-      "special": "Dreierpack im Königsklassenhalbfinale"
+      "special": "pressingstark"
     }
   },
   {
@@ -6815,7 +6815,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -6827,7 +6827,7 @@
     "hints": {
       "nation": "Brasilien",
       "position": "Offensives Mittelfeld",
-      "special": "Maestro"
+      "special": "kombinationsstark"
     }
   },
   {
@@ -6839,7 +6839,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Offensives Mittelfeld",
-      "special": "Confed-Cup-Finaltor"
+      "special": "wichtiges Finaltor"
     }
   },
   {
@@ -6851,7 +6851,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": "Flaco"
+      "special": "schnell"
     }
   },
   {
@@ -6863,7 +6863,7 @@
     "hints": {
       "nation": "Venezuela",
       "position": "Flügelspieler",
-      "special": "Linker Zauberfuß"
+      "special": "Freistoßspezialist"
     }
   },
   {
@@ -6875,7 +6875,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": null
+      "special": "antrittsstark"
     }
   },
   {
@@ -6887,7 +6887,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -6899,7 +6899,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Defensives Mittelfeld",
-      "special": null
+      "special": "Balleroberer"
     }
   },
   {
@@ -6911,7 +6911,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Spielübersicht"
     }
   },
   {
@@ -6923,7 +6923,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Stürmer",
-      "special": null
+      "special": "robust"
     }
   },
   {
@@ -6935,7 +6935,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": "Fußballgott"
+      "special": "Vereinslegende"
     }
   },
   {
@@ -6947,7 +6947,7 @@
     "hints": {
       "nation": "Jamaika",
       "position": "Flügelspieler",
-      "special": "Sprinttempo"
+      "special": "schnell"
     }
   },
   {
@@ -6959,7 +6959,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Flügelspieler",
-      "special": "Sprinttempo"
+      "special": "antrittsstark"
     }
   },
   {
@@ -6983,7 +6983,7 @@
     "hints": {
       "nation": "Burkina Faso",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -6995,7 +6995,7 @@
     "hints": {
       "nation": "Ecuador",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "zweikampfstark"
     }
   },
   {
@@ -7007,7 +7007,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Defensives Mittelfeld",
-      "special": "Unbesiegter Meister 2024"
+      "special": "Kämpfer"
     }
   },
   {
@@ -7019,7 +7019,7 @@
     "hints": {
       "nation": "Ägypten",
       "position": "Stürmer",
-      "special": "Pharao"
+      "special": "Konterspieler"
     }
   },
   {
@@ -7031,7 +7031,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Stürmer",
-      "special": null
+      "special": "technisch stark"
     }
   },
   {
@@ -7043,7 +7043,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Torwart",
-      "special": "Meistertorwart 2009"
+      "special": "Strafraumbeherrschung"
     }
   },
   {
@@ -7055,7 +7055,7 @@
     "hints": {
       "nation": "Schweiz",
       "position": "Außenverteidiger",
-      "special": "Elfmeter und Freistöße"
+      "special": "Standardspezialist"
     }
   },
   {
@@ -7067,7 +7067,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Distanzschütze"
     }
   },
   {
@@ -7079,7 +7079,7 @@
     "hints": {
       "nation": "Dänemark",
       "position": "Stürmer",
-      "special": null
+      "special": "pressingstark"
     }
   },
   {
@@ -7091,7 +7091,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Offensives Mittelfeld",
-      "special": "Ballon-Jubel"
+      "special": "wendig"
     }
   },
   {
@@ -7103,7 +7103,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Helmut"
+      "special": "kombinationsstark"
     }
   },
   {
@@ -7115,7 +7115,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Flügelspieler",
-      "special": null
+      "special": "Dribbler"
     }
   },
   {
@@ -7127,7 +7127,7 @@
     "hints": {
       "nation": "Frankreich",
       "position": "Offensives Mittelfeld",
-      "special": null
+      "special": "Vorlagengeber"
     }
   },
   {
@@ -7139,7 +7139,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Kopfballstarker Mittelstürmer"
+      "special": "Wandspieler"
     }
   },
   {
@@ -7151,7 +7151,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Innenverteidiger",
-      "special": null
+      "special": "Spieleröffnung"
     }
   },
   {
@@ -7163,7 +7163,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Zentrales Mittelfeld",
-      "special": null
+      "special": "Standardspezialist"
     }
   },
   {
@@ -7175,7 +7175,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Torwart",
-      "special": null
+      "special": "Reflexe"
     }
   },
   {
@@ -7187,7 +7187,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "abschlusssicher"
     }
   },
   {
@@ -7199,7 +7199,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": null
+      "special": "pressingstark"
     }
   },
   {
@@ -7211,7 +7211,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Stürmer",
-      "special": "Rekordjoker"
+      "special": "Rekordtorschütze"
     }
   },
   {
@@ -7223,7 +7223,7 @@
     "hints": {
       "nation": "Deutschland",
       "position": "Außenverteidiger",
-      "special": "U21-Europameister 2021"
+      "special": "laufstark"
     }
   }
 ]

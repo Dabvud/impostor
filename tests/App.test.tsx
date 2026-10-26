@@ -222,6 +222,32 @@ describe("Statistik-Protokoll", () => {
   });
 });
 
+describe("Regeln, Statistik und Teilen", () => {
+  it("öffnet die Bildschirme aus der Einrichtung und kehrt zurück", async () => {
+    const user = userEvent.setup();
+    localStorage.setItem(
+      "impostor:v1:groups",
+      JSON.stringify([{ id: "g1", name: "Freitagsrunde", members: [{ id: "a", name: "Anna" }], selected: ["a"], evening: 1 }]),
+    );
+    render(<App />);
+    await user.click(screen.getByRole("button", { name: "Regeln" }));
+    expect(screen.getByRole("heading", { name: "Regeln" })).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Zurück" }));
+
+    await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
+    await user.click(screen.getByRole("button", { name: "Statistik" }));
+    expect(screen.getByRole("heading", { name: "Freitagsrunde" })).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Neuer Abend" }));
+    expect(JSON.parse(localStorage.getItem("impostor:v1:groups") ?? "[]")[0].evening).toBe(2);
+    await user.click(screen.getByRole("button", { name: "Zurück" }));
+    expect(screen.getByRole("button", { name: "Freitagsrunde" })).toHaveAttribute("aria-pressed", "true");
+
+    await user.click(screen.getByRole("button", { name: "App teilen" }));
+    expect(await screen.findByTestId("qr")).toBeInTheDocument();
+    expect(screen.getByText(/^http/)).toBeInTheDocument();
+  });
+});
+
 describe("Runde beenden", () => {
   it("ist während der Runde immer sichtbar und fragt vor dem Abbrechen nach", async () => {
     saveGame({ phase: "reveal", round, index: 1, seen: false });

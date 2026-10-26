@@ -2,7 +2,7 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import clubsJson from "./data/clubs.json";
 import playersJson from "./data/players.json";
 import { unlockAudio } from "./alarm";
-import { type Group } from "./game/groups";
+import { startEvening, type Group } from "./game/groups";
 import { nextRound } from "./game/session";
 import { toRecord } from "./game/stats";
 import { reducer, restore, type GameState } from "./game/state";
@@ -13,6 +13,9 @@ import DiscussionScreen from "./screens/DiscussionScreen";
 import HandoffScreen from "./screens/HandoffScreen";
 import ResolutionScreen from "./screens/ResolutionScreen";
 import RevealScreen from "./screens/RevealScreen";
+import RulesScreen from "./screens/RulesScreen";
+import ShareScreen from "./screens/ShareScreen";
+import StatsScreen from "./screens/StatsScreen";
 import SetupScreen from "./screens/SetupScreen";
 import {
   appendRecord,
@@ -20,6 +23,7 @@ import {
   loadGame,
   loadGroups,
   loadSettings,
+  loadStats,
   loadUsed,
   saveGame,
   saveGroups,
@@ -44,6 +48,8 @@ export default function App() {
   const [groups, setGroups] = useState<Group[]>(loadGroups);
   const [draft, setDraft] = useState<{ settings: Settings; freeNames: string[] } | null>(null);
   const [view, setView] = useState<View>({ kind: "game" });
+  // erhöht sich nach „Statistik löschen“, damit das Protokoll neu gelesen wird
+  const [statsVersion, setStatsVersion] = useState(0);
   const phase = useRef(state.phase);
   const guarded = useRef(false);
   phase.current = state.phase;
@@ -128,7 +134,26 @@ export default function App() {
 
   function renderScreen() {
     switch (state.phase) {
-      case "setup":
+      case "setup": {
+        const back = () => setView({ kind: "game" });
+        const selected = groups.find((g) => g.id === draft?.settings.groupId) ?? null;
+        if (view.kind === "rules") return <RulesScreen onBack={back} />;
+        if (view.kind === "share") return <ShareScreen url={location.origin + import.meta.env.BASE_URL} onBack={back} />;
+        if (view.kind === "stats" && selected) {
+          return (
+            <StatsScreen
+              key={statsVersion}
+              group={selected}
+              records={loadStats(selected.id)}
+              onNewEvening={() => updateGroups(groups.map((g) => (g.id === selected.id ? startEvening(g) : g)))}
+              onClear={() => {
+                clearStats(selected.id);
+                setStatsVersion((v) => v + 1);
+              }}
+              onBack={back}
+            />
+          );
+        }
         if (view.kind === "group") {
           return (
             <GroupScreen
@@ -147,6 +172,7 @@ export default function App() {
             onGroupsChange={updateGroups}
             onEditGroup={(groupId) => setView({ kind: "group", groupId })}
             onDraftChange={(s, freeNames) => setDraft({ settings: s, freeNames })}
+            onOpen={(kind) => setView({ kind })}
             onStart={(s) => {
               setSettings(s);
               saveSettings(s);
@@ -154,6 +180,7 @@ export default function App() {
             }}
           />
         );
+      }
       case "handoff":
         return <HandoffScreen name={state.round.revealOrder[state.index]} onConfirm={() => dispatch({ type: "confirm" })} />;
       case "reveal": {

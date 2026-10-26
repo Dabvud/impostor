@@ -294,3 +294,13 @@ button.primary {
   font-weight: 800;
   color: var(--danger);
 }
+
+.version {
+  position: fixed;
+  right: max(10px, env(safe-area-inset-right));
+  bottom: max(6px, env(safe-area-inset-bottom));
+  font-size: 11px;
+  color: var(--muted);
+  opacity: 0.6;
+  pointer-events: none;
+}

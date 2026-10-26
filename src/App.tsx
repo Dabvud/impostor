@@ -67,42 +67,53 @@ export default function App() {
     dispatch({ type: "start", round });
   }
 
-  switch (state.phase) {
-    case "setup":
-      return (
-        <SetupScreen
-          initial={settings}
-          onStart={(s) => {
-            setSettings(s);
-            saveSettings(s);
-            startRound(s);
-          }}
-        />
-      );
-    case "handoff":
-      return <HandoffScreen name={state.round.revealOrder[state.index]} onConfirm={() => dispatch({ type: "confirm" })} />;
-    case "reveal": {
-      const name = state.round.revealOrder[state.index];
-      return (
-        <RevealScreen
-          key={state.index}
-          isImpostor={state.round.impostors.includes(name)}
-          word={state.round.word.name}
-          canPass={state.seen}
-          onSeen={() => dispatch({ type: "seen" })}
-          onPassOn={() => dispatch({ type: "passOn" })}
-        />
-      );
+  function renderScreen() {
+    switch (state.phase) {
+      case "setup":
+        return (
+          <SetupScreen
+            initial={settings}
+            onStart={(s) => {
+              setSettings(s);
+              saveSettings(s);
+              startRound(s);
+            }}
+          />
+        );
+      case "handoff":
+        return <HandoffScreen name={state.round.revealOrder[state.index]} onConfirm={() => dispatch({ type: "confirm" })} />;
+      case "reveal": {
+        const name = state.round.revealOrder[state.index];
+        return (
+          <RevealScreen
+            key={state.index}
+            isImpostor={state.round.impostors.includes(name)}
+            word={state.round.word.name}
+            canPass={state.seen}
+            onSeen={() => dispatch({ type: "seen" })}
+            onPassOn={() => dispatch({ type: "passOn" })}
+          />
+        );
+      }
+      case "discussion":
+        return <DiscussionScreen starter={state.round.starter} onResolve={() => dispatch({ type: "resolve" })} />;
+      case "resolution":
+        return (
+          <ResolutionScreen
+            round={state.round}
+            onNewRound={() => (settings ? startRound(settings) : dispatch({ type: "toSetup" }))}
+            onSettings={() => dispatch({ type: "toSetup" })}
+          />
+        );
     }
-    case "discussion":
-      return <DiscussionScreen starter={state.round.starter} onResolve={() => dispatch({ type: "resolve" })} />;
-    case "resolution":
-      return (
-        <ResolutionScreen
-          round={state.round}
-          onNewRound={() => (settings ? startRound(settings) : dispatch({ type: "toSetup" }))}
-          onSettings={() => dispatch({ type: "toSetup" })}
-        />
-      );
   }
+
+  return (
+    <>
+      {renderScreen()}
+      <footer className="version">
+        {__APP_VERSION__} · {__BUILD_DATE__}
+      </footer>
+    </>
+  );
 }

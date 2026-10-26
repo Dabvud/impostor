@@ -80,3 +80,10 @@ describe("App", () => {
     expect(screen.getByRole("button", { name: "Start" })).toBeInTheDocument();
   });
 });
+
+describe("Versionsanzeige", () => {
+  it("zeigt Version und Build-Datum auf jedem Bildschirm", () => {
+    render(<App />);
+    expect(screen.getByText(/^v\d+\.\d+\.\d+ · \d{2}\.\d{2}\.\d{4}$/)).toBeInTheDocument();
+  });
+});

@@ -21,6 +21,8 @@ const settings: Settings = {
   secretImpostors: false,
   thinkSeconds: 30,
   discussSeconds: 120,
+  groupId: null,
+  guessEnabled: true,
 };
 
 describe("nextRound", () => {
@@ -35,6 +37,15 @@ describe("nextRound", () => {
   it("gibt mit eingeschaltetem Schalter einen Tipp, sonst keinen", () => {
     expect(["Rot", "Großklub"]).toContain(nextRound(settings, players, clubs, {}, seededRng(5)).round.hint);
     expect(nextRound({ ...settings, hintsEnabled: false }, players, clubs, {}, seededRng(5)).round.hint).toBeNull();
+  });
+
+  it("gibt jeder Runde eine ID und übernimmt den Raten-Schalter", () => {
+    const a = nextRound({ ...settings, guessEnabled: false }, players, clubs, {}, seededRng(5)).round;
+    const b = nextRound(settings, players, clubs, {}, seededRng(6)).round;
+    expect(a.id).toMatch(/^[0-9a-z]{8}$/);
+    expect(a.id).not.toBe(b.id);
+    expect(a.guessEnabled).toBe(false);
+    expect(b.guessEnabled).toBe(true);
   });
 
   it("übernimmt die Timer-Einstellungen in die Runde", () => {

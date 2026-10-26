@@ -69,8 +69,14 @@ export type Settings = {
   thinkSeconds: number | null;
   /** Diskussionszeit; null = kein Diskussions-Timer. */
   discussSeconds: number | null;
+  /** Gewählte Gruppe (für Kader und Statistik); null = Namen frei eingetippt. */
+  groupId: string | null;
+  /** Ein erwischter Impostor darf das Wort raten und gewinnt bei richtiger Antwort. */
+  guessEnabled: boolean;
 };
 export type Round = {
+  /** Zufällige ID, damit eine Runde nie doppelt in die Statistik kommt. */
+  id: string;
   word: Entry;
   hint: string | null;
   impostors: string[];
@@ -80,6 +86,7 @@ export type Round = {
   speakingOrder: string[];
   thinkSeconds: number | null;
   discussSeconds: number | null;
+  guessEnabled: boolean;
   /** Nur wenn alle Impostor sind: jeder bekommt einen eigenen Tipp (Name → Tipp). */
   personalHints?: Record<string, string> | null;
 };

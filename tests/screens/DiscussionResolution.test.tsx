@@ -14,6 +14,8 @@ const round: Round = {
   impostors: ["Ben", "Dana"],
   revealOrder: ["Anna", "Ben", "Cem", "Dana", "Eli"],
   starter: "Jonas",
+  id: "r1",
+  guessEnabled: true,
   speakingOrder: ["Anna", "Ben", "Cem", "Dana", "Eli"],
   thinkSeconds: null,
   discussSeconds: null,

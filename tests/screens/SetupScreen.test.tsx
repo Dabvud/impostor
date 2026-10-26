@@ -125,6 +125,8 @@ describe("SetupScreen", () => {
       secretImpostors: false,
       thinkSeconds: null,
       discussSeconds: 90,
+      groupId: null,
+      guessEnabled: true,
     };
     render(<SetupScreen initial={initial} onStart={vi.fn()} />);
     await user.click(screen.getByRole("button", { name: "Mehr Zeit" }));
@@ -144,6 +146,8 @@ describe("SetupScreen", () => {
       secretImpostors: true,
       thinkSeconds: 15,
       discussSeconds: 180,
+      groupId: null,
+      guessEnabled: true,
     };
     render(<SetupScreen initial={initial} onStart={vi.fn()} />);
     expect(screen.getByRole("switch", { name: "Geheime Anzahl" })).toBeChecked();
@@ -189,6 +193,8 @@ describe("SetupScreen", () => {
       secretImpostors: false,
       thinkSeconds: null,
       discussSeconds: null,
+      groupId: null,
+      guessEnabled: true,
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await user.click(screen.getByRole("button", { name: "Finn entfernen" }));
@@ -211,6 +217,8 @@ describe("SetupScreen", () => {
       secretImpostors: false,
       thinkSeconds: null,
       discussSeconds: null,
+      groupId: null,
+      guessEnabled: true,
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await addNames(user, ["  Dana  "]);
@@ -225,6 +233,8 @@ describe("SetupScreen", () => {
       secretImpostors: false,
       thinkSeconds: null,
       discussSeconds: null,
+      groupId: null,
+      guessEnabled: true,
     });
   });
 

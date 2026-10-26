@@ -24,6 +24,8 @@ const settings: Settings = {
   secretImpostors: true,
   thinkSeconds: 30,
   discussSeconds: 60,
+  groupId: null,
+  guessEnabled: true,
 };
 const game: GameState = {
   phase: "reveal",
@@ -35,6 +37,8 @@ const game: GameState = {
     impostors: ["Ben"],
     revealOrder: ["Anna", "Ben", "Cem"],
     starter: "Cem",
+    id: "r1",
+    guessEnabled: true,
     speakingOrder: ["Cem", "Anna", "Ben"],
     thinkSeconds: 30,
     discussSeconds: null,
@@ -69,7 +73,15 @@ describe("speichern und laden", () => {
 
 describe("Spielstände aus v1.0", () => {
   it("ergänzt bei alten Einstellungen Tipp an, kein Geheim-Modus, keine Timer", () => {
-    const { hintsEnabled: _a, secretImpostors: _b, thinkSeconds: _c, discussSeconds: _d, ...old } = settings;
+    const {
+      hintsEnabled: _a,
+      secretImpostors: _b,
+      thinkSeconds: _c,
+      discussSeconds: _d,
+      groupId: _e,
+      guessEnabled: _f,
+      ...old
+    } = settings;
     localStorage.setItem("impostor:v1:settings", JSON.stringify(old));
     expect(loadSettings()).toEqual({
       ...settings,
@@ -77,6 +89,8 @@ describe("Spielstände aus v1.0", () => {
       secretImpostors: false,
       thinkSeconds: null,
       discussSeconds: null,
+      groupId: null,
+      guessEnabled: true,
     });
   });
 
@@ -87,8 +101,12 @@ describe("Spielstände aus v1.0", () => {
       phase: "discussion",
       round: {
         ...oldRound,
+        id: "",
+        guessEnabled: false,
         word: { name: "Messi", hints: [] },
         hint: null,
+        id: "r1",
+        guessEnabled: true,
         speakingOrder: ["Cem", "Anna", "Ben"],
         thinkSeconds: null,
         discussSeconds: null,

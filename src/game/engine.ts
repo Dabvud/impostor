@@ -82,6 +82,8 @@ export function drawRound(
 
   return {
     round: {
+      id: "",
+      guessEnabled: false,
       word,
       hint,
       personalHints,

@@ -8,6 +8,8 @@ const round: Round = {
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
   starter: "Cem",
+  id: "r1",
+  guessEnabled: true,
   speakingOrder: ["Cem", "Anna", "Ben"],
   thinkSeconds: null,
   discussSeconds: null,

@@ -41,7 +41,9 @@ function isSettings(v: unknown): v is Settings {
     (v.hintsEnabled === undefined || typeof v.hintsEnabled === "boolean") &&
     (v.secretImpostors === undefined || typeof v.secretImpostors === "boolean") &&
     isOptionalSeconds(v.thinkSeconds) &&
-    isOptionalSeconds(v.discussSeconds)
+    isOptionalSeconds(v.discussSeconds) &&
+    (v.groupId === undefined || v.groupId === null || typeof v.groupId === "string") &&
+    (v.guessEnabled === undefined || typeof v.guessEnabled === "boolean")
   );
 }
 
@@ -70,6 +72,9 @@ function upgradeRound(round: Round): Round {
   const fallbackOrder = [...round.revealOrder.slice(start), ...round.revealOrder.slice(0, start)];
   return {
     ...round,
+    // ältere Runden: ohne ID (nie in einer Statistik) und ohne Raten
+    id: typeof round.id === "string" ? round.id : "",
+    guessEnabled: round.guessEnabled === true,
     word: { name: round.word.name, hints: isStringArray(hints) ? hints : [] },
     hint: typeof round.hint === "string" ? round.hint : null,
     speakingOrder: isStringArray(round.speakingOrder) && round.speakingOrder.length > 0 ? round.speakingOrder : fallbackOrder,
@@ -112,6 +117,8 @@ export function loadSettings(): Settings | null {
     secretImpostors: v.secretImpostors ?? false,
     thinkSeconds: secondsOrNull(v.thinkSeconds),
     discussSeconds: secondsOrNull(v.discussSeconds),
+    groupId: v.groupId ?? null,
+    guessEnabled: v.guessEnabled ?? true,
   };
 }
 

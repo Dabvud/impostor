@@ -9,6 +9,11 @@ import type { Club, Footballer, Rng, Round, Settings } from "./types";
  */
 const ALL_IMPOSTORS_MAX = { players: 10, clubs: 6 };
 
+/** 8 Zeichen base36 aus dem Zufallsgenerator. */
+function roundId(rng: Rng): string {
+  return Array.from({ length: 8 }, () => Math.floor(rng() * 36).toString(36)).join("");
+}
+
 /** Schon gespielte Begriffe pro Topf (Schlüssel aus `poolKey`). */
 export type UsedMap = Record<string, string[]>;
 
@@ -27,6 +32,12 @@ export function nextRound(
     ? drawImpostorCount(maxImpostors(names.length), names.length, rng, allowAll)
     : s.impostorCount;
   const result = drawRound(names, impostorCount, pool, used[key] ?? [], rng, s.hintsEnabled);
-  const round = { ...result.round, thinkSeconds: s.thinkSeconds, discussSeconds: s.discussSeconds };
+  const round = {
+    ...result.round,
+    id: roundId(rng),
+    thinkSeconds: s.thinkSeconds,
+    discussSeconds: s.discussSeconds,
+    guessEnabled: s.guessEnabled,
+  };
   return { round, used: { ...used, [key]: result.used } };
 }

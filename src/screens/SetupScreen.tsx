@@ -54,6 +54,8 @@ export default function SetupScreen({ initial, onStart }: Props) {
     secretImpostors,
     thinkSeconds,
     discussSeconds,
+    groupId: initial?.groupId ?? null,
+    guessEnabled: initial?.guessEnabled ?? true,
   };
   const errors = validateSettings(settings);
   const hasDifficulty = MODES.find((m) => m.id === mode)?.hasDifficulty ?? false;

@@ -11,6 +11,8 @@ const base: Settings = {
   secretImpostors: false,
   thinkSeconds: null,
   discussSeconds: null,
+  groupId: null,
+  guessEnabled: true,
 };
 
 describe("maxImpostors", () => {

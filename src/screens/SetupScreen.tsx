@@ -2,9 +2,10 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { formatTime } from "../components/useCountdown";
 import { displayName } from "../displayName";
 import { addMember, newId, selectedNames, toggleSelected, type Group } from "../game/groups";
-import { MODES } from "../game/modes";
+import { firstPlayableMode, MODES, type ModeId } from "../game/modes";
 import { maxImpostors, normalizeNames, validateSettings } from "../game/settings";
-import type { ModeId, Settings, Tier } from "../game/types";
+import type { Settings, Tier } from "../game/types";
+import { APP_NAME } from "../variant/config";
 
 const DIFFICULTIES: { tier: Tier; label: string }[] = [
   { tier: 1, label: "Leicht" },
@@ -33,6 +34,7 @@ export type SetupView = "rules" | "stats" | "share";
 
 type Props = {
   initial: Settings | null;
+  poolSizes?: Partial<Record<ModeId, number>>;
   onStart: (s: Settings) => void;
   groups?: Group[];
   onGroupsChange?: (groups: Group[]) => void;
@@ -48,6 +50,7 @@ const noop = () => {};
 
 export default function SetupScreen({
   initial,
+  poolSizes,
   onStart,
   groups = [],
   onGroupsChange = noop,
@@ -72,7 +75,10 @@ export default function SetupScreen({
   const [duplicateHint, setDuplicateHint] = useState<string | null>(null);
   const nameInput = useRef<HTMLInputElement>(null);
   const [impostorCount, setImpostorCount] = useState(initial?.impostorCount ?? 1);
-  const [mode, setMode] = useState<ModeId>(initial?.mode ?? "alle");
+  const [mode, setMode] = useState<ModeId>(() => {
+    const sizes = Object.fromEntries(MODES.map((m) => [m.id, poolSizes?.[m.id] ?? 1])) as Record<ModeId, number>;
+    return initial && sizes[initial.mode] > 0 ? initial.mode : firstPlayableMode(sizes);
+  });
   const [difficulty, setDifficulty] = useState<Tier>(initial?.difficulty ?? 1);
   const [hintsEnabled, setHintsEnabled] = useState(initial?.hintsEnabled ?? true);
 
@@ -96,7 +102,7 @@ export default function SetupScreen({
     groupId,
     guessEnabled,
   };
-  const errors = validateSettings(settings);
+  const errors = validateSettings(settings, poolSizes?.[mode]);
 
   const draftKey = JSON.stringify([settings, freeNames]);
   // nur bei echten Änderungen melden (Objekte entstehen bei jedem Rendern neu)
@@ -142,7 +148,7 @@ export default function SetupScreen({
 
   return (
     <main className="screen setup">
-      <h1 className="title">Impostor</h1>
+      <h1 className="title">{APP_NAME}</h1>
 
       <section className="panel">
         <h2>Spieler</h2>
@@ -343,8 +349,8 @@ export default function SetupScreen({
         <h2>Spielmodus</h2>
         <select aria-label="Spielmodus" value={mode} onChange={(e) => setMode(e.target.value as ModeId)}>
           {MODES.map((m) => (
-            <option key={m.id} value={m.id}>
-              {m.label}
+            <option key={m.id} value={m.id} disabled={poolSizes?.[m.id] === 0}>
+              {m.label}{poolSizes?.[m.id] === 0 ? " (bald)" : ""}
             </option>
           ))}
         </select>

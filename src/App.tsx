@@ -1,12 +1,11 @@
 import { useEffect, useReducer, useRef, useState } from "react";
-import clubsJson from "./data/clubs.json";
-import playersJson from "./data/players.json";
 import { unlockAudio } from "./alarm";
 import { startEvening, type Group } from "./game/groups";
+import { poolSizes } from "./game/modes";
 import { nextRound } from "./game/session";
 import { toRecord } from "./game/stats";
 import { reducer, restore, type GameState } from "./game/state";
-import type { Club, Footballer, Settings } from "./game/types";
+import type { Settings } from "./game/types";
 import CluesScreen from "./screens/CluesScreen";
 import GroupScreen from "./screens/GroupScreen";
 import DiscussionScreen from "./screens/DiscussionScreen";
@@ -31,8 +30,7 @@ import {
   saveUsed,
 } from "./storage";
 
-const players = playersJson as Footballer[];
-const clubs = clubsJson as Club[];
+const sizes = poolSizes();
 
 /** Bildschirme neben dem Spiel – nicht gespeichert, nach Neuladen geht es ins Spiel. */
 type View = { kind: "game" } | { kind: "group"; groupId: string | null } | { kind: "rules" | "stats" | "share" };
@@ -127,7 +125,7 @@ export default function App() {
   }
 
   function startRound(s: Settings) {
-    const { round, used } = nextRound(s, players, clubs, loadUsed(), Math.random);
+    const { round, used } = nextRound(s, loadUsed(), Math.random);
     saveUsed(used);
     dispatch({ type: "start", round });
   }
@@ -166,6 +164,7 @@ export default function App() {
         }
         return (
           <SetupScreen
+            poolSizes={sizes}
             initial={draft?.settings ?? settings}
             initialFreeNames={draft?.freeNames}
             groups={groups}

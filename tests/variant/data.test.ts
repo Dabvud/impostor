@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import clubsJson from "../src/data/clubs.json";
-import playersJson from "../src/data/players.json";
-import { MODES, poolFor } from "../src/game/modes";
-import type { Club, Footballer, Tier } from "../src/game/types";
+import clubsJson from "../../src/data/clubs.json";
+import playersJson from "../../src/data/players.json";
+import { MODES, poolFor } from "../../src/game/modes";
+import type { Club, Footballer, Tier } from "../../src/variant/types";
 
 const players = playersJson as Footballer[];
 const clubs = clubsJson as Club[];
@@ -250,6 +250,6 @@ describe("Spielmodi", () => {
     m.hasDifficulty ? ([1, 2, 3] as Tier[]).map((d) => [m.id, d] as const) : [[m.id, 1 as Tier] as const],
   );
   it.each(cases)("%s (Stufe %i) hat mindestens 20 Einträge", (mode, difficulty) => {
-    expect(poolFor(mode, difficulty, players, clubs).length).toBeGreaterThanOrEqual(20);
+    expect(poolFor(mode, difficulty).length).toBeGreaterThanOrEqual(20);
   });
 });

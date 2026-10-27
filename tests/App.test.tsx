@@ -1,3 +1,5 @@
+import { firstPlayableMode, poolSizes } from "../src/game/modes";
+import { STORAGE_PREFIX } from "../src/variant/config";
 import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
@@ -5,8 +7,10 @@ import App from "../src/App";
 import type { GameState } from "../src/game/state";
 import { saveGame } from "../src/storage";
 
+const playableMode = firstPlayableMode(poolSizes());
+
 const round = {
-  word: { name: "Schalke 04", hints: [] },
+  word: { name: "Begriff B", hints: [] },
   hint: null,
   impostors: ["Ben"],
   revealOrder: ["Anna", "Ben", "Cem"],
@@ -34,7 +38,7 @@ describe("App", () => {
     const user = userEvent.setup();
     render(<App />);
     for (const name of ["Anna", "Ben", "Cem"]) await user.type(screen.getByLabelText("Name"), `${name}{Enter}`);
-    await user.selectOptions(screen.getByLabelText("Spielmodus"), "vereine-de");
+    await user.selectOptions(screen.getByLabelText("Spielmodus"), playableMode);
     await user.click(screen.getByRole("button", { name: "Start" }));
 
     for (let i = 0; i < 3; i++) {
@@ -70,21 +74,21 @@ describe("App", () => {
   });
 
   it("zeigt in der Alle-Impostor-Runde jedem seinen eigenen Tipp", () => {
-    const personal = { ...round, impostors: ["Anna", "Ben", "Cem"], personalHints: { Anna: "Linksfuß", Ben: "Glatze", Cem: "2010er" } };
+    const personal = { ...round, impostors: ["Anna", "Ben", "Cem"], personalHints: { Anna: "Merkmal B", Ben: "Merkmal C", Cem: "Merkmal D" } };
     saveGame({ phase: "reveal", round: personal, index: 1, seen: false });
     render(<App />);
     fireEvent.click(screen.getByRole("button", { name: "Ich bin Ben" }));
     const card = screen.getByTestId("reveal-card");
     fireEvent.pointerDown(card, { clientY: 400, pointerId: 1 });
     fireEvent.pointerMove(card, { clientY: 250, pointerId: 1 });
-    expect(screen.getByText("Tipp: Glatze")).toBeInTheDocument();
+    expect(screen.getByText("Tipp: Merkmal C")).toBeInTheDocument();
   });
 
   it("setzt nach Neuladen beim Übergabe-Bildschirm des aktuellen Spielers fort", () => {
     saveGame({ phase: "reveal", round, index: 1, seen: true } satisfies GameState);
     render(<App />);
     expect(screen.getByRole("heading", { name: "Ben ist dran" })).toBeInTheDocument();
-    expect(screen.queryByText("Schalke 04")).not.toBeInTheDocument();
+    expect(screen.queryByText("Begriff B")).not.toBeInTheDocument();
   });
 
   it("verdeckt die Karte, wenn das Handy gesperrt oder die App gewechselt wird", () => {
@@ -131,16 +135,16 @@ describe("Gruppen", () => {
     await user.click(screen.getByRole("button", { name: "Freitagsrunde" }));
     await user.click(screen.getByRole("button", { name: "Start" }));
     expect(screen.getByRole("heading", { name: /ist dran$/ })).toBeInTheDocument();
-    expect(JSON.parse(localStorage.getItem("impostor:v1:groups") ?? "[]")[0].name).toBe("Freitagsrunde");
+    expect(JSON.parse(localStorage.getItem(`${STORAGE_PREFIX}:v1:groups`) ?? "[]")[0].name).toBe("Freitagsrunde");
   });
 
   it("löscht eine Gruppe samt Statistik und fällt auf „Ohne Gruppe“ zurück", async () => {
     const user = userEvent.setup();
     localStorage.setItem(
-      "impostor:v1:groups",
+      `${STORAGE_PREFIX}:v1:groups`,
       JSON.stringify([{ id: "g1", name: "Alt", members: [{ id: "a", name: "Anna" }], selected: ["a"], evening: 1 }]),
     );
-    localStorage.setItem("impostor:v1:stats:g1", JSON.stringify([]));
+    localStorage.setItem(`${STORAGE_PREFIX}:v1:stats:g1`, JSON.stringify([]));
     vi.spyOn(window, "confirm").mockReturnValue(true);
     render(<App />);
     await user.click(screen.getByRole("button", { name: "Alt" }));
@@ -148,7 +152,7 @@ describe("Gruppen", () => {
     await user.click(screen.getByRole("button", { name: "Gruppe löschen" }));
     expect(screen.queryByRole("button", { name: "Alt" })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Ohne Gruppe" })).toHaveAttribute("aria-pressed", "true");
-    expect(localStorage.getItem("impostor:v1:stats:g1")).toBeNull();
+    expect(localStorage.getItem(`${STORAGE_PREFIX}:v1:stats:g1`)).toBeNull();
   });
 });
 
@@ -167,7 +171,7 @@ describe("Statistik-Protokoll", () => {
   const settings = {
     names: ["Anna", "Ben", "Cem"],
     impostorCount: 1,
-    mode: "vereine-de",
+    mode: playableMode,
     difficulty: 1,
     hintsEnabled: true,
     secretImpostors: false,
@@ -176,11 +180,11 @@ describe("Statistik-Protokoll", () => {
     groupId: "g1",
     guessEnabled: true,
   };
-  const stats = () => JSON.parse(localStorage.getItem("impostor:v1:stats:g1") ?? "[]");
+  const stats = () => JSON.parse(localStorage.getItem(`${STORAGE_PREFIX}:v1:stats:g1`) ?? "[]");
 
   beforeEach(() => {
-    localStorage.setItem("impostor:v1:groups", JSON.stringify([group]));
-    localStorage.setItem("impostor:v1:settings", JSON.stringify(settings));
+    localStorage.setItem(`${STORAGE_PREFIX}:v1:groups`, JSON.stringify([group]));
+    localStorage.setItem(`${STORAGE_PREFIX}:v1:settings`, JSON.stringify(settings));
   });
 
   it("trägt eine abgeschlossene Runde genau einmal ein – auch nach Neuladen", async () => {
@@ -195,7 +199,7 @@ describe("Statistik-Protokoll", () => {
       starter: "c",
       winner: "impostor",
       caught: false,
-      mode: "vereine-de",
+      mode: playableMode,
     });
     first.unmount();
     render(<App />);
@@ -220,12 +224,12 @@ describe("Statistik-Protokoll", () => {
   });
 
   it("trägt ohne Gruppe nichts ein", async () => {
-    localStorage.setItem("impostor:v1:settings", JSON.stringify({ ...settings, groupId: null }));
+    localStorage.setItem(`${STORAGE_PREFIX}:v1:settings`, JSON.stringify({ ...settings, groupId: null }));
     saveGame({ phase: "resolution", round, step: "caught?", winner: null, caught: null });
     render(<App />);
     await new Promise((r) => setTimeout(r, 550));
     fireEvent.click(screen.getByRole("button", { name: "Nein" }));
-    expect(localStorage.getItem("impostor:v1:stats:g1")).toBeNull();
+    expect(localStorage.getItem(`${STORAGE_PREFIX}:v1:stats:g1`)).toBeNull();
   });
 });
 
@@ -233,7 +237,7 @@ describe("Regeln, Statistik und Teilen", () => {
   it("öffnet die Bildschirme aus der Einrichtung und kehrt zurück", async () => {
     const user = userEvent.setup();
     localStorage.setItem(
-      "impostor:v1:groups",
+      `${STORAGE_PREFIX}:v1:groups`,
       JSON.stringify([{ id: "g1", name: "Freitagsrunde", members: [{ id: "a", name: "Anna" }], selected: ["a"], evening: 1 }]),
     );
     render(<App />);
@@ -246,7 +250,7 @@ describe("Regeln, Statistik und Teilen", () => {
     expect(screen.getByRole("heading", { name: "Freitagsrunde" })).toBeInTheDocument();
     vi.spyOn(window, "confirm").mockReturnValue(true);
     await user.click(screen.getByRole("button", { name: "Neuer Abend" }));
-    expect(JSON.parse(localStorage.getItem("impostor:v1:groups") ?? "[]")[0].evening).toBe(2);
+    expect(JSON.parse(localStorage.getItem(`${STORAGE_PREFIX}:v1:groups`) ?? "[]")[0].evening).toBe(2);
     await user.click(screen.getByRole("button", { name: "Zurück" }));
     expect(screen.getByRole("button", { name: "Freitagsrunde" })).toHaveAttribute("aria-pressed", "true");
 

@@ -102,18 +102,19 @@ describe("drawRound", () => {
   });
 
   describe("wenn alle Impostor sind", () => {
-    const SLOTS = ["herkunft", "position", "liga", "spielart", "eigenschaft", "erfolg", "frisur", "zeit"];
-    const donor = (name: string, team: Entry["team"]): Entry => ({
+    const SLOTS = Array.from({ length: 8 }, (_, i) => `Kategorie${i}`);
+    const donor = (name: string, group: string, tipDonor = true): Entry => ({
       name,
       hints: ["h"],
-      team,
+      group,
+      tipDonor,
       allHints: SLOTS.map((slot) => ({ slot, value: `${slot}:${name}` })),
     });
     const squad: Entry[] = [
-      donor("T1", "Tor"),
-      donor("T2", "Tor"),
-      ...["A1", "A2", "A3", "A4", "A5", "A6"].map((n) => donor(n, "Angriff")),
-      ...["V1", "V2", "V3", "V4", "V5", "V6"].map((n) => donor(n, "Abwehr")),
+      donor("T1", "Ausgeschlossen", false),
+      donor("T2", "Ausgeschlossen", false),
+      ...["A1", "A2", "A3", "A4", "A5", "A6"].map((n) => donor(n, "Gruppe A")),
+      ...["V1", "V2", "V3", "V4", "V5", "V6"].map((n) => donor(n, "Gruppe B")),
     ];
     const tipsOf = (seed: number) =>
       Object.values(drawRound(names, names.length, squad, [], seededRng(seed), true).round.personalHints ?? {});
@@ -126,13 +127,20 @@ describe("drawRound", () => {
       }
     });
 
-    it("nimmt die Tipps von verschiedenen Spielern desselben Mannschaftsteils, nie vom Torwart", () => {
+    it("nimmt die Tipps von verschiedenen Einträgen derselben Gruppe", () => {
       for (let seed = 0; seed < 30; seed++) {
         const donors = tipsOf(seed).map((t) => t.split(":")[1]);
         expect(new Set(donors).size).toBe(names.length);
-        expect(donors.some((d) => d.startsWith("T"))).toBe(false);
         expect(new Set(donors.map((d) => d[0])).size).toBe(1);
       }
+    });
+
+    it("nutzt Einträge mit tipDonor: false nie als Tipp-Geber", () => {
+      for (let seed = 0; seed < 100; seed++) {
+        expect(tipsOf(seed).some((t) => t.split(":")[1].startsWith("T"))).toBe(false);
+      }
+      const excluded = [donor("X", "Gruppe A", false)];
+      expect(drawRound(names, names.length, excluded, [], seededRng(1), true).round.personalHints).toBeNull();
     });
 
     it("gibt keinen gemeinsamen Tipp, wenn Tipp-Schalter aus oder nicht alle Impostor sind", () => {

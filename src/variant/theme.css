@@ -1,0 +1,23 @@
+/* Fußball-Farben: Rasengrün als Grund, Hellgrün für Hauptaktion und Auswahl */
+:root {
+  --bg: #0f1a14;
+  --surface: #1a2b21;
+  --card: #0b2416;
+  --line: #2c4636;
+  --line-soft: #24392c;
+  --text: #f2f5f0;
+  --muted: #9fb3a6;
+  --accent: #3ddc84;
+  --on-accent: #062312;
+  --select: #3ddc84;
+  --on-select: #062312;
+  --danger: #ff5c5c;
+  --clock-color: var(--accent);
+  --focus: var(--accent);
+  --cover-a: #1f3a2a;
+  --cover-b: #1a3224;
+  --hold-fill: rgba(6, 35, 18, 0.35);
+  --qr-bg: #f2f5f0;
+  --impostor-win-bg: var(--danger);
+  --impostor-win-fg: #2a0606;
+}

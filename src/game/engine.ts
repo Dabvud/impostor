@@ -13,15 +13,15 @@ const pick = <T>(items: T[], rng: Rng): T => items[Math.floor(rng() * items.leng
 
 /**
  * Alle sind Impostor: Jeder bekommt einen Tipp von einem anderen, zufälligen Spieler. Damit die
- * Tipps sich nicht verraten, kommen alle Tipp-Geber aus einem Mannschaftsteil (nie Torwart) und
+ * Tipps sich nicht verraten, kommen alle erlaubten Tipp-Geber aus einer Gruppe und
  * jeder Konflikt-Slot (z. B. Herkunft = Nation oder Kontinent) wird nur einmal vergeben.
  */
 function personalTips(names: string[], pool: Entry[], rng: Rng): Record<string, string> | null {
-  const field = pool.filter((e) => e.team !== "Tor" && (e.allHints?.length ?? 0) > 0);
+  const field = pool.filter((e) => e.tipDonor !== false && (e.allHints?.length ?? 0) > 0);
   if (field.length === 0) return null;
-  const team = pick([...new Set(field.map((e) => e.team))], rng);
+  const group = pick([...new Set(field.map((e) => e.group))], rng);
   const donors = shuffle(
-    field.filter((e) => e.team === team),
+    field.filter((e) => e.group === group),
     rng,
   );
   const usedSlots = new Set<string>();

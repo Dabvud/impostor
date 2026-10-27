@@ -4,15 +4,16 @@ import type { UsedMap } from "./game/session";
 import type { GameState } from "./game/state";
 import type { RoundRecord } from "./game/stats";
 import type { Round, Settings } from "./game/types";
+import { STORAGE_PREFIX } from "./variant/config";
 
 const KEYS = {
-  settings: "impostor:v1:settings",
-  game: "impostor:v1:game",
-  used: "impostor:v1:used",
-  groups: "impostor:v1:groups",
+  settings: `${STORAGE_PREFIX}:v1:settings`,
+  game: `${STORAGE_PREFIX}:v1:game`,
+  used: `${STORAGE_PREFIX}:v1:used`,
+  groups: `${STORAGE_PREFIX}:v1:groups`,
 };
 
-const statsKey = (groupId: string) => `impostor:v1:stats:${groupId}`;
+const statsKey = (groupId: string) => `${STORAGE_PREFIX}:v1:stats:${groupId}`;
 
 function read(key: string): unknown {
   try {

@@ -1,3 +1,5 @@
+import { APP_NAME } from "../../src/variant/config";
+import { MODES } from "../../src/game/modes";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
@@ -121,7 +123,7 @@ describe("SetupScreen", () => {
     const initial: Settings = {
       names: ["Anna", "Ben", "Cem"],
       impostorCount: 1,
-      mode: "alle",
+      mode: MODES[0].id,
       difficulty: 1,
       hintsEnabled: true,
       secretImpostors: false,
@@ -142,7 +144,7 @@ describe("SetupScreen", () => {
     const initial: Settings = {
       names: ["Anna", "Ben", "Cem"],
       impostorCount: 1,
-      mode: "alle",
+      mode: MODES[0].id,
       difficulty: 1,
       hintsEnabled: true,
       secretImpostors: true,
@@ -167,14 +169,6 @@ describe("SetupScreen", () => {
     expect(screen.getByRole("button", { name: "Start" })).toBeEnabled();
   });
 
-  it("zeigt die Schwierigkeit nur bei 'Alle Fußballer'", async () => {
-    const user = userEvent.setup();
-    render(<SetupScreen initial={null} onStart={vi.fn()} />);
-    expect(screen.getByRole("button", { name: "Mittel" })).toBeInTheDocument();
-    await user.selectOptions(screen.getByLabelText("Spielmodus"), "vereine-de");
-    expect(screen.queryByRole("button", { name: "Mittel" })).not.toBeInTheDocument();
-  });
-
   it("lässt die Impostor-Anzahl nicht über das Maximum steigen", async () => {
     const user = userEvent.setup();
     render(<SetupScreen initial={null} onStart={vi.fn()} />);
@@ -189,7 +183,7 @@ describe("SetupScreen", () => {
     const initial: Settings = {
       names: ["Anna", "Ben", "Cem", "Dana", "Eli", "Finn"],
       impostorCount: 2,
-      mode: "alle",
+      mode: MODES[0].id,
       difficulty: 1,
       hintsEnabled: true,
       secretImpostors: false,
@@ -213,7 +207,7 @@ describe("SetupScreen", () => {
     const initial: Settings = {
       names: ["Anna", "Ben", "Cem"],
       impostorCount: 1,
-      mode: "alle",
+      mode: MODES[0].id,
       difficulty: 3,
       hintsEnabled: true,
       secretImpostors: false,
@@ -224,12 +218,12 @@ describe("SetupScreen", () => {
     };
     render(<SetupScreen initial={initial} onStart={onStart} />);
     await addNames(user, ["  Dana  "]);
-    await user.selectOptions(screen.getByLabelText("Spielmodus"), "cl-legenden");
+    await user.selectOptions(screen.getByLabelText("Spielmodus"), MODES[1].id);
     await user.click(screen.getByRole("button", { name: "Start" }));
     expect(onStart).toHaveBeenCalledWith({
       names: ["Anna", "Ben", "Cem", "Dana"],
       impostorCount: 1,
-      mode: "cl-legenden",
+      mode: MODES[1].id,
       difficulty: 3,
       hintsEnabled: true,
       secretImpostors: false,
@@ -309,7 +303,7 @@ describe("SetupScreen mit Gruppen", () => {
     function BigHarness() {
       const [groups, setGroups] = useState<Group[]>([big]);
       const initial: Settings = {
-        names: [], impostorCount: 3, mode: "alle", difficulty: 1, hintsEnabled: true, secretImpostors: false,
+        names: [], impostorCount: 3, mode: MODES[0].id, difficulty: 1, hintsEnabled: true, secretImpostors: false,
         thinkSeconds: null, discussSeconds: null, groupId: "g1", guessEnabled: true,
       };
       return <SetupScreen initial={initial} onStart={onStart} groups={groups} onGroupsChange={setGroups} />;
@@ -347,7 +341,7 @@ describe("SetupScreen mit Gruppen", () => {
     const initial: Settings = {
       names: ["X", "Y", "Z"],
       impostorCount: 1,
-      mode: "alle",
+      mode: MODES[0].id,
       difficulty: 1,
       hintsEnabled: true,
       secretImpostors: false,
@@ -376,5 +370,61 @@ describe("SetupScreen mit Gruppen", () => {
     expect(onOpen.mock.calls.map((c) => c[0])).toEqual(["rules", "stats", "share"]);
     await user.click(screen.getByRole("button", { name: "Start" }));
     expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ guessEnabled: false }));
+  });
+});
+
+describe("SetupScreen mit Topfgrößen", () => {
+  const initial: Settings = {
+    names: ["Anna", "Ben", "Cem"], impostorCount: 1, mode: MODES[0].id, difficulty: 1,
+    hintsEnabled: true, secretImpostors: false, thinkSeconds: null, discussSeconds: null,
+    groupId: null, guessEnabled: true,
+  };
+
+  it("verwendet den Titel aus der Konfiguration", () => {
+    render(<SetupScreen initial={null} onStart={vi.fn()} />);
+    expect(screen.getByRole("heading", { level: 1, name: APP_NAME })).toBeInTheDocument();
+  });
+
+  it("sperrt leere Modi im Select und ergänzt „(bald)“", async () => {
+    const user = userEvent.setup();
+    render(<SetupScreen initial={initial} onStart={vi.fn()} poolSizes={{ [MODES[1].id]: 0 }} />);
+    const option = screen.getByRole("option", { name: MODES[1].label + " (bald)" });
+    expect(option).toBeDisabled();
+    await user.selectOptions(screen.getByLabelText("Spielmodus"), MODES[1].id);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[0].id);
+  });
+
+  it("fällt bei gespeichertem leerem Modus auf den ersten spielbaren zurück", async () => {
+    const onStart = vi.fn();
+    render(<SetupScreen initial={initial} onStart={onStart} poolSizes={{ [MODES[0].id]: 0 }} />);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[1].id);
+    await userEvent.setup().click(screen.getByRole("button", { name: "Start" }));
+    expect(onStart).toHaveBeenCalledWith(expect.objectContaining({ mode: MODES[1].id }));
+  });
+
+  it("startet auch ohne gespeicherten Modus mit dem ersten spielbaren", () => {
+    render(<SetupScreen initial={null} onStart={vi.fn()} poolSizes={{ [MODES[0].id]: 0 }} />);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[1].id);
+  });
+
+  it("behält einen gespeicherten spielbaren Modus bei", () => {
+    render(<SetupScreen initial={{ ...initial, mode: MODES[1].id }} onStart={vi.fn()} poolSizes={{ [MODES[0].id]: 2, [MODES[1].id]: 1 }} />);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[1].id);
+  });
+
+  it("behandelt ohne Topfgrößen jeden Modus als spielbar", () => {
+    render(<SetupScreen initial={{ ...initial, mode: MODES[1].id }} onStart={vi.fn()} />);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[1].id);
+    for (const m of MODES) expect(screen.getByRole("option", { name: m.label })).toBeEnabled();
+  });
+
+  it("sperrt Start mit der Fehlermeldung, wenn alle Töpfe leer sind", () => {
+    const sizes = Object.fromEntries(MODES.map((m) => [m.id, 0]));
+    const onStart = vi.fn();
+    render(<SetupScreen initial={initial} onStart={onStart} poolSizes={sizes} />);
+    expect(screen.getByLabelText("Spielmodus")).toHaveValue(MODES[0].id);
+    expect(screen.getByText("In diesem Modus gibt es noch keine Begriffe")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Start" })).toBeDisabled();
+    expect(onStart).not.toHaveBeenCalled();
   });
 });
